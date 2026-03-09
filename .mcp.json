@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "nanobanana-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@ycse/nanobanana-mcp"],
+      "env": {
+        "GOOGLE_AI_API_KEY": "AIzaSyBeAmhjo_DTW3f7TQx_ZzgbtMunUnzp6Jg"
+      }
+    }
+  }
+}

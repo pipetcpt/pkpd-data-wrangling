@@ -1,0 +1,52 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "코딩을 활용한 PK/PD 자료처리"
+  subtitle: "R과 Claude Code를 활용한 피부과 약물의 약동학/약력학 데이터 분석"
+  author: "한성필"
+  date: today
+  chapters:
+    - index.qmd
+    - part: "Part I: R 프로그래밍 기초"
+      chapters:
+        - chapters/01-introduction.qmd
+        - chapters/02-r-object.qmd
+        - chapters/03-r-object-handling.qmd
+        - chapters/04-r-object-handling-advanced.qmd
+    - part: "Part II: PK 데이터 분석"
+      chapters:
+        - chapters/05-pk-information.qmd
+        - chapters/06-pk-eda.qmd
+        - chapters/07-building-analysis-data.qmd
+        - chapters/08-extracting-pk-info.qmd
+        - chapters/09-pk-practice.qmd
+    - part: "Part III: PK-PD 통합 분석"
+      chapters:
+        - chapters/10-pkpd-concerns.qmd
+        - chapters/11-pd-considerations.qmd
+        - chapters/12-pkpd-dataset.qmd
+        - chapters/13-pkpd-derivation.qmd
+        - chapters/14-covariate-exploration.qmd
+        - chapters/15-pkpd-plotting.qmd
+    - references.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: false
+    code-tools: true
+    highlight-style: github
+
+lang: ko
+
+execute:
+  warning: false
+  message: false
+  echo: true
+
+bibliography: references.bib
