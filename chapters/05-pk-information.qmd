@@ -15,7 +15,7 @@ library(gt)           # 출판 품질 표 생성
 
 ## PK 파라미터의 정의와 임상적 의미 {#sec-pk-parameters}
 
-![**Figure 5.1: 농도-시간 곡선 위의 PK 파라미터 (PK Parameters on Concentration-Time Curve).** 전형적인 약물 농도-시간 곡선 위에 Cmax, Tmax, AUC(음영 영역), t1/2(소실 기울기), MRT를 표시하고, 각 파라미터의 수학적 공식을 함께 나타내었다. 흡수상과 소실상을 구분하여 약동학적 의미를 직관적으로 보여준다.](images/ch05_fig1.png){#fig-ch05-1 width=100%}
+![**Figure 5.1: 농도-시간 곡선 위의 PK 파라미터 (PK Parameters on Concentration-Time Curve).** 전형적인 약물 농도-시간 곡선 위에 Cmax, Tmax, AUC(음영 영역), t1/2(소실 기울기), MRT를 표시하고, 각 파라미터의 수학적 공식을 함께 나타내었다. 흡수상과 소실상을 구분하여 약동학적 의미를 직관적으로 보여준다.](../images/ch05_fig1.png){#fig-ch05-1 width=100%}
 
 약동학 분석에서 산출하는 PK 파라미터는 약물의 체내 동태를 정량적으로 기술하는 핵심 지표입니다. 각 파라미터가 무엇을 의미하고, 임상적으로 어떤 판단에 활용되는지 이해하는 것이 중요합니다.
 
@@ -262,7 +262,7 @@ pk_params |>
 
 ## 비구획분석(NCA) 원리 {#sec-nca-principles}
 
-![**Figure 5.2: NCA 사다리꼴 방법 비교 (NCA Trapezoidal Methods Comparison).** 동일한 농도-시간 데이터에 대해 Linear, Log-linear, Linear-up/Log-down 세 가지 사다리꼴 방법을 적용한 결과를 세 개의 패널로 비교하였다. 각 방법에서의 면적 계산 차이와 적용 상황을 설명한다.](images/ch05_fig2.png){#fig-ch05-2 width=100%}
+![**Figure 5.2: NCA 사다리꼴 방법 비교 (NCA Trapezoidal Methods Comparison).** 동일한 농도-시간 데이터에 대해 Linear, Log-linear, Linear-up/Log-down 세 가지 사다리꼴 방법을 적용한 결과를 세 개의 패널로 비교하였다. 각 방법에서의 면적 계산 차이와 적용 상황을 설명한다.](../images/ch05_fig2.png){#fig-ch05-2 width=100%}
 
 비구획분석(Non-Compartmental Analysis, NCA)은 약물의 구획 모형(1-구획, 2-구획 등)을 가정하지 않고, **관찰된 농도-시간 데이터로부터 직접 PK 파라미터를 산출**하는 방법입니다. NCA는 가정이 적고 계산이 간단하며, 규제 기관에서 가장 널리 사용되는 PK 분석 방법입니다.
 
@@ -470,7 +470,7 @@ tdm_criteria |>
 
 ### 좁은 치료역(Narrow Therapeutic Index) 약물 {#sec-nti}
 
-![**Figure 5.3: 좁은 치료역 약물의 TDM 개념 (TDM Concept for Narrow Therapeutic Index Drugs).** 치료 창(therapeutic window)과 목표 농도 범위를 중심으로, MTX와 CsA의 농도 범위를 표시하였다. 독성 영역(toxic zone)과 치료 미달 영역(subtherapeutic zone)을 색상으로 구분하여 TDM의 필요성을 시각적으로 보여준다.](images/ch05_fig3.png){#fig-ch05-3 width=100%}
+![**Figure 5.3: 좁은 치료역 약물의 TDM 개념 (TDM Concept for Narrow Therapeutic Index Drugs).** 치료 창(therapeutic window)과 목표 농도 범위를 중심으로, MTX와 CsA의 농도 범위를 표시하였다. 독성 영역(toxic zone)과 치료 미달 영역(subtherapeutic zone)을 색상으로 구분하여 TDM의 필요성을 시각적으로 보여준다.](../images/ch05_fig3.png){#fig-ch05-3 width=100%}
 
 좁은 치료역 약물은 **유효 농도 범위**가 좁아서, 농도가 조금만 변해도 치료 실패(농도 부족)나 독성(농도 과다)이 발생할 수 있는 약물입니다.
 

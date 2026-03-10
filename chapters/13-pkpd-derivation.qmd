@@ -20,7 +20,7 @@ library(mrgsolve)     # PK-PD 시뮬레이션
 
 ### Sequential Approach vs Simultaneous Approach
 
-![**Figure 13.2: Sequential vs Simultaneous 분석 비교 (Sequential vs Simultaneous PK-PD Analysis).** Sequential 접근(PK 먼저 → 고정 → PD)과 Simultaneous 접근(PK+PD 동시)의 두 가지 분석 방법을 흐름도로 비교하고, 각 방법의 장단점을 함께 표시하였다.](images/ch13_fig2.png){#fig-ch13-2 width=100%}
+![**Figure 13.2: Sequential vs Simultaneous 분석 비교 (Sequential vs Simultaneous PK-PD Analysis).** Sequential 접근(PK 먼저 → 고정 → PD)과 Simultaneous 접근(PK+PD 동시)의 두 가지 분석 방법을 흐름도로 비교하고, 각 방법의 장단점을 함께 표시하였다.](../images/ch13_fig2.png){#fig-ch13-2 width=100%}
 
 PK-PD 관계를 분석하는 두 가지 근본적 접근 방식이 있습니다:
 
@@ -141,7 +141,7 @@ p_loess + p_emax
 
 ## 노출-반응 (Exposure-Response) 분석 {#sec-exposure-response}
 
-![**Figure 13.1: 노출-반응 분석 프레임워크 (Exposure-Response Analysis Framework).** 세 개의 연결된 그래프로 Dose→Exposure(PK), Exposure→Efficacy(E-R), Exposure→Safety(E-S) 관계를 나타내고, 최적 용량 범위를 하이라이트하였다.](images/ch13_fig1.png){#fig-ch13-1 width=100%}
+![**Figure 13.1: 노출-반응 분석 프레임워크 (Exposure-Response Analysis Framework).** 세 개의 연결된 그래프로 Dose→Exposure(PK), Exposure→Efficacy(E-R), Exposure→Safety(E-S) 관계를 나타내고, 최적 용량 범위를 하이라이트하였다.](../images/ch13_fig1.png){#fig-ch13-1 width=100%}
 
 ### 용량-노출 관계 (Dose-Exposure Relationship)
 
@@ -1035,7 +1035,7 @@ tofa_summary |>
 
 ## 약리학 노트: 노출-반응 기반 용량 선택 {#sec-dose-selection}
 
-![**Figure 13.3: 용량 선택을 위한 유익성-위해성 평가 (Benefit-Risk Assessment for Dose Selection).** 노출(exposure)에 따른 유효성(EASI-75 달성 확률) 곡선과 안전성(림프구감소증 위험) 곡선을 겹쳐 표시하고, 치료 창(therapeutic window)을 하이라이트하였다.](images/ch13_fig3.png){#fig-ch13-3 width=100%}
+![**Figure 13.3: 용량 선택을 위한 유익성-위해성 평가 (Benefit-Risk Assessment for Dose Selection).** 노출(exposure)에 따른 유효성(EASI-75 달성 확률) 곡선과 안전성(림프구감소증 위험) 곡선을 겹쳐 표시하고, 치료 창(therapeutic window)을 하이라이트하였다.](../images/ch13_fig3.png){#fig-ch13-3 width=100%}
 
 ### Dupilumab 용량 결정 과정
 

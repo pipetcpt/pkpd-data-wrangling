@@ -329,7 +329,7 @@ tibble(
 
 ## 생물학적 동등성(BE) 시험 분석 {#sec-bioequivalence}
 
-![**Figure 8.1: 생물학적 동등성 시험 설계 (Bioequivalence Study Design).** 2×2 교차 설계(crossover design)에서 Period 1(R→T, T→R), 휴약기(washout), Period 2의 구조와 PK 채혈 일정을 도식화하였다. 80-125% 동등성 판정 기준을 함께 표시하였다.](images/ch08_fig1.png){#fig-ch08-1 width=100%}
+![**Figure 8.1: 생물학적 동등성 시험 설계 (Bioequivalence Study Design).** 2×2 교차 설계(crossover design)에서 Period 1(R→T, T→R), 휴약기(washout), Period 2의 구조와 PK 채혈 일정을 도식화하였다. 80-125% 동등성 판정 기준을 함께 표시하였다.](../images/ch08_fig1.png){#fig-ch08-1 width=100%}
 
 ### BE 시험이란
 
@@ -605,7 +605,7 @@ ggplot(be_forest_data, aes(x = GMR_percent, y = Parameter)) +
 
 ## 단클론항체(mAb) PK 특성 {#sec-mab-pk}
 
-![**Figure 8.2: 단클론항체의 PK 특성 (Monoclonal Antibody PK).** SC 주사 후 림프계를 통한 흡수, FcRn recycling에 의한 재활용, TMDD(표적 결합 및 내재화)를 거쳐 긴 반감기를 갖게 되는 단클론항체의 체내동태를 도식화하였다.](images/ch08_fig2.png){#fig-ch08-2 width=100%}
+![**Figure 8.2: 단클론항체의 PK 특성 (Monoclonal Antibody PK).** SC 주사 후 림프계를 통한 흡수, FcRn recycling에 의한 재활용, TMDD(표적 결합 및 내재화)를 거쳐 긴 반감기를 갖게 되는 단클론항체의 체내동태를 도식화하였다.](../images/ch08_fig2.png){#fig-ch08-2 width=100%}
 
 ### Adalimumab의 약동학
 
@@ -997,7 +997,7 @@ ggplot(ada_pk |> filter(Conc_obs > 0), aes(x = TIME_days, y = Conc_obs, group = 
 
 ## 약리학 노트: Adalimumab의 약리학과 면역원성 {#sec-adalimumab-pharmacology}
 
-![**Figure 8.3: Adalimumab의 항TNF-α 작용기전 (Adalimumab Anti-TNF-α Mechanism).** TNF-α 결합 중화, Fc 매개 효과(CDC, ADCC), 건선 피부에서의 하류 염증 억제 경로를 도식화하였다. 면역원성(ADA 생성)에 의한 약효 감소 기전도 함께 나타낸다.](images/ch08_fig3.png){#fig-ch08-3 width=100%}
+![**Figure 8.3: Adalimumab의 항TNF-α 작용기전 (Adalimumab Anti-TNF-α Mechanism).** TNF-α 결합 중화, Fc 매개 효과(CDC, ADCC), 건선 피부에서의 하류 염증 억제 경로를 도식화하였다. 면역원성(ADA 생성)에 의한 약효 감소 기전도 함께 나타낸다.](../images/ch08_fig3.png){#fig-ch08-3 width=100%}
 
 ### Anti-TNF-α 작용기전
 

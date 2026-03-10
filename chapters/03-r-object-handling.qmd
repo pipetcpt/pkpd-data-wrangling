@@ -127,7 +127,7 @@ $ blq_flag      <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, ...
 
 ## dplyr 5대 동사 {#sec-dplyr-verbs}
 
-![**Figure 3.1: dplyr 5대 동사 파이프라인 (dplyr Five Verbs Pipeline).** filter → select → mutate → arrange → summarise의 5가지 핵심 함수가 데이터 흐름 화살표로 연결된 파이프라인을 보여준다. Cyclosporine TDM 데이터의 변환 과정을 예시로, 각 동사가 데이터에 미치는 변환 효과를 시각적으로 나타낸다.](images/ch03_fig1.png){#fig-ch03-1 width=100%}
+![**Figure 3.1: dplyr 5대 동사 파이프라인 (dplyr Five Verbs Pipeline).** filter → select → mutate → arrange → summarise의 5가지 핵심 함수가 데이터 흐름 화살표로 연결된 파이프라인을 보여준다. Cyclosporine TDM 데이터의 변환 과정을 예시로, 각 동사가 데이터에 미치는 변환 효과를 시각적으로 나타낸다.](../images/ch03_fig1.png){#fig-ch03-1 width=100%}
 
 dplyr 패키지는 데이터 조작을 위한 5가지 핵심 함수(동사)를 제공합니다. 이들을 조합하면 거의 모든 데이터 변환 작업을 수행할 수 있습니다.
 
@@ -664,7 +664,7 @@ calc_csa_dose(80, target_mg_kg_day = 3)
 
 ## 약리학 노트: Cyclosporine {#sec-csa-pharmacology}
 
-![**Figure 3.2: Cyclosporine의 작용기전 (Cyclosporine Mechanism of Action).** Cyclosporine이 cyclophilin과 결합하여 calcineurin을 억제하고, NFAT 탈인산화를 차단함으로써 IL-2 전사를 억제하여 T세포 활성화를 저해하는 일련의 세포 내 신호전달 경로를 도식화하였다.](images/ch03_fig2.png){#fig-ch03-2 width=100%}
+![**Figure 3.2: Cyclosporine의 작용기전 (Cyclosporine Mechanism of Action).** Cyclosporine이 cyclophilin과 결합하여 calcineurin을 억제하고, NFAT 탈인산화를 차단함으로써 IL-2 전사를 억제하여 T세포 활성화를 저해하는 일련의 세포 내 신호전달 경로를 도식화하였다.](../images/ch03_fig2.png){#fig-ch03-2 width=100%}
 
 :::{.callout-note}
 ## Cyclosporine 약리학 개요
@@ -707,7 +707,7 @@ Cyclosporine의 작용기전은 다음과 같습니다:
 
 ### CYP3A4 대사와 약물상호작용
 
-![**Figure 3.3: CYP3A4 약물상호작용 네트워크 (CYP3A4 Drug Interaction Network).** Cyclosporine을 중심에 두고, 억제제(azole 항진균제, macrolide 항생제, CCB, 자몽주스)에 의한 농도 상승과 유도제(rifampicin, St. John's wort)에 의한 농도 감소를 네트워크 형태로 도식화하였다. 각 상호작용의 임상적 중요도를 색상으로 구분하였다.](images/ch03_fig3.png){#fig-ch03-3 width=100%}
+![**Figure 3.3: CYP3A4 약물상호작용 네트워크 (CYP3A4 Drug Interaction Network).** Cyclosporine을 중심에 두고, 억제제(azole 항진균제, macrolide 항생제, CCB, 자몽주스)에 의한 농도 상승과 유도제(rifampicin, St. John's wort)에 의한 농도 감소를 네트워크 형태로 도식화하였다. 각 상호작용의 임상적 중요도를 색상으로 구분하였다.](../images/ch03_fig3.png){#fig-ch03-3 width=100%}
 
 Cyclosporine은 CYP3A4에 의해 주로 대사되므로, 약물상호작용에 매우 주의해야 합니다:
 

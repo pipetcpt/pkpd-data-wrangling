@@ -16,7 +16,7 @@ library(gt)           # 출판 품질 테이블
 
 ## PK-PD 데이터셋 구조 {#sec-pkpd-structure}
 
-![**Figure 12.1: PK-PD 다중 구획 데이터셋 구조 (PK-PD Dataset Structure with Multiple CMT).** CMT=1(Dose), CMT=2(PK obs, ng/mL), CMT=3(PD obs, SCORAD score)의 다중 구획 구조를 다이어그램으로 나타내고, EVID/MDV/DVID 매핑 관계를 예시 데이터와 함께 보여준다.](images/ch12_fig1.png){#fig-ch12-1 width=100%}
+![**Figure 12.1: PK-PD 다중 구획 데이터셋 구조 (PK-PD Dataset Structure with Multiple CMT).** CMT=1(Dose), CMT=2(PK obs, ng/mL), CMT=3(PD obs, SCORAD score)의 다중 구획 구조를 다이어그램으로 나타내고, EVID/MDV/DVID 매핑 관계를 예시 데이터와 함께 보여준다.](../images/ch12_fig1.png){#fig-ch12-1 width=100%}
 
 ### PK 전용 데이터셋과의 차이점
 
@@ -247,7 +247,7 @@ multi_pd <- tribble(
 
 ### 시간 변동 공변량 (Time-Varying Covariates)
 
-![**Figure 12.2: 시간변동 공변량 처리 방법 (Time-Varying Covariate Handling).** LOCF(Last Observation Carried Forward), 선형 보간(Linear interpolation), 계단 함수(Step function)의 세 가지 방법을 치료 기간 동안의 림프구 수 변화 데이터에 적용한 결과를 비교하였다.](images/ch12_fig2.png){#fig-ch12-2 width=100%}
+![**Figure 12.2: 시간변동 공변량 처리 방법 (Time-Varying Covariate Handling).** LOCF(Last Observation Carried Forward), 선형 보간(Linear interpolation), 계단 함수(Step function)의 세 가지 방법을 치료 기간 동안의 림프구 수 변화 데이터에 적용한 결과를 비교하였다.](../images/ch12_fig2.png){#fig-ch12-2 width=100%}
 
 PK-PD 분석에서는 시간에 따라 변하는 공변량이 중요한 역할을 합니다. 아토피 피부염 치료에서의 대표적인 시간 변동 공변량:
 
@@ -958,7 +958,7 @@ data_spec |>
 
 ## 약리학 노트: Tofacitinib 약리학 {#sec-tofacitinib-pharmacology}
 
-![**Figure 12.3: Tofacitinib JAK-STAT 경로 억제 기전 (Tofacitinib JAK-STAT Pathway).** JAK1/3 억제에 의한 사이토카인 신호전달(IL-4, IL-13, IL-31) 차단 → Th2 염증 감소 및 소양증 개선 경로와 안전성 관련 림프구 감소 기전을 도식화하였다.](images/ch12_fig3.png){#fig-ch12-3 width=100%}
+![**Figure 12.3: Tofacitinib JAK-STAT 경로 억제 기전 (Tofacitinib JAK-STAT Pathway).** JAK1/3 억제에 의한 사이토카인 신호전달(IL-4, IL-13, IL-31) 차단 → Th2 염증 감소 및 소양증 개선 경로와 안전성 관련 림프구 감소 기전을 도식화하였다.](../images/ch12_fig3.png){#fig-ch12-3 width=100%}
 
 ### JAK-STAT 경로와 Tofacitinib의 작용 기전
 

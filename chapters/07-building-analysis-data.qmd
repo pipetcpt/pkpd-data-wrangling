@@ -90,7 +90,7 @@ ex
 
 ## NONMEM 데이터셋 형식 이해 {#sec-nonmem-format}
 
-![**Figure 7.1: NONMEM 데이터셋 구조 (NONMEM Dataset Structure).** NONMEM 데이터셋의 필수 열(ID, TIME, DV, AMT, CMT, EVID, MDV)을 다이어그램으로 표현하고, 투여 행(EVID=1)과 관측 행(EVID=0)의 예시 데이터를 함께 보여준다. 각 열의 역할과 데이터 타입을 시각적으로 설명한다.](images/ch07_fig1.png){#fig-ch07-1 width=100%}
+![**Figure 7.1: NONMEM 데이터셋 구조 (NONMEM Dataset Structure).** NONMEM 데이터셋의 필수 열(ID, TIME, DV, AMT, CMT, EVID, MDV)을 다이어그램으로 표현하고, 투여 행(EVID=1)과 관측 행(EVID=0)의 예시 데이터를 함께 보여준다. 각 열의 역할과 데이터 타입을 시각적으로 설명한다.](../images/ch07_fig1.png){#fig-ch07-1 width=100%}
 
 ### NONMEM이란
 
@@ -471,7 +471,7 @@ compare_blq_methods(pk_with_blq)
 
 ## R 실습: Apremilast Phase I 데이터셋 구축 {#sec-apremilast-practice}
 
-![**Figure 7.2: 원시 데이터에서 분석 데이터셋까지의 파이프라인 (Raw Data to Analysis Dataset Pipeline).** 원시 Excel 파일(투약 기록, 실험실 결과, 인구통계)에서 R 처리를 거쳐 병합된 NONMEM 데이터셋을 생성하고 검증하는 전체 파이프라인을 도식화하였다.](images/ch07_fig2.png){#fig-ch07-2 width=100%}
+![**Figure 7.2: 원시 데이터에서 분석 데이터셋까지의 파이프라인 (Raw Data to Analysis Dataset Pipeline).** 원시 Excel 파일(투약 기록, 실험실 결과, 인구통계)에서 R 처리를 거쳐 병합된 NONMEM 데이터셋을 생성하고 검증하는 전체 파이프라인을 도식화하였다.](../images/ch07_fig2.png){#fig-ch07-2 width=100%}
 
 이 절에서는 Apremilast Phase I SAD(Single Ascending Dose) 시험의 원시 데이터를 NONMEM 형식의 분석용 데이터셋으로 변환하는 전체 과정을 실습합니다.
 
@@ -906,7 +906,7 @@ NONMEM 데이터 파일은 보통 `.csv` 또는 `.dat` 확장자를 사용합니
 
 ## 약리학 노트: Apremilast의 약리학 {#sec-apremilast-pharmacology}
 
-![**Figure 7.3: Apremilast PDE4 억제 작용기전 (Apremilast PDE4 Mechanism).** PDE4 억제에 의한 세포 내 cAMP 증가 → PKA 활성화 → 염증성 사이토카인(TNF-α, IL-17, IL-23) 감소 및 항염증성 사이토카인(IL-10) 증가의 신호전달 경로를 도식화하였다.](images/ch07_fig3.png){#fig-ch07-3 width=100%}
+![**Figure 7.3: Apremilast PDE4 억제 작용기전 (Apremilast PDE4 Mechanism).** PDE4 억제에 의한 세포 내 cAMP 증가 → PKA 활성화 → 염증성 사이토카인(TNF-α, IL-17, IL-23) 감소 및 항염증성 사이토카인(IL-10) 증가의 신호전달 경로를 도식화하였다.](../images/ch07_fig3.png){#fig-ch07-3 width=100%}
 
 ### PDE4 억제제의 작용기전
 

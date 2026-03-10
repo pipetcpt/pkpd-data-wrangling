@@ -5,7 +5,7 @@
       "command": "npx",
       "args": ["-y", "@ycse/nanobanana-mcp"],
       "env": {
-        "GOOGLE_AI_API_KEY": "AIzaSyBeAmhjo_DTW3f7TQx_ZzgbtMunUnzp6Jg"
+        "GOOGLE_AI_API_KEY": "AIzaSyBYM_B0vfWLs66esqpjAAjJ1n7AfcMqGd0"
       }
     }
   }
