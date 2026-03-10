@@ -338,6 +338,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="머리말" class="level1 unnumbered">
 <h1 class="unnumbered">머리말</h1>
 <p>이 책은 가톨릭대학교 의학과 대학원 강의 “코딩을 활용한 PK/PD 자료처리 (Mpha508)”의 교재로 작성되었습니다.</p>
+<div id="fig-book-overview" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-book-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/book_overview.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-book-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;1: 이 책의 전체 구성 개요 (Book Overview). R 프로그래밍 기초(Part I), PK 데이터 분석(Part II), PK-PD 통합 분석(Part III)의 3부 구성과 6가지 핵심 약물, 그리고 원시 데이터에서 임상적 통찰까지의 분석 워크플로우를 보여준다.
+</figcaption>
+</figure>
+</div>
 <section id="이-책의-목적" class="level2">
 <h2 class="anchored" data-anchor-id="이-책의-목적">이 책의 목적</h2>
 <p>약동학(Pharmacokinetics, PK)과 약력학(Pharmacodynamics, PD) 데이터를 R 프로그래밍 언어를 활용하여 체계적으로 처리하고 분석하는 능력을 키우는 것을 목표로 합니다. 특히 피부과 및 자가면역질환 치료제를 중심으로, 실제 임상 상황에서 접할 수 있는 약물의 PK/PD 데이터를 다룹니다.</p>
@@ -389,6 +399,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="이-책의-구성" class="level2">
 <h2 class="anchored" data-anchor-id="이-책의-구성">이 책의 구성</h2>
+<p><a href="#fig-book-overview" class="quarto-xref">그림&nbsp;<span>1</span></a> 는 이 책의 전체 구성을 한눈에 보여줍니다.</p>
 <ul>
 <li><strong>Part I (1-4장)</strong>: R 프로그래밍의 기초를 배웁니다. R 객체의 이해부터 tidyverse를 활용한 데이터 처리까지 다룹니다.</li>
 <li><strong>Part II (5-9장)</strong>: PK 데이터 분석의 핵심을 학습합니다. 비구획분석(NCA), 탐색적 데이터 분석, 분석용 데이터셋 구축을 실습합니다.</li>
@@ -882,42 +893,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>이 책은 가톨릭대학교 의학과 대학원 강의 "코딩을 활용한 PK/PD 자료처리 (Mpha508)"의 교재로 작성되었습니다.</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## 이 책의 목적</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="al">![이 책의 전체 구성 개요 (Book Overview). R 프로그래밍 기초(Part I), PK 데이터 분석(Part II), PK-PD 통합 분석(Part III)의 3부 구성과 6가지 핵심 약물, 그리고 원시 데이터에서 임상적 통찰까지의 분석 워크플로우를 보여준다.](images/book_overview.png)</span>{#fig-book-overview width=100%}</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>약동학(Pharmacokinetics, PK)과 약력학(Pharmacodynamics, PD) 데이터를 R 프로그래밍 언어를 활용하여 체계적으로 처리하고 분석하는 능력을 키우는 것을 목표로 합니다. 특히 피부과 및 자가면역질환 치료제를 중심으로, 실제 임상 상황에서 접할 수 있는 약물의 PK/PD 데이터를 다룹니다.</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## 이 책의 목적</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## 다루는 약물</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>약동학(Pharmacokinetics, PK)과 약력학(Pharmacodynamics, PD) 데이터를 R 프로그래밍 언어를 활용하여 체계적으로 처리하고 분석하는 능력을 키우는 것을 목표로 합니다. 특히 피부과 및 자가면역질환 치료제를 중심으로, 실제 임상 상황에서 접할 수 있는 약물의 PK/PD 데이터를 다룹니다.</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>이 책에서는 다음 6가지 피부과/자가면역질환 치료제를 중심으로 PK/PD 데이터 분석을 학습합니다:</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## 다루는 약물</span></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 약물 <span class="pp">|</span> 계열 <span class="pp">|</span> 주요 적응증 <span class="pp">|</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="pp">|------|------|------------|</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Methotrexate <span class="pp">|</span> 항대사제 <span class="pp">|</span> 건선, 류마티스 관절염 <span class="pp">|</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Cyclosporine <span class="pp">|</span> 칼시뉴린 억제제 <span class="pp">|</span> 아토피 피부염, 건선 <span class="pp">|</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Apremilast <span class="pp">|</span> PDE4 억제제 <span class="pp">|</span> 건선, 건선성 관절염 <span class="pp">|</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Adalimumab <span class="pp">|</span> Anti-TNF-α 단클론항체 <span class="pp">|</span> 건선, 류마티스 관절염 <span class="pp">|</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Dupilumab <span class="pp">|</span> Anti-IL-4/13 단클론항체 <span class="pp">|</span> 아토피 피부염 <span class="pp">|</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tofacitinib <span class="pp">|</span> JAK 억제제 <span class="pp">|</span> 아토피 피부염, 류마티스 관절염 <span class="pp">|</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## 이 책의 구성</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>이 책에서는 다음 6가지 피부과/자가면역질환 치료제를 중심으로 PK/PD 데이터 분석을 학습합니다:</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 약물 <span class="pp">|</span> 계열 <span class="pp">|</span> 주요 적응증 <span class="pp">|</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="pp">|------|------|------------|</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Methotrexate <span class="pp">|</span> 항대사제 <span class="pp">|</span> 건선, 류마티스 관절염 <span class="pp">|</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Cyclosporine <span class="pp">|</span> 칼시뉴린 억제제 <span class="pp">|</span> 아토피 피부염, 건선 <span class="pp">|</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Apremilast <span class="pp">|</span> PDE4 억제제 <span class="pp">|</span> 건선, 건선성 관절염 <span class="pp">|</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Adalimumab <span class="pp">|</span> Anti-TNF-α 단클론항체 <span class="pp">|</span> 건선, 류마티스 관절염 <span class="pp">|</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Dupilumab <span class="pp">|</span> Anti-IL-4/13 단클론항체 <span class="pp">|</span> 아토피 피부염 <span class="pp">|</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tofacitinib <span class="pp">|</span> JAK 억제제 <span class="pp">|</span> 아토피 피부염, 류마티스 관절염 <span class="pp">|</span></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Part I (1-4장)**: R 프로그래밍의 기초를 배웁니다. R 객체의 이해부터 tidyverse를 활용한 데이터 처리까지 다룹니다.</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Part II (5-9장)**: PK 데이터 분석의 핵심을 학습합니다. 비구획분석(NCA), 탐색적 데이터 분석, 분석용 데이터셋 구축을 실습합니다.</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Part III (10-15장)**: PK-PD 통합 분석을 수행합니다. PK-PD 모델링 개념, 노출-반응 분석, 공변량 탐색, 시각화를 배웁니다.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## 이 책의 구성</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>@fig-book-overview 는 이 책의 전체 구성을 한눈에 보여줍니다.</span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## Claude Code 활용</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>각 장에는 AI 코딩 도구인 Claude Code를 활용하여 R 코드 작성과 데이터 분석을 효율적으로 수행하는 방법을 포함하고 있습니다. 프롬프트 작성법부터 복잡한 분석 파이프라인 구축까지 점진적으로 학습합니다.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Part I (1-4장)**: R 프로그래밍의 기초를 배웁니다. R 객체의 이해부터 tidyverse를 활용한 데이터 처리까지 다룹니다.</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Part II (5-9장)**: PK 데이터 분석의 핵심을 학습합니다. 비구획분석(NCA), 탐색적 데이터 분석, 분석용 데이터셋 구축을 실습합니다.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Part III (10-15장)**: PK-PD 통합 분석을 수행합니다. PK-PD 모델링 개념, 노출-반응 분석, 공변량 탐색, 시각화를 배웁니다.</span>
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## 사전 요구사항</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Claude Code 활용</span></span>
 <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>R과 RStudio 설치</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>기초적인 통계학 지식</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>약리학 기초 개념 (ADME)에 대한 이해</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>각 장에는 AI 코딩 도구인 Claude Code를 활용하여 R 코드 작성과 데이터 분석을 효율적으로 수행하는 방법을 포함하고 있습니다. 프롬프트 작성법부터 복잡한 분석 파이프라인 구축까지 점진적으로 학습합니다.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## 사전 요구사항</span></span>
 <span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">## 데이터</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>이 책에서 사용하는 모든 데이터셋은 공개된 약리학 문헌을 기반으로 시뮬레이션하여 생성한 것이며, <span class="in">`data/`</span> 폴더에서 확인할 수 있습니다.</span></code></pre></div><button title="클립보드 복사" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>R과 RStudio 설치</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>기초적인 통계학 지식</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>약리학 기초 개념 (ADME)에 대한 이해</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="fu">## 데이터</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>이 책에서 사용하는 모든 데이터셋은 공개된 약리학 문헌을 기반으로 시뮬레이션하여 생성한 것이며, <span class="in">`data/`</span> 폴더에서 확인할 수 있습니다.</span></code></pre></div><button title="클립보드 복사" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
