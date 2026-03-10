@@ -21,11 +21,11 @@ library(broom)        # 모델 결과 정리
 
 ## 공변량(Covariate)의 개념과 중요성 {#sec-covariate-concept}
 
-![**Figure 14.1: 피부과 PK 공변량 분류 (Covariate Categories in Dermatology PK).** 중심에서 5개 카테고리로 방사형으로 배치: Demographics(나이, 체중, 성별), Pathophysiology(eGFR, ALT), Genetics(CYP2C19), Immunology(ADA), Disease(baseline PASI/EASI). 각 카테고리의 대표 변수와 PK 파라미터에 미치는 영향을 함께 나타낸다.](../images/ch14_fig1.png){#fig-ch14-1 width=100%}
+![피부과 PK 공변량 분류 (Covariate Categories in Dermatology PK). 중심에서 5개 카테고리로 방사형으로 배치: Demographics(나이, 체중, 성별), Pathophysiology(eGFR, ALT), Genetics(CYP2C19), Immunology(ADA), Disease(baseline PASI/EASI). 각 카테고리의 대표 변수와 PK 파라미터에 미치는 영향을 함께 나타낸다.](../images/ch14_fig1.png){#fig-ch14-1 width=100%}
 
 ### 공변량이란 무엇인가
 
-집단 약동학(Population PK) 분석에서 공변량은 PK 파라미터(CL, V, ka 등)의 **개체간 변이를 설명하는 환자 수준의 특성**입니다. 수학적으로 표현하면, 개인 $i$의 청소율 $CL_i$는 다음과 같이 분해됩니다:
+@fig-ch14-1 에서 보듯이, 집단 약동학(Population PK) 분석에서 공변량은 PK 파라미터(CL, V, ka 등)의 **개체간 변이를 설명하는 환자 수준의 특성**입니다. 수학적으로 표현하면, 개인 $i$의 청소율 $CL_i$는 다음과 같이 분해됩니다:
 
 $$CL_i = \theta_{CL} \cdot f(\text{Covariates}_i) \cdot e^{\eta_i}$$
 
@@ -94,11 +94,11 @@ $$eGFR_{CKD-EPI} = 141 \times \min(SCR/\kappa, 1)^\alpha \times \max(SCR/\kappa,
 
 ## Allometric Scaling {#sec-allometric-scaling}
 
-![**Figure 14.2: Allometric Scaling 원리 (Allometric Scaling Principle).** 체중과 CL/V의 관계를 나타내는 allometric 관계(CL∝WT^0.75, V∝WT^1.0)를 log-log 그래프로 표시하고, 성인/소아/비만 환자의 범위를 함께 보여준다.](../images/ch14_fig2.png){#fig-ch14-2 width=100%}
+![Allometric Scaling 원리 (Allometric Scaling Principle). 체중과 CL/V의 관계를 나타내는 allometric 관계(CL∝WT^0.75, V∝WT^1.0)를 log-log 그래프로 표시하고, 성인/소아/비만 환자의 범위를 함께 보여준다.](../images/ch14_fig2.png){#fig-ch14-2 width=100%}
 
 ### 체중 기반 파라미터 조정의 원리
 
-Allometric scaling은 체중(WT)과 PK 파라미터 사이의 생물학적 관계를 모델에 반영하는 방법입니다. 이는 포유류 종 간의 대사율이 체중의 $3/4$ 승에 비례한다는 **Kleiber's law**에 기반합니다.
+@fig-ch14-2 에서 보듯이, allometric scaling은 체중(WT)과 PK 파라미터 사이의 생물학적 관계를 모델에 반영하는 방법입니다. 이는 포유류 종 간의 대사율이 체중의 $3/4$ 승에 비례한다는 **Kleiber's law**에 기반합니다.
 
 $$CL = CL_{ref} \times \left(\frac{WT}{WT_{ref}}\right)^{0.75}$$
 
@@ -854,9 +854,9 @@ summary(step_model)
 
 ### Forest Plot: 공변량 효과 시각화
 
-![**Figure 14.3: Forest Plot 해석 방법 (Forest Plot Interpretation).** CL에 대한 공변량 효과를 forest plot으로 표현: 기준선(1.0)에 대해 체중, 나이, 성별, ADA 상태, eGFR의 효과 크기와 수평 신뢰구간을 표시하고, 임상적으로 유의한 효과와 그렇지 않은 효과를 구분하였다.](../images/ch14_fig3.png){#fig-ch14-3 width=100%}
+![Forest Plot 해석 방법 (Forest Plot Interpretation). CL에 대한 공변량 효과를 forest plot으로 표현: 기준선(1.0)에 대해 체중, 나이, 성별, ADA 상태, eGFR의 효과 크기와 수평 신뢰구간을 표시하고, 임상적으로 유의한 효과와 그렇지 않은 효과를 구분하였다.](../images/ch14_fig3.png){#fig-ch14-3 width=100%}
 
-Forest plot은 공변량이 PK 파라미터에 미치는 효과를 직관적으로 보여주는 핵심적인 그래프입니다. 각 공변량의 효과 크기와 신뢰구간을 함께 표시합니다.
+@fig-ch14-3 에서 보듯이, forest plot은 공변량이 PK 파라미터에 미치는 효과를 직관적으로 보여주는 핵심적인 그래프입니다. 각 공변량의 효과 크기와 신뢰구간을 함께 표시합니다.
 
 ```{r}
 #| eval: false

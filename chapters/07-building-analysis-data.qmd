@@ -90,13 +90,13 @@ ex
 
 ## NONMEM 데이터셋 형식 이해 {#sec-nonmem-format}
 
-![**Figure 7.1: NONMEM 데이터셋 구조 (NONMEM Dataset Structure).** NONMEM 데이터셋의 필수 열(ID, TIME, DV, AMT, CMT, EVID, MDV)을 다이어그램으로 표현하고, 투여 행(EVID=1)과 관측 행(EVID=0)의 예시 데이터를 함께 보여준다. 각 열의 역할과 데이터 타입을 시각적으로 설명한다.](../images/ch07_fig1.png){#fig-ch07-1 width=100%}
+![NONMEM 데이터셋 구조 (NONMEM Dataset Structure). NONMEM 데이터셋의 필수 열(ID, TIME, DV, AMT, CMT, EVID, MDV)을 다이어그램으로 표현하고, 투여 행(EVID=1)과 관측 행(EVID=0)의 예시 데이터를 함께 보여준다. 각 열의 역할과 데이터 타입을 시각적으로 설명한다.](../images/ch07_fig1.png){#fig-ch07-1 width=100%}
 
 ### NONMEM이란
 
 **NONMEM(NONlinear Mixed Effects Modeling)**은 집단약동학(Population PK) 모델링에 가장 널리 사용되는 소프트웨어입니다. 비선형 혼합효과 모형(nonlinear mixed-effects model)을 통해 개인 간 변동(inter-individual variability)과 개인 내 변동(intra-individual variability)을 동시에 추정할 수 있습니다.
 
-NONMEM 분석을 위해서는 특정 형식의 데이터셋이 필요하며, 이 형식은 NCA 분석에도 광범위하게 활용됩니다. 따라서 NONMEM 데이터셋 형식을 이해하는 것은 PK 데이터 분석의 기본입니다.
+NONMEM 분석을 위해서는 특정 형식의 데이터셋이 필요하며, 이 형식은 NCA 분석에도 광범위하게 활용됩니다. 따라서 NONMEM 데이터셋 형식을 이해하는 것은 PK 데이터 분석의 기본입니다 (@fig-ch07-1).
 
 ### 필수 컬럼 (Required Columns)
 
@@ -471,9 +471,9 @@ compare_blq_methods(pk_with_blq)
 
 ## R 실습: Apremilast Phase I 데이터셋 구축 {#sec-apremilast-practice}
 
-![**Figure 7.2: 원시 데이터에서 분석 데이터셋까지의 파이프라인 (Raw Data to Analysis Dataset Pipeline).** 원시 Excel 파일(투약 기록, 실험실 결과, 인구통계)에서 R 처리를 거쳐 병합된 NONMEM 데이터셋을 생성하고 검증하는 전체 파이프라인을 도식화하였다.](../images/ch07_fig2.png){#fig-ch07-2 width=100%}
+![원시 데이터에서 분석 데이터셋까지의 파이프라인 (Raw Data to Analysis Dataset Pipeline). 원시 Excel 파일(투약 기록, 실험실 결과, 인구통계)에서 R 처리를 거쳐 병합된 NONMEM 데이터셋을 생성하고 검증하는 전체 파이프라인을 도식화하였다.](../images/ch07_fig2.png){#fig-ch07-2 width=100%}
 
-이 절에서는 Apremilast Phase I SAD(Single Ascending Dose) 시험의 원시 데이터를 NONMEM 형식의 분석용 데이터셋으로 변환하는 전체 과정을 실습합니다.
+이 절에서는 @fig-ch07-2 에 제시된 파이프라인에 따라 Apremilast Phase I SAD(Single Ascending Dose) 시험의 원시 데이터를 NONMEM 형식의 분석용 데이터셋으로 변환하는 전체 과정을 실습합니다.
 
 ### 시험 설계 개요
 
@@ -906,11 +906,11 @@ NONMEM 데이터 파일은 보통 `.csv` 또는 `.dat` 확장자를 사용합니
 
 ## 약리학 노트: Apremilast의 약리학 {#sec-apremilast-pharmacology}
 
-![**Figure 7.3: Apremilast PDE4 억제 작용기전 (Apremilast PDE4 Mechanism).** PDE4 억제에 의한 세포 내 cAMP 증가 → PKA 활성화 → 염증성 사이토카인(TNF-α, IL-17, IL-23) 감소 및 항염증성 사이토카인(IL-10) 증가의 신호전달 경로를 도식화하였다.](../images/ch07_fig3.png){#fig-ch07-3 width=100%}
+![Apremilast PDE4 억제 작용기전 (Apremilast PDE4 Mechanism). PDE4 억제에 의한 세포 내 cAMP 증가 → PKA 활성화 → 염증성 사이토카인(TNF-α, IL-17, IL-23) 감소 및 항염증성 사이토카인(IL-10) 증가의 신호전달 경로를 도식화하였다.](../images/ch07_fig3.png){#fig-ch07-3 width=100%}
 
 ### PDE4 억제제의 작용기전
 
-**Apremilast (Otezla®)**는 **phosphodiesterase 4 (PDE4) 억제제**로, 건선(psoriasis)과 건선성 관절염(psoriatic arthritis)의 치료에 사용됩니다.
+@fig-ch07-3 은 Apremilast의 작용기전을 보여준다. **Apremilast (Otezla®)**는 **phosphodiesterase 4 (PDE4) 억제제**로, 건선(psoriasis)과 건선성 관절염(psoriatic arthritis)의 치료에 사용됩니다.
 
 PDE4는 세포 내 **cyclic adenosine monophosphate (cAMP)**를 분해하는 효소입니다. Apremilast가 PDE4를 억제하면 세포 내 cAMP 농도가 증가하고, 이는 다음과 같은 면역 조절 효과를 나타냅니다:
 

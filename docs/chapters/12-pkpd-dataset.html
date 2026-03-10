@@ -412,13 +412,13 @@ window.Quarto = {
 <img src="../images/ch12_fig1.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch12-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;12.1: <strong>Figure 12.1: PK-PD 다중 구획 데이터셋 구조 (PK-PD Dataset Structure with Multiple CMT).</strong> CMT=1(Dose), CMT=2(PK obs, ng/mL), CMT=3(PD obs, SCORAD score)의 다중 구획 구조를 다이어그램으로 나타내고, EVID/MDV/DVID 매핑 관계를 예시 데이터와 함께 보여준다.
+그림&nbsp;12.1: PK-PD 다중 구획 데이터셋 구조 (PK-PD Dataset Structure with Multiple CMT). CMT=1(Dose), CMT=2(PK obs, ng/mL), CMT=3(PD obs, SCORAD score)의 다중 구획 구조를 다이어그램으로 나타내고, EVID/MDV/DVID 매핑 관계를 예시 데이터와 함께 보여준다.
 </figcaption>
 </figure>
 </div>
 <section id="pk-전용-데이터셋과의-차이점" class="level3" data-number="12.1.1">
 <h3 data-number="12.1.1" class="anchored" data-anchor-id="pk-전용-데이터셋과의-차이점"><span class="header-section-number">12.1.1</span> PK 전용 데이터셋과의 차이점</h3>
-<p>지금까지 학습한 NONMEM 데이터셋은 <strong>PK 관측(약물 농도)</strong>만을 다뤘습니다. PK-PD 통합 데이터셋에서는 여기에 <strong>PD 관측(효과 지표)</strong>이 추가됩니다. 이로 인해 다음과 같은 구조적 변화가 필요합니다:</p>
+<p><a href="#fig-ch12-1" class="quarto-xref">그림&nbsp;<span>12.1</span></a> 은 PK-PD 통합 데이터셋의 다중 구획 구조와 EVID/MDV/DVID 매핑 관계를 보여줍니다. 지금까지 학습한 NONMEM 데이터셋은 <strong>PK 관측(약물 농도)</strong>만을 다뤘습니다. PK-PD 통합 데이터셋에서는 여기에 <strong>PD 관측(효과 지표)</strong>이 추가됩니다. 이로 인해 다음과 같은 구조적 변화가 필요합니다:</p>
 <ol type="1">
 <li><strong>CMT(Compartment)의 확장</strong>: PK 관측과 PD 관측이 서로 다른 구획에 속합니다</li>
 <li><strong>DV(Dependent Variable)의 다중성</strong>: DV에 ng/mL 단위의 농도와 점수 단위의 SCORAD가 혼재합니다</li>
@@ -788,11 +788,11 @@ window.Quarto = {
 <img src="../images/ch12_fig2.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch12-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;12.2: <strong>Figure 12.2: 시간변동 공변량 처리 방법 (Time-Varying Covariate Handling).</strong> LOCF(Last Observation Carried Forward), 선형 보간(Linear interpolation), 계단 함수(Step function)의 세 가지 방법을 치료 기간 동안의 림프구 수 변화 데이터에 적용한 결과를 비교하였다.
+그림&nbsp;12.2: 시간변동 공변량 처리 방법 (Time-Varying Covariate Handling). LOCF(Last Observation Carried Forward), 선형 보간(Linear interpolation), 계단 함수(Step function)의 세 가지 방법을 치료 기간 동안의 림프구 수 변화 데이터에 적용한 결과를 비교하였다.
 </figcaption>
 </figure>
 </div>
-<p>PK-PD 분석에서는 시간에 따라 변하는 공변량이 중요한 역할을 합니다. 아토피 피부염 치료에서의 대표적인 시간 변동 공변량:</p>
+<p><a href="#fig-ch12-2" class="quarto-xref">그림&nbsp;<span>12.2</span></a> 는 세 가지 시간변동 공변량 처리 방법(LOCF, 선형 보간, 계단 함수)을 비교한 것입니다. PK-PD 분석에서는 시간에 따라 변하는 공변량이 중요한 역할을 합니다. 아토피 피부염 치료에서의 대표적인 시간 변동 공변량:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -1572,13 +1572,13 @@ window.Quarto = {
 <img src="../images/ch12_fig3.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch12-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;12.3: <strong>Figure 12.3: Tofacitinib JAK-STAT 경로 억제 기전 (Tofacitinib JAK-STAT Pathway).</strong> JAK1/3 억제에 의한 사이토카인 신호전달(IL-4, IL-13, IL-31) 차단 → Th2 염증 감소 및 소양증 개선 경로와 안전성 관련 림프구 감소 기전을 도식화하였다.
+그림&nbsp;12.3: Tofacitinib JAK-STAT 경로 억제 기전 (Tofacitinib JAK-STAT Pathway). JAK1/3 억제에 의한 사이토카인 신호전달(IL-4, IL-13, IL-31) 차단 → Th2 염증 감소 및 소양증 개선 경로와 안전성 관련 림프구 감소 기전을 도식화하였다.
 </figcaption>
 </figure>
 </div>
 <section id="jak-stat-경로와-tofacitinib의-작용-기전" class="level3" data-number="12.5.1">
 <h3 data-number="12.5.1" class="anchored" data-anchor-id="jak-stat-경로와-tofacitinib의-작용-기전"><span class="header-section-number">12.5.1</span> JAK-STAT 경로와 Tofacitinib의 작용 기전</h3>
-<p><strong>JAK-STAT 경로</strong>는 다양한 사이토카인과 성장인자의 세포 내 신호전달을 매개하는 핵심 경로입니다. 이 경로의 주요 구성요소는 다음과 같습니다:</p>
+<p><a href="#fig-ch12-3" class="quarto-xref">그림&nbsp;<span>12.3</span></a> 은 Tofacitinib이 JAK1/3을 억제하여 사이토카인 신호전달을 차단하는 기전을 도식화한 것입니다. <strong>JAK-STAT 경로</strong>는 다양한 사이토카인과 성장인자의 세포 내 신호전달을 매개하는 핵심 경로입니다. 이 경로의 주요 구성요소는 다음과 같습니다:</p>
 <ol type="1">
 <li><strong>사이토카인 수용체</strong>: 세포 표면에서 사이토카인을 인식</li>
 <li><strong>JAK (Janus Kinase)</strong>: JAK1, JAK2, JAK3, TYK2 — 수용체에 결합하여 신호를 전달</li>
@@ -2334,11 +2334,11 @@ window.Quarto = {
 <span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## PK-PD 데이터셋 구조 {#sec-pkpd-structure}</span></span>
 <span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 12.1: PK-PD 다중 구획 데이터셋 구조 (PK-PD Dataset Structure with Multiple CMT).** CMT=1(Dose), CMT=2(PK obs, ng/mL), CMT=3(PD obs, SCORAD score)의 다중 구획 구조를 다이어그램으로 나타내고, EVID/MDV/DVID 매핑 관계를 예시 데이터와 함께 보여준다.](../images/ch12_fig1.png)</span>{#fig-ch12-1 width=100%}</span>
+<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a><span class="al">![PK-PD 다중 구획 데이터셋 구조 (PK-PD Dataset Structure with Multiple CMT). CMT=1(Dose), CMT=2(PK obs, ng/mL), CMT=3(PD obs, SCORAD score)의 다중 구획 구조를 다이어그램으로 나타내고, EVID/MDV/DVID 매핑 관계를 예시 데이터와 함께 보여준다.](../images/ch12_fig1.png)</span>{#fig-ch12-1 width=100%}</span>
 <span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-23"><a href="#cb25-23" aria-hidden="true" tabindex="-1"></a><span class="fu">### PK 전용 데이터셋과의 차이점</span></span>
 <span id="cb25-24"><a href="#cb25-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-25"><a href="#cb25-25" aria-hidden="true" tabindex="-1"></a>지금까지 학습한 NONMEM 데이터셋은 **PK 관측(약물 농도)**만을 다뤘습니다. PK-PD 통합 데이터셋에서는 여기에 **PD 관측(효과 지표)**이 추가됩니다. 이로 인해 다음과 같은 구조적 변화가 필요합니다:</span>
+<span id="cb25-25"><a href="#cb25-25" aria-hidden="true" tabindex="-1"></a>@fig-ch12-1 은 PK-PD 통합 데이터셋의 다중 구획 구조와 EVID/MDV/DVID 매핑 관계를 보여줍니다. 지금까지 학습한 NONMEM 데이터셋은 **PK 관측(약물 농도)**만을 다뤘습니다. PK-PD 통합 데이터셋에서는 여기에 **PD 관측(효과 지표)**이 추가됩니다. 이로 인해 다음과 같은 구조적 변화가 필요합니다:</span>
 <span id="cb25-26"><a href="#cb25-26" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-27"><a href="#cb25-27" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**CMT(Compartment)의 확장**: PK 관측과 PD 관측이 서로 다른 구획에 속합니다</span>
 <span id="cb25-28"><a href="#cb25-28" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**DV(Dependent Variable)의 다중성**: DV에 ng/mL 단위의 농도와 점수 단위의 SCORAD가 혼재합니다</span>
@@ -2565,9 +2565,9 @@ window.Quarto = {
 <span id="cb25-259"><a href="#cb25-259" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-260"><a href="#cb25-260" aria-hidden="true" tabindex="-1"></a><span class="fu">### 시간 변동 공변량 (Time-Varying Covariates)</span></span>
 <span id="cb25-261"><a href="#cb25-261" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-262"><a href="#cb25-262" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 12.2: 시간변동 공변량 처리 방법 (Time-Varying Covariate Handling).** LOCF(Last Observation Carried Forward), 선형 보간(Linear interpolation), 계단 함수(Step function)의 세 가지 방법을 치료 기간 동안의 림프구 수 변화 데이터에 적용한 결과를 비교하였다.](../images/ch12_fig2.png)</span>{#fig-ch12-2 width=100%}</span>
+<span id="cb25-262"><a href="#cb25-262" aria-hidden="true" tabindex="-1"></a><span class="al">![시간변동 공변량 처리 방법 (Time-Varying Covariate Handling). LOCF(Last Observation Carried Forward), 선형 보간(Linear interpolation), 계단 함수(Step function)의 세 가지 방법을 치료 기간 동안의 림프구 수 변화 데이터에 적용한 결과를 비교하였다.](../images/ch12_fig2.png)</span>{#fig-ch12-2 width=100%}</span>
 <span id="cb25-263"><a href="#cb25-263" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-264"><a href="#cb25-264" aria-hidden="true" tabindex="-1"></a>PK-PD 분석에서는 시간에 따라 변하는 공변량이 중요한 역할을 합니다. 아토피 피부염 치료에서의 대표적인 시간 변동 공변량:</span>
+<span id="cb25-264"><a href="#cb25-264" aria-hidden="true" tabindex="-1"></a>@fig-ch12-2 는 세 가지 시간변동 공변량 처리 방법(LOCF, 선형 보간, 계단 함수)을 비교한 것입니다. PK-PD 분석에서는 시간에 따라 변하는 공변량이 중요한 역할을 합니다. 아토피 피부염 치료에서의 대표적인 시간 변동 공변량:</span>
 <span id="cb25-265"><a href="#cb25-265" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-266"><a href="#cb25-266" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 공변량 <span class="pp">|</span> 측정 빈도 <span class="pp">|</span> 임상적 의미 <span class="pp">|</span></span>
 <span id="cb25-267"><a href="#cb25-267" aria-hidden="true" tabindex="-1"></a><span class="pp">|:---|:---|:---|</span></span>
@@ -3276,11 +3276,11 @@ window.Quarto = {
 <span id="cb25-1000"><a href="#cb25-1000" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-1001"><a href="#cb25-1001" aria-hidden="true" tabindex="-1"></a><span class="fu">## 약리학 노트: Tofacitinib 약리학 {#sec-tofacitinib-pharmacology}</span></span>
 <span id="cb25-1002"><a href="#cb25-1002" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-1003"><a href="#cb25-1003" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 12.3: Tofacitinib JAK-STAT 경로 억제 기전 (Tofacitinib JAK-STAT Pathway).** JAK1/3 억제에 의한 사이토카인 신호전달(IL-4, IL-13, IL-31) 차단 → Th2 염증 감소 및 소양증 개선 경로와 안전성 관련 림프구 감소 기전을 도식화하였다.](../images/ch12_fig3.png)</span>{#fig-ch12-3 width=100%}</span>
+<span id="cb25-1003"><a href="#cb25-1003" aria-hidden="true" tabindex="-1"></a><span class="al">![Tofacitinib JAK-STAT 경로 억제 기전 (Tofacitinib JAK-STAT Pathway). JAK1/3 억제에 의한 사이토카인 신호전달(IL-4, IL-13, IL-31) 차단 → Th2 염증 감소 및 소양증 개선 경로와 안전성 관련 림프구 감소 기전을 도식화하였다.](../images/ch12_fig3.png)</span>{#fig-ch12-3 width=100%}</span>
 <span id="cb25-1004"><a href="#cb25-1004" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-1005"><a href="#cb25-1005" aria-hidden="true" tabindex="-1"></a><span class="fu">### JAK-STAT 경로와 Tofacitinib의 작용 기전</span></span>
 <span id="cb25-1006"><a href="#cb25-1006" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-1007"><a href="#cb25-1007" aria-hidden="true" tabindex="-1"></a>**JAK-STAT 경로**는 다양한 사이토카인과 성장인자의 세포 내 신호전달을 매개하는 핵심 경로입니다. 이 경로의 주요 구성요소는 다음과 같습니다:</span>
+<span id="cb25-1007"><a href="#cb25-1007" aria-hidden="true" tabindex="-1"></a>@fig-ch12-3 은 Tofacitinib이 JAK1/3을 억제하여 사이토카인 신호전달을 차단하는 기전을 도식화한 것입니다. **JAK-STAT 경로**는 다양한 사이토카인과 성장인자의 세포 내 신호전달을 매개하는 핵심 경로입니다. 이 경로의 주요 구성요소는 다음과 같습니다:</span>
 <span id="cb25-1008"><a href="#cb25-1008" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-1009"><a href="#cb25-1009" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**사이토카인 수용체**: 세포 표면에서 사이토카인을 인식</span>
 <span id="cb25-1010"><a href="#cb25-1010" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**JAK (Janus Kinase)**: JAK1, JAK2, JAK3, TYK2 — 수용체에 결합하여 신호를 전달</span>

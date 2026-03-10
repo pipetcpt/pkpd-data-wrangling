@@ -528,14 +528,14 @@ window.Quarto = {
 <img src="../images/ch07_fig1.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch07-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;7.1: <strong>Figure 7.1: NONMEM 데이터셋 구조 (NONMEM Dataset Structure).</strong> NONMEM 데이터셋의 필수 열(ID, TIME, DV, AMT, CMT, EVID, MDV)을 다이어그램으로 표현하고, 투여 행(EVID=1)과 관측 행(EVID=0)의 예시 데이터를 함께 보여준다. 각 열의 역할과 데이터 타입을 시각적으로 설명한다.
+그림&nbsp;7.1: NONMEM 데이터셋 구조 (NONMEM Dataset Structure). NONMEM 데이터셋의 필수 열(ID, TIME, DV, AMT, CMT, EVID, MDV)을 다이어그램으로 표현하고, 투여 행(EVID=1)과 관측 행(EVID=0)의 예시 데이터를 함께 보여준다. 각 열의 역할과 데이터 타입을 시각적으로 설명한다.
 </figcaption>
 </figure>
 </div>
 <section id="nonmem이란" class="level3" data-number="7.2.1">
 <h3 data-number="7.2.1" class="anchored" data-anchor-id="nonmem이란"><span class="header-section-number">7.2.1</span> NONMEM이란</h3>
 <p><strong>NONMEM(NONlinear Mixed Effects Modeling)</strong>은 집단약동학(Population PK) 모델링에 가장 널리 사용되는 소프트웨어입니다. 비선형 혼합효과 모형(nonlinear mixed-effects model)을 통해 개인 간 변동(inter-individual variability)과 개인 내 변동(intra-individual variability)을 동시에 추정할 수 있습니다.</p>
-<p>NONMEM 분석을 위해서는 특정 형식의 데이터셋이 필요하며, 이 형식은 NCA 분석에도 광범위하게 활용됩니다. 따라서 NONMEM 데이터셋 형식을 이해하는 것은 PK 데이터 분석의 기본입니다.</p>
+<p>NONMEM 분석을 위해서는 특정 형식의 데이터셋이 필요하며, 이 형식은 NCA 분석에도 광범위하게 활용됩니다. 따라서 NONMEM 데이터셋 형식을 이해하는 것은 PK 데이터 분석의 기본입니다 (<a href="#fig-ch07-1" class="quarto-xref">그림&nbsp;<span>7.1</span></a>).</p>
 </section>
 <section id="필수-컬럼-required-columns" class="level3" data-number="7.2.2">
 <h3 data-number="7.2.2" class="anchored" data-anchor-id="필수-컬럼-required-columns"><span class="header-section-number">7.2.2</span> 필수 컬럼 (Required Columns)</h3>
@@ -1062,11 +1062,11 @@ window.Quarto = {
 <img src="../images/ch07_fig2.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch07-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;7.2: <strong>Figure 7.2: 원시 데이터에서 분석 데이터셋까지의 파이프라인 (Raw Data to Analysis Dataset Pipeline).</strong> 원시 Excel 파일(투약 기록, 실험실 결과, 인구통계)에서 R 처리를 거쳐 병합된 NONMEM 데이터셋을 생성하고 검증하는 전체 파이프라인을 도식화하였다.
+그림&nbsp;7.2: 원시 데이터에서 분석 데이터셋까지의 파이프라인 (Raw Data to Analysis Dataset Pipeline). 원시 Excel 파일(투약 기록, 실험실 결과, 인구통계)에서 R 처리를 거쳐 병합된 NONMEM 데이터셋을 생성하고 검증하는 전체 파이프라인을 도식화하였다.
 </figcaption>
 </figure>
 </div>
-<p>이 절에서는 Apremilast Phase I SAD(Single Ascending Dose) 시험의 원시 데이터를 NONMEM 형식의 분석용 데이터셋으로 변환하는 전체 과정을 실습합니다.</p>
+<p>이 절에서는 <a href="#fig-ch07-2" class="quarto-xref">그림&nbsp;<span>7.2</span></a> 에 제시된 파이프라인에 따라 Apremilast Phase I SAD(Single Ascending Dose) 시험의 원시 데이터를 NONMEM 형식의 분석용 데이터셋으로 변환하는 전체 과정을 실습합니다.</p>
 <section id="시험-설계-개요" class="level3" data-number="7.5.1">
 <h3 data-number="7.5.1" class="anchored" data-anchor-id="시험-설계-개요"><span class="header-section-number">7.5.1</span> 시험 설계 개요</h3>
 <ul>
@@ -1520,13 +1520,13 @@ window.Quarto = {
 <img src="../images/ch07_fig3.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch07-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;7.3: <strong>Figure 7.3: Apremilast PDE4 억제 작용기전 (Apremilast PDE4 Mechanism).</strong> PDE4 억제에 의한 세포 내 cAMP 증가 → PKA 활성화 → 염증성 사이토카인(TNF-α, IL-17, IL-23) 감소 및 항염증성 사이토카인(IL-10) 증가의 신호전달 경로를 도식화하였다.
+그림&nbsp;7.3: Apremilast PDE4 억제 작용기전 (Apremilast PDE4 Mechanism). PDE4 억제에 의한 세포 내 cAMP 증가 → PKA 활성화 → 염증성 사이토카인(TNF-α, IL-17, IL-23) 감소 및 항염증성 사이토카인(IL-10) 증가의 신호전달 경로를 도식화하였다.
 </figcaption>
 </figure>
 </div>
 <section id="pde4-억제제의-작용기전" class="level3" data-number="7.6.1">
 <h3 data-number="7.6.1" class="anchored" data-anchor-id="pde4-억제제의-작용기전"><span class="header-section-number">7.6.1</span> PDE4 억제제의 작용기전</h3>
-<p><strong>Apremilast (Otezla®)</strong>는 <strong>phosphodiesterase 4 (PDE4) 억제제</strong>로, 건선(psoriasis)과 건선성 관절염(psoriatic arthritis)의 치료에 사용됩니다.</p>
+<p><a href="#fig-ch07-3" class="quarto-xref">그림&nbsp;<span>7.3</span></a> 은 Apremilast의 작용기전을 보여준다. <strong>Apremilast (Otezla®)</strong>는 <strong>phosphodiesterase 4 (PDE4) 억제제</strong>로, 건선(psoriasis)과 건선성 관절염(psoriatic arthritis)의 치료에 사용됩니다.</p>
 <p>PDE4는 세포 내 <strong>cyclic adenosine monophosphate (cAMP)</strong>를 분해하는 효소입니다. Apremilast가 PDE4를 억제하면 세포 내 cAMP 농도가 증가하고, 이는 다음과 같은 면역 조절 효과를 나타냅니다:</p>
 <p><span class="math display">\[
 \text{Apremilast} \xrightarrow{\text{PDE4 억제}} \text{cAMP} \uparrow \xrightarrow{\text{PKA 활성화}} \begin{cases} \text{TNF-}\alpha \downarrow \\ \text{IL-17} \downarrow \\ \text{IL-23} \downarrow \\ \text{IL-10} \uparrow \end{cases}
@@ -2360,13 +2360,13 @@ window.Quarto = {
 <span id="cb27-96"><a href="#cb27-96" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-97"><a href="#cb27-97" aria-hidden="true" tabindex="-1"></a><span class="fu">## NONMEM 데이터셋 형식 이해 {#sec-nonmem-format}</span></span>
 <span id="cb27-98"><a href="#cb27-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-99"><a href="#cb27-99" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 7.1: NONMEM 데이터셋 구조 (NONMEM Dataset Structure).** NONMEM 데이터셋의 필수 열(ID, TIME, DV, AMT, CMT, EVID, MDV)을 다이어그램으로 표현하고, 투여 행(EVID=1)과 관측 행(EVID=0)의 예시 데이터를 함께 보여준다. 각 열의 역할과 데이터 타입을 시각적으로 설명한다.](../images/ch07_fig1.png)</span>{#fig-ch07-1 width=100%}</span>
+<span id="cb27-99"><a href="#cb27-99" aria-hidden="true" tabindex="-1"></a><span class="al">![NONMEM 데이터셋 구조 (NONMEM Dataset Structure). NONMEM 데이터셋의 필수 열(ID, TIME, DV, AMT, CMT, EVID, MDV)을 다이어그램으로 표현하고, 투여 행(EVID=1)과 관측 행(EVID=0)의 예시 데이터를 함께 보여준다. 각 열의 역할과 데이터 타입을 시각적으로 설명한다.](../images/ch07_fig1.png)</span>{#fig-ch07-1 width=100%}</span>
 <span id="cb27-100"><a href="#cb27-100" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-101"><a href="#cb27-101" aria-hidden="true" tabindex="-1"></a><span class="fu">### NONMEM이란</span></span>
 <span id="cb27-102"><a href="#cb27-102" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-103"><a href="#cb27-103" aria-hidden="true" tabindex="-1"></a>**NONMEM(NONlinear Mixed Effects Modeling)**은 집단약동학(Population PK) 모델링에 가장 널리 사용되는 소프트웨어입니다. 비선형 혼합효과 모형(nonlinear mixed-effects model)을 통해 개인 간 변동(inter-individual variability)과 개인 내 변동(intra-individual variability)을 동시에 추정할 수 있습니다.</span>
 <span id="cb27-104"><a href="#cb27-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-105"><a href="#cb27-105" aria-hidden="true" tabindex="-1"></a>NONMEM 분석을 위해서는 특정 형식의 데이터셋이 필요하며, 이 형식은 NCA 분석에도 광범위하게 활용됩니다. 따라서 NONMEM 데이터셋 형식을 이해하는 것은 PK 데이터 분석의 기본입니다.</span>
+<span id="cb27-105"><a href="#cb27-105" aria-hidden="true" tabindex="-1"></a>NONMEM 분석을 위해서는 특정 형식의 데이터셋이 필요하며, 이 형식은 NCA 분석에도 광범위하게 활용됩니다. 따라서 NONMEM 데이터셋 형식을 이해하는 것은 PK 데이터 분석의 기본입니다 (@fig-ch07-1).</span>
 <span id="cb27-106"><a href="#cb27-106" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-107"><a href="#cb27-107" aria-hidden="true" tabindex="-1"></a><span class="fu">### 필수 컬럼 (Required Columns)</span></span>
 <span id="cb27-108"><a href="#cb27-108" aria-hidden="true" tabindex="-1"></a></span>
@@ -2741,9 +2741,9 @@ window.Quarto = {
 <span id="cb27-491"><a href="#cb27-491" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-492"><a href="#cb27-492" aria-hidden="true" tabindex="-1"></a><span class="fu">## R 실습: Apremilast Phase I 데이터셋 구축 {#sec-apremilast-practice}</span></span>
 <span id="cb27-493"><a href="#cb27-493" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-494"><a href="#cb27-494" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 7.2: 원시 데이터에서 분석 데이터셋까지의 파이프라인 (Raw Data to Analysis Dataset Pipeline).** 원시 Excel 파일(투약 기록, 실험실 결과, 인구통계)에서 R 처리를 거쳐 병합된 NONMEM 데이터셋을 생성하고 검증하는 전체 파이프라인을 도식화하였다.](../images/ch07_fig2.png)</span>{#fig-ch07-2 width=100%}</span>
+<span id="cb27-494"><a href="#cb27-494" aria-hidden="true" tabindex="-1"></a><span class="al">![원시 데이터에서 분석 데이터셋까지의 파이프라인 (Raw Data to Analysis Dataset Pipeline). 원시 Excel 파일(투약 기록, 실험실 결과, 인구통계)에서 R 처리를 거쳐 병합된 NONMEM 데이터셋을 생성하고 검증하는 전체 파이프라인을 도식화하였다.](../images/ch07_fig2.png)</span>{#fig-ch07-2 width=100%}</span>
 <span id="cb27-495"><a href="#cb27-495" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-496"><a href="#cb27-496" aria-hidden="true" tabindex="-1"></a>이 절에서는 Apremilast Phase I SAD(Single Ascending Dose) 시험의 원시 데이터를 NONMEM 형식의 분석용 데이터셋으로 변환하는 전체 과정을 실습합니다.</span>
+<span id="cb27-496"><a href="#cb27-496" aria-hidden="true" tabindex="-1"></a>이 절에서는 @fig-ch07-2 에 제시된 파이프라인에 따라 Apremilast Phase I SAD(Single Ascending Dose) 시험의 원시 데이터를 NONMEM 형식의 분석용 데이터셋으로 변환하는 전체 과정을 실습합니다.</span>
 <span id="cb27-497"><a href="#cb27-497" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-498"><a href="#cb27-498" aria-hidden="true" tabindex="-1"></a><span class="fu">### 시험 설계 개요</span></span>
 <span id="cb27-499"><a href="#cb27-499" aria-hidden="true" tabindex="-1"></a></span>
@@ -3176,11 +3176,11 @@ window.Quarto = {
 <span id="cb27-942"><a href="#cb27-942" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-943"><a href="#cb27-943" aria-hidden="true" tabindex="-1"></a><span class="fu">## 약리학 노트: Apremilast의 약리학 {#sec-apremilast-pharmacology}</span></span>
 <span id="cb27-944"><a href="#cb27-944" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-945"><a href="#cb27-945" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 7.3: Apremilast PDE4 억제 작용기전 (Apremilast PDE4 Mechanism).** PDE4 억제에 의한 세포 내 cAMP 증가 → PKA 활성화 → 염증성 사이토카인(TNF-α, IL-17, IL-23) 감소 및 항염증성 사이토카인(IL-10) 증가의 신호전달 경로를 도식화하였다.](../images/ch07_fig3.png)</span>{#fig-ch07-3 width=100%}</span>
+<span id="cb27-945"><a href="#cb27-945" aria-hidden="true" tabindex="-1"></a><span class="al">![Apremilast PDE4 억제 작용기전 (Apremilast PDE4 Mechanism). PDE4 억제에 의한 세포 내 cAMP 증가 → PKA 활성화 → 염증성 사이토카인(TNF-α, IL-17, IL-23) 감소 및 항염증성 사이토카인(IL-10) 증가의 신호전달 경로를 도식화하였다.](../images/ch07_fig3.png)</span>{#fig-ch07-3 width=100%}</span>
 <span id="cb27-946"><a href="#cb27-946" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-947"><a href="#cb27-947" aria-hidden="true" tabindex="-1"></a><span class="fu">### PDE4 억제제의 작용기전</span></span>
 <span id="cb27-948"><a href="#cb27-948" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-949"><a href="#cb27-949" aria-hidden="true" tabindex="-1"></a>**Apremilast (Otezla®)**는 **phosphodiesterase 4 (PDE4) 억제제**로, 건선(psoriasis)과 건선성 관절염(psoriatic arthritis)의 치료에 사용됩니다.</span>
+<span id="cb27-949"><a href="#cb27-949" aria-hidden="true" tabindex="-1"></a>@fig-ch07-3 은 Apremilast의 작용기전을 보여준다. **Apremilast (Otezla®)**는 **phosphodiesterase 4 (PDE4) 억제제**로, 건선(psoriasis)과 건선성 관절염(psoriatic arthritis)의 치료에 사용됩니다.</span>
 <span id="cb27-950"><a href="#cb27-950" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-951"><a href="#cb27-951" aria-hidden="true" tabindex="-1"></a>PDE4는 세포 내 **cyclic adenosine monophosphate (cAMP)**를 분해하는 효소입니다. Apremilast가 PDE4를 억제하면 세포 내 cAMP 농도가 증가하고, 이는 다음과 같은 면역 조절 효과를 나타냅니다:</span>
 <span id="cb27-952"><a href="#cb27-952" aria-hidden="true" tabindex="-1"></a></span>

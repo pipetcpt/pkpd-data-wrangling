@@ -16,11 +16,11 @@ library(gt)           # 출판 품질 테이블
 
 ## PK-PD 데이터셋 구조 {#sec-pkpd-structure}
 
-![**Figure 12.1: PK-PD 다중 구획 데이터셋 구조 (PK-PD Dataset Structure with Multiple CMT).** CMT=1(Dose), CMT=2(PK obs, ng/mL), CMT=3(PD obs, SCORAD score)의 다중 구획 구조를 다이어그램으로 나타내고, EVID/MDV/DVID 매핑 관계를 예시 데이터와 함께 보여준다.](../images/ch12_fig1.png){#fig-ch12-1 width=100%}
+![PK-PD 다중 구획 데이터셋 구조 (PK-PD Dataset Structure with Multiple CMT). CMT=1(Dose), CMT=2(PK obs, ng/mL), CMT=3(PD obs, SCORAD score)의 다중 구획 구조를 다이어그램으로 나타내고, EVID/MDV/DVID 매핑 관계를 예시 데이터와 함께 보여준다.](../images/ch12_fig1.png){#fig-ch12-1 width=100%}
 
 ### PK 전용 데이터셋과의 차이점
 
-지금까지 학습한 NONMEM 데이터셋은 **PK 관측(약물 농도)**만을 다뤘습니다. PK-PD 통합 데이터셋에서는 여기에 **PD 관측(효과 지표)**이 추가됩니다. 이로 인해 다음과 같은 구조적 변화가 필요합니다:
+@fig-ch12-1 은 PK-PD 통합 데이터셋의 다중 구획 구조와 EVID/MDV/DVID 매핑 관계를 보여줍니다. 지금까지 학습한 NONMEM 데이터셋은 **PK 관측(약물 농도)**만을 다뤘습니다. PK-PD 통합 데이터셋에서는 여기에 **PD 관측(효과 지표)**이 추가됩니다. 이로 인해 다음과 같은 구조적 변화가 필요합니다:
 
 1. **CMT(Compartment)의 확장**: PK 관측과 PD 관측이 서로 다른 구획에 속합니다
 2. **DV(Dependent Variable)의 다중성**: DV에 ng/mL 단위의 농도와 점수 단위의 SCORAD가 혼재합니다
@@ -247,9 +247,9 @@ multi_pd <- tribble(
 
 ### 시간 변동 공변량 (Time-Varying Covariates)
 
-![**Figure 12.2: 시간변동 공변량 처리 방법 (Time-Varying Covariate Handling).** LOCF(Last Observation Carried Forward), 선형 보간(Linear interpolation), 계단 함수(Step function)의 세 가지 방법을 치료 기간 동안의 림프구 수 변화 데이터에 적용한 결과를 비교하였다.](../images/ch12_fig2.png){#fig-ch12-2 width=100%}
+![시간변동 공변량 처리 방법 (Time-Varying Covariate Handling). LOCF(Last Observation Carried Forward), 선형 보간(Linear interpolation), 계단 함수(Step function)의 세 가지 방법을 치료 기간 동안의 림프구 수 변화 데이터에 적용한 결과를 비교하였다.](../images/ch12_fig2.png){#fig-ch12-2 width=100%}
 
-PK-PD 분석에서는 시간에 따라 변하는 공변량이 중요한 역할을 합니다. 아토피 피부염 치료에서의 대표적인 시간 변동 공변량:
+@fig-ch12-2 는 세 가지 시간변동 공변량 처리 방법(LOCF, 선형 보간, 계단 함수)을 비교한 것입니다. PK-PD 분석에서는 시간에 따라 변하는 공변량이 중요한 역할을 합니다. 아토피 피부염 치료에서의 대표적인 시간 변동 공변량:
 
 | 공변량 | 측정 빈도 | 임상적 의미 |
 |:---|:---|:---|
@@ -958,11 +958,11 @@ data_spec |>
 
 ## 약리학 노트: Tofacitinib 약리학 {#sec-tofacitinib-pharmacology}
 
-![**Figure 12.3: Tofacitinib JAK-STAT 경로 억제 기전 (Tofacitinib JAK-STAT Pathway).** JAK1/3 억제에 의한 사이토카인 신호전달(IL-4, IL-13, IL-31) 차단 → Th2 염증 감소 및 소양증 개선 경로와 안전성 관련 림프구 감소 기전을 도식화하였다.](../images/ch12_fig3.png){#fig-ch12-3 width=100%}
+![Tofacitinib JAK-STAT 경로 억제 기전 (Tofacitinib JAK-STAT Pathway). JAK1/3 억제에 의한 사이토카인 신호전달(IL-4, IL-13, IL-31) 차단 → Th2 염증 감소 및 소양증 개선 경로와 안전성 관련 림프구 감소 기전을 도식화하였다.](../images/ch12_fig3.png){#fig-ch12-3 width=100%}
 
 ### JAK-STAT 경로와 Tofacitinib의 작용 기전
 
-**JAK-STAT 경로**는 다양한 사이토카인과 성장인자의 세포 내 신호전달을 매개하는 핵심 경로입니다. 이 경로의 주요 구성요소는 다음과 같습니다:
+@fig-ch12-3 은 Tofacitinib이 JAK1/3을 억제하여 사이토카인 신호전달을 차단하는 기전을 도식화한 것입니다. **JAK-STAT 경로**는 다양한 사이토카인과 성장인자의 세포 내 신호전달을 매개하는 핵심 경로입니다. 이 경로의 주요 구성요소는 다음과 같습니다:
 
 1. **사이토카인 수용체**: 세포 표면에서 사이토카인을 인식
 2. **JAK (Janus Kinase)**: JAK1, JAK2, JAK3, TYK2 — 수용체에 결합하여 신호를 전달

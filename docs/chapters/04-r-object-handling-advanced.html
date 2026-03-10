@@ -398,7 +398,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>각 관측값(observation)은 하나의 행(row)을 구성한다</li>
 <li>각 값(value)은 하나의 셀(cell)에 들어간다</li>
 </ol>
-<p>PK 데이터에서는 같은 데이터가 <strong>Wide format</strong>과 <strong>Long format</strong> 두 가지 형태로 존재할 수 있으며, 분석 목적에 따라 변환이 필요합니다.</p>
+<p>PK 데이터에서는 같은 데이터가 <strong>Wide format</strong>과 <strong>Long format</strong> 두 가지 형태로 존재할 수 있으며, 분석 목적에 따라 변환이 필요합니다 (<a href="#fig-ch04-1" class="quarto-xref">그림&nbsp;<span>4.1</span></a>).</p>
 </section>
 <section id="wide-format-vs-long-format" class="level3" data-number="4.1.2">
 <h3 data-number="4.1.2" class="anchored" data-anchor-id="wide-format-vs-long-format"><span class="header-section-number">4.1.2</span> Wide format vs Long format</h3>
@@ -408,7 +408,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <img src="../images/ch04_fig1.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;4.1: <strong>Figure 4.1: Wide ↔︎ Long 데이터 형태 변환 (Wide vs Long Data Format).</strong> PK 농도 데이터의 Wide 형태(열: T0, T1, T2…)와 Long 형태(행: ID, TIME, CONC)를 양방향 화살표로 연결하여 pivot_longer/pivot_wider 변환을 도식화하였다. 각 형태가 적합한 분석 상황을 함께 표시하였다.
+그림&nbsp;4.1: Wide ↔︎ Long 데이터 형태 변환 (Wide vs Long Data Format). PK 농도 데이터의 Wide 형태(열: T0, T1, T2…)와 Long 형태(행: ID, TIME, CONC)를 양방향 화살표로 연결하여 pivot_longer/pivot_wider 변환을 도식화하였다. 각 형태가 적합한 분석 상황을 함께 표시하였다.
 </figcaption>
 </figure>
 </div>
@@ -1206,11 +1206,11 @@ PT002       1      C2           850.2
 <img src="../images/ch04_fig3.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;4.2: <strong>Figure 4.3: BLQ 처리 방법 의사결정 트리 (BLQ Handling Methods Decision Tree).</strong> BLQ 검출 시 의사결정 과정을 트리 형태로 도식화하였다. Pre-dose 여부에 따라 Method M1(0으로 대체), Post-Cmax 여부에 따라 M5(LOQ/2) 또는 M3(censored 처리) 등의 방법을 선택하는 과정을 보여준다.
+그림&nbsp;4.2: BLQ 처리 방법 의사결정 트리 (BLQ Handling Methods Decision Tree). BLQ 검출 시 의사결정 과정을 트리 형태로 도식화하였다. Pre-dose 여부에 따라 Method M1(0으로 대체), Post-Cmax 여부에 따라 M5(LOQ/2) 또는 M3(censored 처리) 등의 방법을 선택하는 과정을 보여준다.
 </figcaption>
 </figure>
 </div>
-<p>BLQ 데이터의 처리는 약동학 분석에서 매우 중요한 통계적/약리학적 의미를 갖습니다. BLQ 값을 어떻게 처리하느냐에 따라 PK 파라미터 추정치가 달라질 수 있습니다.</p>
+<p><a href="#fig-ch04-3" class="quarto-xref">그림&nbsp;<span>4.2</span></a> 은 BLQ 데이터의 처리 과정을 보여줍니다. BLQ 데이터의 처리는 약동학 분석에서 매우 중요한 통계적/약리학적 의미를 갖습니다. BLQ 값을 어떻게 처리하느냐에 따라 PK 파라미터 추정치가 달라질 수 있습니다.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1521,7 +1521,7 @@ PT002       1      C2           850.2
 <img src="../images/ch04_fig2.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;4.3: <strong>Figure 4.2: 임상시험 데이터 흐름 (Clinical Trial Data Flow).</strong> CRF(Case Report Form)에서 수집된 원시 데이터가 SDTM 도메인(DM, PC, EX, VS)으로 표준화되고, ADaM 데이터셋(ADPC, ADPD)을 거쳐 최종 분석 데이터셋으로 변환되는 전체 흐름을 도식화하였다.
+그림&nbsp;4.3: 임상시험 데이터 흐름 (Clinical Trial Data Flow). CRF(Case Report Form)에서 수집된 원시 데이터가 SDTM 도메인(DM, PC, EX, VS)으로 표준화되고, ADaM 데이터셋(ADPC, ADPD)을 거쳐 최종 분석 데이터셋으로 변환되는 전체 흐름을 도식화하였다.
 </figcaption>
 </figure>
 </div>
@@ -1535,7 +1535,7 @@ PT002       1      C2           850.2
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>임상시험에서 수집되는 데이터는 국제적으로 표준화된 형식을 따릅니다. 이 표준을 이해하면 실제 임상 데이터를 받았을 때 더 효율적으로 분석할 수 있습니다.</p>
+<p>임상시험에서 수집되는 데이터는 국제적으로 표준화된 형식을 따릅니다 (<a href="#fig-ch04-2" class="quarto-xref">그림&nbsp;<span>4.3</span></a>). 이 표준을 이해하면 실제 임상 데이터를 받았을 때 더 효율적으로 분석할 수 있습니다.</p>
 </div>
 </div>
 <section id="crf-case-report-form-구조" class="level3" data-number="4.7.1">
@@ -2594,11 +2594,11 @@ PT002       1      C2           850.2
 <span id="cb53-25"><a href="#cb53-25" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>각 관측값(observation)은 하나의 행(row)을 구성한다</span>
 <span id="cb53-26"><a href="#cb53-26" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>각 값(value)은 하나의 셀(cell)에 들어간다</span>
 <span id="cb53-27"><a href="#cb53-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-28"><a href="#cb53-28" aria-hidden="true" tabindex="-1"></a>PK 데이터에서는 같은 데이터가 **Wide format**과 **Long format** 두 가지 형태로 존재할 수 있으며, 분석 목적에 따라 변환이 필요합니다.</span>
+<span id="cb53-28"><a href="#cb53-28" aria-hidden="true" tabindex="-1"></a>PK 데이터에서는 같은 데이터가 **Wide format**과 **Long format** 두 가지 형태로 존재할 수 있으며, 분석 목적에 따라 변환이 필요합니다 (@fig-ch04-1).</span>
 <span id="cb53-29"><a href="#cb53-29" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb53-30"><a href="#cb53-30" aria-hidden="true" tabindex="-1"></a><span class="fu">### Wide format vs Long format</span></span>
 <span id="cb53-31"><a href="#cb53-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-32"><a href="#cb53-32" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 4.1: Wide ↔ Long 데이터 형태 변환 (Wide vs Long Data Format).** PK 농도 데이터의 Wide 형태(열: T0, T1, T2...)와 Long 형태(행: ID, TIME, CONC)를 양방향 화살표로 연결하여 pivot_longer/pivot_wider 변환을 도식화하였다. 각 형태가 적합한 분석 상황을 함께 표시하였다.](../images/ch04_fig1.png)</span>{#fig-ch04-1 width=100%}</span>
+<span id="cb53-32"><a href="#cb53-32" aria-hidden="true" tabindex="-1"></a><span class="al">![Wide ↔ Long 데이터 형태 변환 (Wide vs Long Data Format). PK 농도 데이터의 Wide 형태(열: T0, T1, T2...)와 Long 형태(행: ID, TIME, CONC)를 양방향 화살표로 연결하여 pivot_longer/pivot_wider 변환을 도식화하였다. 각 형태가 적합한 분석 상황을 함께 표시하였다.](../images/ch04_fig1.png)</span>{#fig-ch04-1 width=100%}</span>
 <span id="cb53-33"><a href="#cb53-33" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb53-34"><a href="#cb53-34" aria-hidden="true" tabindex="-1"></a>**Wide format** (흔히 임상 현장에서 사용하는 형태):</span>
 <span id="cb53-35"><a href="#cb53-35" aria-hidden="true" tabindex="-1"></a></span>
@@ -3326,9 +3326,9 @@ PT002       1      C2           850.2
 <span id="cb53-813"><a href="#cb53-813" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb53-814"><a href="#cb53-814" aria-hidden="true" tabindex="-1"></a><span class="fu">### BLQ (Below Limit of Quantification) 처리 {#sec-blq}</span></span>
 <span id="cb53-815"><a href="#cb53-815" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-816"><a href="#cb53-816" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 4.3: BLQ 처리 방법 의사결정 트리 (BLQ Handling Methods Decision Tree).** BLQ 검출 시 의사결정 과정을 트리 형태로 도식화하였다. Pre-dose 여부에 따라 Method M1(0으로 대체), Post-Cmax 여부에 따라 M5(LOQ/2) 또는 M3(censored 처리) 등의 방법을 선택하는 과정을 보여준다.](../images/ch04_fig3.png)</span>{#fig-ch04-3 width=100%}</span>
+<span id="cb53-816"><a href="#cb53-816" aria-hidden="true" tabindex="-1"></a><span class="al">![BLQ 처리 방법 의사결정 트리 (BLQ Handling Methods Decision Tree). BLQ 검출 시 의사결정 과정을 트리 형태로 도식화하였다. Pre-dose 여부에 따라 Method M1(0으로 대체), Post-Cmax 여부에 따라 M5(LOQ/2) 또는 M3(censored 처리) 등의 방법을 선택하는 과정을 보여준다.](../images/ch04_fig3.png)</span>{#fig-ch04-3 width=100%}</span>
 <span id="cb53-817"><a href="#cb53-817" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-818"><a href="#cb53-818" aria-hidden="true" tabindex="-1"></a>BLQ 데이터의 처리는 약동학 분석에서 매우 중요한 통계적/약리학적 의미를 갖습니다. BLQ 값을 어떻게 처리하느냐에 따라 PK 파라미터 추정치가 달라질 수 있습니다.</span>
+<span id="cb53-818"><a href="#cb53-818" aria-hidden="true" tabindex="-1"></a>@fig-ch04-3 은 BLQ 데이터의 처리 과정을 보여줍니다. BLQ 데이터의 처리는 약동학 분석에서 매우 중요한 통계적/약리학적 의미를 갖습니다. BLQ 값을 어떻게 처리하느냐에 따라 PK 파라미터 추정치가 달라질 수 있습니다.</span>
 <span id="cb53-819"><a href="#cb53-819" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb53-820"><a href="#cb53-820" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
 <span id="cb53-821"><a href="#cb53-821" aria-hidden="true" tabindex="-1"></a><span class="fu">## BLQ란 무엇인가?</span></span>
@@ -3613,12 +3613,12 @@ PT002       1      C2           850.2
 <span id="cb53-1118"><a href="#cb53-1118" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb53-1119"><a href="#cb53-1119" aria-hidden="true" tabindex="-1"></a><span class="fu">## 약리학 노트: 임상시험 데이터의 구조 {#sec-clinical-data-structure}</span></span>
 <span id="cb53-1120"><a href="#cb53-1120" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-1121"><a href="#cb53-1121" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 4.2: 임상시험 데이터 흐름 (Clinical Trial Data Flow).** CRF(Case Report Form)에서 수집된 원시 데이터가 SDTM 도메인(DM, PC, EX, VS)으로 표준화되고, ADaM 데이터셋(ADPC, ADPD)을 거쳐 최종 분석 데이터셋으로 변환되는 전체 흐름을 도식화하였다.](../images/ch04_fig2.png)</span>{#fig-ch04-2 width=100%}</span>
+<span id="cb53-1121"><a href="#cb53-1121" aria-hidden="true" tabindex="-1"></a><span class="al">![임상시험 데이터 흐름 (Clinical Trial Data Flow). CRF(Case Report Form)에서 수집된 원시 데이터가 SDTM 도메인(DM, PC, EX, VS)으로 표준화되고, ADaM 데이터셋(ADPC, ADPD)을 거쳐 최종 분석 데이터셋으로 변환되는 전체 흐름을 도식화하였다.](../images/ch04_fig2.png)</span>{#fig-ch04-2 width=100%}</span>
 <span id="cb53-1122"><a href="#cb53-1122" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb53-1123"><a href="#cb53-1123" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
 <span id="cb53-1124"><a href="#cb53-1124" aria-hidden="true" tabindex="-1"></a><span class="fu">## 임상시험 데이터의 표준화</span></span>
 <span id="cb53-1125"><a href="#cb53-1125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-1126"><a href="#cb53-1126" aria-hidden="true" tabindex="-1"></a>임상시험에서 수집되는 데이터는 국제적으로 표준화된 형식을 따릅니다. 이 표준을 이해하면 실제 임상 데이터를 받았을 때 더 효율적으로 분석할 수 있습니다.</span>
+<span id="cb53-1126"><a href="#cb53-1126" aria-hidden="true" tabindex="-1"></a>임상시험에서 수집되는 데이터는 국제적으로 표준화된 형식을 따릅니다 (@fig-ch04-2). 이 표준을 이해하면 실제 임상 데이터를 받았을 때 더 효율적으로 분석할 수 있습니다.</span>
 <span id="cb53-1127"><a href="#cb53-1127" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb53-1128"><a href="#cb53-1128" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb53-1129"><a href="#cb53-1129" aria-hidden="true" tabindex="-1"></a><span class="fu">### CRF (Case Report Form) 구조</span></span>

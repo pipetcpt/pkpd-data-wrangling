@@ -405,11 +405,11 @@ window.Quarto = {
 <img src="../images/ch13_fig2.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch13-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;13.1: <strong>Figure 13.2: Sequential vs Simultaneous 분석 비교 (Sequential vs Simultaneous PK-PD Analysis).</strong> Sequential 접근(PK 먼저 → 고정 → PD)과 Simultaneous 접근(PK+PD 동시)의 두 가지 분석 방법을 흐름도로 비교하고, 각 방법의 장단점을 함께 표시하였다.
+그림&nbsp;13.1: Sequential vs Simultaneous 분석 비교 (Sequential vs Simultaneous PK-PD Analysis). Sequential 접근(PK 먼저 → 고정 → PD)과 Simultaneous 접근(PK+PD 동시)의 두 가지 분석 방법을 흐름도로 비교하고, 각 방법의 장단점을 함께 표시하였다.
 </figcaption>
 </figure>
 </div>
-<p>PK-PD 관계를 분석하는 두 가지 근본적 접근 방식이 있습니다:</p>
+<p><a href="#fig-ch13-2" class="quarto-xref">그림&nbsp;<span>13.1</span></a> 은 PK-PD 관계를 분석하는 두 가지 근본적 접근 방식을 비교합니다:</p>
 <p><strong>Sequential Approach (순차적 접근)</strong></p>
 <p>1단계에서 PK 모델을 먼저 구축하고, 2단계에서 PK 모델로부터 도출된 노출 지표를 PD 모델의 입력으로 사용합니다.</p>
 <pre><code>[PK 데이터] → [PK 모델] → [노출 지표 (AUC, Cmin 등)] → [PD 모델] → [PK-PD 관계]</code></pre>
@@ -552,13 +552,13 @@ window.Quarto = {
 <img src="../images/ch13_fig1.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch13-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;13.2: <strong>Figure 13.1: 노출-반응 분석 프레임워크 (Exposure-Response Analysis Framework).</strong> 세 개의 연결된 그래프로 Dose→Exposure(PK), Exposure→Efficacy(E-R), Exposure→Safety(E-S) 관계를 나타내고, 최적 용량 범위를 하이라이트하였다.
+그림&nbsp;13.2: 노출-반응 분석 프레임워크 (Exposure-Response Analysis Framework). 세 개의 연결된 그래프로 Dose→Exposure(PK), Exposure→Efficacy(E-R), Exposure→Safety(E-S) 관계를 나타내고, 최적 용량 범위를 하이라이트하였다.
 </figcaption>
 </figure>
 </div>
 <section id="용량-노출-관계-dose-exposure-relationship" class="level3" data-number="13.2.1">
 <h3 data-number="13.2.1" class="anchored" data-anchor-id="용량-노출-관계-dose-exposure-relationship"><span class="header-section-number">13.2.1</span> 용량-노출 관계 (Dose-Exposure Relationship)</h3>
-<p>노출-반응 분석의 첫 단계는 <strong>용량과 노출 지표의 관계</strong>를 확인하는 것입니다. 이는 이전 장에서 학습한 용량 비례성(dose proportionality) 분석의 연장선입니다.</p>
+<p><a href="#fig-ch13-1" class="quarto-xref">그림&nbsp;<span>13.2</span></a> 에서 보듯이, 노출-반응 분석의 첫 단계는 <strong>용량과 노출 지표의 관계</strong>를 확인하는 것입니다. 이는 이전 장에서 학습한 용량 비례성(dose proportionality) 분석의 연장선입니다.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 용량-노출 관계 시각화 예시</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>dose_exposure <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
@@ -1486,10 +1486,11 @@ C_{avg} = \frac{AUC_{\tau}}{\tau}
 <img src="../images/ch13_fig3.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch13-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;13.3: <strong>Figure 13.3: 용량 선택을 위한 유익성-위해성 평가 (Benefit-Risk Assessment for Dose Selection).</strong> 노출(exposure)에 따른 유효성(EASI-75 달성 확률) 곡선과 안전성(림프구감소증 위험) 곡선을 겹쳐 표시하고, 치료 창(therapeutic window)을 하이라이트하였다.
+그림&nbsp;13.3: 용량 선택을 위한 유익성-위해성 평가 (Benefit-Risk Assessment for Dose Selection). 노출(exposure)에 따른 유효성(EASI-75 달성 확률) 곡선과 안전성(림프구감소증 위험) 곡선을 겹쳐 표시하고, 치료 창(therapeutic window)을 하이라이트하였다.
 </figcaption>
 </figure>
 </div>
+<p><a href="#fig-ch13-3" class="quarto-xref">그림&nbsp;<span>13.3</span></a> 은 유익성-위해성 평가의 개념적 프레임워크를 보여줍니다.</p>
 <section id="dupilumab-용량-결정-과정" class="level3" data-number="13.5.1">
 <h3 data-number="13.5.1" class="anchored" data-anchor-id="dupilumab-용량-결정-과정"><span class="header-section-number">13.5.1</span> Dupilumab 용량 결정 과정</h3>
 <p>Dupilumab은 아토피 피부염에 대해 <strong>300mg q2w (2주 간격 피하주사)</strong>가 승인 용량입니다. 이 용량이 선택된 과학적 근거:</p>
@@ -2208,9 +2209,9 @@ PD 모델 (SCORAD):
 <span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-23"><a href="#cb26-23" aria-hidden="true" tabindex="-1"></a><span class="fu">### Sequential Approach vs Simultaneous Approach</span></span>
 <span id="cb26-24"><a href="#cb26-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 13.2: Sequential vs Simultaneous 분석 비교 (Sequential vs Simultaneous PK-PD Analysis).** Sequential 접근(PK 먼저 → 고정 → PD)과 Simultaneous 접근(PK+PD 동시)의 두 가지 분석 방법을 흐름도로 비교하고, 각 방법의 장단점을 함께 표시하였다.](../images/ch13_fig2.png)</span>{#fig-ch13-2 width=100%}</span>
+<span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a><span class="al">![Sequential vs Simultaneous 분석 비교 (Sequential vs Simultaneous PK-PD Analysis). Sequential 접근(PK 먼저 → 고정 → PD)과 Simultaneous 접근(PK+PD 동시)의 두 가지 분석 방법을 흐름도로 비교하고, 각 방법의 장단점을 함께 표시하였다.](../images/ch13_fig2.png)</span>{#fig-ch13-2 width=100%}</span>
 <span id="cb26-26"><a href="#cb26-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-27"><a href="#cb26-27" aria-hidden="true" tabindex="-1"></a>PK-PD 관계를 분석하는 두 가지 근본적 접근 방식이 있습니다:</span>
+<span id="cb26-27"><a href="#cb26-27" aria-hidden="true" tabindex="-1"></a>@fig-ch13-2 은 PK-PD 관계를 분석하는 두 가지 근본적 접근 방식을 비교합니다:</span>
 <span id="cb26-28"><a href="#cb26-28" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-29"><a href="#cb26-29" aria-hidden="true" tabindex="-1"></a>**Sequential Approach (순차적 접근)**</span>
 <span id="cb26-30"><a href="#cb26-30" aria-hidden="true" tabindex="-1"></a></span>
@@ -2329,11 +2330,11 @@ PD 모델 (SCORAD):
 <span id="cb26-149"><a href="#cb26-149" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-150"><a href="#cb26-150" aria-hidden="true" tabindex="-1"></a><span class="fu">## 노출-반응 (Exposure-Response) 분석 {#sec-exposure-response}</span></span>
 <span id="cb26-151"><a href="#cb26-151" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-152"><a href="#cb26-152" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 13.1: 노출-반응 분석 프레임워크 (Exposure-Response Analysis Framework).** 세 개의 연결된 그래프로 Dose→Exposure(PK), Exposure→Efficacy(E-R), Exposure→Safety(E-S) 관계를 나타내고, 최적 용량 범위를 하이라이트하였다.](../images/ch13_fig1.png)</span>{#fig-ch13-1 width=100%}</span>
+<span id="cb26-152"><a href="#cb26-152" aria-hidden="true" tabindex="-1"></a><span class="al">![노출-반응 분석 프레임워크 (Exposure-Response Analysis Framework). 세 개의 연결된 그래프로 Dose→Exposure(PK), Exposure→Efficacy(E-R), Exposure→Safety(E-S) 관계를 나타내고, 최적 용량 범위를 하이라이트하였다.](../images/ch13_fig1.png)</span>{#fig-ch13-1 width=100%}</span>
 <span id="cb26-153"><a href="#cb26-153" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-154"><a href="#cb26-154" aria-hidden="true" tabindex="-1"></a><span class="fu">### 용량-노출 관계 (Dose-Exposure Relationship)</span></span>
 <span id="cb26-155"><a href="#cb26-155" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-156"><a href="#cb26-156" aria-hidden="true" tabindex="-1"></a>노출-반응 분석의 첫 단계는 **용량과 노출 지표의 관계**를 확인하는 것입니다. 이는 이전 장에서 학습한 용량 비례성(dose proportionality) 분석의 연장선입니다.</span>
+<span id="cb26-156"><a href="#cb26-156" aria-hidden="true" tabindex="-1"></a>@fig-ch13-1 에서 보듯이, 노출-반응 분석의 첫 단계는 **용량과 노출 지표의 관계**를 확인하는 것입니다. 이는 이전 장에서 학습한 용량 비례성(dose proportionality) 분석의 연장선입니다.</span>
 <span id="cb26-157"><a href="#cb26-157" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-160"><a href="#cb26-160" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb26-161"><a href="#cb26-161" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
@@ -3223,189 +3224,191 @@ PD 모델 (SCORAD):
 <span id="cb26-1075"><a href="#cb26-1075" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-1076"><a href="#cb26-1076" aria-hidden="true" tabindex="-1"></a><span class="fu">## 약리학 노트: 노출-반응 기반 용량 선택 {#sec-dose-selection}</span></span>
 <span id="cb26-1077"><a href="#cb26-1077" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1078"><a href="#cb26-1078" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 13.3: 용량 선택을 위한 유익성-위해성 평가 (Benefit-Risk Assessment for Dose Selection).** 노출(exposure)에 따른 유효성(EASI-75 달성 확률) 곡선과 안전성(림프구감소증 위험) 곡선을 겹쳐 표시하고, 치료 창(therapeutic window)을 하이라이트하였다.](../images/ch13_fig3.png)</span>{#fig-ch13-3 width=100%}</span>
+<span id="cb26-1078"><a href="#cb26-1078" aria-hidden="true" tabindex="-1"></a><span class="al">![용량 선택을 위한 유익성-위해성 평가 (Benefit-Risk Assessment for Dose Selection). 노출(exposure)에 따른 유효성(EASI-75 달성 확률) 곡선과 안전성(림프구감소증 위험) 곡선을 겹쳐 표시하고, 치료 창(therapeutic window)을 하이라이트하였다.](../images/ch13_fig3.png)</span>{#fig-ch13-3 width=100%}</span>
 <span id="cb26-1079"><a href="#cb26-1079" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1080"><a href="#cb26-1080" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dupilumab 용량 결정 과정</span></span>
+<span id="cb26-1080"><a href="#cb26-1080" aria-hidden="true" tabindex="-1"></a>@fig-ch13-3 은 유익성-위해성 평가의 개념적 프레임워크를 보여줍니다.</span>
 <span id="cb26-1081"><a href="#cb26-1081" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1082"><a href="#cb26-1082" aria-hidden="true" tabindex="-1"></a>Dupilumab은 아토피 피부염에 대해 **300mg q2w (2주 간격 피하주사)**가 승인 용량입니다. 이 용량이 선택된 과학적 근거:</span>
+<span id="cb26-1082"><a href="#cb26-1082" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dupilumab 용량 결정 과정</span></span>
 <span id="cb26-1083"><a href="#cb26-1083" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1084"><a href="#cb26-1084" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Phase II 용량-반응 시험** (LIBERTY AD DOSE): 100mg q4w, 200mg q2w, 300mg q2w, 300mg qw를 비교</span>
-<span id="cb26-1085"><a href="#cb26-1085" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**노출-반응 분석 결과**:</span>
-<span id="cb26-1086"><a href="#cb26-1086" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>200mg q2w와 300mg q2w 사이에서 EASI-75 달성률의 유의미한 차이</span>
-<span id="cb26-1087"><a href="#cb26-1087" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>300mg q2w → 정상상태 C~trough~ 약 70 μg/mL → Emax 모델에서 EC~80~ 이상</span>
-<span id="cb26-1088"><a href="#cb26-1088" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>300mg qw는 300mg q2w 대비 추가 효능 개선이 미미</span>
-<span id="cb26-1089"><a href="#cb26-1089" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Benefit-Risk 판단**:</span>
-<span id="cb26-1090"><a href="#cb26-1090" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>300mg q2w: 충분한 효능 + 주사 부위 반응 최소화</span>
-<span id="cb26-1091"><a href="#cb26-1091" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>300mg qw: 약간의 추가 효능 + 비용 증가 + 편의성 감소</span>
-<span id="cb26-1092"><a href="#cb26-1092" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1093"><a href="#cb26-1093" aria-hidden="true" tabindex="-1"></a><span class="fu">### Tofacitinib 용량 선택: 5mg vs 10mg BID</span></span>
+<span id="cb26-1084"><a href="#cb26-1084" aria-hidden="true" tabindex="-1"></a>Dupilumab은 아토피 피부염에 대해 **300mg q2w (2주 간격 피하주사)**가 승인 용량입니다. 이 용량이 선택된 과학적 근거:</span>
+<span id="cb26-1085"><a href="#cb26-1085" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1086"><a href="#cb26-1086" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Phase II 용량-반응 시험** (LIBERTY AD DOSE): 100mg q4w, 200mg q2w, 300mg q2w, 300mg qw를 비교</span>
+<span id="cb26-1087"><a href="#cb26-1087" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**노출-반응 분석 결과**:</span>
+<span id="cb26-1088"><a href="#cb26-1088" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>200mg q2w와 300mg q2w 사이에서 EASI-75 달성률의 유의미한 차이</span>
+<span id="cb26-1089"><a href="#cb26-1089" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>300mg q2w → 정상상태 C~trough~ 약 70 μg/mL → Emax 모델에서 EC~80~ 이상</span>
+<span id="cb26-1090"><a href="#cb26-1090" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>300mg qw는 300mg q2w 대비 추가 효능 개선이 미미</span>
+<span id="cb26-1091"><a href="#cb26-1091" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Benefit-Risk 판단**:</span>
+<span id="cb26-1092"><a href="#cb26-1092" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>300mg q2w: 충분한 효능 + 주사 부위 반응 최소화</span>
+<span id="cb26-1093"><a href="#cb26-1093" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>300mg qw: 약간의 추가 효능 + 비용 증가 + 편의성 감소</span>
 <span id="cb26-1094"><a href="#cb26-1094" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1095"><a href="#cb26-1095" aria-hidden="true" tabindex="-1"></a>Tofacitinib의 아토피 피부염 적응증에서 용량 선택 고려사항:</span>
+<span id="cb26-1095"><a href="#cb26-1095" aria-hidden="true" tabindex="-1"></a><span class="fu">### Tofacitinib 용량 선택: 5mg vs 10mg BID</span></span>
 <span id="cb26-1096"><a href="#cb26-1096" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1097"><a href="#cb26-1097" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 항목 <span class="pp">|</span> 5mg BID <span class="pp">|</span> 10mg BID <span class="pp">|</span></span>
-<span id="cb26-1098"><a href="#cb26-1098" aria-hidden="true" tabindex="-1"></a><span class="pp">|:---|:---|:---|</span></span>
-<span id="cb26-1099"><a href="#cb26-1099" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C~avg~ (정상상태) <span class="pp">|</span> ~40-60 ng/mL <span class="pp">|</span> ~80-120 ng/mL <span class="pp">|</span></span>
-<span id="cb26-1100"><a href="#cb26-1100" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> SCORAD 개선 <span class="pp">|</span> 중등도 <span class="pp">|</span> 현저 <span class="pp">|</span></span>
-<span id="cb26-1101"><a href="#cb26-1101" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> EASI-75 달성률 <span class="pp">|</span> ~30-40% <span class="pp">|</span> ~45-55% <span class="pp">|</span></span>
-<span id="cb26-1102"><a href="#cb26-1102" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 림프구 감소 (Grade 2+) <span class="pp">|</span> ~3-5% <span class="pp">|</span> ~8-12% <span class="pp">|</span></span>
-<span id="cb26-1103"><a href="#cb26-1103" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 감염 위험 <span class="pp">|</span> 중등도 증가 <span class="pp">|</span> 현저한 증가 <span class="pp">|</span></span>
-<span id="cb26-1104"><a href="#cb26-1104" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 대상포진 <span class="pp">|</span> ~2% <span class="pp">|</span> ~4% <span class="pp">|</span></span>
-<span id="cb26-1105"><a href="#cb26-1105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1106"><a href="#cb26-1106" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
-<span id="cb26-1107"><a href="#cb26-1107" aria-hidden="true" tabindex="-1"></a><span class="fu">## Benefit-Risk 분석의 핵심 개념</span></span>
-<span id="cb26-1108"><a href="#cb26-1108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1109"><a href="#cb26-1109" aria-hidden="true" tabindex="-1"></a>용량 선택에서 **노출-반응 분석**은 다음 질문에 답합니다:</span>
+<span id="cb26-1097"><a href="#cb26-1097" aria-hidden="true" tabindex="-1"></a>Tofacitinib의 아토피 피부염 적응증에서 용량 선택 고려사항:</span>
+<span id="cb26-1098"><a href="#cb26-1098" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1099"><a href="#cb26-1099" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 항목 <span class="pp">|</span> 5mg BID <span class="pp">|</span> 10mg BID <span class="pp">|</span></span>
+<span id="cb26-1100"><a href="#cb26-1100" aria-hidden="true" tabindex="-1"></a><span class="pp">|:---|:---|:---|</span></span>
+<span id="cb26-1101"><a href="#cb26-1101" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C~avg~ (정상상태) <span class="pp">|</span> ~40-60 ng/mL <span class="pp">|</span> ~80-120 ng/mL <span class="pp">|</span></span>
+<span id="cb26-1102"><a href="#cb26-1102" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> SCORAD 개선 <span class="pp">|</span> 중등도 <span class="pp">|</span> 현저 <span class="pp">|</span></span>
+<span id="cb26-1103"><a href="#cb26-1103" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> EASI-75 달성률 <span class="pp">|</span> ~30-40% <span class="pp">|</span> ~45-55% <span class="pp">|</span></span>
+<span id="cb26-1104"><a href="#cb26-1104" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 림프구 감소 (Grade 2+) <span class="pp">|</span> ~3-5% <span class="pp">|</span> ~8-12% <span class="pp">|</span></span>
+<span id="cb26-1105"><a href="#cb26-1105" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 감염 위험 <span class="pp">|</span> 중등도 증가 <span class="pp">|</span> 현저한 증가 <span class="pp">|</span></span>
+<span id="cb26-1106"><a href="#cb26-1106" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 대상포진 <span class="pp">|</span> ~2% <span class="pp">|</span> ~4% <span class="pp">|</span></span>
+<span id="cb26-1107"><a href="#cb26-1107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1108"><a href="#cb26-1108" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
+<span id="cb26-1109"><a href="#cb26-1109" aria-hidden="true" tabindex="-1"></a><span class="fu">## Benefit-Risk 분석의 핵심 개념</span></span>
 <span id="cb26-1110"><a href="#cb26-1110" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1111"><a href="#cb26-1111" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**효능의 plateau**: 노출 증가에 따라 효능이 더 이상 개선되지 않는 지점은?</span>
-<span id="cb26-1112"><a href="#cb26-1112" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**안전성의 threshold**: 안전성 이벤트가 급격히 증가하는 노출 수준은?</span>
-<span id="cb26-1113"><a href="#cb26-1113" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**치료 지수(Therapeutic Index)**: 효능과 안전성의 노출 범위가 충분히 분리되어 있는가?</span>
-<span id="cb26-1114"><a href="#cb26-1114" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1115"><a href="#cb26-1115" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb26-1116"><a href="#cb26-1116" aria-hidden="true" tabindex="-1"></a>\text{Therapeutic Index} = \frac{EC_{50,\text{safety}}}{EC_{50,\text{efficacy}}}</span>
+<span id="cb26-1111"><a href="#cb26-1111" aria-hidden="true" tabindex="-1"></a>용량 선택에서 **노출-반응 분석**은 다음 질문에 답합니다:</span>
+<span id="cb26-1112"><a href="#cb26-1112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1113"><a href="#cb26-1113" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**효능의 plateau**: 노출 증가에 따라 효능이 더 이상 개선되지 않는 지점은?</span>
+<span id="cb26-1114"><a href="#cb26-1114" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**안전성의 threshold**: 안전성 이벤트가 급격히 증가하는 노출 수준은?</span>
+<span id="cb26-1115"><a href="#cb26-1115" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**치료 지수(Therapeutic Index)**: 효능과 안전성의 노출 범위가 충분히 분리되어 있는가?</span>
+<span id="cb26-1116"><a href="#cb26-1116" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb26-1117"><a href="#cb26-1117" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb26-1118"><a href="#cb26-1118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1119"><a href="#cb26-1119" aria-hidden="true" tabindex="-1"></a>이상적으로 치료 지수가 높을수록 (&gt; 3-5) 넓은 치료 범위를 가지며, 용량 선택의 유연성이 높습니다.</span>
-<span id="cb26-1120"><a href="#cb26-1120" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb26-1121"><a href="#cb26-1121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1124"><a href="#cb26-1124" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb26-1125"><a href="#cb26-1125" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb26-1126"><a href="#cb26-1126" aria-hidden="true" tabindex="-1"></a><span class="co"># Benefit-Risk 시각화: 효능과 안전성의 동시 표현</span></span>
-<span id="cb26-1127"><a href="#cb26-1127" aria-hidden="true" tabindex="-1"></a>benefit_risk_plot <span class="ot">&lt;-</span> <span class="cf">function</span>(er_data) {</span>
-<span id="cb26-1128"><a href="#cb26-1128" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 노출 구간별 효능/안전성 계산</span></span>
-<span id="cb26-1129"><a href="#cb26-1129" aria-hidden="true" tabindex="-1"></a>  er_binned <span class="ot">&lt;-</span> er_data <span class="sc">|&gt;</span></span>
-<span id="cb26-1130"><a href="#cb26-1130" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">Cavg_bin =</span> <span class="fu">cut</span>(Cavg, <span class="at">breaks =</span> <span class="dv">8</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb26-1131"><a href="#cb26-1131" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(Cavg_bin) <span class="sc">|&gt;</span></span>
-<span id="cb26-1132"><a href="#cb26-1132" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(</span>
-<span id="cb26-1133"><a href="#cb26-1133" aria-hidden="true" tabindex="-1"></a>      <span class="at">Cavg_mid =</span> <span class="fu">mean</span>(Cavg),</span>
-<span id="cb26-1134"><a href="#cb26-1134" aria-hidden="true" tabindex="-1"></a>      <span class="at">Efficacy =</span> <span class="sc">-</span><span class="fu">median</span>(SCORAD_pct_change),     <span class="co"># 효능 (양수 = 개선)</span></span>
-<span id="cb26-1135"><a href="#cb26-1135" aria-hidden="true" tabindex="-1"></a>      <span class="at">Safety_risk =</span> <span class="fu">mean</span>(Lymphopenia <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">*</span> <span class="dv">100</span>, <span class="co"># 안전성 위험 (%)</span></span>
-<span id="cb26-1136"><a href="#cb26-1136" aria-hidden="true" tabindex="-1"></a>      <span class="at">.groups =</span> <span class="st">"drop"</span></span>
-<span id="cb26-1137"><a href="#cb26-1137" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb26-1138"><a href="#cb26-1138" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1139"><a href="#cb26-1139" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 이중 Y축 그래프</span></span>
-<span id="cb26-1140"><a href="#cb26-1140" aria-hidden="true" tabindex="-1"></a>  coeff <span class="ot">&lt;-</span> <span class="fu">max</span>(er_binned<span class="sc">$</span>Safety_risk) <span class="sc">/</span> <span class="fu">max</span>(er_binned<span class="sc">$</span>Efficacy)</span>
-<span id="cb26-1141"><a href="#cb26-1141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1142"><a href="#cb26-1142" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(er_binned, <span class="fu">aes</span>(<span class="at">x =</span> Cavg_mid)) <span class="sc">+</span></span>
-<span id="cb26-1143"><a href="#cb26-1143" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> Efficacy), <span class="at">color =</span> <span class="st">"steelblue"</span>, <span class="at">linewidth =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
-<span id="cb26-1144"><a href="#cb26-1144" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y =</span> Efficacy), <span class="at">color =</span> <span class="st">"steelblue"</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb26-1145"><a href="#cb26-1145" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> Safety_risk <span class="sc">/</span> coeff), <span class="at">color =</span> <span class="st">"firebrick"</span>, <span class="at">linewidth =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
-<span id="cb26-1146"><a href="#cb26-1146" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y =</span> Safety_risk <span class="sc">/</span> coeff), <span class="at">color =</span> <span class="st">"firebrick"</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb26-1147"><a href="#cb26-1147" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_y_continuous</span>(</span>
-<span id="cb26-1148"><a href="#cb26-1148" aria-hidden="true" tabindex="-1"></a>      <span class="at">name =</span> <span class="st">"SCORAD % Improvement (Efficacy)"</span>,</span>
-<span id="cb26-1149"><a href="#cb26-1149" aria-hidden="true" tabindex="-1"></a>      <span class="at">sec.axis =</span> <span class="fu">sec_axis</span>(<span class="sc">~</span> . <span class="sc">*</span> coeff, <span class="at">name =</span> <span class="st">"Lymphopenia Rate (%) (Safety)"</span>)</span>
-<span id="cb26-1150"><a href="#cb26-1150" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb26-1151"><a href="#cb26-1151" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
-<span id="cb26-1152"><a href="#cb26-1152" aria-hidden="true" tabindex="-1"></a>      <span class="at">x =</span> <span class="fu">expression</span>(C[avg]<span class="sc">~</span><span class="st">"(ng/mL)"</span>),</span>
-<span id="cb26-1153"><a href="#cb26-1153" aria-hidden="true" tabindex="-1"></a>      <span class="at">title =</span> <span class="st">"Tofacitinib: Benefit-Risk Profile"</span>,</span>
-<span id="cb26-1154"><a href="#cb26-1154" aria-hidden="true" tabindex="-1"></a>      <span class="at">subtitle =</span> <span class="st">"Blue = Efficacy, Red = Safety"</span></span>
-<span id="cb26-1155"><a href="#cb26-1155" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb26-1156"><a href="#cb26-1156" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<span id="cb26-1157"><a href="#cb26-1157" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(</span>
-<span id="cb26-1158"><a href="#cb26-1158" aria-hidden="true" tabindex="-1"></a>      <span class="at">axis.title.y.left =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"steelblue"</span>),</span>
-<span id="cb26-1159"><a href="#cb26-1159" aria-hidden="true" tabindex="-1"></a>      <span class="at">axis.title.y.right =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"firebrick"</span>)</span>
-<span id="cb26-1160"><a href="#cb26-1160" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb26-1161"><a href="#cb26-1161" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb26-1162"><a href="#cb26-1162" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1163"><a href="#cb26-1163" aria-hidden="true" tabindex="-1"></a><span class="fu">benefit_risk_plot</span>(tofa_full)</span>
-<span id="cb26-1164"><a href="#cb26-1164" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb26-1165"><a href="#cb26-1165" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1166"><a href="#cb26-1166" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb26-1118"><a href="#cb26-1118" aria-hidden="true" tabindex="-1"></a>\text{Therapeutic Index} = \frac{EC_{50,\text{safety}}}{EC_{50,\text{efficacy}}}</span>
+<span id="cb26-1119"><a href="#cb26-1119" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb26-1120"><a href="#cb26-1120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1121"><a href="#cb26-1121" aria-hidden="true" tabindex="-1"></a>이상적으로 치료 지수가 높을수록 (&gt; 3-5) 넓은 치료 범위를 가지며, 용량 선택의 유연성이 높습니다.</span>
+<span id="cb26-1122"><a href="#cb26-1122" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb26-1123"><a href="#cb26-1123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1126"><a href="#cb26-1126" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb26-1127"><a href="#cb26-1127" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb26-1128"><a href="#cb26-1128" aria-hidden="true" tabindex="-1"></a><span class="co"># Benefit-Risk 시각화: 효능과 안전성의 동시 표현</span></span>
+<span id="cb26-1129"><a href="#cb26-1129" aria-hidden="true" tabindex="-1"></a>benefit_risk_plot <span class="ot">&lt;-</span> <span class="cf">function</span>(er_data) {</span>
+<span id="cb26-1130"><a href="#cb26-1130" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 노출 구간별 효능/안전성 계산</span></span>
+<span id="cb26-1131"><a href="#cb26-1131" aria-hidden="true" tabindex="-1"></a>  er_binned <span class="ot">&lt;-</span> er_data <span class="sc">|&gt;</span></span>
+<span id="cb26-1132"><a href="#cb26-1132" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">Cavg_bin =</span> <span class="fu">cut</span>(Cavg, <span class="at">breaks =</span> <span class="dv">8</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb26-1133"><a href="#cb26-1133" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(Cavg_bin) <span class="sc">|&gt;</span></span>
+<span id="cb26-1134"><a href="#cb26-1134" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(</span>
+<span id="cb26-1135"><a href="#cb26-1135" aria-hidden="true" tabindex="-1"></a>      <span class="at">Cavg_mid =</span> <span class="fu">mean</span>(Cavg),</span>
+<span id="cb26-1136"><a href="#cb26-1136" aria-hidden="true" tabindex="-1"></a>      <span class="at">Efficacy =</span> <span class="sc">-</span><span class="fu">median</span>(SCORAD_pct_change),     <span class="co"># 효능 (양수 = 개선)</span></span>
+<span id="cb26-1137"><a href="#cb26-1137" aria-hidden="true" tabindex="-1"></a>      <span class="at">Safety_risk =</span> <span class="fu">mean</span>(Lymphopenia <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">*</span> <span class="dv">100</span>, <span class="co"># 안전성 위험 (%)</span></span>
+<span id="cb26-1138"><a href="#cb26-1138" aria-hidden="true" tabindex="-1"></a>      <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb26-1139"><a href="#cb26-1139" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb26-1140"><a href="#cb26-1140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1141"><a href="#cb26-1141" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 이중 Y축 그래프</span></span>
+<span id="cb26-1142"><a href="#cb26-1142" aria-hidden="true" tabindex="-1"></a>  coeff <span class="ot">&lt;-</span> <span class="fu">max</span>(er_binned<span class="sc">$</span>Safety_risk) <span class="sc">/</span> <span class="fu">max</span>(er_binned<span class="sc">$</span>Efficacy)</span>
+<span id="cb26-1143"><a href="#cb26-1143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1144"><a href="#cb26-1144" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(er_binned, <span class="fu">aes</span>(<span class="at">x =</span> Cavg_mid)) <span class="sc">+</span></span>
+<span id="cb26-1145"><a href="#cb26-1145" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> Efficacy), <span class="at">color =</span> <span class="st">"steelblue"</span>, <span class="at">linewidth =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
+<span id="cb26-1146"><a href="#cb26-1146" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y =</span> Efficacy), <span class="at">color =</span> <span class="st">"steelblue"</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb26-1147"><a href="#cb26-1147" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> Safety_risk <span class="sc">/</span> coeff), <span class="at">color =</span> <span class="st">"firebrick"</span>, <span class="at">linewidth =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
+<span id="cb26-1148"><a href="#cb26-1148" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y =</span> Safety_risk <span class="sc">/</span> coeff), <span class="at">color =</span> <span class="st">"firebrick"</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb26-1149"><a href="#cb26-1149" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb26-1150"><a href="#cb26-1150" aria-hidden="true" tabindex="-1"></a>      <span class="at">name =</span> <span class="st">"SCORAD % Improvement (Efficacy)"</span>,</span>
+<span id="cb26-1151"><a href="#cb26-1151" aria-hidden="true" tabindex="-1"></a>      <span class="at">sec.axis =</span> <span class="fu">sec_axis</span>(<span class="sc">~</span> . <span class="sc">*</span> coeff, <span class="at">name =</span> <span class="st">"Lymphopenia Rate (%) (Safety)"</span>)</span>
+<span id="cb26-1152"><a href="#cb26-1152" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb26-1153"><a href="#cb26-1153" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
+<span id="cb26-1154"><a href="#cb26-1154" aria-hidden="true" tabindex="-1"></a>      <span class="at">x =</span> <span class="fu">expression</span>(C[avg]<span class="sc">~</span><span class="st">"(ng/mL)"</span>),</span>
+<span id="cb26-1155"><a href="#cb26-1155" aria-hidden="true" tabindex="-1"></a>      <span class="at">title =</span> <span class="st">"Tofacitinib: Benefit-Risk Profile"</span>,</span>
+<span id="cb26-1156"><a href="#cb26-1156" aria-hidden="true" tabindex="-1"></a>      <span class="at">subtitle =</span> <span class="st">"Blue = Efficacy, Red = Safety"</span></span>
+<span id="cb26-1157"><a href="#cb26-1157" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb26-1158"><a href="#cb26-1158" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb26-1159"><a href="#cb26-1159" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(</span>
+<span id="cb26-1160"><a href="#cb26-1160" aria-hidden="true" tabindex="-1"></a>      <span class="at">axis.title.y.left =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"steelblue"</span>),</span>
+<span id="cb26-1161"><a href="#cb26-1161" aria-hidden="true" tabindex="-1"></a>      <span class="at">axis.title.y.right =</span> <span class="fu">element_text</span>(<span class="at">color =</span> <span class="st">"firebrick"</span>)</span>
+<span id="cb26-1162"><a href="#cb26-1162" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb26-1163"><a href="#cb26-1163" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb26-1164"><a href="#cb26-1164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1165"><a href="#cb26-1165" aria-hidden="true" tabindex="-1"></a><span class="fu">benefit_risk_plot</span>(tofa_full)</span>
+<span id="cb26-1166"><a href="#cb26-1166" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-1167"><a href="#cb26-1167" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1168"><a href="#cb26-1168" aria-hidden="true" tabindex="-1"></a><span class="fu">## Claude Code 활용 팁 {#sec-claude-tips-13}</span></span>
+<span id="cb26-1168"><a href="#cb26-1168" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb26-1169"><a href="#cb26-1169" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1170"><a href="#cb26-1170" aria-hidden="true" tabindex="-1"></a><span class="fu">### mrgsolve 모델 코드 생성</span></span>
+<span id="cb26-1170"><a href="#cb26-1170" aria-hidden="true" tabindex="-1"></a><span class="fu">## Claude Code 활용 팁 {#sec-claude-tips-13}</span></span>
 <span id="cb26-1171"><a href="#cb26-1171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1172"><a href="#cb26-1172" aria-hidden="true" tabindex="-1"></a>mrgsolve 모델을 처음 작성하는 것은 복잡할 수 있습니다. Claude Code에 다음과 같이 요청할 수 있습니다:</span>
+<span id="cb26-1172"><a href="#cb26-1172" aria-hidden="true" tabindex="-1"></a><span class="fu">### mrgsolve 모델 코드 생성</span></span>
 <span id="cb26-1173"><a href="#cb26-1173" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1174"><a href="#cb26-1174" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb26-1175"><a href="#cb26-1175" aria-hidden="true" tabindex="-1"></a><span class="in">"mrgsolve로 Tofacitinib PK-PD 모델을 작성해주세요:</span></span>
-<span id="cb26-1176"><a href="#cb26-1176" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1177"><a href="#cb26-1177" aria-hidden="true" tabindex="-1"></a><span class="in">PK 모델:</span></span>
-<span id="cb26-1178"><a href="#cb26-1178" aria-hidden="true" tabindex="-1"></a><span class="in">- 1구획 모델, 1차 흡수, 경구 투여</span></span>
-<span id="cb26-1179"><a href="#cb26-1179" aria-hidden="true" tabindex="-1"></a><span class="in">- CL = 30 L/hr, V = 100 L, KA = 2 hr^-1, F = 0.74</span></span>
-<span id="cb26-1180"><a href="#cb26-1180" aria-hidden="true" tabindex="-1"></a><span class="in">- IIV on CL (30% CV), V (20% CV)</span></span>
-<span id="cb26-1181"><a href="#cb26-1181" aria-hidden="true" tabindex="-1"></a><span class="in">- 비례+가산 잔차 오차</span></span>
-<span id="cb26-1182"><a href="#cb26-1182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1183"><a href="#cb26-1183" aria-hidden="true" tabindex="-1"></a><span class="in">PD 모델 (SCORAD):</span></span>
-<span id="cb26-1184"><a href="#cb26-1184" aria-hidden="true" tabindex="-1"></a><span class="in">- 간접 반응 모델 (Indirect Response, inhibition of Kin)</span></span>
-<span id="cb26-1185"><a href="#cb26-1185" aria-hidden="true" tabindex="-1"></a><span class="in">- SCORAD baseline = 65, Kout = 0.01 hr^-1</span></span>
-<span id="cb26-1186"><a href="#cb26-1186" aria-hidden="true" tabindex="-1"></a><span class="in">- Emax = 0.65, EC50 = 80 ng/mL</span></span>
-<span id="cb26-1187"><a href="#cb26-1187" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1188"><a href="#cb26-1188" aria-hidden="true" tabindex="-1"></a><span class="in">시뮬레이션:</span></span>
-<span id="cb26-1189"><a href="#cb26-1189" aria-hidden="true" tabindex="-1"></a><span class="in">- 5mg BID vs 10mg BID, 12주</span></span>
-<span id="cb26-1190"><a href="#cb26-1190" aria-hidden="true" tabindex="-1"></a><span class="in">- 100명씩, 개인 간 변동 포함</span></span>
-<span id="cb26-1191"><a href="#cb26-1191" aria-hidden="true" tabindex="-1"></a><span class="in">- SCORAD time-course plot과 Week 12 분포 boxplot"</span></span>
-<span id="cb26-1192"><a href="#cb26-1192" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb26-1193"><a href="#cb26-1193" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1194"><a href="#cb26-1194" aria-hidden="true" tabindex="-1"></a><span class="fu">### 시뮬레이션 결과 분석 요청</span></span>
+<span id="cb26-1174"><a href="#cb26-1174" aria-hidden="true" tabindex="-1"></a>mrgsolve 모델을 처음 작성하는 것은 복잡할 수 있습니다. Claude Code에 다음과 같이 요청할 수 있습니다:</span>
+<span id="cb26-1175"><a href="#cb26-1175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1176"><a href="#cb26-1176" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-1177"><a href="#cb26-1177" aria-hidden="true" tabindex="-1"></a><span class="in">"mrgsolve로 Tofacitinib PK-PD 모델을 작성해주세요:</span></span>
+<span id="cb26-1178"><a href="#cb26-1178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1179"><a href="#cb26-1179" aria-hidden="true" tabindex="-1"></a><span class="in">PK 모델:</span></span>
+<span id="cb26-1180"><a href="#cb26-1180" aria-hidden="true" tabindex="-1"></a><span class="in">- 1구획 모델, 1차 흡수, 경구 투여</span></span>
+<span id="cb26-1181"><a href="#cb26-1181" aria-hidden="true" tabindex="-1"></a><span class="in">- CL = 30 L/hr, V = 100 L, KA = 2 hr^-1, F = 0.74</span></span>
+<span id="cb26-1182"><a href="#cb26-1182" aria-hidden="true" tabindex="-1"></a><span class="in">- IIV on CL (30% CV), V (20% CV)</span></span>
+<span id="cb26-1183"><a href="#cb26-1183" aria-hidden="true" tabindex="-1"></a><span class="in">- 비례+가산 잔차 오차</span></span>
+<span id="cb26-1184"><a href="#cb26-1184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1185"><a href="#cb26-1185" aria-hidden="true" tabindex="-1"></a><span class="in">PD 모델 (SCORAD):</span></span>
+<span id="cb26-1186"><a href="#cb26-1186" aria-hidden="true" tabindex="-1"></a><span class="in">- 간접 반응 모델 (Indirect Response, inhibition of Kin)</span></span>
+<span id="cb26-1187"><a href="#cb26-1187" aria-hidden="true" tabindex="-1"></a><span class="in">- SCORAD baseline = 65, Kout = 0.01 hr^-1</span></span>
+<span id="cb26-1188"><a href="#cb26-1188" aria-hidden="true" tabindex="-1"></a><span class="in">- Emax = 0.65, EC50 = 80 ng/mL</span></span>
+<span id="cb26-1189"><a href="#cb26-1189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1190"><a href="#cb26-1190" aria-hidden="true" tabindex="-1"></a><span class="in">시뮬레이션:</span></span>
+<span id="cb26-1191"><a href="#cb26-1191" aria-hidden="true" tabindex="-1"></a><span class="in">- 5mg BID vs 10mg BID, 12주</span></span>
+<span id="cb26-1192"><a href="#cb26-1192" aria-hidden="true" tabindex="-1"></a><span class="in">- 100명씩, 개인 간 변동 포함</span></span>
+<span id="cb26-1193"><a href="#cb26-1193" aria-hidden="true" tabindex="-1"></a><span class="in">- SCORAD time-course plot과 Week 12 분포 boxplot"</span></span>
+<span id="cb26-1194"><a href="#cb26-1194" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb26-1195"><a href="#cb26-1195" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1196"><a href="#cb26-1196" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb26-1197"><a href="#cb26-1197" aria-hidden="true" tabindex="-1"></a><span class="in">"mrgsolve 시뮬레이션 결과를 분석해주세요:</span></span>
-<span id="cb26-1198"><a href="#cb26-1198" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1199"><a href="#cb26-1199" aria-hidden="true" tabindex="-1"></a><span class="in">1. 용량군별 SCORAD 50% 개선 달성률 (Week 12)</span></span>
-<span id="cb26-1200"><a href="#cb26-1200" aria-hidden="true" tabindex="-1"></a><span class="in">2. 용량군별 Cavg 분포와 SCORAD 변화의 상관관계</span></span>
-<span id="cb26-1201"><a href="#cb26-1201" aria-hidden="true" tabindex="-1"></a><span class="in">3. CYP2C19 EM vs PM에서의 노출 차이와 효능 차이</span></span>
-<span id="cb26-1202"><a href="#cb26-1202" aria-hidden="true" tabindex="-1"></a><span class="in">4. 체중 75th percentile vs 25th percentile에서의 효능 비교</span></span>
-<span id="cb26-1203"><a href="#cb26-1203" aria-hidden="true" tabindex="-1"></a><span class="in">5. 결과를 gt 테이블과 ggplot 그래프로 요약"</span></span>
-<span id="cb26-1204"><a href="#cb26-1204" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb26-1205"><a href="#cb26-1205" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1206"><a href="#cb26-1206" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
-<span id="cb26-1207"><a href="#cb26-1207" aria-hidden="true" tabindex="-1"></a><span class="fu">## mrgsolve 모델 디버깅 팁</span></span>
-<span id="cb26-1208"><a href="#cb26-1208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1209"><a href="#cb26-1209" aria-hidden="true" tabindex="-1"></a>Claude Code에 모델 디버깅을 요청할 때는 다음 정보를 포함하세요:</span>
+<span id="cb26-1196"><a href="#cb26-1196" aria-hidden="true" tabindex="-1"></a><span class="fu">### 시뮬레이션 결과 분석 요청</span></span>
+<span id="cb26-1197"><a href="#cb26-1197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1198"><a href="#cb26-1198" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-1199"><a href="#cb26-1199" aria-hidden="true" tabindex="-1"></a><span class="in">"mrgsolve 시뮬레이션 결과를 분석해주세요:</span></span>
+<span id="cb26-1200"><a href="#cb26-1200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1201"><a href="#cb26-1201" aria-hidden="true" tabindex="-1"></a><span class="in">1. 용량군별 SCORAD 50% 개선 달성률 (Week 12)</span></span>
+<span id="cb26-1202"><a href="#cb26-1202" aria-hidden="true" tabindex="-1"></a><span class="in">2. 용량군별 Cavg 분포와 SCORAD 변화의 상관관계</span></span>
+<span id="cb26-1203"><a href="#cb26-1203" aria-hidden="true" tabindex="-1"></a><span class="in">3. CYP2C19 EM vs PM에서의 노출 차이와 효능 차이</span></span>
+<span id="cb26-1204"><a href="#cb26-1204" aria-hidden="true" tabindex="-1"></a><span class="in">4. 체중 75th percentile vs 25th percentile에서의 효능 비교</span></span>
+<span id="cb26-1205"><a href="#cb26-1205" aria-hidden="true" tabindex="-1"></a><span class="in">5. 결과를 gt 테이블과 ggplot 그래프로 요약"</span></span>
+<span id="cb26-1206"><a href="#cb26-1206" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb26-1207"><a href="#cb26-1207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1208"><a href="#cb26-1208" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
+<span id="cb26-1209"><a href="#cb26-1209" aria-hidden="true" tabindex="-1"></a><span class="fu">## mrgsolve 모델 디버깅 팁</span></span>
 <span id="cb26-1210"><a href="#cb26-1210" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1211"><a href="#cb26-1211" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**오류 메시지 전체** — <span class="in">`mrgsolve::mcode()`</span> 실행 시 나타나는 오류</span>
-<span id="cb26-1212"><a href="#cb26-1212" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**예상 결과와 실제 결과** — "농도가 음수로 나옵니다" 등</span>
-<span id="cb26-1213"><a href="#cb26-1213" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**모델 코드 전체** — 부분이 아닌 전체 코드 제공</span>
-<span id="cb26-1214"><a href="#cb26-1214" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**시뮬레이션 설정** — 용량, 시간, 대상자 수 등</span>
-<span id="cb26-1215"><a href="#cb26-1215" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1216"><a href="#cb26-1216" aria-hidden="true" tabindex="-1"></a>mrgsolve에서 흔한 실수:</span>
-<span id="cb26-1217"><a href="#cb26-1217" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`$ODE`</span> 블록에서 변수 선언 누락 (<span class="in">`double`</span> 키워드)</span>
-<span id="cb26-1218"><a href="#cb26-1218" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`$MAIN`</span> 블록에서 초기값 설정 오류</span>
-<span id="cb26-1219"><a href="#cb26-1219" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>단위 불일치 (mg vs μg vs ng)</span>
-<span id="cb26-1220"><a href="#cb26-1220" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb26-1221"><a href="#cb26-1221" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1222"><a href="#cb26-1222" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb26-1211"><a href="#cb26-1211" aria-hidden="true" tabindex="-1"></a>Claude Code에 모델 디버깅을 요청할 때는 다음 정보를 포함하세요:</span>
+<span id="cb26-1212"><a href="#cb26-1212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1213"><a href="#cb26-1213" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**오류 메시지 전체** — <span class="in">`mrgsolve::mcode()`</span> 실행 시 나타나는 오류</span>
+<span id="cb26-1214"><a href="#cb26-1214" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**예상 결과와 실제 결과** — "농도가 음수로 나옵니다" 등</span>
+<span id="cb26-1215"><a href="#cb26-1215" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**모델 코드 전체** — 부분이 아닌 전체 코드 제공</span>
+<span id="cb26-1216"><a href="#cb26-1216" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**시뮬레이션 설정** — 용량, 시간, 대상자 수 등</span>
+<span id="cb26-1217"><a href="#cb26-1217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1218"><a href="#cb26-1218" aria-hidden="true" tabindex="-1"></a>mrgsolve에서 흔한 실수:</span>
+<span id="cb26-1219"><a href="#cb26-1219" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`$ODE`</span> 블록에서 변수 선언 누락 (<span class="in">`double`</span> 키워드)</span>
+<span id="cb26-1220"><a href="#cb26-1220" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`$MAIN`</span> 블록에서 초기값 설정 오류</span>
+<span id="cb26-1221"><a href="#cb26-1221" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>단위 불일치 (mg vs μg vs ng)</span>
+<span id="cb26-1222"><a href="#cb26-1222" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb26-1223"><a href="#cb26-1223" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1224"><a href="#cb26-1224" aria-hidden="true" tabindex="-1"></a><span class="fu">## 연습 문제 {#sec-exercises-13}</span></span>
+<span id="cb26-1224"><a href="#cb26-1224" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb26-1225"><a href="#cb26-1225" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1226"><a href="#cb26-1226" aria-hidden="true" tabindex="-1"></a><span class="fu">### 확인 문제</span></span>
+<span id="cb26-1226"><a href="#cb26-1226" aria-hidden="true" tabindex="-1"></a><span class="fu">## 연습 문제 {#sec-exercises-13}</span></span>
 <span id="cb26-1227"><a href="#cb26-1227" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1228"><a href="#cb26-1228" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Sequential approach와 Simultaneous approach의 장단점을 비교하고, 각각 어떤 상황에서 적절한지 설명하세요.</span>
+<span id="cb26-1228"><a href="#cb26-1228" aria-hidden="true" tabindex="-1"></a><span class="fu">### 확인 문제</span></span>
 <span id="cb26-1229"><a href="#cb26-1229" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1230"><a href="#cb26-1230" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>$E_{max}$ 모델의 수식 $E = E_0 + \frac{E_{max} \cdot C^{\gamma}}{EC_{50}^{\gamma} + C^{\gamma}}$ 에서 $\gamma$ (Hill coefficient)가 1보다 클 때와 1일 때의 곡선 모양 차이를 설명하세요. $\gamma &gt; 1$이면 이 모델을 무엇이라고 부릅니까?</span>
+<span id="cb26-1230"><a href="#cb26-1230" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Sequential approach와 Simultaneous approach의 장단점을 비교하고, 각각 어떤 상황에서 적절한지 설명하세요.</span>
 <span id="cb26-1231"><a href="#cb26-1231" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1232"><a href="#cb26-1232" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>C~trough~, C~avg~, AUC 중 어떤 노출 지표를 선택할지 결정하는 기준을 설명하세요. 단클론항체와 소분자 약물에서 각각 어떤 지표가 선호됩니까?</span>
+<span id="cb26-1232"><a href="#cb26-1232" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>$E_{max}$ 모델의 수식 $E = E_0 + \frac{E_{max} \cdot C^{\gamma}}{EC_{50}^{\gamma} + C^{\gamma}}$ 에서 $\gamma$ (Hill coefficient)가 1보다 클 때와 1일 때의 곡선 모양 차이를 설명하세요. $\gamma &gt; 1$이면 이 모델을 무엇이라고 부릅니까?</span>
 <span id="cb26-1233"><a href="#cb26-1233" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1234"><a href="#cb26-1234" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Benefit-Risk 분석에서 치료 지수(Therapeutic Index)가 중요한 이유를 설명하고, 치료 지수가 좁은 약물의 예를 피부과 영역에서 들어보세요.</span>
+<span id="cb26-1234"><a href="#cb26-1234" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>C~trough~, C~avg~, AUC 중 어떤 노출 지표를 선택할지 결정하는 기준을 설명하세요. 단클론항체와 소분자 약물에서 각각 어떤 지표가 선호됩니까?</span>
 <span id="cb26-1235"><a href="#cb26-1235" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1236"><a href="#cb26-1236" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>ADA(항약물항체)가 양성인 환자에서 C~trough~이 감소하는 메커니즘을 설명하고, 이것이 노출-반응 분석에 미치는 영향을 기술하세요.</span>
+<span id="cb26-1236"><a href="#cb26-1236" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Benefit-Risk 분석에서 치료 지수(Therapeutic Index)가 중요한 이유를 설명하고, 치료 지수가 좁은 약물의 예를 피부과 영역에서 들어보세요.</span>
 <span id="cb26-1237"><a href="#cb26-1237" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1238"><a href="#cb26-1238" aria-hidden="true" tabindex="-1"></a><span class="fu">### R 과제</span></span>
+<span id="cb26-1238"><a href="#cb26-1238" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>ADA(항약물항체)가 양성인 환자에서 C~trough~이 감소하는 메커니즘을 설명하고, 이것이 노출-반응 분석에 미치는 영향을 기술하세요.</span>
 <span id="cb26-1239"><a href="#cb26-1239" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1240"><a href="#cb26-1240" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Emax 모델 파라미터 비교**: 이 장의 Dupilumab 데이터에서 다음 세 가지 모델을 fitting하고 비교하세요:</span>
-<span id="cb26-1241"><a href="#cb26-1241" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>선형 모델: $E = E_0 + \beta \cdot C_{trough}$</span>
-<span id="cb26-1242"><a href="#cb26-1242" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Emax 모델: $E = E_0 + \frac{E_{max} \cdot C}{EC_{50} + C}$</span>
-<span id="cb26-1243"><a href="#cb26-1243" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Sigmoid Emax 모델: $E = E_0 + \frac{E_{max} \cdot C^{\gamma}}{EC_{50}^{\gamma} + C^{\gamma}}$</span>
-<span id="cb26-1244"><a href="#cb26-1244" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>AIC를 사용하여 모델을 비교하고, 최적 모델을 선택하세요</span>
-<span id="cb26-1245"><a href="#cb26-1245" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1246"><a href="#cb26-1246" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Tofacitinib 공변량 분석**: <span class="in">`tofa_full`</span> 데이터를 사용하여, 다음 공변량이 노출-반응 관계에 미치는 영향을 분석하세요:</span>
-<span id="cb26-1247"><a href="#cb26-1247" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>CYP2C19 유전자형 (EM vs IM vs PM)에 따른 Cavg 분포 비교</span>
-<span id="cb26-1248"><a href="#cb26-1248" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>체중 사분위수별 SCORAD 개선 비교</span>
-<span id="cb26-1249"><a href="#cb26-1249" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>성별에 따른 림프구 감소 비교</span>
-<span id="cb26-1250"><a href="#cb26-1250" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Forest plot으로 결과 시각화</span>
-<span id="cb26-1251"><a href="#cb26-1251" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1252"><a href="#cb26-1252" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**mrgsolve 시뮬레이션**: 이 장의 Tofacitinib PK-PD 모델을 확장하여, 다음 시나리오를 시뮬레이션하세요:</span>
-<span id="cb26-1253"><a href="#cb26-1253" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>용량 중단(Week 8에서 중단) 후 SCORAD 반등(rebound) 패턴</span>
-<span id="cb26-1254"><a href="#cb26-1254" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>CYP3A4 강력 억제제 병용 시 (CL 50% 감소) 효능 및 안전성 변화</span>
-<span id="cb26-1255"><a href="#cb26-1255" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>결과를 시간-경과 그래프와 요약 테이블로 제시</span>
-<span id="cb26-1256"><a href="#cb26-1256" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1257"><a href="#cb26-1257" aria-hidden="true" tabindex="-1"></a><span class="fu">### Claude Code 과제</span></span>
+<span id="cb26-1240"><a href="#cb26-1240" aria-hidden="true" tabindex="-1"></a><span class="fu">### R 과제</span></span>
+<span id="cb26-1241"><a href="#cb26-1241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1242"><a href="#cb26-1242" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Emax 모델 파라미터 비교**: 이 장의 Dupilumab 데이터에서 다음 세 가지 모델을 fitting하고 비교하세요:</span>
+<span id="cb26-1243"><a href="#cb26-1243" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>선형 모델: $E = E_0 + \beta \cdot C_{trough}$</span>
+<span id="cb26-1244"><a href="#cb26-1244" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Emax 모델: $E = E_0 + \frac{E_{max} \cdot C}{EC_{50} + C}$</span>
+<span id="cb26-1245"><a href="#cb26-1245" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Sigmoid Emax 모델: $E = E_0 + \frac{E_{max} \cdot C^{\gamma}}{EC_{50}^{\gamma} + C^{\gamma}}$</span>
+<span id="cb26-1246"><a href="#cb26-1246" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>AIC를 사용하여 모델을 비교하고, 최적 모델을 선택하세요</span>
+<span id="cb26-1247"><a href="#cb26-1247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1248"><a href="#cb26-1248" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Tofacitinib 공변량 분석**: <span class="in">`tofa_full`</span> 데이터를 사용하여, 다음 공변량이 노출-반응 관계에 미치는 영향을 분석하세요:</span>
+<span id="cb26-1249"><a href="#cb26-1249" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>CYP2C19 유전자형 (EM vs IM vs PM)에 따른 Cavg 분포 비교</span>
+<span id="cb26-1250"><a href="#cb26-1250" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>체중 사분위수별 SCORAD 개선 비교</span>
+<span id="cb26-1251"><a href="#cb26-1251" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>성별에 따른 림프구 감소 비교</span>
+<span id="cb26-1252"><a href="#cb26-1252" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Forest plot으로 결과 시각화</span>
+<span id="cb26-1253"><a href="#cb26-1253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1254"><a href="#cb26-1254" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**mrgsolve 시뮬레이션**: 이 장의 Tofacitinib PK-PD 모델을 확장하여, 다음 시나리오를 시뮬레이션하세요:</span>
+<span id="cb26-1255"><a href="#cb26-1255" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>용량 중단(Week 8에서 중단) 후 SCORAD 반등(rebound) 패턴</span>
+<span id="cb26-1256"><a href="#cb26-1256" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>CYP3A4 강력 억제제 병용 시 (CL 50% 감소) 효능 및 안전성 변화</span>
+<span id="cb26-1257"><a href="#cb26-1257" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>결과를 시간-경과 그래프와 요약 테이블로 제시</span>
 <span id="cb26-1258"><a href="#cb26-1258" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1259"><a href="#cb26-1259" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Claude Code에 다음과 같이 요청하세요:</span>
-<span id="cb26-1260"><a href="#cb26-1260" aria-hidden="true" tabindex="-1"></a><span class="at">   &gt; "Dupilumab과 Tofacitinib의 노출-반응 분석 결과를 비교하는 Quarto 보고서를 작성해줘. 두 약물의 PK-PD 특성 차이(생물학적 제제 vs 소분자), 노출 지표 선택 근거, Emax 모델 파라미터 비교, 그리고 각 약물의 benefit-risk profile을 포함해줘. 모든 분석 결과는 gt 테이블과 ggplot 그래프로 시각화하고, 임상적 해석을 함께 기술해줘."</span></span>
-<span id="cb26-1261"><a href="#cb26-1261" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-1262"><a href="#cb26-1262" aria-hidden="true" tabindex="-1"></a>   Claude Code의 출력을 검토하고, 약리학적으로 부정확한 부분이 있다면 수정 요청을 보내세요.</span>
+<span id="cb26-1259"><a href="#cb26-1259" aria-hidden="true" tabindex="-1"></a><span class="fu">### Claude Code 과제</span></span>
+<span id="cb26-1260"><a href="#cb26-1260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1261"><a href="#cb26-1261" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Claude Code에 다음과 같이 요청하세요:</span>
+<span id="cb26-1262"><a href="#cb26-1262" aria-hidden="true" tabindex="-1"></a><span class="at">   &gt; "Dupilumab과 Tofacitinib의 노출-반응 분석 결과를 비교하는 Quarto 보고서를 작성해줘. 두 약물의 PK-PD 특성 차이(생물학적 제제 vs 소분자), 노출 지표 선택 근거, Emax 모델 파라미터 비교, 그리고 각 약물의 benefit-risk profile을 포함해줘. 모든 분석 결과는 gt 테이블과 ggplot 그래프로 시각화하고, 임상적 해석을 함께 기술해줘."</span></span>
+<span id="cb26-1263"><a href="#cb26-1263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-1264"><a href="#cb26-1264" aria-hidden="true" tabindex="-1"></a>   Claude Code의 출력을 검토하고, 약리학적으로 부정확한 부분이 있다면 수정 요청을 보내세요.</span>
 </code></pre></div><button title="클립보드 복사" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

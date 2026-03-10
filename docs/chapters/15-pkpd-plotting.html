@@ -435,11 +435,11 @@ window.Quarto = {
 <img src="../images/ch15_fig2.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch15-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;15.1: <strong>Figure 15.2: Data-ink Ratio 원칙: Before vs After (Data-Ink Ratio Principle).</strong> Before(격자선, 3D 효과, 과도한 장식이 있는 복잡한 그래프)와 After(최소한의 장식, 데이터에 집중하는 깔끔한 그래프)를 나란히 비교하여 높은 data-ink ratio의 중요성을 시각적으로 보여준다.
+그림&nbsp;15.1: Data-ink Ratio 원칙: Before vs After (Data-Ink Ratio Principle). Before(격자선, 3D 효과, 과도한 장식이 있는 복잡한 그래프)와 After(최소한의 장식, 데이터에 집중하는 깔끔한 그래프)를 나란히 비교하여 높은 data-ink ratio의 중요성을 시각적으로 보여준다.
 </figcaption>
 </figure>
 </div>
-<p>Edward Tufte는 저서 <em>The Visual Display of Quantitative Information</em> (1983)에서 그래프 디자인의 핵심 원칙으로 <strong>데이터-잉크 비율(data-ink ratio)</strong>을 제시했습니다:</p>
+<p><a href="#fig-ch15-2" class="quarto-xref">그림&nbsp;<span>15.1</span></a> 에서 보듯이, Edward Tufte는 저서 <em>The Visual Display of Quantitative Information</em> (1983)에서 그래프 디자인의 핵심 원칙으로 <strong>데이터-잉크 비율(data-ink ratio)</strong>을 제시했습니다:</p>
 <p><span class="math display">\[\text{Data-ink ratio} = \frac{\text{데이터를 표현하는 잉크}}{\text{그래프에 사용된 총 잉크}}\]</span></p>
 <p>이 비율은 가능한 한 <strong>1에 가까워야</strong> 합니다. 즉, 그래프의 모든 요소는 데이터를 전달하는 데 기여해야 하며, 장식적 요소(chartjunk)는 최소화해야 합니다.</p>
 <p>PK-PD 그래프에서 이 원칙을 적용하면:</p>
@@ -591,13 +591,13 @@ window.Quarto = {
 <img src="../images/ch15_fig1.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch15-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;15.2: <strong>Figure 15.1: PK-PD 핵심 그래프 유형 갤러리 (Essential PK-PD Graph Types Gallery).</strong> 8개의 미니 패널로 농도-시간(Conc-Time), 농도-효과(Conc-Effect), GOF(Goodness-of-Fit), Forest plot, Waterfall plot, Kaplan-Meier, Tornado diagram, Heatmap의 대표 그래프 유형을 한눈에 보여준다.
+그림&nbsp;15.2: PK-PD 핵심 그래프 유형 갤러리 (Essential PK-PD Graph Types Gallery). 8개의 미니 패널로 농도-시간(Conc-Time), 농도-효과(Conc-Effect), GOF(Goodness-of-Fit), Forest plot, Waterfall plot, Kaplan-Meier, Tornado diagram, Heatmap의 대표 그래프 유형을 한눈에 보여준다.
 </figcaption>
 </figure>
 </div>
 <section id="농도-시간-그래프-concentration-time-plot" class="level3" data-number="15.2.1">
 <h3 data-number="15.2.1" class="anchored" data-anchor-id="농도-시간-그래프-concentration-time-plot"><span class="header-section-number">15.2.1</span> 농도-시간 그래프 (Concentration-Time Plot)</h3>
-<p>농도-시간 그래프는 PK 분석의 가장 기본적이고 중요한 그래프입니다. <strong>선형(linear) 스케일</strong>과 <strong>반로그(semi-logarithmic) 스케일</strong> 두 가지를 반드시 함께 제시해야 합니다.</p>
+<p><a href="#fig-ch15-1" class="quarto-xref">그림&nbsp;<span>15.2</span></a> 은 PK-PD 분석에서 자주 사용되는 핵심 그래프 유형을 갤러리 형태로 정리한 것입니다. 농도-시간 그래프는 PK 분석의 가장 기본적이고 중요한 그래프입니다. <strong>선형(linear) 스케일</strong>과 <strong>반로그(semi-logarithmic) 스케일</strong> 두 가지를 반드시 함께 제시해야 합니다.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 시뮬레이션: 농도-시간 데이터 생성</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2024</span>)</span>
@@ -1924,13 +1924,13 @@ window.Quarto = {
 <img src="../images/ch15_fig3.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch15-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;15.3: <strong>Figure 15.3: 바이오시밀러 PK 동등성 비교 (Biosimilar PK Equivalence Comparison).</strong> 오리지널(Reference)과 바이오시밀러의 농도-시간 곡선을 겹쳐 표시하고, Cmax와 AUC의 GMR(기하평균비)과 90% CI가 80-125% 범위 내에 있는지를 forest plot으로 함께 보여준다.
+그림&nbsp;15.3: 바이오시밀러 PK 동등성 비교 (Biosimilar PK Equivalence Comparison). 오리지널(Reference)과 바이오시밀러의 농도-시간 곡선을 겹쳐 표시하고, Cmax와 AUC의 GMR(기하평균비)과 90% CI가 80-125% 범위 내에 있는지를 forest plot으로 함께 보여준다.
 </figcaption>
 </figure>
 </div>
 <section id="adalimumab-바이오시밀러-pk-비교" class="level3" data-number="15.6.1">
 <h3 data-number="15.6.1" class="anchored" data-anchor-id="adalimumab-바이오시밀러-pk-비교"><span class="header-section-number">15.6.1</span> Adalimumab 바이오시밀러 PK 비교</h3>
-<p>Adalimumab(Humira)은 가장 많은 바이오시밀러가 개발된 생물학적 제제입니다. 바이오시밀러 허가 시 PK 동등성 입증을 위해 다음 그래프들이 핵심적으로 제출됩니다.</p>
+<p><a href="#fig-ch15-3" class="quarto-xref">그림&nbsp;<span>15.3</span></a> 은 바이오시밀러 PK 동등성 평가의 핵심 시각화를 보여줍니다. Adalimumab(Humira)은 가장 많은 바이오시밀러가 개발된 생물학적 제제입니다. 바이오시밀러 허가 시 PK 동등성 입증을 위해 다음 그래프들이 핵심적으로 제출됩니다.</p>
 <p><strong>PK 프로파일 비교 그래프</strong>: 참조약(reference)과 바이오시밀러의 평균 농도-시간 프로파일을 겹쳐 표시합니다.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 바이오시밀러 PK 비교 시뮬레이션</span></span>
@@ -2801,9 +2801,9 @@ R 함수 create_pkpd_report()를 만들어줘.
 <span id="cb45-27"><a href="#cb45-27" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb45-28"><a href="#cb45-28" aria-hidden="true" tabindex="-1"></a><span class="fu">### 데이터-잉크 비율 (Data-ink Ratio)</span></span>
 <span id="cb45-29"><a href="#cb45-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-30"><a href="#cb45-30" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 15.2: Data-ink Ratio 원칙: Before vs After (Data-Ink Ratio Principle).** Before(격자선, 3D 효과, 과도한 장식이 있는 복잡한 그래프)와 After(최소한의 장식, 데이터에 집중하는 깔끔한 그래프)를 나란히 비교하여 높은 data-ink ratio의 중요성을 시각적으로 보여준다.](../images/ch15_fig2.png)</span>{#fig-ch15-2 width=100%}</span>
+<span id="cb45-30"><a href="#cb45-30" aria-hidden="true" tabindex="-1"></a><span class="al">![Data-ink Ratio 원칙: Before vs After (Data-Ink Ratio Principle). Before(격자선, 3D 효과, 과도한 장식이 있는 복잡한 그래프)와 After(최소한의 장식, 데이터에 집중하는 깔끔한 그래프)를 나란히 비교하여 높은 data-ink ratio의 중요성을 시각적으로 보여준다.](../images/ch15_fig2.png)</span>{#fig-ch15-2 width=100%}</span>
 <span id="cb45-31"><a href="#cb45-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-32"><a href="#cb45-32" aria-hidden="true" tabindex="-1"></a>Edward Tufte는 저서 *The Visual Display of Quantitative Information* (1983)에서 그래프 디자인의 핵심 원칙으로 **데이터-잉크 비율(data-ink ratio)**을 제시했습니다:</span>
+<span id="cb45-32"><a href="#cb45-32" aria-hidden="true" tabindex="-1"></a>@fig-ch15-2 에서 보듯이, Edward Tufte는 저서 *The Visual Display of Quantitative Information* (1983)에서 그래프 디자인의 핵심 원칙으로 **데이터-잉크 비율(data-ink ratio)**을 제시했습니다:</span>
 <span id="cb45-33"><a href="#cb45-33" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb45-34"><a href="#cb45-34" aria-hidden="true" tabindex="-1"></a>$$\text{Data-ink ratio} = \frac{\text{데이터를 표현하는 잉크}}{\text{그래프에 사용된 총 잉크}}$$</span>
 <span id="cb45-35"><a href="#cb45-35" aria-hidden="true" tabindex="-1"></a></span>
@@ -2920,11 +2920,11 @@ R 함수 create_pkpd_report()를 만들어줘.
 <span id="cb45-150"><a href="#cb45-150" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb45-151"><a href="#cb45-151" aria-hidden="true" tabindex="-1"></a><span class="fu">## PK/PD 핵심 그래프 유형 {#sec-graph-types}</span></span>
 <span id="cb45-152"><a href="#cb45-152" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-153"><a href="#cb45-153" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 15.1: PK-PD 핵심 그래프 유형 갤러리 (Essential PK-PD Graph Types Gallery).** 8개의 미니 패널로 농도-시간(Conc-Time), 농도-효과(Conc-Effect), GOF(Goodness-of-Fit), Forest plot, Waterfall plot, Kaplan-Meier, Tornado diagram, Heatmap의 대표 그래프 유형을 한눈에 보여준다.](../images/ch15_fig1.png)</span>{#fig-ch15-1 width=100%}</span>
+<span id="cb45-153"><a href="#cb45-153" aria-hidden="true" tabindex="-1"></a><span class="al">![PK-PD 핵심 그래프 유형 갤러리 (Essential PK-PD Graph Types Gallery). 8개의 미니 패널로 농도-시간(Conc-Time), 농도-효과(Conc-Effect), GOF(Goodness-of-Fit), Forest plot, Waterfall plot, Kaplan-Meier, Tornado diagram, Heatmap의 대표 그래프 유형을 한눈에 보여준다.](../images/ch15_fig1.png)</span>{#fig-ch15-1 width=100%}</span>
 <span id="cb45-154"><a href="#cb45-154" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb45-155"><a href="#cb45-155" aria-hidden="true" tabindex="-1"></a><span class="fu">### 농도-시간 그래프 (Concentration-Time Plot)</span></span>
 <span id="cb45-156"><a href="#cb45-156" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-157"><a href="#cb45-157" aria-hidden="true" tabindex="-1"></a>농도-시간 그래프는 PK 분석의 가장 기본적이고 중요한 그래프입니다. **선형(linear) 스케일**과 **반로그(semi-logarithmic) 스케일** 두 가지를 반드시 함께 제시해야 합니다.</span>
+<span id="cb45-157"><a href="#cb45-157" aria-hidden="true" tabindex="-1"></a>@fig-ch15-1 은 PK-PD 분석에서 자주 사용되는 핵심 그래프 유형을 갤러리 형태로 정리한 것입니다. 농도-시간 그래프는 PK 분석의 가장 기본적이고 중요한 그래프입니다. **선형(linear) 스케일**과 **반로그(semi-logarithmic) 스케일** 두 가지를 반드시 함께 제시해야 합니다.</span>
 <span id="cb45-158"><a href="#cb45-158" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb45-161"><a href="#cb45-161" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb45-162"><a href="#cb45-162" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
@@ -4275,11 +4275,11 @@ R 함수 create_pkpd_report()를 만들어줘.
 <span id="cb45-1569"><a href="#cb45-1569" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb45-1570"><a href="#cb45-1570" aria-hidden="true" tabindex="-1"></a><span class="fu">## 약리학 노트: FDA/EMA 바이오시밀러 그래프 사례 {#sec-biosimilar-graphs}</span></span>
 <span id="cb45-1571"><a href="#cb45-1571" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-1572"><a href="#cb45-1572" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 15.3: 바이오시밀러 PK 동등성 비교 (Biosimilar PK Equivalence Comparison).** 오리지널(Reference)과 바이오시밀러의 농도-시간 곡선을 겹쳐 표시하고, Cmax와 AUC의 GMR(기하평균비)과 90% CI가 80-125% 범위 내에 있는지를 forest plot으로 함께 보여준다.](../images/ch15_fig3.png)</span>{#fig-ch15-3 width=100%}</span>
+<span id="cb45-1572"><a href="#cb45-1572" aria-hidden="true" tabindex="-1"></a><span class="al">![바이오시밀러 PK 동등성 비교 (Biosimilar PK Equivalence Comparison). 오리지널(Reference)과 바이오시밀러의 농도-시간 곡선을 겹쳐 표시하고, Cmax와 AUC의 GMR(기하평균비)과 90% CI가 80-125% 범위 내에 있는지를 forest plot으로 함께 보여준다.](../images/ch15_fig3.png)</span>{#fig-ch15-3 width=100%}</span>
 <span id="cb45-1573"><a href="#cb45-1573" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb45-1574"><a href="#cb45-1574" aria-hidden="true" tabindex="-1"></a><span class="fu">### Adalimumab 바이오시밀러 PK 비교</span></span>
 <span id="cb45-1575"><a href="#cb45-1575" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-1576"><a href="#cb45-1576" aria-hidden="true" tabindex="-1"></a>Adalimumab(Humira)은 가장 많은 바이오시밀러가 개발된 생물학적 제제입니다. 바이오시밀러 허가 시 PK 동등성 입증을 위해 다음 그래프들이 핵심적으로 제출됩니다.</span>
+<span id="cb45-1576"><a href="#cb45-1576" aria-hidden="true" tabindex="-1"></a>@fig-ch15-3 은 바이오시밀러 PK 동등성 평가의 핵심 시각화를 보여줍니다. Adalimumab(Humira)은 가장 많은 바이오시밀러가 개발된 생물학적 제제입니다. 바이오시밀러 허가 시 PK 동등성 입증을 위해 다음 그래프들이 핵심적으로 제출됩니다.</span>
 <span id="cb45-1577"><a href="#cb45-1577" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb45-1578"><a href="#cb45-1578" aria-hidden="true" tabindex="-1"></a>**PK 프로파일 비교 그래프**: 참조약(reference)과 바이오시밀러의 평균 농도-시간 프로파일을 겹쳐 표시합니다.</span>
 <span id="cb45-1579"><a href="#cb45-1579" aria-hidden="true" tabindex="-1"></a></span>

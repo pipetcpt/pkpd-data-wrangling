@@ -25,9 +25,9 @@ library(gt)           # 테이블
 
 ### 데이터-잉크 비율 (Data-ink Ratio)
 
-![**Figure 15.2: Data-ink Ratio 원칙: Before vs After (Data-Ink Ratio Principle).** Before(격자선, 3D 효과, 과도한 장식이 있는 복잡한 그래프)와 After(최소한의 장식, 데이터에 집중하는 깔끔한 그래프)를 나란히 비교하여 높은 data-ink ratio의 중요성을 시각적으로 보여준다.](../images/ch15_fig2.png){#fig-ch15-2 width=100%}
+![Data-ink Ratio 원칙: Before vs After (Data-Ink Ratio Principle). Before(격자선, 3D 효과, 과도한 장식이 있는 복잡한 그래프)와 After(최소한의 장식, 데이터에 집중하는 깔끔한 그래프)를 나란히 비교하여 높은 data-ink ratio의 중요성을 시각적으로 보여준다.](../images/ch15_fig2.png){#fig-ch15-2 width=100%}
 
-Edward Tufte는 저서 *The Visual Display of Quantitative Information* (1983)에서 그래프 디자인의 핵심 원칙으로 **데이터-잉크 비율(data-ink ratio)**을 제시했습니다:
+@fig-ch15-2 에서 보듯이, Edward Tufte는 저서 *The Visual Display of Quantitative Information* (1983)에서 그래프 디자인의 핵심 원칙으로 **데이터-잉크 비율(data-ink ratio)**을 제시했습니다:
 
 $$\text{Data-ink ratio} = \frac{\text{데이터를 표현하는 잉크}}{\text{그래프에 사용된 총 잉크}}$$
 
@@ -144,11 +144,11 @@ theme_regulatory <- function(base_size = 11, base_family = "Arial") {
 
 ## PK/PD 핵심 그래프 유형 {#sec-graph-types}
 
-![**Figure 15.1: PK-PD 핵심 그래프 유형 갤러리 (Essential PK-PD Graph Types Gallery).** 8개의 미니 패널로 농도-시간(Conc-Time), 농도-효과(Conc-Effect), GOF(Goodness-of-Fit), Forest plot, Waterfall plot, Kaplan-Meier, Tornado diagram, Heatmap의 대표 그래프 유형을 한눈에 보여준다.](../images/ch15_fig1.png){#fig-ch15-1 width=100%}
+![PK-PD 핵심 그래프 유형 갤러리 (Essential PK-PD Graph Types Gallery). 8개의 미니 패널로 농도-시간(Conc-Time), 농도-효과(Conc-Effect), GOF(Goodness-of-Fit), Forest plot, Waterfall plot, Kaplan-Meier, Tornado diagram, Heatmap의 대표 그래프 유형을 한눈에 보여준다.](../images/ch15_fig1.png){#fig-ch15-1 width=100%}
 
 ### 농도-시간 그래프 (Concentration-Time Plot)
 
-농도-시간 그래프는 PK 분석의 가장 기본적이고 중요한 그래프입니다. **선형(linear) 스케일**과 **반로그(semi-logarithmic) 스케일** 두 가지를 반드시 함께 제시해야 합니다.
+@fig-ch15-1 은 PK-PD 분석에서 자주 사용되는 핵심 그래프 유형을 갤러리 형태로 정리한 것입니다. 농도-시간 그래프는 PK 분석의 가장 기본적이고 중요한 그래프입니다. **선형(linear) 스케일**과 **반로그(semi-logarithmic) 스케일** 두 가지를 반드시 함께 제시해야 합니다.
 
 ```{r}
 #| eval: false
@@ -1499,11 +1499,11 @@ ggsave("report_page2_pd.pdf", page2,
 
 ## 약리학 노트: FDA/EMA 바이오시밀러 그래프 사례 {#sec-biosimilar-graphs}
 
-![**Figure 15.3: 바이오시밀러 PK 동등성 비교 (Biosimilar PK Equivalence Comparison).** 오리지널(Reference)과 바이오시밀러의 농도-시간 곡선을 겹쳐 표시하고, Cmax와 AUC의 GMR(기하평균비)과 90% CI가 80-125% 범위 내에 있는지를 forest plot으로 함께 보여준다.](../images/ch15_fig3.png){#fig-ch15-3 width=100%}
+![바이오시밀러 PK 동등성 비교 (Biosimilar PK Equivalence Comparison). 오리지널(Reference)과 바이오시밀러의 농도-시간 곡선을 겹쳐 표시하고, Cmax와 AUC의 GMR(기하평균비)과 90% CI가 80-125% 범위 내에 있는지를 forest plot으로 함께 보여준다.](../images/ch15_fig3.png){#fig-ch15-3 width=100%}
 
 ### Adalimumab 바이오시밀러 PK 비교
 
-Adalimumab(Humira)은 가장 많은 바이오시밀러가 개발된 생물학적 제제입니다. 바이오시밀러 허가 시 PK 동등성 입증을 위해 다음 그래프들이 핵심적으로 제출됩니다.
+@fig-ch15-3 은 바이오시밀러 PK 동등성 평가의 핵심 시각화를 보여줍니다. Adalimumab(Humira)은 가장 많은 바이오시밀러가 개발된 생물학적 제제입니다. 바이오시밀러 허가 시 PK 동등성 입증을 위해 다음 그래프들이 핵심적으로 제출됩니다.
 
 **PK 프로파일 비교 그래프**: 참조약(reference)과 바이오시밀러의 평균 농도-시간 프로파일을 겹쳐 표시합니다.
 

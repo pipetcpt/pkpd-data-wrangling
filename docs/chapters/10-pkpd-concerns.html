@@ -506,11 +506,11 @@ window.Quarto = {
 <img src="../images/ch10_fig1.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch10-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;10.1: <strong>Figure 10.1: Emax 및 Sigmoid Emax 모델 (Emax and Sigmoid Emax Model).</strong> Emax 곡선(γ=1)과 sigmoid 곡선(γ=1,2,5)을 나란히 비교하여, EC50과 Emax를 표시하고 potency(역가)와 efficacy(유효성)의 개념적 차이를 시각적으로 설명한다.
+그림&nbsp;10.1: Emax 및 Sigmoid Emax 모델 (Emax and Sigmoid Emax Model). Emax 곡선(γ=1)과 sigmoid 곡선(γ=1,2,5)을 나란히 비교하여, EC50과 Emax를 표시하고 potency(역가)와 efficacy(유효성)의 개념적 차이를 시각적으로 설명한다.
 </figcaption>
 </figure>
 </div>
-<p>약물 농도와 효과의 관계를 기술하는 가장 기본적이고 널리 사용되는 모델은 <strong>Emax 모델</strong>입니다. 이 모델은 수용체 이론(receptor theory)에서 유래했으며, 약물-수용체 결합의 포화성(saturable binding)을 반영합니다.</p>
+<p><a href="#fig-ch10-1" class="quarto-xref">그림&nbsp;<span>10.1</span></a> 은 Emax 곡선과 sigmoid 곡선을 비교하여 potency와 efficacy의 개념적 차이를 보여줍니다. 약물 농도와 효과의 관계를 기술하는 가장 기본적이고 널리 사용되는 모델은 <strong>Emax 모델</strong>입니다. 이 모델은 수용체 이론(receptor theory)에서 유래했으며, 약물-수용체 결합의 포화성(saturable binding)을 반영합니다.</p>
 <p><span class="math display">\[E = E_0 + \frac{E_{max} \cdot C}{EC_{50} + C}\]</span></p>
 <p>각 파라미터의 의미:</p>
 <table class="caption-top table">
@@ -682,13 +682,13 @@ window.Quarto = {
 <img src="../images/ch10_fig2.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch10-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;10.2: <strong>Figure 10.2: 직접 및 간접 반응 모델 (Direct vs Indirect Response Models).</strong> 4개 패널로 Direct effect, IDR-I(Kin 억제), IDR-II(Kout 억제), IDR-III(Kin 자극), IDR-IV(Kout 자극)의 구조를 도식화하였다. 각 모델에서의 약물 효과 발현 시점과 반응 패턴의 차이를 나타낸다.
+그림&nbsp;10.2: 직접 및 간접 반응 모델 (Direct vs Indirect Response Models). 4개 패널로 Direct effect, IDR-I(Kin 억제), IDR-II(Kout 억제), IDR-III(Kin 자극), IDR-IV(Kout 자극)의 구조를 도식화하였다. 각 모델에서의 약물 효과 발현 시점과 반응 패턴의 차이를 나타낸다.
 </figcaption>
 </figure>
 </div>
 <section id="sec-hysteresis-concept" class="level3" data-number="10.2.1">
 <h3 data-number="10.2.1" class="anchored" data-anchor-id="sec-hysteresis-concept"><span class="header-section-number">10.2.1</span> Hysteresis의 개념</h3>
-<p>임상 현장에서 약물의 혈중 농도와 효과를 동시에 측정하면, 두 변수 사이에 <strong>시간 지연(temporal delay)</strong>이 존재하는 경우가 대부분입니다. 이러한 시간 지연은 농도-효과 관계를 xy 평면에 그렸을 때 <strong>히스테리시스 루프(hysteresis loop)</strong>로 나타납니다.</p>
+<p><a href="#fig-ch10-2" class="quarto-xref">그림&nbsp;<span>10.2</span></a> 에서 보듯이, 임상 현장에서 약물의 혈중 농도와 효과를 동시에 측정하면, 두 변수 사이에 <strong>시간 지연(temporal delay)</strong>이 존재하는 경우가 대부분입니다. 이러한 시간 지연은 농도-효과 관계를 xy 평면에 그렸을 때 <strong>히스테리시스 루프(hysteresis loop)</strong>로 나타납니다.</p>
 <p><strong>Clockwise Hysteresis (시계 방향 히스테리시스)</strong>:</p>
 <ul>
 <li>같은 농도에서 <strong>농도 상승 시 효과가 더 크고</strong>, 하강 시 더 작음</li>
@@ -1612,10 +1612,11 @@ window.Quarto = {
 <img src="../images/ch10_fig3.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch10-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;10.3: <strong>Figure 10.3: Dupilumab의 IL-4Rα 차단 기전 (Dupilumab IL-4Rα Blockade Mechanism).</strong> IL-4와 IL-13이 IL-4Rα에 결합하지 못하도록 차단하여 Th2 신호전달(JAK1/TYK2/STAT6)을 억제하고, IgE 감소, 호산구 감소, 피부 염증 개선으로 이어지는 경로를 도식화하였다.
+그림&nbsp;10.3: Dupilumab의 IL-4Rα 차단 기전 (Dupilumab IL-4Rα Blockade Mechanism). IL-4와 IL-13이 IL-4Rα에 결합하지 못하도록 차단하여 Th2 신호전달(JAK1/TYK2/STAT6)을 억제하고, IgE 감소, 호산구 감소, 피부 염증 개선으로 이어지는 경로를 도식화하였다.
 </figcaption>
 </figure>
 </div>
+<p><a href="#fig-ch10-3" class="quarto-xref">그림&nbsp;<span>10.3</span></a> 은 Dupilumab이 IL-4Rα를 차단하여 Th2 신호전달을 억제하는 기전을 도식화한 것입니다.</p>
 <section id="작용기전-il-4rα-차단" class="level3" data-number="10.5.1">
 <h3 data-number="10.5.1" class="anchored" data-anchor-id="작용기전-il-4rα-차단"><span class="header-section-number">10.5.1</span> 작용기전: IL-4Rα 차단</h3>
 <p><strong>Dupilumab (dupixent)</strong>은 <strong>IL-4 수용체 alpha 서브유닛(IL-4Rα)</strong>에 대한 완전 인간 단클론항체(fully human monoclonal antibody, IgG4)입니다. IL-4Rα는 두 가지 사이토카인 수용체 복합체의 공통 구성요소입니다:</p>
@@ -2629,9 +2630,9 @@ Free drug, total drug, target occupancy를 시간 경과로 시각화해줘."</c
 <span id="cb18-84"><a href="#cb18-84" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-85"><a href="#cb18-85" aria-hidden="true" tabindex="-1"></a><span class="fu">### Emax 모델: 농도-효과 관계의 기본 {#sec-emax-model}</span></span>
 <span id="cb18-86"><a href="#cb18-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-87"><a href="#cb18-87" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 10.1: Emax 및 Sigmoid Emax 모델 (Emax and Sigmoid Emax Model).** Emax 곡선(γ=1)과 sigmoid 곡선(γ=1,2,5)을 나란히 비교하여, EC50과 Emax를 표시하고 potency(역가)와 efficacy(유효성)의 개념적 차이를 시각적으로 설명한다.](../images/ch10_fig1.png)</span>{#fig-ch10-1 width=100%}</span>
+<span id="cb18-87"><a href="#cb18-87" aria-hidden="true" tabindex="-1"></a><span class="al">![Emax 및 Sigmoid Emax 모델 (Emax and Sigmoid Emax Model). Emax 곡선(γ=1)과 sigmoid 곡선(γ=1,2,5)을 나란히 비교하여, EC50과 Emax를 표시하고 potency(역가)와 efficacy(유효성)의 개념적 차이를 시각적으로 설명한다.](../images/ch10_fig1.png)</span>{#fig-ch10-1 width=100%}</span>
 <span id="cb18-88"><a href="#cb18-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-89"><a href="#cb18-89" aria-hidden="true" tabindex="-1"></a>약물 농도와 효과의 관계를 기술하는 가장 기본적이고 널리 사용되는 모델은 **Emax 모델**입니다. 이 모델은 수용체 이론(receptor theory)에서 유래했으며, 약물-수용체 결합의 포화성(saturable binding)을 반영합니다.</span>
+<span id="cb18-89"><a href="#cb18-89" aria-hidden="true" tabindex="-1"></a>@fig-ch10-1 은 Emax 곡선과 sigmoid 곡선을 비교하여 potency와 efficacy의 개념적 차이를 보여줍니다. 약물 농도와 효과의 관계를 기술하는 가장 기본적이고 널리 사용되는 모델은 **Emax 모델**입니다. 이 모델은 수용체 이론(receptor theory)에서 유래했으며, 약물-수용체 결합의 포화성(saturable binding)을 반영합니다.</span>
 <span id="cb18-90"><a href="#cb18-90" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-91"><a href="#cb18-91" aria-hidden="true" tabindex="-1"></a>$$E = E_0 + \frac{E_{max} \cdot C}{EC_{50} + C}$$</span>
 <span id="cb18-92"><a href="#cb18-92" aria-hidden="true" tabindex="-1"></a></span>
@@ -2701,11 +2702,11 @@ Free drug, total drug, target occupancy를 시간 경과로 시각화해줘."</c
 <span id="cb18-156"><a href="#cb18-156" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-157"><a href="#cb18-157" aria-hidden="true" tabindex="-1"></a><span class="fu">## 효과 지연과 Effect Compartment {#sec-hysteresis}</span></span>
 <span id="cb18-158"><a href="#cb18-158" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-159"><a href="#cb18-159" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 10.2: 직접 및 간접 반응 모델 (Direct vs Indirect Response Models).** 4개 패널로 Direct effect, IDR-I(Kin 억제), IDR-II(Kout 억제), IDR-III(Kin 자극), IDR-IV(Kout 자극)의 구조를 도식화하였다. 각 모델에서의 약물 효과 발현 시점과 반응 패턴의 차이를 나타낸다.](../images/ch10_fig2.png)</span>{#fig-ch10-2 width=100%}</span>
+<span id="cb18-159"><a href="#cb18-159" aria-hidden="true" tabindex="-1"></a><span class="al">![직접 및 간접 반응 모델 (Direct vs Indirect Response Models). 4개 패널로 Direct effect, IDR-I(Kin 억제), IDR-II(Kout 억제), IDR-III(Kin 자극), IDR-IV(Kout 자극)의 구조를 도식화하였다. 각 모델에서의 약물 효과 발현 시점과 반응 패턴의 차이를 나타낸다.](../images/ch10_fig2.png)</span>{#fig-ch10-2 width=100%}</span>
 <span id="cb18-160"><a href="#cb18-160" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-161"><a href="#cb18-161" aria-hidden="true" tabindex="-1"></a><span class="fu">### Hysteresis의 개념 {#sec-hysteresis-concept}</span></span>
 <span id="cb18-162"><a href="#cb18-162" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-163"><a href="#cb18-163" aria-hidden="true" tabindex="-1"></a>임상 현장에서 약물의 혈중 농도와 효과를 동시에 측정하면, 두 변수 사이에 **시간 지연(temporal delay)**이 존재하는 경우가 대부분입니다. 이러한 시간 지연은 농도-효과 관계를 xy 평면에 그렸을 때 **히스테리시스 루프(hysteresis loop)**로 나타납니다.</span>
+<span id="cb18-163"><a href="#cb18-163" aria-hidden="true" tabindex="-1"></a>@fig-ch10-2 에서 보듯이, 임상 현장에서 약물의 혈중 농도와 효과를 동시에 측정하면, 두 변수 사이에 **시간 지연(temporal delay)**이 존재하는 경우가 대부분입니다. 이러한 시간 지연은 농도-효과 관계를 xy 평면에 그렸을 때 **히스테리시스 루프(hysteresis loop)**로 나타납니다.</span>
 <span id="cb18-164"><a href="#cb18-164" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-165"><a href="#cb18-165" aria-hidden="true" tabindex="-1"></a>**Clockwise Hysteresis (시계 방향 히스테리시스)**:</span>
 <span id="cb18-166"><a href="#cb18-166" aria-hidden="true" tabindex="-1"></a></span>
@@ -3464,327 +3465,329 @@ Free drug, total drug, target occupancy를 시간 경과로 시각화해줘."</c
 <span id="cb18-939"><a href="#cb18-939" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-940"><a href="#cb18-940" aria-hidden="true" tabindex="-1"></a><span class="fu">## 약리학 노트: Dupilumab의 약리학 {#sec-dupilumab-pharmacology}</span></span>
 <span id="cb18-941"><a href="#cb18-941" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-942"><a href="#cb18-942" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 10.3: Dupilumab의 IL-4Rα 차단 기전 (Dupilumab IL-4Rα Blockade Mechanism).** IL-4와 IL-13이 IL-4Rα에 결합하지 못하도록 차단하여 Th2 신호전달(JAK1/TYK2/STAT6)을 억제하고, IgE 감소, 호산구 감소, 피부 염증 개선으로 이어지는 경로를 도식화하였다.](../images/ch10_fig3.png)</span>{#fig-ch10-3 width=100%}</span>
+<span id="cb18-942"><a href="#cb18-942" aria-hidden="true" tabindex="-1"></a><span class="al">![Dupilumab의 IL-4Rα 차단 기전 (Dupilumab IL-4Rα Blockade Mechanism). IL-4와 IL-13이 IL-4Rα에 결합하지 못하도록 차단하여 Th2 신호전달(JAK1/TYK2/STAT6)을 억제하고, IgE 감소, 호산구 감소, 피부 염증 개선으로 이어지는 경로를 도식화하였다.](../images/ch10_fig3.png)</span>{#fig-ch10-3 width=100%}</span>
 <span id="cb18-943"><a href="#cb18-943" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-944"><a href="#cb18-944" aria-hidden="true" tabindex="-1"></a><span class="fu">### 작용기전: IL-4Rα 차단</span></span>
+<span id="cb18-944"><a href="#cb18-944" aria-hidden="true" tabindex="-1"></a>@fig-ch10-3 은 Dupilumab이 IL-4Rα를 차단하여 Th2 신호전달을 억제하는 기전을 도식화한 것입니다.</span>
 <span id="cb18-945"><a href="#cb18-945" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-946"><a href="#cb18-946" aria-hidden="true" tabindex="-1"></a>**Dupilumab (dupixent)**은 **IL-4 수용체 alpha 서브유닛(IL-4Rα)**에 대한 완전 인간 단클론항체(fully human monoclonal antibody, IgG4)입니다. IL-4Rα는 두 가지 사이토카인 수용체 복합체의 공통 구성요소입니다:</span>
+<span id="cb18-946"><a href="#cb18-946" aria-hidden="true" tabindex="-1"></a><span class="fu">### 작용기전: IL-4Rα 차단</span></span>
 <span id="cb18-947"><a href="#cb18-947" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-948"><a href="#cb18-948" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Type I IL-4 receptor**: IL-4Rα + γc (common gamma chain)</span>
-<span id="cb18-949"><a href="#cb18-949" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>IL-4만 신호전달</span>
-<span id="cb18-950"><a href="#cb18-950" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>주로 림프구에서 발현</span>
-<span id="cb18-951"><a href="#cb18-951" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Type II IL-4 receptor**: IL-4Rα + IL-13Rα1</span>
-<span id="cb18-952"><a href="#cb18-952" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>IL-4와 IL-13 모두 신호전달</span>
-<span id="cb18-953"><a href="#cb18-953" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>비조혈 세포(keratinocyte, fibroblast 등)에서도 발현</span>
-<span id="cb18-954"><a href="#cb18-954" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-955"><a href="#cb18-955" aria-hidden="true" tabindex="-1"></a>Dupilumab은 IL-4Rα에 결합하여 **IL-4와 IL-13 모두의 신호전달을 동시에 차단**합니다. 이는 하류(downstream) 신호경로인 **JAK1-STAT6 pathway**의 활성화를 억제합니다.</span>
+<span id="cb18-948"><a href="#cb18-948" aria-hidden="true" tabindex="-1"></a>**Dupilumab (dupixent)**은 **IL-4 수용체 alpha 서브유닛(IL-4Rα)**에 대한 완전 인간 단클론항체(fully human monoclonal antibody, IgG4)입니다. IL-4Rα는 두 가지 사이토카인 수용체 복합체의 공통 구성요소입니다:</span>
+<span id="cb18-949"><a href="#cb18-949" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-950"><a href="#cb18-950" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Type I IL-4 receptor**: IL-4Rα + γc (common gamma chain)</span>
+<span id="cb18-951"><a href="#cb18-951" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>IL-4만 신호전달</span>
+<span id="cb18-952"><a href="#cb18-952" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>주로 림프구에서 발현</span>
+<span id="cb18-953"><a href="#cb18-953" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Type II IL-4 receptor**: IL-4Rα + IL-13Rα1</span>
+<span id="cb18-954"><a href="#cb18-954" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>IL-4와 IL-13 모두 신호전달</span>
+<span id="cb18-955"><a href="#cb18-955" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>비조혈 세포(keratinocyte, fibroblast 등)에서도 발현</span>
 <span id="cb18-956"><a href="#cb18-956" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-957"><a href="#cb18-957" aria-hidden="true" tabindex="-1"></a><span class="fu">### Th2 면역반응 조절</span></span>
+<span id="cb18-957"><a href="#cb18-957" aria-hidden="true" tabindex="-1"></a>Dupilumab은 IL-4Rα에 결합하여 **IL-4와 IL-13 모두의 신호전달을 동시에 차단**합니다. 이는 하류(downstream) 신호경로인 **JAK1-STAT6 pathway**의 활성화를 억제합니다.</span>
 <span id="cb18-958"><a href="#cb18-958" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-959"><a href="#cb18-959" aria-hidden="true" tabindex="-1"></a>아토피 피부염의 핵심 병태생리는 **Th2 편향 면역반응(Th2-skewed immune response)**입니다. IL-4와 IL-13은 이 과정에서 핵심적인 역할을 합니다:</span>
+<span id="cb18-959"><a href="#cb18-959" aria-hidden="true" tabindex="-1"></a><span class="fu">### Th2 면역반응 조절</span></span>
 <span id="cb18-960"><a href="#cb18-960" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-961"><a href="#cb18-961" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 사이토카인 <span class="pp">|</span> 주요 작용 <span class="pp">|</span> Dupilumab에 의한 억제 효과 <span class="pp">|</span></span>
-<span id="cb18-962"><a href="#cb18-962" aria-hidden="true" tabindex="-1"></a><span class="pp">|-----------|----------|-------------------------|</span></span>
-<span id="cb18-963"><a href="#cb18-963" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IL-4 <span class="pp">|</span> T 세포의 Th2 분화 유도 <span class="pp">|</span> Th2 면역 편향 감소 <span class="pp">|</span></span>
-<span id="cb18-964"><a href="#cb18-964" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IL-4 <span class="pp">|</span> B 세포의 IgE class switching <span class="pp">|</span> 혈청 IgE 감소 <span class="pp">|</span></span>
-<span id="cb18-965"><a href="#cb18-965" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IL-13 <span class="pp">|</span> 각질형성세포의 장벽 단백질(filaggrin) 발현 억제 <span class="pp">|</span> 피부 장벽 기능 회복 <span class="pp">|</span></span>
-<span id="cb18-966"><a href="#cb18-966" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IL-13 <span class="pp">|</span> 호산구 침윤 촉진 <span class="pp">|</span> 피부 염증 감소 <span class="pp">|</span></span>
-<span id="cb18-967"><a href="#cb18-967" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IL-4/IL-13 <span class="pp">|</span> 점액 분비 촉진 (기도) <span class="pp">|</span> 천식 증상 개선 <span class="pp">|</span></span>
-<span id="cb18-968"><a href="#cb18-968" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-969"><a href="#cb18-969" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
-<span id="cb18-970"><a href="#cb18-970" aria-hidden="true" tabindex="-1"></a><span class="fu">## Dupilumab의 적응증 확대</span></span>
-<span id="cb18-971"><a href="#cb18-971" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-972"><a href="#cb18-972" aria-hidden="true" tabindex="-1"></a>Dupilumab은 아토피 피부염으로 최초 승인(FDA 2017)된 이후, Th2 면역반응이 관여하는 다양한 질환으로 적응증이 확대되었습니다:</span>
+<span id="cb18-961"><a href="#cb18-961" aria-hidden="true" tabindex="-1"></a>아토피 피부염의 핵심 병태생리는 **Th2 편향 면역반응(Th2-skewed immune response)**입니다. IL-4와 IL-13은 이 과정에서 핵심적인 역할을 합니다:</span>
+<span id="cb18-962"><a href="#cb18-962" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-963"><a href="#cb18-963" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 사이토카인 <span class="pp">|</span> 주요 작용 <span class="pp">|</span> Dupilumab에 의한 억제 효과 <span class="pp">|</span></span>
+<span id="cb18-964"><a href="#cb18-964" aria-hidden="true" tabindex="-1"></a><span class="pp">|-----------|----------|-------------------------|</span></span>
+<span id="cb18-965"><a href="#cb18-965" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IL-4 <span class="pp">|</span> T 세포의 Th2 분화 유도 <span class="pp">|</span> Th2 면역 편향 감소 <span class="pp">|</span></span>
+<span id="cb18-966"><a href="#cb18-966" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IL-4 <span class="pp">|</span> B 세포의 IgE class switching <span class="pp">|</span> 혈청 IgE 감소 <span class="pp">|</span></span>
+<span id="cb18-967"><a href="#cb18-967" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IL-13 <span class="pp">|</span> 각질형성세포의 장벽 단백질(filaggrin) 발현 억제 <span class="pp">|</span> 피부 장벽 기능 회복 <span class="pp">|</span></span>
+<span id="cb18-968"><a href="#cb18-968" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IL-13 <span class="pp">|</span> 호산구 침윤 촉진 <span class="pp">|</span> 피부 염증 감소 <span class="pp">|</span></span>
+<span id="cb18-969"><a href="#cb18-969" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IL-4/IL-13 <span class="pp">|</span> 점액 분비 촉진 (기도) <span class="pp">|</span> 천식 증상 개선 <span class="pp">|</span></span>
+<span id="cb18-970"><a href="#cb18-970" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-971"><a href="#cb18-971" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
+<span id="cb18-972"><a href="#cb18-972" aria-hidden="true" tabindex="-1"></a><span class="fu">## Dupilumab의 적응증 확대</span></span>
 <span id="cb18-973"><a href="#cb18-973" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-974"><a href="#cb18-974" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**아토피 피부염** (2017): 성인 및 소아(6개월 이상)</span>
-<span id="cb18-975"><a href="#cb18-975" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**천식** (2018): 호산구성 또는 OCS-의존 중등증-중증 천식</span>
-<span id="cb18-976"><a href="#cb18-976" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**비용종 동반 만성 비부비동염** (2019)</span>
-<span id="cb18-977"><a href="#cb18-977" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**결절성 양진** (2022)</span>
-<span id="cb18-978"><a href="#cb18-978" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**호산구성 식도염** (2022)</span>
-<span id="cb18-979"><a href="#cb18-979" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**COPD** (2024): 호산구 증가가 동반된 COPD</span>
-<span id="cb18-980"><a href="#cb18-980" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-981"><a href="#cb18-981" aria-hidden="true" tabindex="-1"></a>이러한 적응증 확대는 IL-4/IL-13 경로가 다양한 Th2 관련 질환에 공통적으로 관여함을 반영합니다.</span>
-<span id="cb18-982"><a href="#cb18-982" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb18-983"><a href="#cb18-983" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-984"><a href="#cb18-984" aria-hidden="true" tabindex="-1"></a><span class="fu">### 아토피 피부염에서의 임상 효과</span></span>
+<span id="cb18-974"><a href="#cb18-974" aria-hidden="true" tabindex="-1"></a>Dupilumab은 아토피 피부염으로 최초 승인(FDA 2017)된 이후, Th2 면역반응이 관여하는 다양한 질환으로 적응증이 확대되었습니다:</span>
+<span id="cb18-975"><a href="#cb18-975" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-976"><a href="#cb18-976" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**아토피 피부염** (2017): 성인 및 소아(6개월 이상)</span>
+<span id="cb18-977"><a href="#cb18-977" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**천식** (2018): 호산구성 또는 OCS-의존 중등증-중증 천식</span>
+<span id="cb18-978"><a href="#cb18-978" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**비용종 동반 만성 비부비동염** (2019)</span>
+<span id="cb18-979"><a href="#cb18-979" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**결절성 양진** (2022)</span>
+<span id="cb18-980"><a href="#cb18-980" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**호산구성 식도염** (2022)</span>
+<span id="cb18-981"><a href="#cb18-981" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**COPD** (2024): 호산구 증가가 동반된 COPD</span>
+<span id="cb18-982"><a href="#cb18-982" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-983"><a href="#cb18-983" aria-hidden="true" tabindex="-1"></a>이러한 적응증 확대는 IL-4/IL-13 경로가 다양한 Th2 관련 질환에 공통적으로 관여함을 반영합니다.</span>
+<span id="cb18-984"><a href="#cb18-984" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb18-985"><a href="#cb18-985" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-986"><a href="#cb18-986" aria-hidden="true" tabindex="-1"></a>Dupilumab의 효과는 여러 대규모 Phase III 임상시험(SOLO 1&amp;2, CHRONOS, CAFE 등)에서 확인되었습니다:</span>
+<span id="cb18-986"><a href="#cb18-986" aria-hidden="true" tabindex="-1"></a><span class="fu">### 아토피 피부염에서의 임상 효과</span></span>
 <span id="cb18-987"><a href="#cb18-987" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-988"><a href="#cb18-988" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 시험 <span class="pp">|</span> 대상 <span class="pp">|</span> 투여 요법 <span class="pp">|</span> EASI-75 (16주) <span class="pp">|</span> IGA 0/1 (16주) <span class="pp">|</span></span>
-<span id="cb18-989"><a href="#cb18-989" aria-hidden="true" tabindex="-1"></a><span class="pp">|------|------|----------|---------------|---------------|</span></span>
-<span id="cb18-990"><a href="#cb18-990" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> SOLO 1 <span class="pp">|</span> 중등증-중증 AD <span class="pp">|</span> 300mg Q2W <span class="pp">|</span> 51% vs 15% (placebo) <span class="pp">|</span> 38% vs 10% <span class="pp">|</span></span>
-<span id="cb18-991"><a href="#cb18-991" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> SOLO 2 <span class="pp">|</span> 중등증-중증 AD <span class="pp">|</span> 300mg Q2W <span class="pp">|</span> 44% vs 12% (placebo) <span class="pp">|</span> 36% vs 8% <span class="pp">|</span></span>
-<span id="cb18-992"><a href="#cb18-992" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CHRONOS <span class="pp">|</span> AD + TCS 병용 <span class="pp">|</span> 300mg Q2W + TCS <span class="pp">|</span> 69% vs 23% (placebo + TCS) <span class="pp">|</span> 39% vs 12% <span class="pp">|</span></span>
-<span id="cb18-993"><a href="#cb18-993" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-994"><a href="#cb18-994" aria-hidden="true" tabindex="-1"></a>**핵심 관찰:**</span>
+<span id="cb18-988"><a href="#cb18-988" aria-hidden="true" tabindex="-1"></a>Dupilumab의 효과는 여러 대규모 Phase III 임상시험(SOLO 1&amp;2, CHRONOS, CAFE 등)에서 확인되었습니다:</span>
+<span id="cb18-989"><a href="#cb18-989" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-990"><a href="#cb18-990" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 시험 <span class="pp">|</span> 대상 <span class="pp">|</span> 투여 요법 <span class="pp">|</span> EASI-75 (16주) <span class="pp">|</span> IGA 0/1 (16주) <span class="pp">|</span></span>
+<span id="cb18-991"><a href="#cb18-991" aria-hidden="true" tabindex="-1"></a><span class="pp">|------|------|----------|---------------|---------------|</span></span>
+<span id="cb18-992"><a href="#cb18-992" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> SOLO 1 <span class="pp">|</span> 중등증-중증 AD <span class="pp">|</span> 300mg Q2W <span class="pp">|</span> 51% vs 15% (placebo) <span class="pp">|</span> 38% vs 10% <span class="pp">|</span></span>
+<span id="cb18-993"><a href="#cb18-993" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> SOLO 2 <span class="pp">|</span> 중등증-중증 AD <span class="pp">|</span> 300mg Q2W <span class="pp">|</span> 44% vs 12% (placebo) <span class="pp">|</span> 36% vs 8% <span class="pp">|</span></span>
+<span id="cb18-994"><a href="#cb18-994" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CHRONOS <span class="pp">|</span> AD + TCS 병용 <span class="pp">|</span> 300mg Q2W + TCS <span class="pp">|</span> 69% vs 23% (placebo + TCS) <span class="pp">|</span> 39% vs 12% <span class="pp">|</span></span>
 <span id="cb18-995"><a href="#cb18-995" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-996"><a href="#cb18-996" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>EASI-75 달성률: 약 44-69% (monotherapy vs combination)</span>
-<span id="cb18-997"><a href="#cb18-997" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Placebo response: 12-23% (피부과에서 placebo 효과가 상당함)</span>
-<span id="cb18-998"><a href="#cb18-998" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>효과 발현 시작: 2주 시점부터 placebo 대비 유의한 차이</span>
-<span id="cb18-999"><a href="#cb18-999" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>최대 효과: 16주 이후에도 지속적으로 개선</span>
-<span id="cb18-1000"><a href="#cb18-1000" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1001"><a href="#cb18-1001" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dupilumab의 약동학 {#sec-dupilumab-pk}</span></span>
+<span id="cb18-996"><a href="#cb18-996" aria-hidden="true" tabindex="-1"></a>**핵심 관찰:**</span>
+<span id="cb18-997"><a href="#cb18-997" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-998"><a href="#cb18-998" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>EASI-75 달성률: 약 44-69% (monotherapy vs combination)</span>
+<span id="cb18-999"><a href="#cb18-999" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Placebo response: 12-23% (피부과에서 placebo 효과가 상당함)</span>
+<span id="cb18-1000"><a href="#cb18-1000" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>효과 발현 시작: 2주 시점부터 placebo 대비 유의한 차이</span>
+<span id="cb18-1001"><a href="#cb18-1001" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>최대 효과: 16주 이후에도 지속적으로 개선</span>
 <span id="cb18-1002"><a href="#cb18-1002" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1003"><a href="#cb18-1003" aria-hidden="true" tabindex="-1"></a>Dupilumab의 약동학적 특성은 단클론항체의 전형적인 특성과 표적 매개 약물 배치(Target-Mediated Drug Disposition, TMDD)의 특성을 모두 보여줍니다.</span>
+<span id="cb18-1003"><a href="#cb18-1003" aria-hidden="true" tabindex="-1"></a><span class="fu">### Dupilumab의 약동학 {#sec-dupilumab-pk}</span></span>
 <span id="cb18-1004"><a href="#cb18-1004" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1005"><a href="#cb18-1005" aria-hidden="true" tabindex="-1"></a>**기본 PK 파라미터:**</span>
+<span id="cb18-1005"><a href="#cb18-1005" aria-hidden="true" tabindex="-1"></a>Dupilumab의 약동학적 특성은 단클론항체의 전형적인 특성과 표적 매개 약물 배치(Target-Mediated Drug Disposition, TMDD)의 특성을 모두 보여줍니다.</span>
 <span id="cb18-1006"><a href="#cb18-1006" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1007"><a href="#cb18-1007" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 파라미터 <span class="pp">|</span> 값 <span class="pp">|</span> 비고 <span class="pp">|</span></span>
-<span id="cb18-1008"><a href="#cb18-1008" aria-hidden="true" tabindex="-1"></a><span class="pp">|----------|------|------|</span></span>
-<span id="cb18-1009"><a href="#cb18-1009" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 생체이용률 (F) <span class="pp">|</span> ~64% <span class="pp">|</span> SC 투여 <span class="pp">|</span></span>
-<span id="cb18-1010"><a href="#cb18-1010" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> T~max~ <span class="pp">|</span> 3-7일 <span class="pp">|</span> SC 투여 후 <span class="pp">|</span></span>
-<span id="cb18-1011"><a href="#cb18-1011" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 반감기 (t~1/2~) <span class="pp">|</span> ~26일 <span class="pp">|</span> 항정상태 <span class="pp">|</span></span>
-<span id="cb18-1012"><a href="#cb18-1012" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CL/F (linear) <span class="pp">|</span> ~0.36 L/day <span class="pp">|</span> 체중에 따라 변화 <span class="pp">|</span></span>
-<span id="cb18-1013"><a href="#cb18-1013" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> V~d~/F <span class="pp">|</span> ~4.8 L <span class="pp">|</span> 혈관 내 분포가 주 <span class="pp">|</span></span>
-<span id="cb18-1014"><a href="#cb18-1014" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 항정상태 도달 <span class="pp">|</span> ~16주 (Q2W) <span class="pp">|</span> 600mg loading 시 단축 <span class="pp">|</span></span>
-<span id="cb18-1015"><a href="#cb18-1015" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1016"><a href="#cb18-1016" aria-hidden="true" tabindex="-1"></a>**Target-Mediated Drug Disposition (TMDD):**</span>
+<span id="cb18-1007"><a href="#cb18-1007" aria-hidden="true" tabindex="-1"></a>**기본 PK 파라미터:**</span>
+<span id="cb18-1008"><a href="#cb18-1008" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1009"><a href="#cb18-1009" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 파라미터 <span class="pp">|</span> 값 <span class="pp">|</span> 비고 <span class="pp">|</span></span>
+<span id="cb18-1010"><a href="#cb18-1010" aria-hidden="true" tabindex="-1"></a><span class="pp">|----------|------|------|</span></span>
+<span id="cb18-1011"><a href="#cb18-1011" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 생체이용률 (F) <span class="pp">|</span> ~64% <span class="pp">|</span> SC 투여 <span class="pp">|</span></span>
+<span id="cb18-1012"><a href="#cb18-1012" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> T~max~ <span class="pp">|</span> 3-7일 <span class="pp">|</span> SC 투여 후 <span class="pp">|</span></span>
+<span id="cb18-1013"><a href="#cb18-1013" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 반감기 (t~1/2~) <span class="pp">|</span> ~26일 <span class="pp">|</span> 항정상태 <span class="pp">|</span></span>
+<span id="cb18-1014"><a href="#cb18-1014" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CL/F (linear) <span class="pp">|</span> ~0.36 L/day <span class="pp">|</span> 체중에 따라 변화 <span class="pp">|</span></span>
+<span id="cb18-1015"><a href="#cb18-1015" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> V~d~/F <span class="pp">|</span> ~4.8 L <span class="pp">|</span> 혈관 내 분포가 주 <span class="pp">|</span></span>
+<span id="cb18-1016"><a href="#cb18-1016" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 항정상태 도달 <span class="pp">|</span> ~16주 (Q2W) <span class="pp">|</span> 600mg loading 시 단축 <span class="pp">|</span></span>
 <span id="cb18-1017"><a href="#cb18-1017" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1018"><a href="#cb18-1018" aria-hidden="true" tabindex="-1"></a>Dupilumab의 약동학에서 가장 주목할 특징은 **비선형 소실(nonlinear elimination)**입니다. 이는 약물이 표적 수용체(IL-4Rα)에 결합하여 내재화(internalization)되면서 소실되는 **TMDD 기전** 때문입니다.</span>
+<span id="cb18-1018"><a href="#cb18-1018" aria-hidden="true" tabindex="-1"></a>**Target-Mediated Drug Disposition (TMDD):**</span>
 <span id="cb18-1019"><a href="#cb18-1019" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1020"><a href="#cb18-1020" aria-hidden="true" tabindex="-1"></a>$$\frac{dC}{dt} = \text{Input} - CL_{linear} \cdot C - \frac{V_{max} \cdot C}{K_m + C}$$</span>
+<span id="cb18-1020"><a href="#cb18-1020" aria-hidden="true" tabindex="-1"></a>Dupilumab의 약동학에서 가장 주목할 특징은 **비선형 소실(nonlinear elimination)**입니다. 이는 약물이 표적 수용체(IL-4Rα)에 결합하여 내재화(internalization)되면서 소실되는 **TMDD 기전** 때문입니다.</span>
 <span id="cb18-1021"><a href="#cb18-1021" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1022"><a href="#cb18-1022" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>저농도: $C \ll K_m$이면 TMDD가 지배적 → 빠른 소실</span>
-<span id="cb18-1023"><a href="#cb18-1023" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>고농도: $C \gg K_m$이면 수용체가 포화 → 선형 소실이 지배적</span>
-<span id="cb18-1024"><a href="#cb18-1024" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>임상적 의미: 600mg loading dose를 사용하는 이유 중 하나가 빠르게 수용체를 포화시켜 선형 PK 영역에 도달하기 위함</span>
-<span id="cb18-1025"><a href="#cb18-1025" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1026"><a href="#cb18-1026" aria-hidden="true" tabindex="-1"></a>**PK에 영향을 미치는 공변량:**</span>
+<span id="cb18-1022"><a href="#cb18-1022" aria-hidden="true" tabindex="-1"></a>$$\frac{dC}{dt} = \text{Input} - CL_{linear} \cdot C - \frac{V_{max} \cdot C}{K_m + C}$$</span>
+<span id="cb18-1023"><a href="#cb18-1023" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1024"><a href="#cb18-1024" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>저농도: $C \ll K_m$이면 TMDD가 지배적 → 빠른 소실</span>
+<span id="cb18-1025"><a href="#cb18-1025" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>고농도: $C \gg K_m$이면 수용체가 포화 → 선형 소실이 지배적</span>
+<span id="cb18-1026"><a href="#cb18-1026" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>임상적 의미: 600mg loading dose를 사용하는 이유 중 하나가 빠르게 수용체를 포화시켜 선형 PK 영역에 도달하기 위함</span>
 <span id="cb18-1027"><a href="#cb18-1027" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1028"><a href="#cb18-1028" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 공변량 <span class="pp">|</span> 영향 <span class="pp">|</span> 임상적 의미 <span class="pp">|</span></span>
-<span id="cb18-1029"><a href="#cb18-1029" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|------|------------|</span></span>
-<span id="cb18-1030"><a href="#cb18-1030" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 체중 <span class="pp">|</span> 체중 증가 시 CL 증가, Ctrough 감소 <span class="pp">|</span> 비만 환자에서 효과 감소 가능성 <span class="pp">|</span></span>
-<span id="cb18-1031"><a href="#cb18-1031" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 나이 <span class="pp">|</span> 임상적으로 유의한 영향 없음 <span class="pp">|</span> 용량 조절 불필요 <span class="pp">|</span></span>
-<span id="cb18-1032"><a href="#cb18-1032" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 성별 <span class="pp">|</span> 체중 보정 후 유의한 차이 없음 <span class="pp">|</span> 용량 조절 불필요 <span class="pp">|</span></span>
-<span id="cb18-1033"><a href="#cb18-1033" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ADA (Anti-Drug Antibody) <span class="pp">|</span> 일부 환자에서 Ctrough 감소 <span class="pp">|</span> 약 5-8%에서 ADA 양성 <span class="pp">|</span></span>
-<span id="cb18-1034"><a href="#cb18-1034" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Baseline albumin <span class="pp">|</span> 알부민 낮을 때 CL 소폭 증가 <span class="pp">|</span> 중증 AD에서 고려 <span class="pp">|</span></span>
-<span id="cb18-1035"><a href="#cb18-1035" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Baseline IgE <span class="pp">|</span> IgE 높을 때 CL 소폭 증가 <span class="pp">|</span> TMDD 기전 반영 <span class="pp">|</span></span>
-<span id="cb18-1036"><a href="#cb18-1036" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1037"><a href="#cb18-1037" aria-hidden="true" tabindex="-1"></a><span class="fu">### PK-PD 관계: 혈중 농도와 EASI Score {#sec-dupilumab-pkpd}</span></span>
+<span id="cb18-1028"><a href="#cb18-1028" aria-hidden="true" tabindex="-1"></a>**PK에 영향을 미치는 공변량:**</span>
+<span id="cb18-1029"><a href="#cb18-1029" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1030"><a href="#cb18-1030" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 공변량 <span class="pp">|</span> 영향 <span class="pp">|</span> 임상적 의미 <span class="pp">|</span></span>
+<span id="cb18-1031"><a href="#cb18-1031" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|------|------------|</span></span>
+<span id="cb18-1032"><a href="#cb18-1032" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 체중 <span class="pp">|</span> 체중 증가 시 CL 증가, Ctrough 감소 <span class="pp">|</span> 비만 환자에서 효과 감소 가능성 <span class="pp">|</span></span>
+<span id="cb18-1033"><a href="#cb18-1033" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 나이 <span class="pp">|</span> 임상적으로 유의한 영향 없음 <span class="pp">|</span> 용량 조절 불필요 <span class="pp">|</span></span>
+<span id="cb18-1034"><a href="#cb18-1034" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 성별 <span class="pp">|</span> 체중 보정 후 유의한 차이 없음 <span class="pp">|</span> 용량 조절 불필요 <span class="pp">|</span></span>
+<span id="cb18-1035"><a href="#cb18-1035" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ADA (Anti-Drug Antibody) <span class="pp">|</span> 일부 환자에서 Ctrough 감소 <span class="pp">|</span> 약 5-8%에서 ADA 양성 <span class="pp">|</span></span>
+<span id="cb18-1036"><a href="#cb18-1036" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Baseline albumin <span class="pp">|</span> 알부민 낮을 때 CL 소폭 증가 <span class="pp">|</span> 중증 AD에서 고려 <span class="pp">|</span></span>
+<span id="cb18-1037"><a href="#cb18-1037" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Baseline IgE <span class="pp">|</span> IgE 높을 때 CL 소폭 증가 <span class="pp">|</span> TMDD 기전 반영 <span class="pp">|</span></span>
 <span id="cb18-1038"><a href="#cb18-1038" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1039"><a href="#cb18-1039" aria-hidden="true" tabindex="-1"></a>Dupilumab의 노출-반응(exposure-response) 관계에서 가장 많이 사용되는 PK 지표는 **trough 농도(C~trough~)**이며, PD 지표로는 EASI score의 **% change from baseline**이 사용됩니다.</span>
+<span id="cb18-1039"><a href="#cb18-1039" aria-hidden="true" tabindex="-1"></a><span class="fu">### PK-PD 관계: 혈중 농도와 EASI Score {#sec-dupilumab-pkpd}</span></span>
 <span id="cb18-1040"><a href="#cb18-1040" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1043"><a href="#cb18-1043" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb18-1044"><a href="#cb18-1044" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb18-1045"><a href="#cb18-1045" aria-hidden="true" tabindex="-1"></a><span class="co"># Dupilumab 노출-반응 관계 시각화 (모의 데이터)</span></span>
-<span id="cb18-1046"><a href="#cb18-1046" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb18-1047"><a href="#cb18-1047" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1048"><a href="#cb18-1048" aria-hidden="true" tabindex="-1"></a>n_patients <span class="ot">&lt;-</span> <span class="dv">200</span></span>
+<span id="cb18-1041"><a href="#cb18-1041" aria-hidden="true" tabindex="-1"></a>Dupilumab의 노출-반응(exposure-response) 관계에서 가장 많이 사용되는 PK 지표는 **trough 농도(C~trough~)**이며, PD 지표로는 EASI score의 **% change from baseline**이 사용됩니다.</span>
+<span id="cb18-1042"><a href="#cb18-1042" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1045"><a href="#cb18-1045" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-1046"><a href="#cb18-1046" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb18-1047"><a href="#cb18-1047" aria-hidden="true" tabindex="-1"></a><span class="co"># Dupilumab 노출-반응 관계 시각화 (모의 데이터)</span></span>
+<span id="cb18-1048"><a href="#cb18-1048" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
 <span id="cb18-1049"><a href="#cb18-1049" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1050"><a href="#cb18-1050" aria-hidden="true" tabindex="-1"></a><span class="co"># 모의 데이터 생성</span></span>
-<span id="cb18-1051"><a href="#cb18-1051" aria-hidden="true" tabindex="-1"></a>dupilumab_er <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb18-1052"><a href="#cb18-1052" aria-hidden="true" tabindex="-1"></a>  <span class="at">patient_id =</span> <span class="dv">1</span><span class="sc">:</span>n_patients,</span>
-<span id="cb18-1053"><a href="#cb18-1053" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Ctrough at Week 16 (ug/mL) - 대략적인 분포</span></span>
-<span id="cb18-1054"><a href="#cb18-1054" aria-hidden="true" tabindex="-1"></a>  <span class="at">ctrough =</span> <span class="fu">c</span>(</span>
-<span id="cb18-1055"><a href="#cb18-1055" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rlnorm</span>(<span class="dv">50</span>, <span class="fu">log</span>(<span class="fl">0.5</span>), <span class="fl">0.8</span>),   <span class="co"># Placebo-like (very low)</span></span>
-<span id="cb18-1056"><a href="#cb18-1056" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rlnorm</span>(<span class="dv">75</span>, <span class="fu">log</span>(<span class="dv">50</span>), <span class="fl">0.5</span>),    <span class="co"># Q4W</span></span>
-<span id="cb18-1057"><a href="#cb18-1057" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rlnorm</span>(<span class="dv">75</span>, <span class="fu">log</span>(<span class="dv">80</span>), <span class="fl">0.4</span>)     <span class="co"># Q2W</span></span>
-<span id="cb18-1058"><a href="#cb18-1058" aria-hidden="true" tabindex="-1"></a>  ),</span>
-<span id="cb18-1059"><a href="#cb18-1059" aria-hidden="true" tabindex="-1"></a>  <span class="at">regimen =</span> <span class="fu">c</span>(</span>
-<span id="cb18-1060"><a href="#cb18-1060" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"Placebo"</span>, <span class="dv">50</span>),</span>
-<span id="cb18-1061"><a href="#cb18-1061" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"300mg Q4W"</span>, <span class="dv">75</span>),</span>
-<span id="cb18-1062"><a href="#cb18-1062" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"300mg Q2W"</span>, <span class="dv">75</span>)</span>
-<span id="cb18-1063"><a href="#cb18-1063" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb18-1064"><a href="#cb18-1064" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
-<span id="cb18-1065"><a href="#cb18-1065" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb18-1066"><a href="#cb18-1066" aria-hidden="true" tabindex="-1"></a>    <span class="co"># EASI % change from baseline (Emax-like relationship + noise)</span></span>
-<span id="cb18-1067"><a href="#cb18-1067" aria-hidden="true" tabindex="-1"></a>    <span class="at">easi_change =</span> <span class="fu">case_when</span>(</span>
-<span id="cb18-1068"><a href="#cb18-1068" aria-hidden="true" tabindex="-1"></a>      regimen <span class="sc">==</span> <span class="st">"Placebo"</span> <span class="sc">~</span> <span class="fu">rnorm</span>(<span class="fu">n</span>(), <span class="sc">-</span><span class="dv">20</span>, <span class="dv">15</span>),</span>
-<span id="cb18-1069"><a href="#cb18-1069" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="sc">-</span><span class="dv">90</span> <span class="sc">*</span> ctrough<span class="sc">^</span><span class="fl">1.2</span> <span class="sc">/</span> (<span class="dv">40</span><span class="sc">^</span><span class="fl">1.2</span> <span class="sc">+</span> ctrough<span class="sc">^</span><span class="fl">1.2</span>) <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="fu">n</span>(), <span class="dv">0</span>, <span class="dv">10</span>)</span>
-<span id="cb18-1070"><a href="#cb18-1070" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb18-1071"><a href="#cb18-1071" aria-hidden="true" tabindex="-1"></a>    <span class="at">easi_change =</span> <span class="fu">pmax</span>(<span class="fu">pmin</span>(easi_change, <span class="dv">10</span>), <span class="sc">-</span><span class="dv">100</span>),  <span class="co"># 범위 제한</span></span>
-<span id="cb18-1072"><a href="#cb18-1072" aria-hidden="true" tabindex="-1"></a>    <span class="at">easi75 =</span> <span class="fu">ifelse</span>(easi_change <span class="sc">&lt;=</span> <span class="sc">-</span><span class="dv">75</span>, <span class="st">"EASI-75 달성"</span>, <span class="st">"미달성"</span>)</span>
-<span id="cb18-1073"><a href="#cb18-1073" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb18-1074"><a href="#cb18-1074" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1075"><a href="#cb18-1075" aria-hidden="true" tabindex="-1"></a><span class="co"># Exposure-Response: Ctrough vs EASI % change</span></span>
-<span id="cb18-1076"><a href="#cb18-1076" aria-hidden="true" tabindex="-1"></a>p_er <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dupilumab_er <span class="sc">%&gt;%</span> <span class="fu">filter</span>(regimen <span class="sc">!=</span> <span class="st">"Placebo"</span>),</span>
-<span id="cb18-1077"><a href="#cb18-1077" aria-hidden="true" tabindex="-1"></a>               <span class="fu">aes</span>(<span class="at">x =</span> ctrough, <span class="at">y =</span> easi_change)) <span class="sc">+</span></span>
-<span id="cb18-1078"><a href="#cb18-1078" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> easi75), <span class="at">alpha =</span> <span class="fl">0.6</span>, <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb18-1079"><a href="#cb18-1079" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">se =</span> <span class="cn">TRUE</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb18-1080"><a href="#cb18-1080" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="sc">-</span><span class="dv">75</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
-<span id="cb18-1081"><a href="#cb18-1081" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">5</span>, <span class="at">y =</span> <span class="sc">-</span><span class="dv">72</span>, <span class="at">label =</span> <span class="st">"EASI-75 기준"</span>, <span class="at">color =</span> <span class="st">"red"</span>,</span>
-<span id="cb18-1082"><a href="#cb18-1082" aria-hidden="true" tabindex="-1"></a>           <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">size =</span> <span class="fl">3.5</span>) <span class="sc">+</span></span>
-<span id="cb18-1083"><a href="#cb18-1083" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb18-1084"><a href="#cb18-1084" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="fu">expression</span>(C[trough]<span class="sc">~</span><span class="st">"at Week 16 (μg/mL)"</span>),</span>
-<span id="cb18-1085"><a href="#cb18-1085" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"EASI % Change from Baseline"</span>,</span>
-<span id="cb18-1086"><a href="#cb18-1086" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Dupilumab 노출-반응 관계"</span>,</span>
-<span id="cb18-1087"><a href="#cb18-1087" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Ctrough가 높을수록 EASI 개선이 큼 (모의 데이터)"</span>,</span>
-<span id="cb18-1088"><a href="#cb18-1088" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">""</span></span>
-<span id="cb18-1089"><a href="#cb18-1089" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb18-1090"><a href="#cb18-1090" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"NanumGothic"</span>) <span class="sc">+</span></span>
-<span id="cb18-1091"><a href="#cb18-1091" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb18-1092"><a href="#cb18-1092" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">14</span>),</span>
-<span id="cb18-1093"><a href="#cb18-1093" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span></span>
-<span id="cb18-1094"><a href="#cb18-1094" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb18-1095"><a href="#cb18-1095" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"grey60"</span>, <span class="st">"steelblue"</span>))</span>
-<span id="cb18-1096"><a href="#cb18-1096" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1097"><a href="#cb18-1097" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p_er)</span>
-<span id="cb18-1098"><a href="#cb18-1098" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-1099"><a href="#cb18-1099" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1102"><a href="#cb18-1102" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb18-1103"><a href="#cb18-1103" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb18-1104"><a href="#cb18-1104" aria-hidden="true" tabindex="-1"></a><span class="co"># Ctrough quartile별 EASI-75 달성률</span></span>
-<span id="cb18-1105"><a href="#cb18-1105" aria-hidden="true" tabindex="-1"></a>er_quartile <span class="ot">&lt;-</span> dupilumab_er <span class="sc">%&gt;%</span></span>
-<span id="cb18-1106"><a href="#cb18-1106" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(regimen <span class="sc">!=</span> <span class="st">"Placebo"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb18-1107"><a href="#cb18-1107" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb18-1108"><a href="#cb18-1108" aria-hidden="true" tabindex="-1"></a>    <span class="at">ctrough_q =</span> <span class="fu">cut</span>(</span>
-<span id="cb18-1109"><a href="#cb18-1109" aria-hidden="true" tabindex="-1"></a>      ctrough,</span>
-<span id="cb18-1110"><a href="#cb18-1110" aria-hidden="true" tabindex="-1"></a>      <span class="at">breaks =</span> <span class="fu">quantile</span>(ctrough, <span class="at">probs =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.75</span>, <span class="dv">1</span>)),</span>
-<span id="cb18-1111"><a href="#cb18-1111" aria-hidden="true" tabindex="-1"></a>      <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Q1 (lowest)"</span>, <span class="st">"Q2"</span>, <span class="st">"Q3"</span>, <span class="st">"Q4 (highest)"</span>),</span>
-<span id="cb18-1112"><a href="#cb18-1112" aria-hidden="true" tabindex="-1"></a>      <span class="at">include.lowest =</span> <span class="cn">TRUE</span></span>
-<span id="cb18-1113"><a href="#cb18-1113" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb18-1114"><a href="#cb18-1114" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb18-1115"><a href="#cb18-1115" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ctrough_q) <span class="sc">%&gt;%</span></span>
-<span id="cb18-1116"><a href="#cb18-1116" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb18-1117"><a href="#cb18-1117" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
-<span id="cb18-1118"><a href="#cb18-1118" aria-hidden="true" tabindex="-1"></a>    <span class="at">easi75_n =</span> <span class="fu">sum</span>(easi75 <span class="sc">==</span> <span class="st">"EASI-75 달성"</span>),</span>
-<span id="cb18-1119"><a href="#cb18-1119" aria-hidden="true" tabindex="-1"></a>    <span class="at">easi75_rate =</span> <span class="fu">mean</span>(easi75 <span class="sc">==</span> <span class="st">"EASI-75 달성"</span>) <span class="sc">*</span> <span class="dv">100</span>,</span>
-<span id="cb18-1120"><a href="#cb18-1120" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_change =</span> <span class="fu">mean</span>(easi_change),</span>
-<span id="cb18-1121"><a href="#cb18-1121" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
-<span id="cb18-1122"><a href="#cb18-1122" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb18-1123"><a href="#cb18-1123" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1124"><a href="#cb18-1124" aria-hidden="true" tabindex="-1"></a><span class="co"># Quartile별 달성률 막대 그래프</span></span>
-<span id="cb18-1125"><a href="#cb18-1125" aria-hidden="true" tabindex="-1"></a>p_quartile <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(er_quartile, <span class="fu">aes</span>(<span class="at">x =</span> ctrough_q, <span class="at">y =</span> easi75_rate)) <span class="sc">+</span></span>
-<span id="cb18-1126"><a href="#cb18-1126" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">"steelblue"</span>, <span class="at">alpha =</span> <span class="fl">0.8</span>, <span class="at">width =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
-<span id="cb18-1127"><a href="#cb18-1127" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(<span class="fu">round</span>(easi75_rate), <span class="st">"%"</span>)),</span>
-<span id="cb18-1128"><a href="#cb18-1128" aria-hidden="true" tabindex="-1"></a>            <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.5</span>, <span class="at">size =</span> <span class="dv">4</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>) <span class="sc">+</span></span>
-<span id="cb18-1129"><a href="#cb18-1129" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb18-1130"><a href="#cb18-1130" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="fu">expression</span>(C[trough]<span class="sc">~</span><span class="st">"Quartile"</span>),</span>
-<span id="cb18-1131"><a href="#cb18-1131" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"EASI-75 달성률 (%)"</span>,</span>
-<span id="cb18-1132"><a href="#cb18-1132" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Ctrough Quartile별 EASI-75 달성률"</span>,</span>
-<span id="cb18-1133"><a href="#cb18-1133" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"노출이 높을수록 반응률이 높아지는 경향"</span></span>
-<span id="cb18-1134"><a href="#cb18-1134" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb18-1135"><a href="#cb18-1135" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">100</span>)) <span class="sc">+</span></span>
-<span id="cb18-1136"><a href="#cb18-1136" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"NanumGothic"</span>) <span class="sc">+</span></span>
-<span id="cb18-1137"><a href="#cb18-1137" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">14</span>))</span>
-<span id="cb18-1138"><a href="#cb18-1138" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1139"><a href="#cb18-1139" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p_quartile)</span>
+<span id="cb18-1050"><a href="#cb18-1050" aria-hidden="true" tabindex="-1"></a>n_patients <span class="ot">&lt;-</span> <span class="dv">200</span></span>
+<span id="cb18-1051"><a href="#cb18-1051" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1052"><a href="#cb18-1052" aria-hidden="true" tabindex="-1"></a><span class="co"># 모의 데이터 생성</span></span>
+<span id="cb18-1053"><a href="#cb18-1053" aria-hidden="true" tabindex="-1"></a>dupilumab_er <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb18-1054"><a href="#cb18-1054" aria-hidden="true" tabindex="-1"></a>  <span class="at">patient_id =</span> <span class="dv">1</span><span class="sc">:</span>n_patients,</span>
+<span id="cb18-1055"><a href="#cb18-1055" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Ctrough at Week 16 (ug/mL) - 대략적인 분포</span></span>
+<span id="cb18-1056"><a href="#cb18-1056" aria-hidden="true" tabindex="-1"></a>  <span class="at">ctrough =</span> <span class="fu">c</span>(</span>
+<span id="cb18-1057"><a href="#cb18-1057" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rlnorm</span>(<span class="dv">50</span>, <span class="fu">log</span>(<span class="fl">0.5</span>), <span class="fl">0.8</span>),   <span class="co"># Placebo-like (very low)</span></span>
+<span id="cb18-1058"><a href="#cb18-1058" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rlnorm</span>(<span class="dv">75</span>, <span class="fu">log</span>(<span class="dv">50</span>), <span class="fl">0.5</span>),    <span class="co"># Q4W</span></span>
+<span id="cb18-1059"><a href="#cb18-1059" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rlnorm</span>(<span class="dv">75</span>, <span class="fu">log</span>(<span class="dv">80</span>), <span class="fl">0.4</span>)     <span class="co"># Q2W</span></span>
+<span id="cb18-1060"><a href="#cb18-1060" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb18-1061"><a href="#cb18-1061" aria-hidden="true" tabindex="-1"></a>  <span class="at">regimen =</span> <span class="fu">c</span>(</span>
+<span id="cb18-1062"><a href="#cb18-1062" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"Placebo"</span>, <span class="dv">50</span>),</span>
+<span id="cb18-1063"><a href="#cb18-1063" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"300mg Q4W"</span>, <span class="dv">75</span>),</span>
+<span id="cb18-1064"><a href="#cb18-1064" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"300mg Q2W"</span>, <span class="dv">75</span>)</span>
+<span id="cb18-1065"><a href="#cb18-1065" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb18-1066"><a href="#cb18-1066" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb18-1067"><a href="#cb18-1067" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb18-1068"><a href="#cb18-1068" aria-hidden="true" tabindex="-1"></a>    <span class="co"># EASI % change from baseline (Emax-like relationship + noise)</span></span>
+<span id="cb18-1069"><a href="#cb18-1069" aria-hidden="true" tabindex="-1"></a>    <span class="at">easi_change =</span> <span class="fu">case_when</span>(</span>
+<span id="cb18-1070"><a href="#cb18-1070" aria-hidden="true" tabindex="-1"></a>      regimen <span class="sc">==</span> <span class="st">"Placebo"</span> <span class="sc">~</span> <span class="fu">rnorm</span>(<span class="fu">n</span>(), <span class="sc">-</span><span class="dv">20</span>, <span class="dv">15</span>),</span>
+<span id="cb18-1071"><a href="#cb18-1071" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="sc">-</span><span class="dv">90</span> <span class="sc">*</span> ctrough<span class="sc">^</span><span class="fl">1.2</span> <span class="sc">/</span> (<span class="dv">40</span><span class="sc">^</span><span class="fl">1.2</span> <span class="sc">+</span> ctrough<span class="sc">^</span><span class="fl">1.2</span>) <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="fu">n</span>(), <span class="dv">0</span>, <span class="dv">10</span>)</span>
+<span id="cb18-1072"><a href="#cb18-1072" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb18-1073"><a href="#cb18-1073" aria-hidden="true" tabindex="-1"></a>    <span class="at">easi_change =</span> <span class="fu">pmax</span>(<span class="fu">pmin</span>(easi_change, <span class="dv">10</span>), <span class="sc">-</span><span class="dv">100</span>),  <span class="co"># 범위 제한</span></span>
+<span id="cb18-1074"><a href="#cb18-1074" aria-hidden="true" tabindex="-1"></a>    <span class="at">easi75 =</span> <span class="fu">ifelse</span>(easi_change <span class="sc">&lt;=</span> <span class="sc">-</span><span class="dv">75</span>, <span class="st">"EASI-75 달성"</span>, <span class="st">"미달성"</span>)</span>
+<span id="cb18-1075"><a href="#cb18-1075" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb18-1076"><a href="#cb18-1076" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1077"><a href="#cb18-1077" aria-hidden="true" tabindex="-1"></a><span class="co"># Exposure-Response: Ctrough vs EASI % change</span></span>
+<span id="cb18-1078"><a href="#cb18-1078" aria-hidden="true" tabindex="-1"></a>p_er <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dupilumab_er <span class="sc">%&gt;%</span> <span class="fu">filter</span>(regimen <span class="sc">!=</span> <span class="st">"Placebo"</span>),</span>
+<span id="cb18-1079"><a href="#cb18-1079" aria-hidden="true" tabindex="-1"></a>               <span class="fu">aes</span>(<span class="at">x =</span> ctrough, <span class="at">y =</span> easi_change)) <span class="sc">+</span></span>
+<span id="cb18-1080"><a href="#cb18-1080" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> easi75), <span class="at">alpha =</span> <span class="fl">0.6</span>, <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb18-1081"><a href="#cb18-1081" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">se =</span> <span class="cn">TRUE</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb18-1082"><a href="#cb18-1082" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="sc">-</span><span class="dv">75</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb18-1083"><a href="#cb18-1083" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">5</span>, <span class="at">y =</span> <span class="sc">-</span><span class="dv">72</span>, <span class="at">label =</span> <span class="st">"EASI-75 기준"</span>, <span class="at">color =</span> <span class="st">"red"</span>,</span>
+<span id="cb18-1084"><a href="#cb18-1084" aria-hidden="true" tabindex="-1"></a>           <span class="at">hjust =</span> <span class="dv">0</span>, <span class="at">size =</span> <span class="fl">3.5</span>) <span class="sc">+</span></span>
+<span id="cb18-1085"><a href="#cb18-1085" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb18-1086"><a href="#cb18-1086" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="fu">expression</span>(C[trough]<span class="sc">~</span><span class="st">"at Week 16 (μg/mL)"</span>),</span>
+<span id="cb18-1087"><a href="#cb18-1087" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"EASI % Change from Baseline"</span>,</span>
+<span id="cb18-1088"><a href="#cb18-1088" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Dupilumab 노출-반응 관계"</span>,</span>
+<span id="cb18-1089"><a href="#cb18-1089" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Ctrough가 높을수록 EASI 개선이 큼 (모의 데이터)"</span>,</span>
+<span id="cb18-1090"><a href="#cb18-1090" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">""</span></span>
+<span id="cb18-1091"><a href="#cb18-1091" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb18-1092"><a href="#cb18-1092" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"NanumGothic"</span>) <span class="sc">+</span></span>
+<span id="cb18-1093"><a href="#cb18-1093" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb18-1094"><a href="#cb18-1094" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">14</span>),</span>
+<span id="cb18-1095"><a href="#cb18-1095" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">"bottom"</span></span>
+<span id="cb18-1096"><a href="#cb18-1096" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb18-1097"><a href="#cb18-1097" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"grey60"</span>, <span class="st">"steelblue"</span>))</span>
+<span id="cb18-1098"><a href="#cb18-1098" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1099"><a href="#cb18-1099" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p_er)</span>
+<span id="cb18-1100"><a href="#cb18-1100" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-1101"><a href="#cb18-1101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1104"><a href="#cb18-1104" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-1105"><a href="#cb18-1105" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb18-1106"><a href="#cb18-1106" aria-hidden="true" tabindex="-1"></a><span class="co"># Ctrough quartile별 EASI-75 달성률</span></span>
+<span id="cb18-1107"><a href="#cb18-1107" aria-hidden="true" tabindex="-1"></a>er_quartile <span class="ot">&lt;-</span> dupilumab_er <span class="sc">%&gt;%</span></span>
+<span id="cb18-1108"><a href="#cb18-1108" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(regimen <span class="sc">!=</span> <span class="st">"Placebo"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb18-1109"><a href="#cb18-1109" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb18-1110"><a href="#cb18-1110" aria-hidden="true" tabindex="-1"></a>    <span class="at">ctrough_q =</span> <span class="fu">cut</span>(</span>
+<span id="cb18-1111"><a href="#cb18-1111" aria-hidden="true" tabindex="-1"></a>      ctrough,</span>
+<span id="cb18-1112"><a href="#cb18-1112" aria-hidden="true" tabindex="-1"></a>      <span class="at">breaks =</span> <span class="fu">quantile</span>(ctrough, <span class="at">probs =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="fl">0.75</span>, <span class="dv">1</span>)),</span>
+<span id="cb18-1113"><a href="#cb18-1113" aria-hidden="true" tabindex="-1"></a>      <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Q1 (lowest)"</span>, <span class="st">"Q2"</span>, <span class="st">"Q3"</span>, <span class="st">"Q4 (highest)"</span>),</span>
+<span id="cb18-1114"><a href="#cb18-1114" aria-hidden="true" tabindex="-1"></a>      <span class="at">include.lowest =</span> <span class="cn">TRUE</span></span>
+<span id="cb18-1115"><a href="#cb18-1115" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb18-1116"><a href="#cb18-1116" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb18-1117"><a href="#cb18-1117" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ctrough_q) <span class="sc">%&gt;%</span></span>
+<span id="cb18-1118"><a href="#cb18-1118" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb18-1119"><a href="#cb18-1119" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb18-1120"><a href="#cb18-1120" aria-hidden="true" tabindex="-1"></a>    <span class="at">easi75_n =</span> <span class="fu">sum</span>(easi75 <span class="sc">==</span> <span class="st">"EASI-75 달성"</span>),</span>
+<span id="cb18-1121"><a href="#cb18-1121" aria-hidden="true" tabindex="-1"></a>    <span class="at">easi75_rate =</span> <span class="fu">mean</span>(easi75 <span class="sc">==</span> <span class="st">"EASI-75 달성"</span>) <span class="sc">*</span> <span class="dv">100</span>,</span>
+<span id="cb18-1122"><a href="#cb18-1122" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_change =</span> <span class="fu">mean</span>(easi_change),</span>
+<span id="cb18-1123"><a href="#cb18-1123" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb18-1124"><a href="#cb18-1124" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb18-1125"><a href="#cb18-1125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1126"><a href="#cb18-1126" aria-hidden="true" tabindex="-1"></a><span class="co"># Quartile별 달성률 막대 그래프</span></span>
+<span id="cb18-1127"><a href="#cb18-1127" aria-hidden="true" tabindex="-1"></a>p_quartile <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(er_quartile, <span class="fu">aes</span>(<span class="at">x =</span> ctrough_q, <span class="at">y =</span> easi75_rate)) <span class="sc">+</span></span>
+<span id="cb18-1128"><a href="#cb18-1128" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">"steelblue"</span>, <span class="at">alpha =</span> <span class="fl">0.8</span>, <span class="at">width =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
+<span id="cb18-1129"><a href="#cb18-1129" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(<span class="fu">round</span>(easi75_rate), <span class="st">"%"</span>)),</span>
+<span id="cb18-1130"><a href="#cb18-1130" aria-hidden="true" tabindex="-1"></a>            <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.5</span>, <span class="at">size =</span> <span class="dv">4</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>) <span class="sc">+</span></span>
+<span id="cb18-1131"><a href="#cb18-1131" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb18-1132"><a href="#cb18-1132" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="fu">expression</span>(C[trough]<span class="sc">~</span><span class="st">"Quartile"</span>),</span>
+<span id="cb18-1133"><a href="#cb18-1133" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"EASI-75 달성률 (%)"</span>,</span>
+<span id="cb18-1134"><a href="#cb18-1134" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Ctrough Quartile별 EASI-75 달성률"</span>,</span>
+<span id="cb18-1135"><a href="#cb18-1135" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"노출이 높을수록 반응률이 높아지는 경향"</span></span>
+<span id="cb18-1136"><a href="#cb18-1136" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb18-1137"><a href="#cb18-1137" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">100</span>)) <span class="sc">+</span></span>
+<span id="cb18-1138"><a href="#cb18-1138" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">"NanumGothic"</span>) <span class="sc">+</span></span>
+<span id="cb18-1139"><a href="#cb18-1139" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">14</span>))</span>
 <span id="cb18-1140"><a href="#cb18-1140" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1141"><a href="#cb18-1141" aria-hidden="true" tabindex="-1"></a><span class="co"># gt 테이블로 요약</span></span>
-<span id="cb18-1142"><a href="#cb18-1142" aria-hidden="true" tabindex="-1"></a>er_quartile <span class="sc">%&gt;%</span></span>
-<span id="cb18-1143"><a href="#cb18-1143" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb18-1144"><a href="#cb18-1144" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(</span>
-<span id="cb18-1145"><a href="#cb18-1145" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Dupilumab Ctrough Quartile별 EASI-75 반응률"</span>,</span>
-<span id="cb18-1146"><a href="#cb18-1146" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"모의 데이터 기반 노출-반응 분석"</span></span>
-<span id="cb18-1147"><a href="#cb18-1147" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb18-1148"><a href="#cb18-1148" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>(</span>
-<span id="cb18-1149"><a href="#cb18-1149" aria-hidden="true" tabindex="-1"></a>    <span class="at">ctrough_q =</span> <span class="st">"Ctrough Quartile"</span>,</span>
-<span id="cb18-1150"><a href="#cb18-1150" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="st">"N"</span>,</span>
-<span id="cb18-1151"><a href="#cb18-1151" aria-hidden="true" tabindex="-1"></a>    <span class="at">easi75_n =</span> <span class="st">"EASI-75 달성 (n)"</span>,</span>
-<span id="cb18-1152"><a href="#cb18-1152" aria-hidden="true" tabindex="-1"></a>    <span class="at">easi75_rate =</span> <span class="st">"달성률 (%)"</span>,</span>
-<span id="cb18-1153"><a href="#cb18-1153" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_change =</span> <span class="st">"평균 EASI 변화 (%)"</span></span>
-<span id="cb18-1154"><a href="#cb18-1154" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb18-1155"><a href="#cb18-1155" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_number</span>(<span class="at">columns =</span> <span class="fu">c</span>(easi75_rate, mean_change), <span class="at">decimals =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb18-1156"><a href="#cb18-1156" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_footnote</span>(<span class="st">"모의 데이터: 실제 임상 데이터와 다를 수 있음"</span>)</span>
-<span id="cb18-1157"><a href="#cb18-1157" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-1158"><a href="#cb18-1158" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1159"><a href="#cb18-1159" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
-<span id="cb18-1160"><a href="#cb18-1160" aria-hidden="true" tabindex="-1"></a><span class="fu">## 노출-반응 분석의 주의점</span></span>
-<span id="cb18-1161"><a href="#cb18-1161" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1162"><a href="#cb18-1162" aria-hidden="true" tabindex="-1"></a>위 분석에서 Ctrough quartile별 반응률 차이가 관찰되더라도, 이를 **인과관계(causality)**로 해석할 때는 주의가 필요합니다:</span>
+<span id="cb18-1141"><a href="#cb18-1141" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p_quartile)</span>
+<span id="cb18-1142"><a href="#cb18-1142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1143"><a href="#cb18-1143" aria-hidden="true" tabindex="-1"></a><span class="co"># gt 테이블로 요약</span></span>
+<span id="cb18-1144"><a href="#cb18-1144" aria-hidden="true" tabindex="-1"></a>er_quartile <span class="sc">%&gt;%</span></span>
+<span id="cb18-1145"><a href="#cb18-1145" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb18-1146"><a href="#cb18-1146" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(</span>
+<span id="cb18-1147"><a href="#cb18-1147" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Dupilumab Ctrough Quartile별 EASI-75 반응률"</span>,</span>
+<span id="cb18-1148"><a href="#cb18-1148" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"모의 데이터 기반 노출-반응 분석"</span></span>
+<span id="cb18-1149"><a href="#cb18-1149" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb18-1150"><a href="#cb18-1150" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>(</span>
+<span id="cb18-1151"><a href="#cb18-1151" aria-hidden="true" tabindex="-1"></a>    <span class="at">ctrough_q =</span> <span class="st">"Ctrough Quartile"</span>,</span>
+<span id="cb18-1152"><a href="#cb18-1152" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="st">"N"</span>,</span>
+<span id="cb18-1153"><a href="#cb18-1153" aria-hidden="true" tabindex="-1"></a>    <span class="at">easi75_n =</span> <span class="st">"EASI-75 달성 (n)"</span>,</span>
+<span id="cb18-1154"><a href="#cb18-1154" aria-hidden="true" tabindex="-1"></a>    <span class="at">easi75_rate =</span> <span class="st">"달성률 (%)"</span>,</span>
+<span id="cb18-1155"><a href="#cb18-1155" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_change =</span> <span class="st">"평균 EASI 변화 (%)"</span></span>
+<span id="cb18-1156"><a href="#cb18-1156" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb18-1157"><a href="#cb18-1157" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_number</span>(<span class="at">columns =</span> <span class="fu">c</span>(easi75_rate, mean_change), <span class="at">decimals =</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb18-1158"><a href="#cb18-1158" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_footnote</span>(<span class="st">"모의 데이터: 실제 임상 데이터와 다를 수 있음"</span>)</span>
+<span id="cb18-1159"><a href="#cb18-1159" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-1160"><a href="#cb18-1160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1161"><a href="#cb18-1161" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
+<span id="cb18-1162"><a href="#cb18-1162" aria-hidden="true" tabindex="-1"></a><span class="fu">## 노출-반응 분석의 주의점</span></span>
 <span id="cb18-1163"><a href="#cb18-1163" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1164"><a href="#cb18-1164" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**교란 변수(confounders)**: 체중이 큰 환자는 같은 용량에서 Ctrough가 낮고, 동시에 질환 중증도가 높을 수 있습니다.</span>
-<span id="cb18-1165"><a href="#cb18-1165" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**선택 편향(selection bias)**: 약물에 잘 반응하는 환자가 치료를 지속하여 Ctrough가 축적될 수 있습니다.</span>
-<span id="cb18-1166"><a href="#cb18-1166" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**TMDD 영향**: 질환이 활성화된 환자는 IL-4Rα 발현이 높아 Dupilumab의 CL이 증가하고 Ctrough가 감소합니다.</span>
-<span id="cb18-1167"><a href="#cb18-1167" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1168"><a href="#cb18-1168" aria-hidden="true" tabindex="-1"></a>따라서 단순 quartile 분석 외에도 population PK-PD 모델링을 통한 공변량 보정이 필요합니다.</span>
-<span id="cb18-1169"><a href="#cb18-1169" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb18-1170"><a href="#cb18-1170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1171"><a href="#cb18-1171" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb18-1164"><a href="#cb18-1164" aria-hidden="true" tabindex="-1"></a>위 분석에서 Ctrough quartile별 반응률 차이가 관찰되더라도, 이를 **인과관계(causality)**로 해석할 때는 주의가 필요합니다:</span>
+<span id="cb18-1165"><a href="#cb18-1165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1166"><a href="#cb18-1166" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**교란 변수(confounders)**: 체중이 큰 환자는 같은 용량에서 Ctrough가 낮고, 동시에 질환 중증도가 높을 수 있습니다.</span>
+<span id="cb18-1167"><a href="#cb18-1167" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**선택 편향(selection bias)**: 약물에 잘 반응하는 환자가 치료를 지속하여 Ctrough가 축적될 수 있습니다.</span>
+<span id="cb18-1168"><a href="#cb18-1168" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**TMDD 영향**: 질환이 활성화된 환자는 IL-4Rα 발현이 높아 Dupilumab의 CL이 증가하고 Ctrough가 감소합니다.</span>
+<span id="cb18-1169"><a href="#cb18-1169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1170"><a href="#cb18-1170" aria-hidden="true" tabindex="-1"></a>따라서 단순 quartile 분석 외에도 population PK-PD 모델링을 통한 공변량 보정이 필요합니다.</span>
+<span id="cb18-1171"><a href="#cb18-1171" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb18-1172"><a href="#cb18-1172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1173"><a href="#cb18-1173" aria-hidden="true" tabindex="-1"></a><span class="fu">## Claude Code 활용 팁 {#sec-claude-tips-10}</span></span>
+<span id="cb18-1173"><a href="#cb18-1173" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb18-1174"><a href="#cb18-1174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1175"><a href="#cb18-1175" aria-hidden="true" tabindex="-1"></a><span class="fu">### PK-PD 모델 수식을 R 코드로 변환</span></span>
+<span id="cb18-1175"><a href="#cb18-1175" aria-hidden="true" tabindex="-1"></a><span class="fu">## Claude Code 활용 팁 {#sec-claude-tips-10}</span></span>
 <span id="cb18-1176"><a href="#cb18-1176" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1177"><a href="#cb18-1177" aria-hidden="true" tabindex="-1"></a>PK-PD 모델의 수학적 수식을 R 코드로 변환할 때 Claude Code를 활용하면 효율적입니다:</span>
+<span id="cb18-1177"><a href="#cb18-1177" aria-hidden="true" tabindex="-1"></a><span class="fu">### PK-PD 모델 수식을 R 코드로 변환</span></span>
 <span id="cb18-1178"><a href="#cb18-1178" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1179"><a href="#cb18-1179" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-1180"><a href="#cb18-1180" aria-hidden="true" tabindex="-1"></a><span class="in">"다음 PK-PD 모델을 R 함수로 구현해줘:</span></span>
-<span id="cb18-1181"><a href="#cb18-1181" aria-hidden="true" tabindex="-1"></a><span class="in">- PK: 2-compartment model (IV bolus)</span></span>
-<span id="cb18-1182"><a href="#cb18-1182" aria-hidden="true" tabindex="-1"></a><span class="in">  dA1/dt = -(CL/V1 + Q/V1)*A1 + (Q/V2)*A2</span></span>
-<span id="cb18-1183"><a href="#cb18-1183" aria-hidden="true" tabindex="-1"></a><span class="in">  dA2/dt = (Q/V1)*A1 - (Q/V2)*A2</span></span>
-<span id="cb18-1184"><a href="#cb18-1184" aria-hidden="true" tabindex="-1"></a><span class="in">  Cp = A1/V1</span></span>
-<span id="cb18-1185"><a href="#cb18-1185" aria-hidden="true" tabindex="-1"></a><span class="in">- PD: Sigmoid Emax with effect compartment</span></span>
-<span id="cb18-1186"><a href="#cb18-1186" aria-hidden="true" tabindex="-1"></a><span class="in">  dCe/dt = ke0*(Cp - Ce)</span></span>
-<span id="cb18-1187"><a href="#cb18-1187" aria-hidden="true" tabindex="-1"></a><span class="in">  E = E0 + Emax*Ce^gamma/(EC50^gamma + Ce^gamma)</span></span>
-<span id="cb18-1188"><a href="#cb18-1188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1189"><a href="#cb18-1189" aria-hidden="true" tabindex="-1"></a><span class="in">파라미터: CL=10 L/h, V1=20 L, V2=30 L, Q=15 L/h,</span></span>
-<span id="cb18-1190"><a href="#cb18-1190" aria-hidden="true" tabindex="-1"></a><span class="in">          E0=0, Emax=100, EC50=5, ke0=0.1, gamma=2</span></span>
-<span id="cb18-1191"><a href="#cb18-1191" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1192"><a href="#cb18-1192" aria-hidden="true" tabindex="-1"></a><span class="in">1000mg IV bolus 투여 후 72시간 시뮬레이션하고,</span></span>
-<span id="cb18-1193"><a href="#cb18-1193" aria-hidden="true" tabindex="-1"></a><span class="in">PK (Cp vs time), PD (Effect vs time),</span></span>
-<span id="cb18-1194"><a href="#cb18-1194" aria-hidden="true" tabindex="-1"></a><span class="in">Hysteresis loop (Cp vs Effect)를 그려줘."</span></span>
-<span id="cb18-1195"><a href="#cb18-1195" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-1196"><a href="#cb18-1196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1197"><a href="#cb18-1197" aria-hidden="true" tabindex="-1"></a><span class="fu">### mrgsolve 모델 생성 요청</span></span>
+<span id="cb18-1179"><a href="#cb18-1179" aria-hidden="true" tabindex="-1"></a>PK-PD 모델의 수학적 수식을 R 코드로 변환할 때 Claude Code를 활용하면 효율적입니다:</span>
+<span id="cb18-1180"><a href="#cb18-1180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1181"><a href="#cb18-1181" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-1182"><a href="#cb18-1182" aria-hidden="true" tabindex="-1"></a><span class="in">"다음 PK-PD 모델을 R 함수로 구현해줘:</span></span>
+<span id="cb18-1183"><a href="#cb18-1183" aria-hidden="true" tabindex="-1"></a><span class="in">- PK: 2-compartment model (IV bolus)</span></span>
+<span id="cb18-1184"><a href="#cb18-1184" aria-hidden="true" tabindex="-1"></a><span class="in">  dA1/dt = -(CL/V1 + Q/V1)*A1 + (Q/V2)*A2</span></span>
+<span id="cb18-1185"><a href="#cb18-1185" aria-hidden="true" tabindex="-1"></a><span class="in">  dA2/dt = (Q/V1)*A1 - (Q/V2)*A2</span></span>
+<span id="cb18-1186"><a href="#cb18-1186" aria-hidden="true" tabindex="-1"></a><span class="in">  Cp = A1/V1</span></span>
+<span id="cb18-1187"><a href="#cb18-1187" aria-hidden="true" tabindex="-1"></a><span class="in">- PD: Sigmoid Emax with effect compartment</span></span>
+<span id="cb18-1188"><a href="#cb18-1188" aria-hidden="true" tabindex="-1"></a><span class="in">  dCe/dt = ke0*(Cp - Ce)</span></span>
+<span id="cb18-1189"><a href="#cb18-1189" aria-hidden="true" tabindex="-1"></a><span class="in">  E = E0 + Emax*Ce^gamma/(EC50^gamma + Ce^gamma)</span></span>
+<span id="cb18-1190"><a href="#cb18-1190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1191"><a href="#cb18-1191" aria-hidden="true" tabindex="-1"></a><span class="in">파라미터: CL=10 L/h, V1=20 L, V2=30 L, Q=15 L/h,</span></span>
+<span id="cb18-1192"><a href="#cb18-1192" aria-hidden="true" tabindex="-1"></a><span class="in">          E0=0, Emax=100, EC50=5, ke0=0.1, gamma=2</span></span>
+<span id="cb18-1193"><a href="#cb18-1193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1194"><a href="#cb18-1194" aria-hidden="true" tabindex="-1"></a><span class="in">1000mg IV bolus 투여 후 72시간 시뮬레이션하고,</span></span>
+<span id="cb18-1195"><a href="#cb18-1195" aria-hidden="true" tabindex="-1"></a><span class="in">PK (Cp vs time), PD (Effect vs time),</span></span>
+<span id="cb18-1196"><a href="#cb18-1196" aria-hidden="true" tabindex="-1"></a><span class="in">Hysteresis loop (Cp vs Effect)를 그려줘."</span></span>
+<span id="cb18-1197"><a href="#cb18-1197" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb18-1198"><a href="#cb18-1198" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1199"><a href="#cb18-1199" aria-hidden="true" tabindex="-1"></a>복잡한 PK-PD 모델을 mrgsolve 문법으로 작성할 때:</span>
+<span id="cb18-1199"><a href="#cb18-1199" aria-hidden="true" tabindex="-1"></a><span class="fu">### mrgsolve 모델 생성 요청</span></span>
 <span id="cb18-1200"><a href="#cb18-1200" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1201"><a href="#cb18-1201" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-1202"><a href="#cb18-1202" aria-hidden="true" tabindex="-1"></a><span class="in">"Dupilumab의 TMDD PK 모델을 mrgsolve로 구현해줘.</span></span>
-<span id="cb18-1203"><a href="#cb18-1203" aria-hidden="true" tabindex="-1"></a><span class="in">사용할 모델 구조:</span></span>
-<span id="cb18-1204"><a href="#cb18-1204" aria-hidden="true" tabindex="-1"></a><span class="in">- PK: 2-compartment + quasi-steady state (QSS) TMDD</span></span>
-<span id="cb18-1205"><a href="#cb18-1205" aria-hidden="true" tabindex="-1"></a><span class="in">- SC absorption with first-order kinetics</span></span>
-<span id="cb18-1206"><a href="#cb18-1206" aria-hidden="true" tabindex="-1"></a><span class="in">- Target: IL-4Rα (R)</span></span>
-<span id="cb18-1207"><a href="#cb18-1207" aria-hidden="true" tabindex="-1"></a><span class="in">- Drug-target complex: DR</span></span>
-<span id="cb18-1208"><a href="#cb18-1208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1209"><a href="#cb18-1209" aria-hidden="true" tabindex="-1"></a><span class="in">파라미터는 FDA label과 published PopPK 논문의 값을 참고해서 설정하고,</span></span>
-<span id="cb18-1210"><a href="#cb18-1210" aria-hidden="true" tabindex="-1"></a><span class="in">600mg loading -&gt; 300mg Q2W 16주 시뮬레이션해줘.</span></span>
-<span id="cb18-1211"><a href="#cb18-1211" aria-hidden="true" tabindex="-1"></a><span class="in">Free drug, total drug, target occupancy를 시간 경과로 시각화해줘."</span></span>
-<span id="cb18-1212"><a href="#cb18-1212" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-1213"><a href="#cb18-1213" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1214"><a href="#cb18-1214" aria-hidden="true" tabindex="-1"></a><span class="fu">### 시뮬레이션 기반 용량 최적화</span></span>
+<span id="cb18-1201"><a href="#cb18-1201" aria-hidden="true" tabindex="-1"></a>복잡한 PK-PD 모델을 mrgsolve 문법으로 작성할 때:</span>
+<span id="cb18-1202"><a href="#cb18-1202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1203"><a href="#cb18-1203" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-1204"><a href="#cb18-1204" aria-hidden="true" tabindex="-1"></a><span class="in">"Dupilumab의 TMDD PK 모델을 mrgsolve로 구현해줘.</span></span>
+<span id="cb18-1205"><a href="#cb18-1205" aria-hidden="true" tabindex="-1"></a><span class="in">사용할 모델 구조:</span></span>
+<span id="cb18-1206"><a href="#cb18-1206" aria-hidden="true" tabindex="-1"></a><span class="in">- PK: 2-compartment + quasi-steady state (QSS) TMDD</span></span>
+<span id="cb18-1207"><a href="#cb18-1207" aria-hidden="true" tabindex="-1"></a><span class="in">- SC absorption with first-order kinetics</span></span>
+<span id="cb18-1208"><a href="#cb18-1208" aria-hidden="true" tabindex="-1"></a><span class="in">- Target: IL-4Rα (R)</span></span>
+<span id="cb18-1209"><a href="#cb18-1209" aria-hidden="true" tabindex="-1"></a><span class="in">- Drug-target complex: DR</span></span>
+<span id="cb18-1210"><a href="#cb18-1210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1211"><a href="#cb18-1211" aria-hidden="true" tabindex="-1"></a><span class="in">파라미터는 FDA label과 published PopPK 논문의 값을 참고해서 설정하고,</span></span>
+<span id="cb18-1212"><a href="#cb18-1212" aria-hidden="true" tabindex="-1"></a><span class="in">600mg loading -&gt; 300mg Q2W 16주 시뮬레이션해줘.</span></span>
+<span id="cb18-1213"><a href="#cb18-1213" aria-hidden="true" tabindex="-1"></a><span class="in">Free drug, total drug, target occupancy를 시간 경과로 시각화해줘."</span></span>
+<span id="cb18-1214"><a href="#cb18-1214" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb18-1215"><a href="#cb18-1215" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1216"><a href="#cb18-1216" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-1217"><a href="#cb18-1217" aria-hidden="true" tabindex="-1"></a><span class="in">"위 Dupilumab PK-PD 모델을 사용해서 체중별 최적 용량을 탐색해줘.</span></span>
-<span id="cb18-1218"><a href="#cb18-1218" aria-hidden="true" tabindex="-1"></a><span class="in">시나리오:</span></span>
-<span id="cb18-1219"><a href="#cb18-1219" aria-hidden="true" tabindex="-1"></a><span class="in">- 체중: 50, 70, 90, 120 kg</span></span>
-<span id="cb18-1220"><a href="#cb18-1220" aria-hidden="true" tabindex="-1"></a><span class="in">- 용량: 200, 300, 400, 600 mg Q2W</span></span>
-<span id="cb18-1221"><a href="#cb18-1221" aria-hidden="true" tabindex="-1"></a><span class="in">- 목표: Week 16에서 EASI-75 달성 확률 &gt; 70%</span></span>
-<span id="cb18-1222"><a href="#cb18-1222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1223"><a href="#cb18-1223" aria-hidden="true" tabindex="-1"></a><span class="in">각 체중-용량 조합에 대해 1000명 가상 환자를 시뮬레이션하고,</span></span>
-<span id="cb18-1224"><a href="#cb18-1224" aria-hidden="true" tabindex="-1"></a><span class="in">결과를 heatmap으로 시각화해줘."</span></span>
-<span id="cb18-1225"><a href="#cb18-1225" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-1226"><a href="#cb18-1226" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1227"><a href="#cb18-1227" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb18-1216"><a href="#cb18-1216" aria-hidden="true" tabindex="-1"></a><span class="fu">### 시뮬레이션 기반 용량 최적화</span></span>
+<span id="cb18-1217"><a href="#cb18-1217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1218"><a href="#cb18-1218" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-1219"><a href="#cb18-1219" aria-hidden="true" tabindex="-1"></a><span class="in">"위 Dupilumab PK-PD 모델을 사용해서 체중별 최적 용량을 탐색해줘.</span></span>
+<span id="cb18-1220"><a href="#cb18-1220" aria-hidden="true" tabindex="-1"></a><span class="in">시나리오:</span></span>
+<span id="cb18-1221"><a href="#cb18-1221" aria-hidden="true" tabindex="-1"></a><span class="in">- 체중: 50, 70, 90, 120 kg</span></span>
+<span id="cb18-1222"><a href="#cb18-1222" aria-hidden="true" tabindex="-1"></a><span class="in">- 용량: 200, 300, 400, 600 mg Q2W</span></span>
+<span id="cb18-1223"><a href="#cb18-1223" aria-hidden="true" tabindex="-1"></a><span class="in">- 목표: Week 16에서 EASI-75 달성 확률 &gt; 70%</span></span>
+<span id="cb18-1224"><a href="#cb18-1224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1225"><a href="#cb18-1225" aria-hidden="true" tabindex="-1"></a><span class="in">각 체중-용량 조합에 대해 1000명 가상 환자를 시뮬레이션하고,</span></span>
+<span id="cb18-1226"><a href="#cb18-1226" aria-hidden="true" tabindex="-1"></a><span class="in">결과를 heatmap으로 시각화해줘."</span></span>
+<span id="cb18-1227"><a href="#cb18-1227" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb18-1228"><a href="#cb18-1228" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1229"><a href="#cb18-1229" aria-hidden="true" tabindex="-1"></a><span class="fu">## 연습 문제 {#sec-exercises-10}</span></span>
+<span id="cb18-1229"><a href="#cb18-1229" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb18-1230"><a href="#cb18-1230" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1231"><a href="#cb18-1231" aria-hidden="true" tabindex="-1"></a><span class="fu">### 확인 문제</span></span>
+<span id="cb18-1231"><a href="#cb18-1231" aria-hidden="true" tabindex="-1"></a><span class="fu">## 연습 문제 {#sec-exercises-10}</span></span>
 <span id="cb18-1232"><a href="#cb18-1232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1233"><a href="#cb18-1233" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Emax 모델에서 $EC_{50}$의 정의를 설명하고, $EC_{50}$가 **potency**를 나타내는 이유를 수용체 이론의 관점에서 설명하세요.</span>
+<span id="cb18-1233"><a href="#cb18-1233" aria-hidden="true" tabindex="-1"></a><span class="fu">### 확인 문제</span></span>
 <span id="cb18-1234"><a href="#cb18-1234" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1235"><a href="#cb18-1235" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Hill 계수 $\gamma = 0.5$, $\gamma = 1$, $\gamma = 3$인 경우, $EC_{50}$의 2배 농도에서 각각 최대 효과의 몇 %가 달성되는지 계산하세요.</span>
+<span id="cb18-1235"><a href="#cb18-1235" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Emax 모델에서 $EC_{50}$의 정의를 설명하고, $EC_{50}$가 **potency**를 나타내는 이유를 수용체 이론의 관점에서 설명하세요.</span>
 <span id="cb18-1236"><a href="#cb18-1236" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1237"><a href="#cb18-1237" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Counter-clockwise hysteresis가 나타나는 세 가지 원인을 제시하고, 각각에 해당하는 약물 예시를 들어 설명하세요.</span>
+<span id="cb18-1237"><a href="#cb18-1237" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Hill 계수 $\gamma = 0.5$, $\gamma = 1$, $\gamma = 3$인 경우, $EC_{50}$의 2배 농도에서 각각 최대 효과의 몇 %가 달성되는지 계산하세요.</span>
 <span id="cb18-1238"><a href="#cb18-1238" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1239"><a href="#cb18-1239" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>간접 반응 모델(IDR)의 4가지 유형을 나열하고, Dupilumab의 EASI score에 대한 효과가 어떤 유형에 해당하는지 근거와 함께 설명하세요.</span>
+<span id="cb18-1239"><a href="#cb18-1239" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Counter-clockwise hysteresis가 나타나는 세 가지 원인을 제시하고, 각각에 해당하는 약물 예시를 들어 설명하세요.</span>
 <span id="cb18-1240"><a href="#cb18-1240" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1241"><a href="#cb18-1241" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Dupilumab의 약동학에서 Target-Mediated Drug Disposition (TMDD)이 나타나는 이유와, 이것이 용량 설정에 미치는 영향을 설명하세요.</span>
+<span id="cb18-1241"><a href="#cb18-1241" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>간접 반응 모델(IDR)의 4가지 유형을 나열하고, Dupilumab의 EASI score에 대한 효과가 어떤 유형에 해당하는지 근거와 함께 설명하세요.</span>
 <span id="cb18-1242"><a href="#cb18-1242" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1243"><a href="#cb18-1243" aria-hidden="true" tabindex="-1"></a><span class="fu">### R 과제</span></span>
+<span id="cb18-1243"><a href="#cb18-1243" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Dupilumab의 약동학에서 Target-Mediated Drug Disposition (TMDD)이 나타나는 이유와, 이것이 용량 설정에 미치는 영향을 설명하세요.</span>
 <span id="cb18-1244"><a href="#cb18-1244" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1245"><a href="#cb18-1245" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Emax 모델 파라미터 탐색**: 이 장의 <span class="in">`emax_model()`</span> 함수를 활용하여, $E_0 = 10$, $E_{max} = 90$, $EC_{50} = 5$, $\gamma = 1, 1.5, 2, 3$인 4가지 모델의 농도-효과 곡선을 하나의 그래프에 그리세요. 로그 스케일 x축을 사용하고, 각 곡선의 $EC_{50}$과 $EC_{80}$ 위치를 점으로 표시하세요. $EC_{80}$ (최대 효과의 80%를 달성하는 농도)을 $\gamma$ 값에 따라 계산하고 테이블로 정리하세요.</span>
+<span id="cb18-1245"><a href="#cb18-1245" aria-hidden="true" tabindex="-1"></a><span class="fu">### R 과제</span></span>
 <span id="cb18-1246"><a href="#cb18-1246" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1247"><a href="#cb18-1247" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**PK-PD 시뮬레이션 비교**: mrgsolve를 사용하여 다음 두 가지 PK-PD 모델을 비교하세요:</span>
-<span id="cb18-1248"><a href="#cb18-1248" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>모델 A: Direct Emax model (CE = CP)</span>
-<span id="cb18-1249"><a href="#cb18-1249" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>모델 B: Effect compartment model (ke0 = 0.1)</span>
-<span id="cb18-1250"><a href="#cb18-1250" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1251"><a href="#cb18-1251" aria-hidden="true" tabindex="-1"></a>   동일한 PK 파라미터(CL=5, V=50, KA=1.5)와 PD 파라미터(Emax=100, EC50=2, gamma=1)를 사용하여 50mg 경구 투여 후 72시간 시뮬레이션하세요. 두 모델의 농도-시간, 효과-시간, 농도-효과(hysteresis) 그래프를 나란히 비교하세요.</span>
+<span id="cb18-1247"><a href="#cb18-1247" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Emax 모델 파라미터 탐색**: 이 장의 <span class="in">`emax_model()`</span> 함수를 활용하여, $E_0 = 10$, $E_{max} = 90$, $EC_{50} = 5$, $\gamma = 1, 1.5, 2, 3$인 4가지 모델의 농도-효과 곡선을 하나의 그래프에 그리세요. 로그 스케일 x축을 사용하고, 각 곡선의 $EC_{50}$과 $EC_{80}$ 위치를 점으로 표시하세요. $EC_{80}$ (최대 효과의 80%를 달성하는 농도)을 $\gamma$ 값에 따라 계산하고 테이블로 정리하세요.</span>
+<span id="cb18-1248"><a href="#cb18-1248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1249"><a href="#cb18-1249" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**PK-PD 시뮬레이션 비교**: mrgsolve를 사용하여 다음 두 가지 PK-PD 모델을 비교하세요:</span>
+<span id="cb18-1250"><a href="#cb18-1250" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>모델 A: Direct Emax model (CE = CP)</span>
+<span id="cb18-1251"><a href="#cb18-1251" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>모델 B: Effect compartment model (ke0 = 0.1)</span>
 <span id="cb18-1252"><a href="#cb18-1252" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1253"><a href="#cb18-1253" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Dupilumab 투여 요법 최적화**: 이 장의 Dupilumab PK-PD 모델을 확장하여, 3가지 투여 요법(300mg Q2W, 300mg Q4W, 200mg Q2W)을 24주간 시뮬레이션하세요. 각 요법에 대해:</span>
-<span id="cb18-1254"><a href="#cb18-1254" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>PK 프로파일(Cp vs time)</span>
-<span id="cb18-1255"><a href="#cb18-1255" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>EASI score 시간 경과</span>
-<span id="cb18-1256"><a href="#cb18-1256" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>EASI % change from baseline</span>
-<span id="cb18-1257"><a href="#cb18-1257" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>EASI-75 달성 시점(주)</span>
-<span id="cb18-1258"><a href="#cb18-1258" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1259"><a href="#cb18-1259" aria-hidden="true" tabindex="-1"></a>   을 비교하는 종합 그래프를 작성하고, 어느 요법이 가장 빠르게 EASI-75에 도달하는지 분석하세요.</span>
+<span id="cb18-1253"><a href="#cb18-1253" aria-hidden="true" tabindex="-1"></a>   동일한 PK 파라미터(CL=5, V=50, KA=1.5)와 PD 파라미터(Emax=100, EC50=2, gamma=1)를 사용하여 50mg 경구 투여 후 72시간 시뮬레이션하세요. 두 모델의 농도-시간, 효과-시간, 농도-효과(hysteresis) 그래프를 나란히 비교하세요.</span>
+<span id="cb18-1254"><a href="#cb18-1254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1255"><a href="#cb18-1255" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Dupilumab 투여 요법 최적화**: 이 장의 Dupilumab PK-PD 모델을 확장하여, 3가지 투여 요법(300mg Q2W, 300mg Q4W, 200mg Q2W)을 24주간 시뮬레이션하세요. 각 요법에 대해:</span>
+<span id="cb18-1256"><a href="#cb18-1256" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>PK 프로파일(Cp vs time)</span>
+<span id="cb18-1257"><a href="#cb18-1257" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>EASI score 시간 경과</span>
+<span id="cb18-1258"><a href="#cb18-1258" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>EASI % change from baseline</span>
+<span id="cb18-1259"><a href="#cb18-1259" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>EASI-75 달성 시점(주)</span>
 <span id="cb18-1260"><a href="#cb18-1260" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1261"><a href="#cb18-1261" aria-hidden="true" tabindex="-1"></a><span class="fu">### Claude Code 과제</span></span>
+<span id="cb18-1261"><a href="#cb18-1261" aria-hidden="true" tabindex="-1"></a>   을 비교하는 종합 그래프를 작성하고, 어느 요법이 가장 빠르게 EASI-75에 도달하는지 분석하세요.</span>
 <span id="cb18-1262"><a href="#cb18-1262" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1263"><a href="#cb18-1263" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Claude Code에 다음과 같이 요청하세요:</span>
-<span id="cb18-1264"><a href="#cb18-1264" aria-hidden="true" tabindex="-1"></a><span class="at">   &gt; "1-compartment PK (경구 투여) + indirect response PD 모델을 mrgsolve로 구현해줘. IDR Type I (inhibition of kin) 모델을 사용하고, baseline response = 50, kin = 5, kout = 0.1, IC50 = 3, Imax = 0.85 파라미터를 사용해. 다음 3가지 투여 시나리오를 시뮬레이션하고 비교해줘: (1) 100mg QD, (2) 200mg BID, (3) 600mg loading + 100mg QD. 각 시나리오에서 반응이 baseline의 50%에 도달하는 시점을 계산하고, PK 프로파일과 PD 반응을 나란히 비교하는 그래프를 만들어줘."</span></span>
-<span id="cb18-1265"><a href="#cb18-1265" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-1266"><a href="#cb18-1266" aria-hidden="true" tabindex="-1"></a>   시뮬레이션 결과를 분석하여 loading dose의 임상적 의의를 설명하는 짧은 보고서도 함께 작성하세요.</span>
+<span id="cb18-1263"><a href="#cb18-1263" aria-hidden="true" tabindex="-1"></a><span class="fu">### Claude Code 과제</span></span>
+<span id="cb18-1264"><a href="#cb18-1264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1265"><a href="#cb18-1265" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Claude Code에 다음과 같이 요청하세요:</span>
+<span id="cb18-1266"><a href="#cb18-1266" aria-hidden="true" tabindex="-1"></a><span class="at">   &gt; "1-compartment PK (경구 투여) + indirect response PD 모델을 mrgsolve로 구현해줘. IDR Type I (inhibition of kin) 모델을 사용하고, baseline response = 50, kin = 5, kout = 0.1, IC50 = 3, Imax = 0.85 파라미터를 사용해. 다음 3가지 투여 시나리오를 시뮬레이션하고 비교해줘: (1) 100mg QD, (2) 200mg BID, (3) 600mg loading + 100mg QD. 각 시나리오에서 반응이 baseline의 50%에 도달하는 시점을 계산하고, PK 프로파일과 PD 반응을 나란히 비교하는 그래프를 만들어줘."</span></span>
+<span id="cb18-1267"><a href="#cb18-1267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-1268"><a href="#cb18-1268" aria-hidden="true" tabindex="-1"></a>   시뮬레이션 결과를 분석하여 loading dose의 임상적 의의를 설명하는 짧은 보고서도 함께 작성하세요.</span>
 </code></pre></div><button title="클립보드 복사" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

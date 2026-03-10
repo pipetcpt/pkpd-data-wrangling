@@ -409,13 +409,13 @@ window.Quarto = {
 <img src="../images/ch01_fig3.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch01-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;1.1: <strong>Figure 1.3: 재현 가능한 연구 워크플로우 (Reproducible Research Workflow).</strong> 원시 데이터(Raw data)에서 R 스크립트를 통한 분석, Quarto를 이용한 보고서/출판물 생성까지의 전 과정을 도식화하였다. Git을 통한 버전 관리와 AI 코딩 어시스턴트(Claude Code)의 역할을 함께 나타내어, 현대적인 재현 가능한 PK/PD 연구의 워크플로우를 보여준다.
+그림&nbsp;1.1: 재현 가능한 연구 워크플로우 (Reproducible Research Workflow). 원시 데이터(Raw data)에서 R 스크립트를 통한 분석, Quarto를 이용한 보고서/출판물 생성까지의 전 과정을 도식화하였다. Git을 통한 버전 관리와 AI 코딩 어시스턴트(Claude Code)의 역할을 함께 나타내어, 현대적인 재현 가능한 PK/PD 연구의 워크플로우를 보여준다.
 </figcaption>
 </figure>
 </div>
 <section id="신약-개발-과정에서의-pkpd-분석-역할" class="level3" data-number="1.2.1">
 <h3 data-number="1.2.1" class="anchored" data-anchor-id="신약-개발-과정에서의-pkpd-분석-역할"><span class="header-section-number">1.2.1</span> 신약 개발 과정에서의 PK/PD 분석 역할</h3>
-<p>신약이 환자에게 도달하기까지는 평균 10-15년의 기간과 수조 원의 비용이 소요됩니다. 이 과정에서 PK/PD 분석은 거의 모든 단계에 관여합니다.</p>
+<p>신약이 환자에게 도달하기까지는 평균 10-15년의 기간과 수조 원의 비용이 소요됩니다. 이 과정에서 PK/PD 분석은 거의 모든 단계에 관여합니다. <a href="#fig-ch01-3" class="quarto-xref">그림&nbsp;<span>1.1</span></a> 은 원시 데이터에서 최종 출판물까지 이어지는 재현 가능한 연구 워크플로우를 보여줍니다.</p>
 <p><strong>전임상 단계(Preclinical Phase)</strong>에서는 동물 실험 데이터를 바탕으로 인체 최초 투여 용량(First-in-Human dose)을 예측합니다. Allometric scaling을 통해 동물에서의 청소율(clearance)과 분포용적(volume of distribution)을 인체로 외삽(extrapolation)하는 작업이 필요합니다.</p>
 <p><strong>임상 1상(Phase I)</strong>에서는 건강한 자원자를 대상으로 약물의 안전성과 PK 특성을 평가합니다. 용량-비례성(dose proportionality), 음식의 영향(food effect), 약물 상호작용(drug-drug interaction) 등을 평가하며, 이 모든 것이 PK 데이터 분석에 기반합니다.</p>
 <p><strong>임상 2상(Phase II)</strong>에서는 PK/PD 관계를 규명하여 최적 용량을 탐색합니다. 예를 들어, Apremilast의 경우 PDE4 억제율과 PASI 점수 개선의 관계를 모델링하여 하루 2회 30mg이라는 최종 용량이 결정되었습니다.</p>
@@ -490,11 +490,11 @@ window.Quarto = {
 <img src="../images/ch01_fig1.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch01-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;1.2: <strong>Figure 1.1: ADME 과정의 개요 (Overview of ADME Processes).</strong> 약물이 체내에 투여된 후 흡수(Absorption), 분포(Distribution), 대사(Metabolism), 배설(Excretion)의 4단계를 거치는 과정을 도식화하였다. 경구(PO) 및 피하(SC) 투여 경로에서의 흡수, 피부/조직으로의 분포, 간의 CYP 효소에 의한 대사, 신장/담즙을 통한 배설 경로와 주요 약동학적 파라미터(F, Vd, CL)의 관계를 나타낸다.
+그림&nbsp;1.2: ADME 과정의 개요 (Overview of ADME Processes). 약물이 체내에 투여된 후 흡수(Absorption), 분포(Distribution), 대사(Metabolism), 배설(Excretion)의 4단계를 거치는 과정을 도식화하였다. 경구(PO) 및 피하(SC) 투여 경로에서의 흡수, 피부/조직으로의 분포, 간의 CYP 효소에 의한 대사, 신장/담즙을 통한 배설 경로와 주요 약동학적 파라미터(F, Vd, CL)의 관계를 나타낸다.
 </figcaption>
 </figure>
 </div>
-<p>약동학을 이해하기 위한 가장 기본적인 프레임워크가 바로 <strong>ADME</strong>입니다. ADME는 흡수(Absorption), 분포(Distribution), 대사(Metabolism), 배설(Excretion)의 약자로, 약물이 체내에 들어와서 나가기까지의 전 과정을 설명합니다.</p>
+<p>약동학을 이해하기 위한 가장 기본적인 프레임워크가 바로 <strong>ADME</strong>입니다 (<a href="#fig-ch01-1" class="quarto-xref">그림&nbsp;<span>1.2</span></a>). ADME는 흡수(Absorption), 분포(Distribution), 대사(Metabolism), 배설(Excretion)의 약자로, 약물이 체내에 들어와서 나가기까지의 전 과정을 설명합니다.</p>
 <section id="sec-absorption" class="level3" data-number="1.3.1">
 <h3 data-number="1.3.1" class="anchored" data-anchor-id="sec-absorption"><span class="header-section-number">1.3.1</span> 흡수 (Absorption)</h3>
 <p>약물의 흡수란 투여 부위에서 전신 순환(systemic circulation)으로 약물이 이동하는 과정입니다. 흡수 경로에 따라 약물의 생체이용률(bioavailability, F)과 흡수 속도가 크게 달라집니다.</p>
@@ -773,7 +773,7 @@ window.Quarto = {
 <img src="../images/ch01_fig2.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch01-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;1.3: <strong>Figure 1.2: 피부과 질환 치료제의 발전 스펙트럼 (Dermatologic Disease Treatment Spectrum).</strong> 전통적 전신치료제(MTX, CsA)에서 생물학적 제제(anti-TNF, anti-IL), 소분자 표적 치료제(JAK 억제제, PDE4 억제제)로 이어지는 피부과 면역 질환 치료의 발전 과정을 시간순으로 도식화하였다. 각 세대별 대표 약물과 표적 분자를 함께 표시하였다.
+그림&nbsp;1.3: 피부과 질환 치료제의 발전 스펙트럼 (Dermatologic Disease Treatment Spectrum). 전통적 전신치료제(MTX, CsA)에서 생물학적 제제(anti-TNF, anti-IL), 소분자 표적 치료제(JAK 억제제, PDE4 억제제)로 이어지는 피부과 면역 질환 치료의 발전 과정을 시간순으로 도식화하였다. 각 세대별 대표 약물과 표적 분자를 함께 표시하였다.
 </figcaption>
 </figure>
 </div>
@@ -819,7 +819,7 @@ window.Quarto = {
 </section>
 <section id="sec-treatment-spectrum" class="level3" data-number="1.4.3">
 <h3 data-number="1.4.3" class="anchored" data-anchor-id="sec-treatment-spectrum"><span class="header-section-number">1.4.3</span> 치료 약물 스펙트럼</h3>
-<p>피부과 면역 질환의 치료는 다음과 같은 단계적 발전을 거쳐왔습니다:</p>
+<p>피부과 면역 질환의 치료는 다음과 같은 단계적 발전을 거쳐왔습니다 (<a href="#fig-ch01-2" class="quarto-xref">그림&nbsp;<span>1.3</span></a>):</p>
 <pre><code>전통적 전신치료제    →    생물학적 제제       →    소분자 표적 치료제
 (1970-90년대)           (2000년대~)                (2010년대~)
 
@@ -2219,11 +2219,11 @@ data/processed/pk_clean.csv 파일의 NCA 분석을 수행해줘.
 <span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## 약동학/약력학 자료처리의 중요성 {#sec-importance}</span></span>
 <span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 1.3: 재현 가능한 연구 워크플로우 (Reproducible Research Workflow).** 원시 데이터(Raw data)에서 R 스크립트를 통한 분석, Quarto를 이용한 보고서/출판물 생성까지의 전 과정을 도식화하였다. Git을 통한 버전 관리와 AI 코딩 어시스턴트(Claude Code)의 역할을 함께 나타내어, 현대적인 재현 가능한 PK/PD 연구의 워크플로우를 보여준다.](../images/ch01_fig3.png)</span>{#fig-ch01-3 width=100%}</span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a><span class="al">![재현 가능한 연구 워크플로우 (Reproducible Research Workflow). 원시 데이터(Raw data)에서 R 스크립트를 통한 분석, Quarto를 이용한 보고서/출판물 생성까지의 전 과정을 도식화하였다. Git을 통한 버전 관리와 AI 코딩 어시스턴트(Claude Code)의 역할을 함께 나타내어, 현대적인 재현 가능한 PK/PD 연구의 워크플로우를 보여준다.](../images/ch01_fig3.png)</span>{#fig-ch01-3 width=100%}</span>
 <span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a><span class="fu">### 신약 개발 과정에서의 PK/PD 분석 역할</span></span>
 <span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a>신약이 환자에게 도달하기까지는 평균 10-15년의 기간과 수조 원의 비용이 소요됩니다. 이 과정에서 PK/PD 분석은 거의 모든 단계에 관여합니다.</span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a>신약이 환자에게 도달하기까지는 평균 10-15년의 기간과 수조 원의 비용이 소요됩니다. 이 과정에서 PK/PD 분석은 거의 모든 단계에 관여합니다. @fig-ch01-3 은 원시 데이터에서 최종 출판물까지 이어지는 재현 가능한 연구 워크플로우를 보여줍니다.</span>
 <span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a>**전임상 단계(Preclinical Phase)**에서는 동물 실험 데이터를 바탕으로 인체 최초 투여 용량(First-in-Human dose)을 예측합니다. Allometric scaling을 통해 동물에서의 청소율(clearance)과 분포용적(volume of distribution)을 인체로 외삽(extrapolation)하는 작업이 필요합니다.</span>
 <span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a></span>
@@ -2284,9 +2284,9 @@ data/processed/pk_clean.csv 파일의 NCA 분석을 수행해줘.
 <span id="cb24-83"><a href="#cb24-83" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-84"><a href="#cb24-84" aria-hidden="true" tabindex="-1"></a><span class="fu">## ADME 기초 약리학 {#sec-adme}</span></span>
 <span id="cb24-85"><a href="#cb24-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-86"><a href="#cb24-86" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 1.1: ADME 과정의 개요 (Overview of ADME Processes).** 약물이 체내에 투여된 후 흡수(Absorption), 분포(Distribution), 대사(Metabolism), 배설(Excretion)의 4단계를 거치는 과정을 도식화하였다. 경구(PO) 및 피하(SC) 투여 경로에서의 흡수, 피부/조직으로의 분포, 간의 CYP 효소에 의한 대사, 신장/담즙을 통한 배설 경로와 주요 약동학적 파라미터(F, Vd, CL)의 관계를 나타낸다.](../images/ch01_fig1.png)</span>{#fig-ch01-1 width=100%}</span>
+<span id="cb24-86"><a href="#cb24-86" aria-hidden="true" tabindex="-1"></a><span class="al">![ADME 과정의 개요 (Overview of ADME Processes). 약물이 체내에 투여된 후 흡수(Absorption), 분포(Distribution), 대사(Metabolism), 배설(Excretion)의 4단계를 거치는 과정을 도식화하였다. 경구(PO) 및 피하(SC) 투여 경로에서의 흡수, 피부/조직으로의 분포, 간의 CYP 효소에 의한 대사, 신장/담즙을 통한 배설 경로와 주요 약동학적 파라미터(F, Vd, CL)의 관계를 나타낸다.](../images/ch01_fig1.png)</span>{#fig-ch01-1 width=100%}</span>
 <span id="cb24-87"><a href="#cb24-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-88"><a href="#cb24-88" aria-hidden="true" tabindex="-1"></a>약동학을 이해하기 위한 가장 기본적인 프레임워크가 바로 **ADME**입니다. ADME는 흡수(Absorption), 분포(Distribution), 대사(Metabolism), 배설(Excretion)의 약자로, 약물이 체내에 들어와서 나가기까지의 전 과정을 설명합니다.</span>
+<span id="cb24-88"><a href="#cb24-88" aria-hidden="true" tabindex="-1"></a>약동학을 이해하기 위한 가장 기본적인 프레임워크가 바로 **ADME**입니다 (@fig-ch01-1). ADME는 흡수(Absorption), 분포(Distribution), 대사(Metabolism), 배설(Excretion)의 약자로, 약물이 체내에 들어와서 나가기까지의 전 과정을 설명합니다.</span>
 <span id="cb24-89"><a href="#cb24-89" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-90"><a href="#cb24-90" aria-hidden="true" tabindex="-1"></a><span class="fu">### 흡수 (Absorption) {#sec-absorption}</span></span>
 <span id="cb24-91"><a href="#cb24-91" aria-hidden="true" tabindex="-1"></a></span>
@@ -2430,7 +2430,7 @@ data/processed/pk_clean.csv 파일의 NCA 분석을 수행해줘.
 <span id="cb24-229"><a href="#cb24-229" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-230"><a href="#cb24-230" aria-hidden="true" tabindex="-1"></a><span class="fu">## 피부과 질환과 약물치료 개관 {#sec-dermatology}</span></span>
 <span id="cb24-231"><a href="#cb24-231" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-232"><a href="#cb24-232" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 1.2: 피부과 질환 치료제의 발전 스펙트럼 (Dermatologic Disease Treatment Spectrum).** 전통적 전신치료제(MTX, CsA)에서 생물학적 제제(anti-TNF, anti-IL), 소분자 표적 치료제(JAK 억제제, PDE4 억제제)로 이어지는 피부과 면역 질환 치료의 발전 과정을 시간순으로 도식화하였다. 각 세대별 대표 약물과 표적 분자를 함께 표시하였다.](../images/ch01_fig2.png)</span>{#fig-ch01-2 width=100%}</span>
+<span id="cb24-232"><a href="#cb24-232" aria-hidden="true" tabindex="-1"></a><span class="al">![피부과 질환 치료제의 발전 스펙트럼 (Dermatologic Disease Treatment Spectrum). 전통적 전신치료제(MTX, CsA)에서 생물학적 제제(anti-TNF, anti-IL), 소분자 표적 치료제(JAK 억제제, PDE4 억제제)로 이어지는 피부과 면역 질환 치료의 발전 과정을 시간순으로 도식화하였다. 각 세대별 대표 약물과 표적 분자를 함께 표시하였다.](../images/ch01_fig2.png)</span>{#fig-ch01-2 width=100%}</span>
 <span id="cb24-233"><a href="#cb24-233" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-234"><a href="#cb24-234" aria-hidden="true" tabindex="-1"></a><span class="fu">### 건선 (Psoriasis) {#sec-psoriasis}</span></span>
 <span id="cb24-235"><a href="#cb24-235" aria-hidden="true" tabindex="-1"></a></span>
@@ -2477,7 +2477,7 @@ data/processed/pk_clean.csv 파일의 NCA 분석을 수행해줘.
 <span id="cb24-276"><a href="#cb24-276" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-277"><a href="#cb24-277" aria-hidden="true" tabindex="-1"></a><span class="fu">### 치료 약물 스펙트럼 {#sec-treatment-spectrum}</span></span>
 <span id="cb24-278"><a href="#cb24-278" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-279"><a href="#cb24-279" aria-hidden="true" tabindex="-1"></a>피부과 면역 질환의 치료는 다음과 같은 단계적 발전을 거쳐왔습니다:</span>
+<span id="cb24-279"><a href="#cb24-279" aria-hidden="true" tabindex="-1"></a>피부과 면역 질환의 치료는 다음과 같은 단계적 발전을 거쳐왔습니다 (@fig-ch01-2):</span>
 <span id="cb24-280"><a href="#cb24-280" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-281"><a href="#cb24-281" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb24-282"><a href="#cb24-282" aria-hidden="true" tabindex="-1"></a><span class="in">전통적 전신치료제    →    생물학적 제제       →    소분자 표적 치료제</span></span>

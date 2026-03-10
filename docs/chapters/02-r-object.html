@@ -375,11 +375,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <img src="../images/ch02_fig1.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;2.1: <strong>Figure 2.1: R 데이터 타입 체계와 PK 데이터 매핑 (R Data Types Hierarchy).</strong> R의 기본 데이터 구조인 vector에서 matrix/array, list, data.frame/tibble로 이어지는 계층 구조를 도식화하였다. 각 구조에 PK 데이터 변수(concentration=numeric, route=factor, ID=character)가 어떻게 매핑되는지를 함께 나타낸다.
+그림&nbsp;2.1: R 데이터 타입 체계와 PK 데이터 매핑 (R Data Types Hierarchy). R의 기본 데이터 구조인 vector에서 matrix/array, list, data.frame/tibble로 이어지는 계층 구조를 도식화하였다. 각 구조에 PK 데이터 변수(concentration=numeric, route=factor, ID=character)가 어떻게 매핑되는지를 함께 나타낸다.
 </figcaption>
 </figure>
 </div>
-<p>R에서 모든 데이터는 특정한 <strong>타입(type)</strong>을 가집니다. 약동학 데이터를 다룰 때 각 변수가 어떤 타입인지를 정확히 이해하는 것은 데이터 오류를 방지하고 올바른 분석을 수행하는 데 핵심적입니다.</p>
+<p><a href="#fig-ch02-1" class="quarto-xref">그림&nbsp;<span>2.1</span></a> 은 R의 데이터 타입 체계와 PK 데이터 변수의 매핑 관계를 보여줍니다. R에서 모든 데이터는 특정한 <strong>타입(type)</strong>을 가집니다. 약동학 데이터를 다룰 때 각 변수가 어떤 타입인지를 정확히 이해하는 것은 데이터 오류를 방지하고 올바른 분석을 수행하는 데 핵심적입니다.</p>
 <section id="다섯-가지-기본-타입" class="level3" data-number="2.1.1">
 <h3 data-number="2.1.1" class="anchored" data-anchor-id="다섯-가지-기본-타입"><span class="header-section-number">2.1.1</span> 다섯 가지 기본 타입</h3>
 <p>R에는 다섯 가지 기본 데이터 타입(atomic type)이 있습니다.</p>
@@ -956,11 +956,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <img src="../images/ch02_fig2.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;2.2: <strong>Figure 2.2: PK 데이터의 데이터프레임 구조 (PK Data Structure as Data Frame).</strong> 데이터프레임의 행(rows)은 개별 관측값, 열(columns)은 변수(ID, TIME, CONC, DOSE)에 대응하는 구조를 보여준다. Methotrexate 건선 환자의 실제 PK 데이터 예시를 통해 각 열의 데이터 타입과 의미를 설명한다.
+그림&nbsp;2.2: PK 데이터의 데이터프레임 구조 (PK Data Structure as Data Frame). 데이터프레임의 행(rows)은 개별 관측값, 열(columns)은 변수(ID, TIME, CONC, DOSE)에 대응하는 구조를 보여준다. Methotrexate 건선 환자의 실제 PK 데이터 예시를 통해 각 열의 데이터 타입과 의미를 설명한다.
 </figcaption>
 </figure>
 </div>
-<p>데이터프레임은 R에서 <strong>표 형태의 데이터</strong>를 저장하는 가장 핵심적인 구조입니다. 약동학 데이터 분석의 대부분은 데이터프레임을 기반으로 이루어집니다. 데이터프레임은 사실 <strong>동일한 길이의 벡터들을 열(column)으로 묶은 리스트</strong>입니다.</p>
+<p>데이터프레임은 R에서 <strong>표 형태의 데이터</strong>를 저장하는 가장 핵심적인 구조입니다 (<a href="#fig-ch02-2" class="quarto-xref">그림&nbsp;<span>2.2</span></a>). 약동학 데이터 분석의 대부분은 데이터프레임을 기반으로 이루어집니다. 데이터프레임은 사실 <strong>동일한 길이의 벡터들을 열(column)으로 묶은 리스트</strong>입니다.</p>
 <section id="data.frame-생성" class="level3" data-number="2.5.1">
 <h3 data-number="2.5.1" class="anchored" data-anchor-id="data.frame-생성"><span class="header-section-number">2.5.1</span> data.frame 생성</h3>
 <div class="cell">
@@ -1326,7 +1326,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <img src="../images/ch02_fig3.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;2.3: <strong>Figure 2.3: Methotrexate의 작용기전 (Methotrexate Mechanism of Action).</strong> Methotrexate가 DHFR(디히드로엽산 환원효소)을 억제하여 엽산 경로를 차단하고, 빠르게 분열하는 세포(건선의 각질세포)에 미치는 영향을 도식화하였다. 저용량에서의 아데노신 방출 증가를 통한 항염증 효과 경로도 함께 나타낸다.
+그림&nbsp;2.3: Methotrexate의 작용기전 (Methotrexate Mechanism of Action). Methotrexate가 DHFR(디히드로엽산 환원효소)을 억제하여 엽산 경로를 차단하고, 빠르게 분열하는 세포(건선의 각질세포)에 미치는 영향을 도식화하였다. 저용량에서의 아데노신 방출 증가를 통한 항염증 효과 경로도 함께 나타낸다.
 </figcaption>
 </figure>
 </div>
@@ -1340,6 +1340,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<p><a href="#fig-ch02-3" class="quarto-xref">그림&nbsp;<span>2.3</span></a> 은 Methotrexate의 작용기전을 도식화한 것입니다.</p>
 <p><strong>작용 기전</strong></p>
 <p>Methotrexate(MTX)는 엽산(folic acid) 유사체로서 <strong>디히드로엽산 환원효소(dihydrofolate reductase, DHFR)</strong>를 경쟁적으로 억제합니다. 이로 인해 퓨린(purine) 및 피리미딘(pyrimidine) 합성에 필요한 테트라히드로엽산(tetrahydrofolate)의 생성이 차단되어 DNA 합성이 억제됩니다. 또한 MTX는 아미노이미다졸카르복사미드(AICAR) 변환효소를 억제하여 세포 내 아데노신(adenosine) 농도를 증가시키는데, 이 아데노신이 항염증 효과를 매개하는 것으로 알려져 있습니다.</p>
 <p><strong>건선에서의 사용</strong></p>
@@ -2195,9 +2196,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## R의 기본 데이터 타입 {#sec-data-types}</span></span>
 <span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 2.1: R 데이터 타입 체계와 PK 데이터 매핑 (R Data Types Hierarchy).** R의 기본 데이터 구조인 vector에서 matrix/array, list, data.frame/tibble로 이어지는 계층 구조를 도식화하였다. 각 구조에 PK 데이터 변수(concentration=numeric, route=factor, ID=character)가 어떻게 매핑되는지를 함께 나타낸다.](../images/ch02_fig1.png)</span>{#fig-ch02-1 width=100%}</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a><span class="al">![R 데이터 타입 체계와 PK 데이터 매핑 (R Data Types Hierarchy). R의 기본 데이터 구조인 vector에서 matrix/array, list, data.frame/tibble로 이어지는 계층 구조를 도식화하였다. 각 구조에 PK 데이터 변수(concentration=numeric, route=factor, ID=character)가 어떻게 매핑되는지를 함께 나타낸다.](../images/ch02_fig1.png)</span>{#fig-ch02-1 width=100%}</span>
 <span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>R에서 모든 데이터는 특정한 **타입(type)**을 가집니다. 약동학 데이터를 다룰 때 각 변수가 어떤 타입인지를 정확히 이해하는 것은 데이터 오류를 방지하고 올바른 분석을 수행하는 데 핵심적입니다.</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>@fig-ch02-1 은 R의 데이터 타입 체계와 PK 데이터 변수의 매핑 관계를 보여줍니다. R에서 모든 데이터는 특정한 **타입(type)**을 가집니다. 약동학 데이터를 다룰 때 각 변수가 어떤 타입인지를 정확히 이해하는 것은 데이터 오류를 방지하고 올바른 분석을 수행하는 데 핵심적입니다.</span>
 <span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a><span class="fu">### 다섯 가지 기본 타입</span></span>
 <span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a></span>
@@ -2743,9 +2744,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb37-588"><a href="#cb37-588" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-589"><a href="#cb37-589" aria-hidden="true" tabindex="-1"></a><span class="fu">## 데이터프레임(data.frame)과 tibble {#sec-dataframe}</span></span>
 <span id="cb37-590"><a href="#cb37-590" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-591"><a href="#cb37-591" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 2.2: PK 데이터의 데이터프레임 구조 (PK Data Structure as Data Frame).** 데이터프레임의 행(rows)은 개별 관측값, 열(columns)은 변수(ID, TIME, CONC, DOSE)에 대응하는 구조를 보여준다. Methotrexate 건선 환자의 실제 PK 데이터 예시를 통해 각 열의 데이터 타입과 의미를 설명한다.](../images/ch02_fig2.png)</span>{#fig-ch02-2 width=100%}</span>
+<span id="cb37-591"><a href="#cb37-591" aria-hidden="true" tabindex="-1"></a><span class="al">![PK 데이터의 데이터프레임 구조 (PK Data Structure as Data Frame). 데이터프레임의 행(rows)은 개별 관측값, 열(columns)은 변수(ID, TIME, CONC, DOSE)에 대응하는 구조를 보여준다. Methotrexate 건선 환자의 실제 PK 데이터 예시를 통해 각 열의 데이터 타입과 의미를 설명한다.](../images/ch02_fig2.png)</span>{#fig-ch02-2 width=100%}</span>
 <span id="cb37-592"><a href="#cb37-592" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-593"><a href="#cb37-593" aria-hidden="true" tabindex="-1"></a>데이터프레임은 R에서 **표 형태의 데이터**를 저장하는 가장 핵심적인 구조입니다. 약동학 데이터 분석의 대부분은 데이터프레임을 기반으로 이루어집니다. 데이터프레임은 사실 **동일한 길이의 벡터들을 열(column)으로 묶은 리스트**입니다.</span>
+<span id="cb37-593"><a href="#cb37-593" aria-hidden="true" tabindex="-1"></a>데이터프레임은 R에서 **표 형태의 데이터**를 저장하는 가장 핵심적인 구조입니다 (@fig-ch02-2). 약동학 데이터 분석의 대부분은 데이터프레임을 기반으로 이루어집니다. 데이터프레임은 사실 **동일한 길이의 벡터들을 열(column)으로 묶은 리스트**입니다.</span>
 <span id="cb37-594"><a href="#cb37-594" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-595"><a href="#cb37-595" aria-hidden="true" tabindex="-1"></a><span class="fu">### data.frame 생성</span></span>
 <span id="cb37-596"><a href="#cb37-596" aria-hidden="true" tabindex="-1"></a></span>
@@ -3085,329 +3086,331 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb37-952"><a href="#cb37-952" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-953"><a href="#cb37-953" aria-hidden="true" tabindex="-1"></a><span class="fu">## 약리학 노트: Methotrexate의 약리학 {#sec-pharmacology-mtx}</span></span>
 <span id="cb37-954"><a href="#cb37-954" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-955"><a href="#cb37-955" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 2.3: Methotrexate의 작용기전 (Methotrexate Mechanism of Action).** Methotrexate가 DHFR(디히드로엽산 환원효소)을 억제하여 엽산 경로를 차단하고, 빠르게 분열하는 세포(건선의 각질세포)에 미치는 영향을 도식화하였다. 저용량에서의 아데노신 방출 증가를 통한 항염증 효과 경로도 함께 나타낸다.](../images/ch02_fig3.png)</span>{#fig-ch02-3 width=100%}</span>
+<span id="cb37-955"><a href="#cb37-955" aria-hidden="true" tabindex="-1"></a><span class="al">![Methotrexate의 작용기전 (Methotrexate Mechanism of Action). Methotrexate가 DHFR(디히드로엽산 환원효소)을 억제하여 엽산 경로를 차단하고, 빠르게 분열하는 세포(건선의 각질세포)에 미치는 영향을 도식화하였다. 저용량에서의 아데노신 방출 증가를 통한 항염증 효과 경로도 함께 나타낸다.](../images/ch02_fig3.png)</span>{#fig-ch02-3 width=100%}</span>
 <span id="cb37-956"><a href="#cb37-956" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-957"><a href="#cb37-957" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
 <span id="cb37-958"><a href="#cb37-958" aria-hidden="true" tabindex="-1"></a><span class="fu">### Methotrexate (MTX) 약리학 개요</span></span>
 <span id="cb37-959"><a href="#cb37-959" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-960"><a href="#cb37-960" aria-hidden="true" tabindex="-1"></a>**작용 기전**</span>
+<span id="cb37-960"><a href="#cb37-960" aria-hidden="true" tabindex="-1"></a>@fig-ch02-3 은 Methotrexate의 작용기전을 도식화한 것입니다.</span>
 <span id="cb37-961"><a href="#cb37-961" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-962"><a href="#cb37-962" aria-hidden="true" tabindex="-1"></a>Methotrexate(MTX)는 엽산(folic acid) 유사체로서 **디히드로엽산 환원효소(dihydrofolate reductase, DHFR)**를 경쟁적으로 억제합니다. 이로 인해 퓨린(purine) 및 피리미딘(pyrimidine) 합성에 필요한 테트라히드로엽산(tetrahydrofolate)의 생성이 차단되어 DNA 합성이 억제됩니다. 또한 MTX는 아미노이미다졸카르복사미드(AICAR) 변환효소를 억제하여 세포 내 아데노신(adenosine) 농도를 증가시키는데, 이 아데노신이 항염증 효과를 매개하는 것으로 알려져 있습니다.</span>
+<span id="cb37-962"><a href="#cb37-962" aria-hidden="true" tabindex="-1"></a>**작용 기전**</span>
 <span id="cb37-963"><a href="#cb37-963" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-964"><a href="#cb37-964" aria-hidden="true" tabindex="-1"></a>**건선에서의 사용**</span>
+<span id="cb37-964"><a href="#cb37-964" aria-hidden="true" tabindex="-1"></a>Methotrexate(MTX)는 엽산(folic acid) 유사체로서 **디히드로엽산 환원효소(dihydrofolate reductase, DHFR)**를 경쟁적으로 억제합니다. 이로 인해 퓨린(purine) 및 피리미딘(pyrimidine) 합성에 필요한 테트라히드로엽산(tetrahydrofolate)의 생성이 차단되어 DNA 합성이 억제됩니다. 또한 MTX는 아미노이미다졸카르복사미드(AICAR) 변환효소를 억제하여 세포 내 아데노신(adenosine) 농도를 증가시키는데, 이 아데노신이 항염증 효과를 매개하는 것으로 알려져 있습니다.</span>
 <span id="cb37-965"><a href="#cb37-965" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-966"><a href="#cb37-966" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**적응증**: 중등도~중증 판상 건선(plaque psoriasis)에서 전신 치료제로 사용</span>
-<span id="cb37-967"><a href="#cb37-967" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**용량**: 저용량 요법 - 주 1회 **7.5~25 mg** (경구 또는 피하주사)</span>
-<span id="cb37-968"><a href="#cb37-968" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**시작 용량**: 보통 7.5~10 mg/week로 시작, 효과에 따라 점진적 증량</span>
-<span id="cb37-969"><a href="#cb37-969" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**반응 평가**: PASI (Psoriasis Area and Severity Index) 점수로 12~16주 후 평가</span>
-<span id="cb37-970"><a href="#cb37-970" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**엽산 보충**: MTX 투여 24~48시간 후 **엽산(folic acid) 5 mg** 복용 (부작용 감소)</span>
-<span id="cb37-971"><a href="#cb37-971" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb37-972"><a href="#cb37-972" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-973"><a href="#cb37-973" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
-<span id="cb37-974"><a href="#cb37-974" aria-hidden="true" tabindex="-1"></a><span class="fu">### MTX의 약동학(Pharmacokinetics) 특성</span></span>
-<span id="cb37-975"><a href="#cb37-975" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-976"><a href="#cb37-976" aria-hidden="true" tabindex="-1"></a>**흡수(Absorption)**</span>
+<span id="cb37-966"><a href="#cb37-966" aria-hidden="true" tabindex="-1"></a>**건선에서의 사용**</span>
+<span id="cb37-967"><a href="#cb37-967" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-968"><a href="#cb37-968" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**적응증**: 중등도~중증 판상 건선(plaque psoriasis)에서 전신 치료제로 사용</span>
+<span id="cb37-969"><a href="#cb37-969" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**용량**: 저용량 요법 - 주 1회 **7.5~25 mg** (경구 또는 피하주사)</span>
+<span id="cb37-970"><a href="#cb37-970" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**시작 용량**: 보통 7.5~10 mg/week로 시작, 효과에 따라 점진적 증량</span>
+<span id="cb37-971"><a href="#cb37-971" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**반응 평가**: PASI (Psoriasis Area and Severity Index) 점수로 12~16주 후 평가</span>
+<span id="cb37-972"><a href="#cb37-972" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**엽산 보충**: MTX 투여 24~48시간 후 **엽산(folic acid) 5 mg** 복용 (부작용 감소)</span>
+<span id="cb37-973"><a href="#cb37-973" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb37-974"><a href="#cb37-974" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-975"><a href="#cb37-975" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
+<span id="cb37-976"><a href="#cb37-976" aria-hidden="true" tabindex="-1"></a><span class="fu">### MTX의 약동학(Pharmacokinetics) 특성</span></span>
 <span id="cb37-977"><a href="#cb37-977" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-978"><a href="#cb37-978" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**경구(PO)**: 생체이용률(bioavailability, F) 약 60~80%, 고용량에서 감소 (포화성 흡수)</span>
-<span id="cb37-979"><a href="#cb37-979" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**피하주사(SC)**: F 거의 100%, 고용량에서도 안정적 흡수</span>
-<span id="cb37-980"><a href="#cb37-980" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Tmax**: PO 1~2시간, SC 0.5~1.5시간</span>
-<span id="cb37-981"><a href="#cb37-981" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>음식의 영향은 미미하나 유제품과의 동시 투여는 흡수 감소 가능</span>
-<span id="cb37-982"><a href="#cb37-982" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-983"><a href="#cb37-983" aria-hidden="true" tabindex="-1"></a>**분포(Distribution)**</span>
+<span id="cb37-978"><a href="#cb37-978" aria-hidden="true" tabindex="-1"></a>**흡수(Absorption)**</span>
+<span id="cb37-979"><a href="#cb37-979" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-980"><a href="#cb37-980" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**경구(PO)**: 생체이용률(bioavailability, F) 약 60~80%, 고용량에서 감소 (포화성 흡수)</span>
+<span id="cb37-981"><a href="#cb37-981" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**피하주사(SC)**: F 거의 100%, 고용량에서도 안정적 흡수</span>
+<span id="cb37-982"><a href="#cb37-982" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Tmax**: PO 1~2시간, SC 0.5~1.5시간</span>
+<span id="cb37-983"><a href="#cb37-983" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>음식의 영향은 미미하나 유제품과의 동시 투여는 흡수 감소 가능</span>
 <span id="cb37-984"><a href="#cb37-984" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-985"><a href="#cb37-985" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>혈장 단백 결합률: 약 50% (주로 알부민)</span>
-<span id="cb37-986"><a href="#cb37-986" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>분포용적(Vd): 약 0.4~0.8 L/kg</span>
-<span id="cb37-987"><a href="#cb37-987" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>적혈구 내 축적 (polyglutamate 형태로 - 수주에 걸쳐 서서히 제거)</span>
-<span id="cb37-988"><a href="#cb37-988" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-989"><a href="#cb37-989" aria-hidden="true" tabindex="-1"></a>**대사(Metabolism) 및 배설(Excretion)**</span>
+<span id="cb37-985"><a href="#cb37-985" aria-hidden="true" tabindex="-1"></a>**분포(Distribution)**</span>
+<span id="cb37-986"><a href="#cb37-986" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-987"><a href="#cb37-987" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>혈장 단백 결합률: 약 50% (주로 알부민)</span>
+<span id="cb37-988"><a href="#cb37-988" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>분포용적(Vd): 약 0.4~0.8 L/kg</span>
+<span id="cb37-989"><a href="#cb37-989" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>적혈구 내 축적 (polyglutamate 형태로 - 수주에 걸쳐 서서히 제거)</span>
 <span id="cb37-990"><a href="#cb37-990" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-991"><a href="#cb37-991" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>주요 배설 경로: **신장 배설** (70~90%, 주로 사구체 여과 + 세뇨관 분비)</span>
-<span id="cb37-992"><a href="#cb37-992" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>간 대사: 7-hydroxy-methotrexate (활성 대사체)</span>
-<span id="cb37-993"><a href="#cb37-993" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>반감기(t1/2): **3~10시간** (저용량), 고용량에서는 8~15시간</span>
-<span id="cb37-994"><a href="#cb37-994" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**신기능에 따라 청소율이 크게 변함** → 신기능 저하 환자에서 주의 필요</span>
-<span id="cb37-995"><a href="#cb37-995" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-996"><a href="#cb37-996" aria-hidden="true" tabindex="-1"></a>**독성 프로파일**</span>
+<span id="cb37-991"><a href="#cb37-991" aria-hidden="true" tabindex="-1"></a>**대사(Metabolism) 및 배설(Excretion)**</span>
+<span id="cb37-992"><a href="#cb37-992" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-993"><a href="#cb37-993" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>주요 배설 경로: **신장 배설** (70~90%, 주로 사구체 여과 + 세뇨관 분비)</span>
+<span id="cb37-994"><a href="#cb37-994" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>간 대사: 7-hydroxy-methotrexate (활성 대사체)</span>
+<span id="cb37-995"><a href="#cb37-995" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>반감기(t1/2): **3~10시간** (저용량), 고용량에서는 8~15시간</span>
+<span id="cb37-996"><a href="#cb37-996" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**신기능에 따라 청소율이 크게 변함** → 신기능 저하 환자에서 주의 필요</span>
 <span id="cb37-997"><a href="#cb37-997" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-998"><a href="#cb37-998" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**골수 억제**: 범혈구감소증 (가장 중요한 급성 독성)</span>
-<span id="cb37-999"><a href="#cb37-999" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**간독성**: 장기 사용 시 간섬유화/경변 가능 → 정기적 간기능 검사</span>
-<span id="cb37-1000"><a href="#cb37-1000" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**폐독성**: MTX 폐렴 (과민 반응, 용량 비의존적)</span>
-<span id="cb37-1001"><a href="#cb37-1001" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**위장관**: 구내염, 오심, 설사</span>
-<span id="cb37-1002"><a href="#cb37-1002" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**기형 유발성**: 임신 금기 (카테고리 X)</span>
-<span id="cb37-1003"><a href="#cb37-1003" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1004"><a href="#cb37-1004" aria-hidden="true" tabindex="-1"></a>**치료약물모니터링(TDM)**</span>
+<span id="cb37-998"><a href="#cb37-998" aria-hidden="true" tabindex="-1"></a>**독성 프로파일**</span>
+<span id="cb37-999"><a href="#cb37-999" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1000"><a href="#cb37-1000" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**골수 억제**: 범혈구감소증 (가장 중요한 급성 독성)</span>
+<span id="cb37-1001"><a href="#cb37-1001" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**간독성**: 장기 사용 시 간섬유화/경변 가능 → 정기적 간기능 검사</span>
+<span id="cb37-1002"><a href="#cb37-1002" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**폐독성**: MTX 폐렴 (과민 반응, 용량 비의존적)</span>
+<span id="cb37-1003"><a href="#cb37-1003" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**위장관**: 구내염, 오심, 설사</span>
+<span id="cb37-1004"><a href="#cb37-1004" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**기형 유발성**: 임신 금기 (카테고리 X)</span>
 <span id="cb37-1005"><a href="#cb37-1005" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1006"><a href="#cb37-1006" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>저용량(건선 치료): 일반적으로 TDM 불필요, CBC와 간기능 정기 모니터링</span>
-<span id="cb37-1007"><a href="#cb37-1007" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**고용량(항암 요법, &gt;500 mg/m²)**: 반드시 TDM 시행</span>
-<span id="cb37-1008"><a href="#cb37-1008" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>24시간 농도 &gt; 10 μmol/L → leucovorin rescue 강화</span>
-<span id="cb37-1009"><a href="#cb37-1009" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>48시간 농도 &gt; 1 μmol/L → 지연 배설, 적극적 수액/알칼리화</span>
-<span id="cb37-1010"><a href="#cb37-1010" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb37-1011"><a href="#cb37-1011" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1012"><a href="#cb37-1012" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1013"><a href="#cb37-1013" aria-hidden="true" tabindex="-1"></a><span class="fu">## Claude Code 활용 팁 {#sec-claude-tips}</span></span>
+<span id="cb37-1006"><a href="#cb37-1006" aria-hidden="true" tabindex="-1"></a>**치료약물모니터링(TDM)**</span>
+<span id="cb37-1007"><a href="#cb37-1007" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1008"><a href="#cb37-1008" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>저용량(건선 치료): 일반적으로 TDM 불필요, CBC와 간기능 정기 모니터링</span>
+<span id="cb37-1009"><a href="#cb37-1009" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**고용량(항암 요법, &gt;500 mg/m²)**: 반드시 TDM 시행</span>
+<span id="cb37-1010"><a href="#cb37-1010" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>24시간 농도 &gt; 10 μmol/L → leucovorin rescue 강화</span>
+<span id="cb37-1011"><a href="#cb37-1011" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>48시간 농도 &gt; 1 μmol/L → 지연 배설, 적극적 수액/알칼리화</span>
+<span id="cb37-1012"><a href="#cb37-1012" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb37-1013"><a href="#cb37-1013" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-1014"><a href="#cb37-1014" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1015"><a href="#cb37-1015" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
-<span id="cb37-1016"><a href="#cb37-1016" aria-hidden="true" tabindex="-1"></a><span class="fu">### Claude Code로 R 객체 이해하기</span></span>
-<span id="cb37-1017"><a href="#cb37-1017" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1018"><a href="#cb37-1018" aria-hidden="true" tabindex="-1"></a>**패턴 1: 데이터프레임 구조 설명 요청**</span>
+<span id="cb37-1015"><a href="#cb37-1015" aria-hidden="true" tabindex="-1"></a><span class="fu">## Claude Code 활용 팁 {#sec-claude-tips}</span></span>
+<span id="cb37-1016"><a href="#cb37-1016" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1017"><a href="#cb37-1017" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
+<span id="cb37-1018"><a href="#cb37-1018" aria-hidden="true" tabindex="-1"></a><span class="fu">### Claude Code로 R 객체 이해하기</span></span>
 <span id="cb37-1019"><a href="#cb37-1019" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1020"><a href="#cb37-1020" aria-hidden="true" tabindex="-1"></a>새로운 데이터를 받았을 때, Claude Code에게 구조를 설명해달라고 요청할 수 있습니다.</span>
+<span id="cb37-1020"><a href="#cb37-1020" aria-hidden="true" tabindex="-1"></a>**패턴 1: 데이터프레임 구조 설명 요청**</span>
 <span id="cb37-1021"><a href="#cb37-1021" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1022"><a href="#cb37-1022" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "이 데이터프레임에는 ID, TIME, DV, AMT, EVID, CMT, MDV 열이 있어. 각 열의 의미와 적절한 R 타입을 설명해줘."</span></span>
+<span id="cb37-1022"><a href="#cb37-1022" aria-hidden="true" tabindex="-1"></a>새로운 데이터를 받았을 때, Claude Code에게 구조를 설명해달라고 요청할 수 있습니다.</span>
 <span id="cb37-1023"><a href="#cb37-1023" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1024"><a href="#cb37-1024" aria-hidden="true" tabindex="-1"></a>Claude Code는 NONMEM 데이터셋 형식을 이해하고 있으므로 각 열의 의미, 기대되는 타입, 일반적인 값 범위 등을 설명해줄 것입니다.</span>
+<span id="cb37-1024"><a href="#cb37-1024" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "이 데이터프레임에는 ID, TIME, DV, AMT, EVID, CMT, MDV 열이 있어. 각 열의 의미와 적절한 R 타입을 설명해줘."</span></span>
 <span id="cb37-1025"><a href="#cb37-1025" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1026"><a href="#cb37-1026" aria-hidden="true" tabindex="-1"></a>**패턴 2: 타입 변환 디버깅**</span>
+<span id="cb37-1026"><a href="#cb37-1026" aria-hidden="true" tabindex="-1"></a>Claude Code는 NONMEM 데이터셋 형식을 이해하고 있으므로 각 열의 의미, 기대되는 타입, 일반적인 값 범위 등을 설명해줄 것입니다.</span>
 <span id="cb37-1027"><a href="#cb37-1027" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1028"><a href="#cb37-1028" aria-hidden="true" tabindex="-1"></a>데이터 타입 문제로 오류가 발생했을 때:</span>
+<span id="cb37-1028"><a href="#cb37-1028" aria-hidden="true" tabindex="-1"></a>**패턴 2: 타입 변환 디버깅**</span>
 <span id="cb37-1029"><a href="#cb37-1029" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1030"><a href="#cb37-1030" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "read_csv로 데이터를 불렀는데, DV 열이 character로 읽혔어. BLQ 값이 '&lt;0.05'로 들어있을 때 어떻게 처리해야 해?"</span></span>
+<span id="cb37-1030"><a href="#cb37-1030" aria-hidden="true" tabindex="-1"></a>데이터 타입 문제로 오류가 발생했을 때:</span>
 <span id="cb37-1031"><a href="#cb37-1031" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1034"><a href="#cb37-1034" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb37-1035"><a href="#cb37-1035" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb37-1036"><a href="#cb37-1036" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1037"><a href="#cb37-1037" aria-hidden="true" tabindex="-1"></a><span class="co"># Claude Code가 제안할 수 있는 해결 코드</span></span>
-<span id="cb37-1038"><a href="#cb37-1038" aria-hidden="true" tabindex="-1"></a>mtx_pk <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/pk_methotrexate.csv"</span>)</span>
-<span id="cb37-1039"><a href="#cb37-1039" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1040"><a href="#cb37-1040" aria-hidden="true" tabindex="-1"></a><span class="co"># BLQ 처리 방법 1: BLQ 플래그 생성 후 숫자 변환</span></span>
-<span id="cb37-1041"><a href="#cb37-1041" aria-hidden="true" tabindex="-1"></a>mtx_pk <span class="ot">&lt;-</span> mtx_pk <span class="sc">%&gt;%</span></span>
-<span id="cb37-1042"><a href="#cb37-1042" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb37-1043"><a href="#cb37-1043" aria-hidden="true" tabindex="-1"></a>    <span class="at">BLQ =</span> <span class="fu">ifelse</span>(<span class="fu">grepl</span>(<span class="st">"&lt;"</span>, DV) <span class="sc">|</span> DV <span class="sc">==</span> <span class="st">"BLQ"</span>, <span class="dv">1</span>, <span class="dv">0</span>),</span>
-<span id="cb37-1044"><a href="#cb37-1044" aria-hidden="true" tabindex="-1"></a>    <span class="at">DV_numeric =</span> <span class="fu">case_when</span>(</span>
-<span id="cb37-1045"><a href="#cb37-1045" aria-hidden="true" tabindex="-1"></a>      BLQ <span class="sc">==</span> <span class="dv">1</span> <span class="sc">~</span> <span class="dv">0</span>,        <span class="co"># 또는 LLOQ/2 등</span></span>
-<span id="cb37-1046"><a href="#cb37-1046" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="fu">as.numeric</span>(DV)</span>
-<span id="cb37-1047"><a href="#cb37-1047" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb37-1048"><a href="#cb37-1048" aria-hidden="true" tabindex="-1"></a>    <span class="at">MDV =</span> <span class="fu">ifelse</span>(BLQ <span class="sc">==</span> <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span>
-<span id="cb37-1049"><a href="#cb37-1049" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb37-1050"><a href="#cb37-1050" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb37-1051"><a href="#cb37-1051" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1052"><a href="#cb37-1052" aria-hidden="true" tabindex="-1"></a>**패턴 3: 데이터 구조 문서화**</span>
+<span id="cb37-1032"><a href="#cb37-1032" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "read_csv로 데이터를 불렀는데, DV 열이 character로 읽혔어. BLQ 값이 '&lt;0.05'로 들어있을 때 어떻게 처리해야 해?"</span></span>
+<span id="cb37-1033"><a href="#cb37-1033" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1036"><a href="#cb37-1036" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-1037"><a href="#cb37-1037" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb37-1038"><a href="#cb37-1038" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1039"><a href="#cb37-1039" aria-hidden="true" tabindex="-1"></a><span class="co"># Claude Code가 제안할 수 있는 해결 코드</span></span>
+<span id="cb37-1040"><a href="#cb37-1040" aria-hidden="true" tabindex="-1"></a>mtx_pk <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/pk_methotrexate.csv"</span>)</span>
+<span id="cb37-1041"><a href="#cb37-1041" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1042"><a href="#cb37-1042" aria-hidden="true" tabindex="-1"></a><span class="co"># BLQ 처리 방법 1: BLQ 플래그 생성 후 숫자 변환</span></span>
+<span id="cb37-1043"><a href="#cb37-1043" aria-hidden="true" tabindex="-1"></a>mtx_pk <span class="ot">&lt;-</span> mtx_pk <span class="sc">%&gt;%</span></span>
+<span id="cb37-1044"><a href="#cb37-1044" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb37-1045"><a href="#cb37-1045" aria-hidden="true" tabindex="-1"></a>    <span class="at">BLQ =</span> <span class="fu">ifelse</span>(<span class="fu">grepl</span>(<span class="st">"&lt;"</span>, DV) <span class="sc">|</span> DV <span class="sc">==</span> <span class="st">"BLQ"</span>, <span class="dv">1</span>, <span class="dv">0</span>),</span>
+<span id="cb37-1046"><a href="#cb37-1046" aria-hidden="true" tabindex="-1"></a>    <span class="at">DV_numeric =</span> <span class="fu">case_when</span>(</span>
+<span id="cb37-1047"><a href="#cb37-1047" aria-hidden="true" tabindex="-1"></a>      BLQ <span class="sc">==</span> <span class="dv">1</span> <span class="sc">~</span> <span class="dv">0</span>,        <span class="co"># 또는 LLOQ/2 등</span></span>
+<span id="cb37-1048"><a href="#cb37-1048" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="fu">as.numeric</span>(DV)</span>
+<span id="cb37-1049"><a href="#cb37-1049" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb37-1050"><a href="#cb37-1050" aria-hidden="true" tabindex="-1"></a>    <span class="at">MDV =</span> <span class="fu">ifelse</span>(BLQ <span class="sc">==</span> <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb37-1051"><a href="#cb37-1051" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb37-1052"><a href="#cb37-1052" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb37-1053"><a href="#cb37-1053" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1054"><a href="#cb37-1054" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "이 코드에서 사용하는 데이터프레임의 각 열에 대한 설명을 주석으로 작성해줘."</span></span>
+<span id="cb37-1054"><a href="#cb37-1054" aria-hidden="true" tabindex="-1"></a>**패턴 3: 데이터 구조 문서화**</span>
 <span id="cb37-1055"><a href="#cb37-1055" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1056"><a href="#cb37-1056" aria-hidden="true" tabindex="-1"></a>Claude Code는 다음과 같은 문서화 코드를 생성할 수 있습니다:</span>
+<span id="cb37-1056"><a href="#cb37-1056" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "이 코드에서 사용하는 데이터프레임의 각 열에 대한 설명을 주석으로 작성해줘."</span></span>
 <span id="cb37-1057"><a href="#cb37-1057" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1060"><a href="#cb37-1060" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb37-1061"><a href="#cb37-1061" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb37-1062"><a href="#cb37-1062" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1063"><a href="#cb37-1063" aria-hidden="true" tabindex="-1"></a><span class="co"># Methotrexate PK 데이터셋 변수 정의</span></span>
-<span id="cb37-1064"><a href="#cb37-1064" aria-hidden="true" tabindex="-1"></a><span class="co"># ===================================</span></span>
-<span id="cb37-1065"><a href="#cb37-1065" aria-hidden="true" tabindex="-1"></a><span class="co"># ID   : chr  - 환자 식별자 (예: "PT001")</span></span>
-<span id="cb37-1066"><a href="#cb37-1066" aria-hidden="true" tabindex="-1"></a><span class="co"># TIME : dbl  - 투여 후 경과 시간 (단위: hr)</span></span>
-<span id="cb37-1067"><a href="#cb37-1067" aria-hidden="true" tabindex="-1"></a><span class="co"># DV   : dbl  - 종속변수, 혈장 농도 (단위: ng/mL)</span></span>
-<span id="cb37-1068"><a href="#cb37-1068" aria-hidden="true" tabindex="-1"></a><span class="co"># AMT  : dbl  - 투여량 (단위: mg), 관측 행에서는 NA</span></span>
-<span id="cb37-1069"><a href="#cb37-1069" aria-hidden="true" tabindex="-1"></a><span class="co"># EVID : int  - 이벤트 ID (1=투여, 0=관측)</span></span>
-<span id="cb37-1070"><a href="#cb37-1070" aria-hidden="true" tabindex="-1"></a><span class="co"># CMT  : int  - 구획 번호 (1=투여, 2=관측)</span></span>
-<span id="cb37-1071"><a href="#cb37-1071" aria-hidden="true" tabindex="-1"></a><span class="co"># MDV  : int  - Missing DV 플래그 (1=DV 무시, 0=DV 사용)</span></span>
-<span id="cb37-1072"><a href="#cb37-1072" aria-hidden="true" tabindex="-1"></a><span class="co"># WT   : dbl  - 체중 (단위: kg)</span></span>
-<span id="cb37-1073"><a href="#cb37-1073" aria-hidden="true" tabindex="-1"></a><span class="co"># CRCL : dbl  - 크레아티닌 청소율 (단위: mL/min)</span></span>
-<span id="cb37-1074"><a href="#cb37-1074" aria-hidden="true" tabindex="-1"></a><span class="co"># ROUTE: fct  - 투여 경로 (levels: PO, SC, IV)</span></span>
-<span id="cb37-1075"><a href="#cb37-1075" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb37-1076"><a href="#cb37-1076" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1077"><a href="#cb37-1077" aria-hidden="true" tabindex="-1"></a>**패턴 4: 객체 변환 코드 생성**</span>
+<span id="cb37-1058"><a href="#cb37-1058" aria-hidden="true" tabindex="-1"></a>Claude Code는 다음과 같은 문서화 코드를 생성할 수 있습니다:</span>
+<span id="cb37-1059"><a href="#cb37-1059" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1062"><a href="#cb37-1062" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-1063"><a href="#cb37-1063" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb37-1064"><a href="#cb37-1064" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1065"><a href="#cb37-1065" aria-hidden="true" tabindex="-1"></a><span class="co"># Methotrexate PK 데이터셋 변수 정의</span></span>
+<span id="cb37-1066"><a href="#cb37-1066" aria-hidden="true" tabindex="-1"></a><span class="co"># ===================================</span></span>
+<span id="cb37-1067"><a href="#cb37-1067" aria-hidden="true" tabindex="-1"></a><span class="co"># ID   : chr  - 환자 식별자 (예: "PT001")</span></span>
+<span id="cb37-1068"><a href="#cb37-1068" aria-hidden="true" tabindex="-1"></a><span class="co"># TIME : dbl  - 투여 후 경과 시간 (단위: hr)</span></span>
+<span id="cb37-1069"><a href="#cb37-1069" aria-hidden="true" tabindex="-1"></a><span class="co"># DV   : dbl  - 종속변수, 혈장 농도 (단위: ng/mL)</span></span>
+<span id="cb37-1070"><a href="#cb37-1070" aria-hidden="true" tabindex="-1"></a><span class="co"># AMT  : dbl  - 투여량 (단위: mg), 관측 행에서는 NA</span></span>
+<span id="cb37-1071"><a href="#cb37-1071" aria-hidden="true" tabindex="-1"></a><span class="co"># EVID : int  - 이벤트 ID (1=투여, 0=관측)</span></span>
+<span id="cb37-1072"><a href="#cb37-1072" aria-hidden="true" tabindex="-1"></a><span class="co"># CMT  : int  - 구획 번호 (1=투여, 2=관측)</span></span>
+<span id="cb37-1073"><a href="#cb37-1073" aria-hidden="true" tabindex="-1"></a><span class="co"># MDV  : int  - Missing DV 플래그 (1=DV 무시, 0=DV 사용)</span></span>
+<span id="cb37-1074"><a href="#cb37-1074" aria-hidden="true" tabindex="-1"></a><span class="co"># WT   : dbl  - 체중 (단위: kg)</span></span>
+<span id="cb37-1075"><a href="#cb37-1075" aria-hidden="true" tabindex="-1"></a><span class="co"># CRCL : dbl  - 크레아티닌 청소율 (단위: mL/min)</span></span>
+<span id="cb37-1076"><a href="#cb37-1076" aria-hidden="true" tabindex="-1"></a><span class="co"># ROUTE: fct  - 투여 경로 (levels: PO, SC, IV)</span></span>
+<span id="cb37-1077"><a href="#cb37-1077" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb37-1078"><a href="#cb37-1078" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1079"><a href="#cb37-1079" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "이 리스트 형태의 환자 데이터를 NONMEM 형식의 데이터프레임으로 변환하는 코드를 작성해줘."</span></span>
+<span id="cb37-1079"><a href="#cb37-1079" aria-hidden="true" tabindex="-1"></a>**패턴 4: 객체 변환 코드 생성**</span>
 <span id="cb37-1080"><a href="#cb37-1080" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1081"><a href="#cb37-1081" aria-hidden="true" tabindex="-1"></a>이처럼 Claude Code는 R 객체 간 변환, 특히 PK/PD 데이터 구조와 관련된 작업에서 큰 도움이 됩니다.</span>
-<span id="cb37-1082"><a href="#cb37-1082" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb37-1083"><a href="#cb37-1083" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1084"><a href="#cb37-1084" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
-<span id="cb37-1085"><a href="#cb37-1085" aria-hidden="true" tabindex="-1"></a><span class="fu">### 효과적인 프롬프트 예시</span></span>
-<span id="cb37-1086"><a href="#cb37-1086" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1087"><a href="#cb37-1087" aria-hidden="true" tabindex="-1"></a>다음과 같은 프롬프트를 사용하면 더 정확한 답변을 얻을 수 있습니다:</span>
+<span id="cb37-1081"><a href="#cb37-1081" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "이 리스트 형태의 환자 데이터를 NONMEM 형식의 데이터프레임으로 변환하는 코드를 작성해줘."</span></span>
+<span id="cb37-1082"><a href="#cb37-1082" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1083"><a href="#cb37-1083" aria-hidden="true" tabindex="-1"></a>이처럼 Claude Code는 R 객체 간 변환, 특히 PK/PD 데이터 구조와 관련된 작업에서 큰 도움이 됩니다.</span>
+<span id="cb37-1084"><a href="#cb37-1084" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb37-1085"><a href="#cb37-1085" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1086"><a href="#cb37-1086" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
+<span id="cb37-1087"><a href="#cb37-1087" aria-hidden="true" tabindex="-1"></a><span class="fu">### 효과적인 프롬프트 예시</span></span>
 <span id="cb37-1088"><a href="#cb37-1088" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1089"><a href="#cb37-1089" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**구체적인 데이터 명시**: "Methotrexate SC 15mg 투여 후 PK 데이터를 tibble로 만들어줘. 채혈 시점은 0, 0.5, 1, 2, 4, 8, 12, 24시간이야."</span>
+<span id="cb37-1089"><a href="#cb37-1089" aria-hidden="true" tabindex="-1"></a>다음과 같은 프롬프트를 사용하면 더 정확한 답변을 얻을 수 있습니다:</span>
 <span id="cb37-1090"><a href="#cb37-1090" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1091"><a href="#cb37-1091" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**원하는 출력 형식 지정**: "이 데이터를 NONMEM 입력 형식(ID, TIME, DV, AMT, EVID, CMT, MDV)으로 변환해줘."</span>
+<span id="cb37-1091"><a href="#cb37-1091" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**구체적인 데이터 명시**: "Methotrexate SC 15mg 투여 후 PK 데이터를 tibble로 만들어줘. 채혈 시점은 0, 0.5, 1, 2, 4, 8, 12, 24시간이야."</span>
 <span id="cb37-1092"><a href="#cb37-1092" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1093"><a href="#cb37-1093" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**맥락 제공**: "건선 환자 30명의 Methotrexate PK 연구에서, 체중별로 AUC를 비교하는 코드를 작성해줘. 체중은 3개 그룹(&lt;60, 60-80, &gt;80 kg)으로 나눠줘."</span>
-<span id="cb37-1094"><a href="#cb37-1094" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb37-1095"><a href="#cb37-1095" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1096"><a href="#cb37-1096" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1097"><a href="#cb37-1097" aria-hidden="true" tabindex="-1"></a><span class="fu">## 연습 문제 {#sec-exercises}</span></span>
+<span id="cb37-1093"><a href="#cb37-1093" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**원하는 출력 형식 지정**: "이 데이터를 NONMEM 입력 형식(ID, TIME, DV, AMT, EVID, CMT, MDV)으로 변환해줘."</span>
+<span id="cb37-1094"><a href="#cb37-1094" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1095"><a href="#cb37-1095" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**맥락 제공**: "건선 환자 30명의 Methotrexate PK 연구에서, 체중별로 AUC를 비교하는 코드를 작성해줘. 체중은 3개 그룹(&lt;60, 60-80, &gt;80 kg)으로 나눠줘."</span>
+<span id="cb37-1096"><a href="#cb37-1096" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb37-1097"><a href="#cb37-1097" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-1098"><a href="#cb37-1098" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1099"><a href="#cb37-1099" aria-hidden="true" tabindex="-1"></a><span class="fu">### 확인 문제</span></span>
+<span id="cb37-1099"><a href="#cb37-1099" aria-hidden="true" tabindex="-1"></a><span class="fu">## 연습 문제 {#sec-exercises}</span></span>
 <span id="cb37-1100"><a href="#cb37-1100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1101"><a href="#cb37-1101" aria-hidden="true" tabindex="-1"></a>**문제 1.** 다음 R 객체들의 <span class="in">`class()`</span>를 각각 예측하시오.</span>
+<span id="cb37-1101"><a href="#cb37-1101" aria-hidden="true" tabindex="-1"></a><span class="fu">### 확인 문제</span></span>
 <span id="cb37-1102"><a href="#cb37-1102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1105"><a href="#cb37-1105" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb37-1106"><a href="#cb37-1106" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb37-1107"><a href="#cb37-1107" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1108"><a href="#cb37-1108" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">42</span></span>
-<span id="cb37-1109"><a href="#cb37-1109" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">42</span>L</span>
-<span id="cb37-1110"><a href="#cb37-1110" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="st">"42"</span></span>
-<span id="cb37-1111"><a href="#cb37-1111" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="cn">TRUE</span></span>
-<span id="cb37-1112"><a href="#cb37-1112" aria-hidden="true" tabindex="-1"></a>e <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="st">"High"</span>, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Low"</span>, <span class="st">"Medium"</span>, <span class="st">"High"</span>))</span>
-<span id="cb37-1113"><a href="#cb37-1113" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb37-1114"><a href="#cb37-1114" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1115"><a href="#cb37-1115" aria-hidden="true" tabindex="-1"></a>**문제 2.** 다음 코드의 결과를 예측하시오.</span>
+<span id="cb37-1103"><a href="#cb37-1103" aria-hidden="true" tabindex="-1"></a>**문제 1.** 다음 R 객체들의 <span class="in">`class()`</span>를 각각 예측하시오.</span>
+<span id="cb37-1104"><a href="#cb37-1104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1107"><a href="#cb37-1107" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-1108"><a href="#cb37-1108" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb37-1109"><a href="#cb37-1109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1110"><a href="#cb37-1110" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">42</span></span>
+<span id="cb37-1111"><a href="#cb37-1111" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">42</span>L</span>
+<span id="cb37-1112"><a href="#cb37-1112" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="st">"42"</span></span>
+<span id="cb37-1113"><a href="#cb37-1113" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="cn">TRUE</span></span>
+<span id="cb37-1114"><a href="#cb37-1114" aria-hidden="true" tabindex="-1"></a>e <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="st">"High"</span>, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Low"</span>, <span class="st">"Medium"</span>, <span class="st">"High"</span>))</span>
+<span id="cb37-1115"><a href="#cb37-1115" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb37-1116"><a href="#cb37-1116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1119"><a href="#cb37-1119" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb37-1120"><a href="#cb37-1120" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb37-1121"><a href="#cb37-1121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1122"><a href="#cb37-1122" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="st">"2"</span>, <span class="cn">TRUE</span>)</span>
-<span id="cb37-1123"><a href="#cb37-1123" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(x)     <span class="co"># ?</span></span>
-<span id="cb37-1124"><a href="#cb37-1124" aria-hidden="true" tabindex="-1"></a>x            <span class="co"># ?</span></span>
-<span id="cb37-1125"><a href="#cb37-1125" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb37-1126"><a href="#cb37-1126" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1127"><a href="#cb37-1127" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
-<span id="cb37-1128"><a href="#cb37-1128" aria-hidden="true" tabindex="-1"></a><span class="fu">### 힌트</span></span>
-<span id="cb37-1129"><a href="#cb37-1129" aria-hidden="true" tabindex="-1"></a>R에서 벡터는 하나의 타입만 가질 수 있습니다. 여러 타입이 섞이면 **자동 형변환(coercion)**이 일어납니다. 우선순위: <span class="in">`character`</span> &gt; <span class="in">`numeric`</span> &gt; <span class="in">`logical`</span>.</span>
-<span id="cb37-1130"><a href="#cb37-1130" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb37-1131"><a href="#cb37-1131" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1132"><a href="#cb37-1132" aria-hidden="true" tabindex="-1"></a>**문제 3.** <span class="in">`data.frame`</span>과 <span class="in">`tibble`</span>의 차이점을 세 가지 이상 서술하시오.</span>
+<span id="cb37-1117"><a href="#cb37-1117" aria-hidden="true" tabindex="-1"></a>**문제 2.** 다음 코드의 결과를 예측하시오.</span>
+<span id="cb37-1118"><a href="#cb37-1118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1121"><a href="#cb37-1121" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-1122"><a href="#cb37-1122" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb37-1123"><a href="#cb37-1123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1124"><a href="#cb37-1124" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="st">"2"</span>, <span class="cn">TRUE</span>)</span>
+<span id="cb37-1125"><a href="#cb37-1125" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(x)     <span class="co"># ?</span></span>
+<span id="cb37-1126"><a href="#cb37-1126" aria-hidden="true" tabindex="-1"></a>x            <span class="co"># ?</span></span>
+<span id="cb37-1127"><a href="#cb37-1127" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-1128"><a href="#cb37-1128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1129"><a href="#cb37-1129" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
+<span id="cb37-1130"><a href="#cb37-1130" aria-hidden="true" tabindex="-1"></a><span class="fu">### 힌트</span></span>
+<span id="cb37-1131"><a href="#cb37-1131" aria-hidden="true" tabindex="-1"></a>R에서 벡터는 하나의 타입만 가질 수 있습니다. 여러 타입이 섞이면 **자동 형변환(coercion)**이 일어납니다. 우선순위: <span class="in">`character`</span> &gt; <span class="in">`numeric`</span> &gt; <span class="in">`logical`</span>.</span>
+<span id="cb37-1132"><a href="#cb37-1132" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb37-1133"><a href="#cb37-1133" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1134"><a href="#cb37-1134" aria-hidden="true" tabindex="-1"></a>**문제 4.** 다음 상황에서 적절한 R 데이터 타입(또는 구조)을 선택하시오.</span>
+<span id="cb37-1134"><a href="#cb37-1134" aria-hidden="true" tabindex="-1"></a>**문제 3.** <span class="in">`data.frame`</span>과 <span class="in">`tibble`</span>의 차이점을 세 가지 이상 서술하시오.</span>
 <span id="cb37-1135"><a href="#cb37-1135" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1136"><a href="#cb37-1136" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 상황 <span class="pp">|</span> 적절한 타입/구조 <span class="pp">|</span></span>
-<span id="cb37-1137"><a href="#cb37-1137" aria-hidden="true" tabindex="-1"></a><span class="pp">|:---|:---|</span></span>
-<span id="cb37-1138"><a href="#cb37-1138" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 환자의 시간별 혈장 농도 데이터 (ID, TIME, DV, AMT, EVID) <span class="pp">|</span> ? <span class="pp">|</span></span>
-<span id="cb37-1139"><a href="#cb37-1139" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Methotrexate의 PK 파라미터 (CL=8.5, Vd=45.2, ka=1.2) <span class="pp">|</span> ? <span class="pp">|</span></span>
-<span id="cb37-1140"><a href="#cb37-1140" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 투여 경로 (PO, SC, IV) <span class="pp">|</span> ? <span class="pp">|</span></span>
-<span id="cb37-1141"><a href="#cb37-1141" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 건선 중증도 (Mild &lt; Moderate &lt; Severe) <span class="pp">|</span> ? <span class="pp">|</span></span>
-<span id="cb37-1142"><a href="#cb37-1142" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 단일 환자의 인구통계 + 투약정보 + PK 데이터 <span class="pp">|</span> ? <span class="pp">|</span></span>
-<span id="cb37-1143"><a href="#cb37-1143" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1144"><a href="#cb37-1144" aria-hidden="true" tabindex="-1"></a>**문제 5.** Factor에서 <span class="in">`levels`</span>의 순서가 중요한 이유를 ggplot2 시각화와 관련지어 설명하시오.</span>
+<span id="cb37-1136"><a href="#cb37-1136" aria-hidden="true" tabindex="-1"></a>**문제 4.** 다음 상황에서 적절한 R 데이터 타입(또는 구조)을 선택하시오.</span>
+<span id="cb37-1137"><a href="#cb37-1137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1138"><a href="#cb37-1138" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 상황 <span class="pp">|</span> 적절한 타입/구조 <span class="pp">|</span></span>
+<span id="cb37-1139"><a href="#cb37-1139" aria-hidden="true" tabindex="-1"></a><span class="pp">|:---|:---|</span></span>
+<span id="cb37-1140"><a href="#cb37-1140" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 환자의 시간별 혈장 농도 데이터 (ID, TIME, DV, AMT, EVID) <span class="pp">|</span> ? <span class="pp">|</span></span>
+<span id="cb37-1141"><a href="#cb37-1141" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Methotrexate의 PK 파라미터 (CL=8.5, Vd=45.2, ka=1.2) <span class="pp">|</span> ? <span class="pp">|</span></span>
+<span id="cb37-1142"><a href="#cb37-1142" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 투여 경로 (PO, SC, IV) <span class="pp">|</span> ? <span class="pp">|</span></span>
+<span id="cb37-1143"><a href="#cb37-1143" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 건선 중증도 (Mild &lt; Moderate &lt; Severe) <span class="pp">|</span> ? <span class="pp">|</span></span>
+<span id="cb37-1144"><a href="#cb37-1144" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 단일 환자의 인구통계 + 투약정보 + PK 데이터 <span class="pp">|</span> ? <span class="pp">|</span></span>
 <span id="cb37-1145"><a href="#cb37-1145" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1146"><a href="#cb37-1146" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1147"><a href="#cb37-1147" aria-hidden="true" tabindex="-1"></a><span class="fu">### R 실습 과제</span></span>
+<span id="cb37-1146"><a href="#cb37-1146" aria-hidden="true" tabindex="-1"></a>**문제 5.** Factor에서 <span class="in">`levels`</span>의 순서가 중요한 이유를 ggplot2 시각화와 관련지어 설명하시오.</span>
+<span id="cb37-1147"><a href="#cb37-1147" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-1148"><a href="#cb37-1148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1149"><a href="#cb37-1149" aria-hidden="true" tabindex="-1"></a>**실습 1: 벡터 연산과 NCA**</span>
+<span id="cb37-1149"><a href="#cb37-1149" aria-hidden="true" tabindex="-1"></a><span class="fu">### R 실습 과제</span></span>
 <span id="cb37-1150"><a href="#cb37-1150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1151"><a href="#cb37-1151" aria-hidden="true" tabindex="-1"></a>아래 데이터를 사용하여 비구획분석(Non-Compartmental Analysis, NCA)의 기초 파라미터를 계산하시오.</span>
+<span id="cb37-1151"><a href="#cb37-1151" aria-hidden="true" tabindex="-1"></a>**실습 1: 벡터 연산과 NCA**</span>
 <span id="cb37-1152"><a href="#cb37-1152" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1155"><a href="#cb37-1155" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb37-1156"><a href="#cb37-1156" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb37-1157"><a href="#cb37-1157" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1158"><a href="#cb37-1158" aria-hidden="true" tabindex="-1"></a><span class="co"># Methotrexate 15mg SC 투여 후 데이터 (환자 PT004)</span></span>
-<span id="cb37-1159"><a href="#cb37-1159" aria-hidden="true" tabindex="-1"></a>time <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">24</span>)</span>
-<span id="cb37-1160"><a href="#cb37-1160" aria-hidden="true" tabindex="-1"></a>conc <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">45</span>, <span class="dv">180</span>, <span class="dv">390</span>, <span class="dv">520</span>, <span class="dv">470</span>, <span class="dv">310</span>, <span class="dv">200</span>, <span class="dv">85</span>, <span class="dv">42</span>, <span class="dv">15</span>, <span class="fl">2.8</span>)</span>
-<span id="cb37-1161"><a href="#cb37-1161" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1162"><a href="#cb37-1162" aria-hidden="true" tabindex="-1"></a><span class="co"># 과제:</span></span>
-<span id="cb37-1163"><a href="#cb37-1163" aria-hidden="true" tabindex="-1"></a><span class="co"># 1) Cmax와 Tmax를 구하시오.</span></span>
-<span id="cb37-1164"><a href="#cb37-1164" aria-hidden="true" tabindex="-1"></a><span class="co"># 2) 사다리꼴 공식으로 AUC(0-24h)를 계산하시오.</span></span>
-<span id="cb37-1165"><a href="#cb37-1165" aria-hidden="true" tabindex="-1"></a><span class="co"># 3) 마지막 3개 시점을 이용하여 소실 속도 상수(λz)를 추정하시오.</span></span>
-<span id="cb37-1166"><a href="#cb37-1166" aria-hidden="true" tabindex="-1"></a><span class="co">#    (힌트: log(conc) vs time의 기울기 = -λz)</span></span>
-<span id="cb37-1167"><a href="#cb37-1167" aria-hidden="true" tabindex="-1"></a><span class="co"># 4) 소실 반감기(t1/2 = ln(2)/λz)를 계산하시오.</span></span>
-<span id="cb37-1168"><a href="#cb37-1168" aria-hidden="true" tabindex="-1"></a><span class="co"># 5) AUC(0-inf)를 추정하시오. (AUC(0-24) + Clast/λz)</span></span>
-<span id="cb37-1169"><a href="#cb37-1169" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb37-1170"><a href="#cb37-1170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1171"><a href="#cb37-1171" aria-hidden="true" tabindex="-1"></a>**실습 2: 데이터프레임 다루기**</span>
+<span id="cb37-1153"><a href="#cb37-1153" aria-hidden="true" tabindex="-1"></a>아래 데이터를 사용하여 비구획분석(Non-Compartmental Analysis, NCA)의 기초 파라미터를 계산하시오.</span>
+<span id="cb37-1154"><a href="#cb37-1154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1157"><a href="#cb37-1157" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-1158"><a href="#cb37-1158" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb37-1159"><a href="#cb37-1159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1160"><a href="#cb37-1160" aria-hidden="true" tabindex="-1"></a><span class="co"># Methotrexate 15mg SC 투여 후 데이터 (환자 PT004)</span></span>
+<span id="cb37-1161"><a href="#cb37-1161" aria-hidden="true" tabindex="-1"></a>time <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">24</span>)</span>
+<span id="cb37-1162"><a href="#cb37-1162" aria-hidden="true" tabindex="-1"></a>conc <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">45</span>, <span class="dv">180</span>, <span class="dv">390</span>, <span class="dv">520</span>, <span class="dv">470</span>, <span class="dv">310</span>, <span class="dv">200</span>, <span class="dv">85</span>, <span class="dv">42</span>, <span class="dv">15</span>, <span class="fl">2.8</span>)</span>
+<span id="cb37-1163"><a href="#cb37-1163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1164"><a href="#cb37-1164" aria-hidden="true" tabindex="-1"></a><span class="co"># 과제:</span></span>
+<span id="cb37-1165"><a href="#cb37-1165" aria-hidden="true" tabindex="-1"></a><span class="co"># 1) Cmax와 Tmax를 구하시오.</span></span>
+<span id="cb37-1166"><a href="#cb37-1166" aria-hidden="true" tabindex="-1"></a><span class="co"># 2) 사다리꼴 공식으로 AUC(0-24h)를 계산하시오.</span></span>
+<span id="cb37-1167"><a href="#cb37-1167" aria-hidden="true" tabindex="-1"></a><span class="co"># 3) 마지막 3개 시점을 이용하여 소실 속도 상수(λz)를 추정하시오.</span></span>
+<span id="cb37-1168"><a href="#cb37-1168" aria-hidden="true" tabindex="-1"></a><span class="co">#    (힌트: log(conc) vs time의 기울기 = -λz)</span></span>
+<span id="cb37-1169"><a href="#cb37-1169" aria-hidden="true" tabindex="-1"></a><span class="co"># 4) 소실 반감기(t1/2 = ln(2)/λz)를 계산하시오.</span></span>
+<span id="cb37-1170"><a href="#cb37-1170" aria-hidden="true" tabindex="-1"></a><span class="co"># 5) AUC(0-inf)를 추정하시오. (AUC(0-24) + Clast/λz)</span></span>
+<span id="cb37-1171"><a href="#cb37-1171" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb37-1172"><a href="#cb37-1172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1173"><a href="#cb37-1173" aria-hidden="true" tabindex="-1"></a>아래 코드로 생성한 데이터프레임을 사용하여 각 문항을 수행하시오.</span>
+<span id="cb37-1173"><a href="#cb37-1173" aria-hidden="true" tabindex="-1"></a>**실습 2: 데이터프레임 다루기**</span>
 <span id="cb37-1174"><a href="#cb37-1174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1177"><a href="#cb37-1177" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb37-1178"><a href="#cb37-1178" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb37-1179"><a href="#cb37-1179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1180"><a href="#cb37-1180" aria-hidden="true" tabindex="-1"></a><span class="co"># 데이터프레임 생성</span></span>
-<span id="cb37-1181"><a href="#cb37-1181" aria-hidden="true" tabindex="-1"></a>mtx_study <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb37-1182"><a href="#cb37-1182" aria-hidden="true" tabindex="-1"></a>  <span class="at">ID    =</span> <span class="fu">rep</span>(<span class="fu">paste0</span>(<span class="st">"PT"</span>, <span class="fu">sprintf</span>(<span class="st">"%03d"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)), <span class="at">each =</span> <span class="dv">8</span>),</span>
-<span id="cb37-1183"><a href="#cb37-1183" aria-hidden="true" tabindex="-1"></a>  <span class="at">TIME  =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.5</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">12</span>), <span class="at">times =</span> <span class="dv">6</span>),</span>
-<span id="cb37-1184"><a href="#cb37-1184" aria-hidden="true" tabindex="-1"></a>  <span class="at">DV    =</span> <span class="fu">c</span>(</span>
-<span id="cb37-1185"><a href="#cb37-1185" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>,  <span class="dv">80</span>, <span class="dv">310</span>, <span class="dv">460</span>, <span class="dv">270</span>, <span class="dv">170</span>,  <span class="dv">80</span>, <span class="dv">28</span>,    <span class="co"># PT001</span></span>
-<span id="cb37-1186"><a href="#cb37-1186" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>,  <span class="dv">65</span>, <span class="dv">280</span>, <span class="dv">420</span>, <span class="dv">240</span>, <span class="dv">145</span>,  <span class="dv">65</span>, <span class="dv">20</span>,    <span class="co"># PT002</span></span>
-<span id="cb37-1187"><a href="#cb37-1187" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>, <span class="dv">100</span>, <span class="dv">370</span>, <span class="dv">540</span>, <span class="dv">350</span>, <span class="dv">230</span>, <span class="dv">120</span>, <span class="dv">45</span>,    <span class="co"># PT003</span></span>
-<span id="cb37-1188"><a href="#cb37-1188" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>,  <span class="dv">75</span>, <span class="dv">300</span>, <span class="dv">440</span>, <span class="dv">260</span>, <span class="dv">160</span>,  <span class="dv">75</span>, <span class="dv">25</span>,    <span class="co"># PT004</span></span>
-<span id="cb37-1189"><a href="#cb37-1189" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>,  <span class="dv">55</span>, <span class="dv">250</span>, <span class="dv">380</span>, <span class="dv">210</span>, <span class="dv">125</span>,  <span class="dv">55</span>, <span class="dv">15</span>,    <span class="co"># PT005</span></span>
-<span id="cb37-1190"><a href="#cb37-1190" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>,  <span class="dv">90</span>, <span class="dv">350</span>, <span class="dv">510</span>, <span class="dv">330</span>, <span class="dv">220</span>, <span class="dv">110</span>, <span class="dv">40</span>     <span class="co"># PT006</span></span>
-<span id="cb37-1191"><a href="#cb37-1191" aria-hidden="true" tabindex="-1"></a>  ),</span>
-<span id="cb37-1192"><a href="#cb37-1192" aria-hidden="true" tabindex="-1"></a>  <span class="at">DOSE  =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">15</span>, <span class="dv">10</span>, <span class="dv">25</span>), <span class="at">each =</span> <span class="dv">8</span>),</span>
-<span id="cb37-1193"><a href="#cb37-1193" aria-hidden="true" tabindex="-1"></a>  <span class="at">ROUTE =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"SC"</span>, <span class="st">"PO"</span>, <span class="st">"SC"</span>, <span class="st">"SC"</span>, <span class="st">"PO"</span>, <span class="st">"SC"</span>), <span class="at">each =</span> <span class="dv">8</span>),</span>
-<span id="cb37-1194"><a href="#cb37-1194" aria-hidden="true" tabindex="-1"></a>  <span class="at">WT    =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">65</span>, <span class="dv">80</span>, <span class="dv">55</span>, <span class="dv">72</span>, <span class="dv">90</span>, <span class="dv">60</span>), <span class="at">each =</span> <span class="dv">8</span>),</span>
-<span id="cb37-1195"><a href="#cb37-1195" aria-hidden="true" tabindex="-1"></a>  <span class="at">SEX   =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"M"</span>, <span class="st">"F"</span>, <span class="st">"M"</span>, <span class="st">"F"</span>, <span class="st">"M"</span>, <span class="st">"F"</span>), <span class="at">each =</span> <span class="dv">8</span>),</span>
-<span id="cb37-1196"><a href="#cb37-1196" aria-hidden="true" tabindex="-1"></a>  <span class="at">CRCL  =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">95</span>, <span class="dv">110</span>, <span class="dv">65</span>, <span class="dv">88</span>, <span class="dv">120</span>, <span class="dv">78</span>), <span class="at">each =</span> <span class="dv">8</span>),</span>
-<span id="cb37-1197"><a href="#cb37-1197" aria-hidden="true" tabindex="-1"></a>  <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span></span>
-<span id="cb37-1198"><a href="#cb37-1198" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb37-1199"><a href="#cb37-1199" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1200"><a href="#cb37-1200" aria-hidden="true" tabindex="-1"></a><span class="co"># 과제:</span></span>
-<span id="cb37-1201"><a href="#cb37-1201" aria-hidden="true" tabindex="-1"></a><span class="co"># 1) 이 데이터프레임의 구조를 str()과 glimpse()로 확인하시오.</span></span>
-<span id="cb37-1202"><a href="#cb37-1202" aria-hidden="true" tabindex="-1"></a><span class="co"># 2) SC 투여 환자만 필터링하시오.</span></span>
-<span id="cb37-1203"><a href="#cb37-1203" aria-hidden="true" tabindex="-1"></a><span class="co"># 3) 각 환자의 Cmax를 구하시오. (tapply 또는 aggregate 사용)</span></span>
-<span id="cb37-1204"><a href="#cb37-1204" aria-hidden="true" tabindex="-1"></a><span class="co"># 4) 용량 보정 Cmax (Cmax/Dose)를 구하여 새로운 열로 추가하시오.</span></span>
-<span id="cb37-1205"><a href="#cb37-1205" aria-hidden="true" tabindex="-1"></a><span class="co"># 5) ROUTE를 factor로 변환하고, levels을 "PO", "SC"로 지정하시오.</span></span>
-<span id="cb37-1206"><a href="#cb37-1206" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb37-1207"><a href="#cb37-1207" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1208"><a href="#cb37-1208" aria-hidden="true" tabindex="-1"></a>**실습 3: 리스트에서 데이터프레임으로**</span>
+<span id="cb37-1175"><a href="#cb37-1175" aria-hidden="true" tabindex="-1"></a>아래 코드로 생성한 데이터프레임을 사용하여 각 문항을 수행하시오.</span>
+<span id="cb37-1176"><a href="#cb37-1176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1179"><a href="#cb37-1179" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-1180"><a href="#cb37-1180" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb37-1181"><a href="#cb37-1181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1182"><a href="#cb37-1182" aria-hidden="true" tabindex="-1"></a><span class="co"># 데이터프레임 생성</span></span>
+<span id="cb37-1183"><a href="#cb37-1183" aria-hidden="true" tabindex="-1"></a>mtx_study <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb37-1184"><a href="#cb37-1184" aria-hidden="true" tabindex="-1"></a>  <span class="at">ID    =</span> <span class="fu">rep</span>(<span class="fu">paste0</span>(<span class="st">"PT"</span>, <span class="fu">sprintf</span>(<span class="st">"%03d"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>)), <span class="at">each =</span> <span class="dv">8</span>),</span>
+<span id="cb37-1185"><a href="#cb37-1185" aria-hidden="true" tabindex="-1"></a>  <span class="at">TIME  =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.5</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">12</span>), <span class="at">times =</span> <span class="dv">6</span>),</span>
+<span id="cb37-1186"><a href="#cb37-1186" aria-hidden="true" tabindex="-1"></a>  <span class="at">DV    =</span> <span class="fu">c</span>(</span>
+<span id="cb37-1187"><a href="#cb37-1187" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>,  <span class="dv">80</span>, <span class="dv">310</span>, <span class="dv">460</span>, <span class="dv">270</span>, <span class="dv">170</span>,  <span class="dv">80</span>, <span class="dv">28</span>,    <span class="co"># PT001</span></span>
+<span id="cb37-1188"><a href="#cb37-1188" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>,  <span class="dv">65</span>, <span class="dv">280</span>, <span class="dv">420</span>, <span class="dv">240</span>, <span class="dv">145</span>,  <span class="dv">65</span>, <span class="dv">20</span>,    <span class="co"># PT002</span></span>
+<span id="cb37-1189"><a href="#cb37-1189" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>, <span class="dv">100</span>, <span class="dv">370</span>, <span class="dv">540</span>, <span class="dv">350</span>, <span class="dv">230</span>, <span class="dv">120</span>, <span class="dv">45</span>,    <span class="co"># PT003</span></span>
+<span id="cb37-1190"><a href="#cb37-1190" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>,  <span class="dv">75</span>, <span class="dv">300</span>, <span class="dv">440</span>, <span class="dv">260</span>, <span class="dv">160</span>,  <span class="dv">75</span>, <span class="dv">25</span>,    <span class="co"># PT004</span></span>
+<span id="cb37-1191"><a href="#cb37-1191" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>,  <span class="dv">55</span>, <span class="dv">250</span>, <span class="dv">380</span>, <span class="dv">210</span>, <span class="dv">125</span>,  <span class="dv">55</span>, <span class="dv">15</span>,    <span class="co"># PT005</span></span>
+<span id="cb37-1192"><a href="#cb37-1192" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span>,  <span class="dv">90</span>, <span class="dv">350</span>, <span class="dv">510</span>, <span class="dv">330</span>, <span class="dv">220</span>, <span class="dv">110</span>, <span class="dv">40</span>     <span class="co"># PT006</span></span>
+<span id="cb37-1193"><a href="#cb37-1193" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb37-1194"><a href="#cb37-1194" aria-hidden="true" tabindex="-1"></a>  <span class="at">DOSE  =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">15</span>, <span class="dv">25</span>, <span class="dv">15</span>, <span class="dv">10</span>, <span class="dv">25</span>), <span class="at">each =</span> <span class="dv">8</span>),</span>
+<span id="cb37-1195"><a href="#cb37-1195" aria-hidden="true" tabindex="-1"></a>  <span class="at">ROUTE =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"SC"</span>, <span class="st">"PO"</span>, <span class="st">"SC"</span>, <span class="st">"SC"</span>, <span class="st">"PO"</span>, <span class="st">"SC"</span>), <span class="at">each =</span> <span class="dv">8</span>),</span>
+<span id="cb37-1196"><a href="#cb37-1196" aria-hidden="true" tabindex="-1"></a>  <span class="at">WT    =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">65</span>, <span class="dv">80</span>, <span class="dv">55</span>, <span class="dv">72</span>, <span class="dv">90</span>, <span class="dv">60</span>), <span class="at">each =</span> <span class="dv">8</span>),</span>
+<span id="cb37-1197"><a href="#cb37-1197" aria-hidden="true" tabindex="-1"></a>  <span class="at">SEX   =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"M"</span>, <span class="st">"F"</span>, <span class="st">"M"</span>, <span class="st">"F"</span>, <span class="st">"M"</span>, <span class="st">"F"</span>), <span class="at">each =</span> <span class="dv">8</span>),</span>
+<span id="cb37-1198"><a href="#cb37-1198" aria-hidden="true" tabindex="-1"></a>  <span class="at">CRCL  =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">95</span>, <span class="dv">110</span>, <span class="dv">65</span>, <span class="dv">88</span>, <span class="dv">120</span>, <span class="dv">78</span>), <span class="at">each =</span> <span class="dv">8</span>),</span>
+<span id="cb37-1199"><a href="#cb37-1199" aria-hidden="true" tabindex="-1"></a>  <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span></span>
+<span id="cb37-1200"><a href="#cb37-1200" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb37-1201"><a href="#cb37-1201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1202"><a href="#cb37-1202" aria-hidden="true" tabindex="-1"></a><span class="co"># 과제:</span></span>
+<span id="cb37-1203"><a href="#cb37-1203" aria-hidden="true" tabindex="-1"></a><span class="co"># 1) 이 데이터프레임의 구조를 str()과 glimpse()로 확인하시오.</span></span>
+<span id="cb37-1204"><a href="#cb37-1204" aria-hidden="true" tabindex="-1"></a><span class="co"># 2) SC 투여 환자만 필터링하시오.</span></span>
+<span id="cb37-1205"><a href="#cb37-1205" aria-hidden="true" tabindex="-1"></a><span class="co"># 3) 각 환자의 Cmax를 구하시오. (tapply 또는 aggregate 사용)</span></span>
+<span id="cb37-1206"><a href="#cb37-1206" aria-hidden="true" tabindex="-1"></a><span class="co"># 4) 용량 보정 Cmax (Cmax/Dose)를 구하여 새로운 열로 추가하시오.</span></span>
+<span id="cb37-1207"><a href="#cb37-1207" aria-hidden="true" tabindex="-1"></a><span class="co"># 5) ROUTE를 factor로 변환하고, levels을 "PO", "SC"로 지정하시오.</span></span>
+<span id="cb37-1208"><a href="#cb37-1208" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb37-1209"><a href="#cb37-1209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1210"><a href="#cb37-1210" aria-hidden="true" tabindex="-1"></a>아래의 리스트 형태 데이터를 NONMEM 형식의 데이터프레임으로 변환하시오.</span>
+<span id="cb37-1210"><a href="#cb37-1210" aria-hidden="true" tabindex="-1"></a>**실습 3: 리스트에서 데이터프레임으로**</span>
 <span id="cb37-1211"><a href="#cb37-1211" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1214"><a href="#cb37-1214" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb37-1215"><a href="#cb37-1215" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb37-1216"><a href="#cb37-1216" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1217"><a href="#cb37-1217" aria-hidden="true" tabindex="-1"></a><span class="co"># 리스트 형태의 환자 데이터</span></span>
-<span id="cb37-1218"><a href="#cb37-1218" aria-hidden="true" tabindex="-1"></a>patients <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
-<span id="cb37-1219"><a href="#cb37-1219" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(</span>
-<span id="cb37-1220"><a href="#cb37-1220" aria-hidden="true" tabindex="-1"></a>    <span class="at">id =</span> <span class="st">"PT010"</span>, <span class="at">wt =</span> <span class="dv">68</span>, <span class="at">dose =</span> <span class="dv">15</span>, <span class="at">route =</span> <span class="st">"SC"</span>,</span>
-<span id="cb37-1221"><a href="#cb37-1221" aria-hidden="true" tabindex="-1"></a>    <span class="at">time =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">12</span>),</span>
-<span id="cb37-1222"><a href="#cb37-1222" aria-hidden="true" tabindex="-1"></a>    <span class="at">conc =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">350</span>, <span class="dv">440</span>, <span class="dv">250</span>, <span class="dv">70</span>, <span class="dv">20</span>)</span>
-<span id="cb37-1223"><a href="#cb37-1223" aria-hidden="true" tabindex="-1"></a>  ),</span>
-<span id="cb37-1224"><a href="#cb37-1224" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(</span>
-<span id="cb37-1225"><a href="#cb37-1225" aria-hidden="true" tabindex="-1"></a>    <span class="at">id =</span> <span class="st">"PT011"</span>, <span class="at">wt =</span> <span class="dv">75</span>, <span class="at">dose =</span> <span class="dv">20</span>, <span class="at">route =</span> <span class="st">"SC"</span>,</span>
-<span id="cb37-1226"><a href="#cb37-1226" aria-hidden="true" tabindex="-1"></a>    <span class="at">time =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">12</span>),</span>
-<span id="cb37-1227"><a href="#cb37-1227" aria-hidden="true" tabindex="-1"></a>    <span class="at">conc =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">450</span>, <span class="dv">580</span>, <span class="dv">340</span>, <span class="dv">100</span>, <span class="dv">32</span>)</span>
-<span id="cb37-1228"><a href="#cb37-1228" aria-hidden="true" tabindex="-1"></a>  ),</span>
-<span id="cb37-1229"><a href="#cb37-1229" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(</span>
-<span id="cb37-1230"><a href="#cb37-1230" aria-hidden="true" tabindex="-1"></a>    <span class="at">id =</span> <span class="st">"PT012"</span>, <span class="at">wt =</span> <span class="dv">58</span>, <span class="at">dose =</span> <span class="dv">15</span>, <span class="at">route =</span> <span class="st">"PO"</span>,</span>
-<span id="cb37-1231"><a href="#cb37-1231" aria-hidden="true" tabindex="-1"></a>    <span class="at">time =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">12</span>),</span>
-<span id="cb37-1232"><a href="#cb37-1232" aria-hidden="true" tabindex="-1"></a>    <span class="at">conc =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">280</span>, <span class="dv">390</span>, <span class="dv">200</span>, <span class="dv">55</span>, <span class="dv">14</span>)</span>
-<span id="cb37-1233"><a href="#cb37-1233" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb37-1234"><a href="#cb37-1234" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb37-1235"><a href="#cb37-1235" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1236"><a href="#cb37-1236" aria-hidden="true" tabindex="-1"></a><span class="co"># 과제:</span></span>
-<span id="cb37-1237"><a href="#cb37-1237" aria-hidden="true" tabindex="-1"></a><span class="co"># 위 리스트를 아래 형식의 데이터프레임으로 변환하시오.</span></span>
-<span id="cb37-1238"><a href="#cb37-1238" aria-hidden="true" tabindex="-1"></a><span class="co"># 열: ID, TIME, DV, AMT, EVID, MDV, CMT, WT, ROUTE</span></span>
-<span id="cb37-1239"><a href="#cb37-1239" aria-hidden="true" tabindex="-1"></a><span class="co"># 힌트: 각 환자에 대해 투여 행(EVID=1)과 관측 행(EVID=0)을 모두 포함해야 합니다.</span></span>
-<span id="cb37-1240"><a href="#cb37-1240" aria-hidden="true" tabindex="-1"></a><span class="co"># lapply() 또는 purrr::map()을 활용할 수 있습니다.</span></span>
-<span id="cb37-1241"><a href="#cb37-1241" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb37-1242"><a href="#cb37-1242" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1243"><a href="#cb37-1243" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1244"><a href="#cb37-1244" aria-hidden="true" tabindex="-1"></a><span class="fu">### Claude Code 도전 과제</span></span>
+<span id="cb37-1212"><a href="#cb37-1212" aria-hidden="true" tabindex="-1"></a>아래의 리스트 형태 데이터를 NONMEM 형식의 데이터프레임으로 변환하시오.</span>
+<span id="cb37-1213"><a href="#cb37-1213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1216"><a href="#cb37-1216" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-1217"><a href="#cb37-1217" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb37-1218"><a href="#cb37-1218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1219"><a href="#cb37-1219" aria-hidden="true" tabindex="-1"></a><span class="co"># 리스트 형태의 환자 데이터</span></span>
+<span id="cb37-1220"><a href="#cb37-1220" aria-hidden="true" tabindex="-1"></a>patients <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb37-1221"><a href="#cb37-1221" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(</span>
+<span id="cb37-1222"><a href="#cb37-1222" aria-hidden="true" tabindex="-1"></a>    <span class="at">id =</span> <span class="st">"PT010"</span>, <span class="at">wt =</span> <span class="dv">68</span>, <span class="at">dose =</span> <span class="dv">15</span>, <span class="at">route =</span> <span class="st">"SC"</span>,</span>
+<span id="cb37-1223"><a href="#cb37-1223" aria-hidden="true" tabindex="-1"></a>    <span class="at">time =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">12</span>),</span>
+<span id="cb37-1224"><a href="#cb37-1224" aria-hidden="true" tabindex="-1"></a>    <span class="at">conc =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">350</span>, <span class="dv">440</span>, <span class="dv">250</span>, <span class="dv">70</span>, <span class="dv">20</span>)</span>
+<span id="cb37-1225"><a href="#cb37-1225" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb37-1226"><a href="#cb37-1226" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(</span>
+<span id="cb37-1227"><a href="#cb37-1227" aria-hidden="true" tabindex="-1"></a>    <span class="at">id =</span> <span class="st">"PT011"</span>, <span class="at">wt =</span> <span class="dv">75</span>, <span class="at">dose =</span> <span class="dv">20</span>, <span class="at">route =</span> <span class="st">"SC"</span>,</span>
+<span id="cb37-1228"><a href="#cb37-1228" aria-hidden="true" tabindex="-1"></a>    <span class="at">time =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">12</span>),</span>
+<span id="cb37-1229"><a href="#cb37-1229" aria-hidden="true" tabindex="-1"></a>    <span class="at">conc =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">450</span>, <span class="dv">580</span>, <span class="dv">340</span>, <span class="dv">100</span>, <span class="dv">32</span>)</span>
+<span id="cb37-1230"><a href="#cb37-1230" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb37-1231"><a href="#cb37-1231" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(</span>
+<span id="cb37-1232"><a href="#cb37-1232" aria-hidden="true" tabindex="-1"></a>    <span class="at">id =</span> <span class="st">"PT012"</span>, <span class="at">wt =</span> <span class="dv">58</span>, <span class="at">dose =</span> <span class="dv">15</span>, <span class="at">route =</span> <span class="st">"PO"</span>,</span>
+<span id="cb37-1233"><a href="#cb37-1233" aria-hidden="true" tabindex="-1"></a>    <span class="at">time =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">12</span>),</span>
+<span id="cb37-1234"><a href="#cb37-1234" aria-hidden="true" tabindex="-1"></a>    <span class="at">conc =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">280</span>, <span class="dv">390</span>, <span class="dv">200</span>, <span class="dv">55</span>, <span class="dv">14</span>)</span>
+<span id="cb37-1235"><a href="#cb37-1235" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb37-1236"><a href="#cb37-1236" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb37-1237"><a href="#cb37-1237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1238"><a href="#cb37-1238" aria-hidden="true" tabindex="-1"></a><span class="co"># 과제:</span></span>
+<span id="cb37-1239"><a href="#cb37-1239" aria-hidden="true" tabindex="-1"></a><span class="co"># 위 리스트를 아래 형식의 데이터프레임으로 변환하시오.</span></span>
+<span id="cb37-1240"><a href="#cb37-1240" aria-hidden="true" tabindex="-1"></a><span class="co"># 열: ID, TIME, DV, AMT, EVID, MDV, CMT, WT, ROUTE</span></span>
+<span id="cb37-1241"><a href="#cb37-1241" aria-hidden="true" tabindex="-1"></a><span class="co"># 힌트: 각 환자에 대해 투여 행(EVID=1)과 관측 행(EVID=0)을 모두 포함해야 합니다.</span></span>
+<span id="cb37-1242"><a href="#cb37-1242" aria-hidden="true" tabindex="-1"></a><span class="co"># lapply() 또는 purrr::map()을 활용할 수 있습니다.</span></span>
+<span id="cb37-1243"><a href="#cb37-1243" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-1244"><a href="#cb37-1244" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-1245"><a href="#cb37-1245" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1246"><a href="#cb37-1246" aria-hidden="true" tabindex="-1"></a>다음 과제를 Claude Code를 활용하여 수행하시오.</span>
+<span id="cb37-1246"><a href="#cb37-1246" aria-hidden="true" tabindex="-1"></a><span class="fu">### Claude Code 도전 과제</span></span>
 <span id="cb37-1247"><a href="#cb37-1247" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1248"><a href="#cb37-1248" aria-hidden="true" tabindex="-1"></a>**과제: PK 데이터 구조 설계 및 검증**</span>
+<span id="cb37-1248"><a href="#cb37-1248" aria-hidden="true" tabindex="-1"></a>다음 과제를 Claude Code를 활용하여 수행하시오.</span>
 <span id="cb37-1249"><a href="#cb37-1249" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1250"><a href="#cb37-1250" aria-hidden="true" tabindex="-1"></a>Claude Code에게 다음을 단계별로 요청하시오:</span>
+<span id="cb37-1250"><a href="#cb37-1250" aria-hidden="true" tabindex="-1"></a>**과제: PK 데이터 구조 설계 및 검증**</span>
 <span id="cb37-1251"><a href="#cb37-1251" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1252"><a href="#cb37-1252" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>"Methotrexate 건선 PK 연구의 모의 데이터셋을 만들어줘. 환자 10명, SC 투여, 용량은 10/15/25mg 세 그룹, 채혈 시점 8개. NONMEM 형식으로."</span>
+<span id="cb37-1252"><a href="#cb37-1252" aria-hidden="true" tabindex="-1"></a>Claude Code에게 다음을 단계별로 요청하시오:</span>
 <span id="cb37-1253"><a href="#cb37-1253" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1254"><a href="#cb37-1254" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>생성된 데이터프레임에 대해: "이 데이터의 각 열 타입이 적절한지 확인하고, 필요한 변환을 수행해줘."</span>
+<span id="cb37-1254"><a href="#cb37-1254" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>"Methotrexate 건선 PK 연구의 모의 데이터셋을 만들어줘. 환자 10명, SC 투여, 용량은 10/15/25mg 세 그룹, 채혈 시점 8개. NONMEM 형식으로."</span>
 <span id="cb37-1255"><a href="#cb37-1255" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1256"><a href="#cb37-1256" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>"이 데이터에서 용량군별로 농도-시간 프로파일을 그래프로 그려줘. 개별 환자 곡선과 평균 곡선을 함께 표시해줘."</span>
+<span id="cb37-1256"><a href="#cb37-1256" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>생성된 데이터프레임에 대해: "이 데이터의 각 열 타입이 적절한지 확인하고, 필요한 변환을 수행해줘."</span>
 <span id="cb37-1257"><a href="#cb37-1257" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1258"><a href="#cb37-1258" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>최종 결과를 평가하시오: 생성된 데이터의 타입이 올바른지, PK 프로파일이 약리학적으로 타당한지(Tmax, Cmax의 용량 비례성 등)를 검토합니다.</span>
+<span id="cb37-1258"><a href="#cb37-1258" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>"이 데이터에서 용량군별로 농도-시간 프로파일을 그래프로 그려줘. 개별 환자 곡선과 평균 곡선을 함께 표시해줘."</span>
 <span id="cb37-1259"><a href="#cb37-1259" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1260"><a href="#cb37-1260" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
-<span id="cb37-1261"><a href="#cb37-1261" aria-hidden="true" tabindex="-1"></a><span class="fu">### 도전 과제 수행 요령</span></span>
-<span id="cb37-1262"><a href="#cb37-1262" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1263"><a href="#cb37-1263" aria-hidden="true" tabindex="-1"></a>Claude Code와 대화할 때 한 번에 모든 것을 요구하기보다 **단계별로** 진행하는 것이 좋습니다. 각 단계의 출력을 확인한 후 다음 단계로 넘어가면 오류를 조기에 발견하고 수정할 수 있습니다.</span>
+<span id="cb37-1260"><a href="#cb37-1260" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>최종 결과를 평가하시오: 생성된 데이터의 타입이 올바른지, PK 프로파일이 약리학적으로 타당한지(Tmax, Cmax의 용량 비례성 등)를 검토합니다.</span>
+<span id="cb37-1261"><a href="#cb37-1261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1262"><a href="#cb37-1262" aria-hidden="true" tabindex="-1"></a>:::{.callout-tip}</span>
+<span id="cb37-1263"><a href="#cb37-1263" aria-hidden="true" tabindex="-1"></a><span class="fu">### 도전 과제 수행 요령</span></span>
 <span id="cb37-1264"><a href="#cb37-1264" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1265"><a href="#cb37-1265" aria-hidden="true" tabindex="-1"></a>또한, 생성된 코드를 그대로 사용하기보다 **이해하고 필요에 따라 수정**하는 습관을 들이는 것이 중요합니다. Claude Code는 도구이지, 여러분의 약학적 판단을 대체하는 것이 아닙니다.</span>
-<span id="cb37-1266"><a href="#cb37-1266" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb37-1267"><a href="#cb37-1267" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1268"><a href="#cb37-1268" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1269"><a href="#cb37-1269" aria-hidden="true" tabindex="-1"></a><span class="fu">## 요약 {#sec-summary-ch02}</span></span>
+<span id="cb37-1265"><a href="#cb37-1265" aria-hidden="true" tabindex="-1"></a>Claude Code와 대화할 때 한 번에 모든 것을 요구하기보다 **단계별로** 진행하는 것이 좋습니다. 각 단계의 출력을 확인한 후 다음 단계로 넘어가면 오류를 조기에 발견하고 수정할 수 있습니다.</span>
+<span id="cb37-1266"><a href="#cb37-1266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1267"><a href="#cb37-1267" aria-hidden="true" tabindex="-1"></a>또한, 생성된 코드를 그대로 사용하기보다 **이해하고 필요에 따라 수정**하는 습관을 들이는 것이 중요합니다. Claude Code는 도구이지, 여러분의 약학적 판단을 대체하는 것이 아닙니다.</span>
+<span id="cb37-1268"><a href="#cb37-1268" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb37-1269"><a href="#cb37-1269" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb37-1270"><a href="#cb37-1270" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1271"><a href="#cb37-1271" aria-hidden="true" tabindex="-1"></a>이 장에서 학습한 R 객체 체계를 정리하면 다음과 같습니다.</span>
+<span id="cb37-1271"><a href="#cb37-1271" aria-hidden="true" tabindex="-1"></a><span class="fu">## 요약 {#sec-summary-ch02}</span></span>
 <span id="cb37-1272"><a href="#cb37-1272" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1273"><a href="#cb37-1273" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 객체 <span class="pp">|</span> 차원 <span class="pp">|</span> 타입 제한 <span class="pp">|</span> PK/PD 활용 예 <span class="pp">|</span></span>
-<span id="cb37-1274"><a href="#cb37-1274" aria-hidden="true" tabindex="-1"></a><span class="pp">|:---|:---|:---|:---|</span></span>
-<span id="cb37-1275"><a href="#cb37-1275" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 벡터(vector) <span class="pp">|</span> 1차원 <span class="pp">|</span> 동일 타입 <span class="pp">|</span> 시간 벡터, 농도 벡터, PK 파라미터 <span class="pp">|</span></span>
-<span id="cb37-1276"><a href="#cb37-1276" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 행렬(matrix) <span class="pp">|</span> 2차원 <span class="pp">|</span> 동일 타입 <span class="pp">|</span> 공분산 행렬, 시뮬레이션 결과 <span class="pp">|</span></span>
-<span id="cb37-1277"><a href="#cb37-1277" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 배열(array) <span class="pp">|</span> n차원 <span class="pp">|</span> 동일 타입 <span class="pp">|</span> 다중 시뮬레이션 결과 <span class="pp">|</span></span>
-<span id="cb37-1278"><a href="#cb37-1278" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 리스트(list) <span class="pp">|</span> 1차원 <span class="pp">|</span> 혼합 가능 <span class="pp">|</span> 환자 전체 정보, 모델 결과 <span class="pp">|</span></span>
-<span id="cb37-1279"><a href="#cb37-1279" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 데이터프레임 <span class="pp">|</span> 2차원 <span class="pp">|</span> 열별 동일 <span class="pp">|</span> NONMEM 데이터셋, 분석 데이터 <span class="pp">|</span></span>
-<span id="cb37-1280"><a href="#cb37-1280" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> tibble <span class="pp">|</span> 2차원 <span class="pp">|</span> 열별 동일 <span class="pp">|</span> tidyverse 기반 분석 데이터 <span class="pp">|</span></span>
-<span id="cb37-1281"><a href="#cb37-1281" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> factor <span class="pp">|</span> 1차원 <span class="pp">|</span> 범주형 <span class="pp">|</span> 투여 경로, 용량군, 중증도 <span class="pp">|</span></span>
-<span id="cb37-1282"><a href="#cb37-1282" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1283"><a href="#cb37-1283" aria-hidden="true" tabindex="-1"></a>핵심 원칙을 다시 정리합니다:</span>
+<span id="cb37-1273"><a href="#cb37-1273" aria-hidden="true" tabindex="-1"></a>이 장에서 학습한 R 객체 체계를 정리하면 다음과 같습니다.</span>
+<span id="cb37-1274"><a href="#cb37-1274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1275"><a href="#cb37-1275" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 객체 <span class="pp">|</span> 차원 <span class="pp">|</span> 타입 제한 <span class="pp">|</span> PK/PD 활용 예 <span class="pp">|</span></span>
+<span id="cb37-1276"><a href="#cb37-1276" aria-hidden="true" tabindex="-1"></a><span class="pp">|:---|:---|:---|:---|</span></span>
+<span id="cb37-1277"><a href="#cb37-1277" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 벡터(vector) <span class="pp">|</span> 1차원 <span class="pp">|</span> 동일 타입 <span class="pp">|</span> 시간 벡터, 농도 벡터, PK 파라미터 <span class="pp">|</span></span>
+<span id="cb37-1278"><a href="#cb37-1278" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 행렬(matrix) <span class="pp">|</span> 2차원 <span class="pp">|</span> 동일 타입 <span class="pp">|</span> 공분산 행렬, 시뮬레이션 결과 <span class="pp">|</span></span>
+<span id="cb37-1279"><a href="#cb37-1279" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 배열(array) <span class="pp">|</span> n차원 <span class="pp">|</span> 동일 타입 <span class="pp">|</span> 다중 시뮬레이션 결과 <span class="pp">|</span></span>
+<span id="cb37-1280"><a href="#cb37-1280" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 리스트(list) <span class="pp">|</span> 1차원 <span class="pp">|</span> 혼합 가능 <span class="pp">|</span> 환자 전체 정보, 모델 결과 <span class="pp">|</span></span>
+<span id="cb37-1281"><a href="#cb37-1281" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 데이터프레임 <span class="pp">|</span> 2차원 <span class="pp">|</span> 열별 동일 <span class="pp">|</span> NONMEM 데이터셋, 분석 데이터 <span class="pp">|</span></span>
+<span id="cb37-1282"><a href="#cb37-1282" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> tibble <span class="pp">|</span> 2차원 <span class="pp">|</span> 열별 동일 <span class="pp">|</span> tidyverse 기반 분석 데이터 <span class="pp">|</span></span>
+<span id="cb37-1283"><a href="#cb37-1283" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> factor <span class="pp">|</span> 1차원 <span class="pp">|</span> 범주형 <span class="pp">|</span> 투여 경로, 용량군, 중증도 <span class="pp">|</span></span>
 <span id="cb37-1284"><a href="#cb37-1284" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1285"><a href="#cb37-1285" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**데이터를 불러오면 가장 먼저 `str()`과 `glimpse()`로 구조를 확인**합니다.</span>
-<span id="cb37-1286"><a href="#cb37-1286" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**각 변수의 타입이 의도한 대로인지 확인**합니다. 특히 숫자여야 할 열이 문자로 읽혔는지, BLQ 값 때문에 타입이 꼬이지 않았는지 점검합니다.</span>
-<span id="cb37-1287"><a href="#cb37-1287" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**벡터화 연산을 적극 활용**합니다. for 루프 대신 벡터 연산을 사용하면 코드가 간결하고 빠릅니다.</span>
-<span id="cb37-1288"><a href="#cb37-1288" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**범주형 데이터는 factor로 관리**합니다. 특히 시각화와 모델링에서 level 순서가 중요합니다.</span>
-<span id="cb37-1289"><a href="#cb37-1289" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**tidyverse(tibble)를 기본으로 사용**하는 것을 권장합니다. 더 안전하고 일관된 동작을 보장합니다.</span>
-<span id="cb37-1290"><a href="#cb37-1290" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-1291"><a href="#cb37-1291" aria-hidden="true" tabindex="-1"></a>다음 장에서는 이러한 R 객체들을 본격적으로 조작하는 **tidyverse 데이터 전처리** 기법을 학습합니다. <span class="in">`dplyr`</span>의 <span class="in">`filter()`</span>, <span class="in">`select()`</span>, <span class="in">`mutate()`</span>, <span class="in">`group_by()`</span>, <span class="in">`summarize()`</span> 등의 함수를 사용하여 PK 데이터를 효율적으로 다루는 방법을 배울 것입니다.</span>
+<span id="cb37-1285"><a href="#cb37-1285" aria-hidden="true" tabindex="-1"></a>핵심 원칙을 다시 정리합니다:</span>
+<span id="cb37-1286"><a href="#cb37-1286" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1287"><a href="#cb37-1287" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**데이터를 불러오면 가장 먼저 `str()`과 `glimpse()`로 구조를 확인**합니다.</span>
+<span id="cb37-1288"><a href="#cb37-1288" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**각 변수의 타입이 의도한 대로인지 확인**합니다. 특히 숫자여야 할 열이 문자로 읽혔는지, BLQ 값 때문에 타입이 꼬이지 않았는지 점검합니다.</span>
+<span id="cb37-1289"><a href="#cb37-1289" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**벡터화 연산을 적극 활용**합니다. for 루프 대신 벡터 연산을 사용하면 코드가 간결하고 빠릅니다.</span>
+<span id="cb37-1290"><a href="#cb37-1290" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**범주형 데이터는 factor로 관리**합니다. 특히 시각화와 모델링에서 level 순서가 중요합니다.</span>
+<span id="cb37-1291"><a href="#cb37-1291" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**tidyverse(tibble)를 기본으로 사용**하는 것을 권장합니다. 더 안전하고 일관된 동작을 보장합니다.</span>
+<span id="cb37-1292"><a href="#cb37-1292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-1293"><a href="#cb37-1293" aria-hidden="true" tabindex="-1"></a>다음 장에서는 이러한 R 객체들을 본격적으로 조작하는 **tidyverse 데이터 전처리** 기법을 학습합니다. <span class="in">`dplyr`</span>의 <span class="in">`filter()`</span>, <span class="in">`select()`</span>, <span class="in">`mutate()`</span>, <span class="in">`group_by()`</span>, <span class="in">`summarize()`</span> 등의 함수를 사용하여 PK 데이터를 효율적으로 다루는 방법을 배울 것입니다.</span>
 </code></pre></div><button title="클립보드 복사" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

@@ -512,11 +512,11 @@ $ blq_flag      &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, ...</code></pre>
 <img src="../images/ch03_fig1.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;3.1: <strong>Figure 3.1: dplyr 5대 동사 파이프라인 (dplyr Five Verbs Pipeline).</strong> filter → select → mutate → arrange → summarise의 5가지 핵심 함수가 데이터 흐름 화살표로 연결된 파이프라인을 보여준다. Cyclosporine TDM 데이터의 변환 과정을 예시로, 각 동사가 데이터에 미치는 변환 효과를 시각적으로 나타낸다.
+그림&nbsp;3.1: dplyr 5대 동사 파이프라인 (dplyr Five Verbs Pipeline). filter → select → mutate → arrange → summarise의 5가지 핵심 함수가 데이터 흐름 화살표로 연결된 파이프라인을 보여준다. Cyclosporine TDM 데이터의 변환 과정을 예시로, 각 동사가 데이터에 미치는 변환 효과를 시각적으로 나타낸다.
 </figcaption>
 </figure>
 </div>
-<p>dplyr 패키지는 데이터 조작을 위한 5가지 핵심 함수(동사)를 제공합니다. 이들을 조합하면 거의 모든 데이터 변환 작업을 수행할 수 있습니다.</p>
+<p><a href="#fig-ch03-1" class="quarto-xref">그림&nbsp;<span>3.1</span></a> 은 dplyr의 5대 동사가 데이터를 변환하는 파이프라인을 보여줍니다. dplyr 패키지는 데이터 조작을 위한 5가지 핵심 함수(동사)를 제공합니다. 이들을 조합하면 거의 모든 데이터 변환 작업을 수행할 수 있습니다.</p>
 <section id="sec-filter" class="level3" data-number="3.3.1">
 <h3 data-number="3.3.1" class="anchored" data-anchor-id="sec-filter"><span class="header-section-number">3.3.1</span> <code>filter()</code>: 행 필터링</h3>
 <p><code>filter()</code>는 조건에 맞는 행(관측값)만 선택합니다. SQL의 <code>WHERE</code>절과 유사합니다.</p>
@@ -1073,7 +1073,7 @@ $ blq_flag      &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, ...</code></pre>
 <img src="../images/ch03_fig2.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;3.2: <strong>Figure 3.2: Cyclosporine의 작용기전 (Cyclosporine Mechanism of Action).</strong> Cyclosporine이 cyclophilin과 결합하여 calcineurin을 억제하고, NFAT 탈인산화를 차단함으로써 IL-2 전사를 억제하여 T세포 활성화를 저해하는 일련의 세포 내 신호전달 경로를 도식화하였다.
+그림&nbsp;3.2: Cyclosporine의 작용기전 (Cyclosporine Mechanism of Action). Cyclosporine이 cyclophilin과 결합하여 calcineurin을 억제하고, NFAT 탈인산화를 차단함으로써 IL-2 전사를 억제하여 T세포 활성화를 저해하는 일련의 세포 내 신호전달 경로를 도식화하였다.
 </figcaption>
 </figure>
 </div>
@@ -1087,7 +1087,7 @@ $ blq_flag      &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, ...</code></pre>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Cyclosporine A (CsA)는 <em>Tolypocladium inflatum</em> 곰팡이에서 분리된 11개 아미노산으로 구성된 고리형 펩타이드(cyclic peptide)로, 1970년대에 발견된 이후 장기이식 거부반응 예방과 다양한 자가면역질환 치료에 사용되어 왔습니다.</p>
+<p>Cyclosporine A (CsA)는 <a href="#fig-ch03-2" class="quarto-xref">그림&nbsp;<span>3.2</span></a> 에 나타낸 것처럼 calcineurin 억제를 통해 T세포 활성화를 저해하는 약물로, <em>Tolypocladium inflatum</em> 곰팡이에서 분리된 11개 아미노산으로 구성된 고리형 펩타이드(cyclic peptide)로, 1970년대에 발견된 이후 장기이식 거부반응 예방과 다양한 자가면역질환 치료에 사용되어 왔습니다.</p>
 </div>
 </div>
 <section id="작용기전" class="level3" data-number="3.6.1">
@@ -1162,11 +1162,11 @@ $ blq_flag      &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, ...</code></pre>
 <img src="../images/ch03_fig3.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;3.3: <strong>Figure 3.3: CYP3A4 약물상호작용 네트워크 (CYP3A4 Drug Interaction Network).</strong> Cyclosporine을 중심에 두고, 억제제(azole 항진균제, macrolide 항생제, CCB, 자몽주스)에 의한 농도 상승과 유도제(rifampicin, St.&nbsp;John’s wort)에 의한 농도 감소를 네트워크 형태로 도식화하였다. 각 상호작용의 임상적 중요도를 색상으로 구분하였다.
+그림&nbsp;3.3: CYP3A4 약물상호작용 네트워크 (CYP3A4 Drug Interaction Network). Cyclosporine을 중심에 두고, 억제제(azole 항진균제, macrolide 항생제, CCB, 자몽주스)에 의한 농도 상승과 유도제(rifampicin, St.&nbsp;John’s wort)에 의한 농도 감소를 네트워크 형태로 도식화하였다. 각 상호작용의 임상적 중요도를 색상으로 구분하였다.
 </figcaption>
 </figure>
 </div>
-<p>Cyclosporine은 CYP3A4에 의해 주로 대사되므로, 약물상호작용에 매우 주의해야 합니다:</p>
+<p>Cyclosporine은 CYP3A4에 의해 주로 대사되므로, 약물상호작용에 매우 주의해야 합니다 (<a href="#fig-ch03-3" class="quarto-xref">그림&nbsp;<span>3.3</span></a>):</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2244,9 +2244,9 @@ C0가 100 ng/mL 미만이면 치료 효과가 불충분할 수 있고, 200 ng/mL
 <span id="cb39-137"><a href="#cb39-137" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb39-138"><a href="#cb39-138" aria-hidden="true" tabindex="-1"></a><span class="fu">## dplyr 5대 동사 {#sec-dplyr-verbs}</span></span>
 <span id="cb39-139"><a href="#cb39-139" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-140"><a href="#cb39-140" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 3.1: dplyr 5대 동사 파이프라인 (dplyr Five Verbs Pipeline).** filter → select → mutate → arrange → summarise의 5가지 핵심 함수가 데이터 흐름 화살표로 연결된 파이프라인을 보여준다. Cyclosporine TDM 데이터의 변환 과정을 예시로, 각 동사가 데이터에 미치는 변환 효과를 시각적으로 나타낸다.](../images/ch03_fig1.png)</span>{#fig-ch03-1 width=100%}</span>
+<span id="cb39-140"><a href="#cb39-140" aria-hidden="true" tabindex="-1"></a><span class="al">![dplyr 5대 동사 파이프라인 (dplyr Five Verbs Pipeline). filter → select → mutate → arrange → summarise의 5가지 핵심 함수가 데이터 흐름 화살표로 연결된 파이프라인을 보여준다. Cyclosporine TDM 데이터의 변환 과정을 예시로, 각 동사가 데이터에 미치는 변환 효과를 시각적으로 나타낸다.](../images/ch03_fig1.png)</span>{#fig-ch03-1 width=100%}</span>
 <span id="cb39-141"><a href="#cb39-141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-142"><a href="#cb39-142" aria-hidden="true" tabindex="-1"></a>dplyr 패키지는 데이터 조작을 위한 5가지 핵심 함수(동사)를 제공합니다. 이들을 조합하면 거의 모든 데이터 변환 작업을 수행할 수 있습니다.</span>
+<span id="cb39-142"><a href="#cb39-142" aria-hidden="true" tabindex="-1"></a>@fig-ch03-1 은 dplyr의 5대 동사가 데이터를 변환하는 파이프라인을 보여줍니다. dplyr 패키지는 데이터 조작을 위한 5가지 핵심 함수(동사)를 제공합니다. 이들을 조합하면 거의 모든 데이터 변환 작업을 수행할 수 있습니다.</span>
 <span id="cb39-143"><a href="#cb39-143" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb39-144"><a href="#cb39-144" aria-hidden="true" tabindex="-1"></a><span class="fu">### `filter()`: 행 필터링 {#sec-filter}</span></span>
 <span id="cb39-145"><a href="#cb39-145" aria-hidden="true" tabindex="-1"></a></span>
@@ -2781,12 +2781,12 @@ C0가 100 ng/mL 미만이면 치료 효과가 불충분할 수 있고, 200 ng/mL
 <span id="cb39-720"><a href="#cb39-720" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb39-721"><a href="#cb39-721" aria-hidden="true" tabindex="-1"></a><span class="fu">## 약리학 노트: Cyclosporine {#sec-csa-pharmacology}</span></span>
 <span id="cb39-722"><a href="#cb39-722" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-723"><a href="#cb39-723" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 3.2: Cyclosporine의 작용기전 (Cyclosporine Mechanism of Action).** Cyclosporine이 cyclophilin과 결합하여 calcineurin을 억제하고, NFAT 탈인산화를 차단함으로써 IL-2 전사를 억제하여 T세포 활성화를 저해하는 일련의 세포 내 신호전달 경로를 도식화하였다.](../images/ch03_fig2.png)</span>{#fig-ch03-2 width=100%}</span>
+<span id="cb39-723"><a href="#cb39-723" aria-hidden="true" tabindex="-1"></a><span class="al">![Cyclosporine의 작용기전 (Cyclosporine Mechanism of Action). Cyclosporine이 cyclophilin과 결합하여 calcineurin을 억제하고, NFAT 탈인산화를 차단함으로써 IL-2 전사를 억제하여 T세포 활성화를 저해하는 일련의 세포 내 신호전달 경로를 도식화하였다.](../images/ch03_fig2.png)</span>{#fig-ch03-2 width=100%}</span>
 <span id="cb39-724"><a href="#cb39-724" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb39-725"><a href="#cb39-725" aria-hidden="true" tabindex="-1"></a>:::{.callout-note}</span>
 <span id="cb39-726"><a href="#cb39-726" aria-hidden="true" tabindex="-1"></a><span class="fu">## Cyclosporine 약리학 개요</span></span>
 <span id="cb39-727"><a href="#cb39-727" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-728"><a href="#cb39-728" aria-hidden="true" tabindex="-1"></a>Cyclosporine A (CsA)는 *Tolypocladium inflatum* 곰팡이에서 분리된 11개 아미노산으로 구성된 고리형 펩타이드(cyclic peptide)로, 1970년대에 발견된 이후 장기이식 거부반응 예방과 다양한 자가면역질환 치료에 사용되어 왔습니다.</span>
+<span id="cb39-728"><a href="#cb39-728" aria-hidden="true" tabindex="-1"></a>Cyclosporine A (CsA)는 @fig-ch03-2 에 나타낸 것처럼 calcineurin 억제를 통해 T세포 활성화를 저해하는 약물로, *Tolypocladium inflatum* 곰팡이에서 분리된 11개 아미노산으로 구성된 고리형 펩타이드(cyclic peptide)로, 1970년대에 발견된 이후 장기이식 거부반응 예방과 다양한 자가면역질환 치료에 사용되어 왔습니다.</span>
 <span id="cb39-729"><a href="#cb39-729" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb39-730"><a href="#cb39-730" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb39-731"><a href="#cb39-731" aria-hidden="true" tabindex="-1"></a><span class="fu">### 작용기전</span></span>
@@ -2824,9 +2824,9 @@ C0가 100 ng/mL 미만이면 치료 효과가 불충분할 수 있고, 200 ng/mL
 <span id="cb39-763"><a href="#cb39-763" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb39-764"><a href="#cb39-764" aria-hidden="true" tabindex="-1"></a><span class="fu">### CYP3A4 대사와 약물상호작용</span></span>
 <span id="cb39-765"><a href="#cb39-765" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-766"><a href="#cb39-766" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 3.3: CYP3A4 약물상호작용 네트워크 (CYP3A4 Drug Interaction Network).** Cyclosporine을 중심에 두고, 억제제(azole 항진균제, macrolide 항생제, CCB, 자몽주스)에 의한 농도 상승과 유도제(rifampicin, St. John's wort)에 의한 농도 감소를 네트워크 형태로 도식화하였다. 각 상호작용의 임상적 중요도를 색상으로 구분하였다.](../images/ch03_fig3.png)</span>{#fig-ch03-3 width=100%}</span>
+<span id="cb39-766"><a href="#cb39-766" aria-hidden="true" tabindex="-1"></a><span class="al">![CYP3A4 약물상호작용 네트워크 (CYP3A4 Drug Interaction Network). Cyclosporine을 중심에 두고, 억제제(azole 항진균제, macrolide 항생제, CCB, 자몽주스)에 의한 농도 상승과 유도제(rifampicin, St. John's wort)에 의한 농도 감소를 네트워크 형태로 도식화하였다. 각 상호작용의 임상적 중요도를 색상으로 구분하였다.](../images/ch03_fig3.png)</span>{#fig-ch03-3 width=100%}</span>
 <span id="cb39-767"><a href="#cb39-767" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-768"><a href="#cb39-768" aria-hidden="true" tabindex="-1"></a>Cyclosporine은 CYP3A4에 의해 주로 대사되므로, 약물상호작용에 매우 주의해야 합니다:</span>
+<span id="cb39-768"><a href="#cb39-768" aria-hidden="true" tabindex="-1"></a>Cyclosporine은 CYP3A4에 의해 주로 대사되므로, 약물상호작용에 매우 주의해야 합니다 (@fig-ch03-3):</span>
 <span id="cb39-769"><a href="#cb39-769" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb39-770"><a href="#cb39-770" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
 <span id="cb39-771"><a href="#cb39-771" aria-hidden="true" tabindex="-1"></a><span class="fu">## 임상적으로 중요한 약물상호작용</span></span>

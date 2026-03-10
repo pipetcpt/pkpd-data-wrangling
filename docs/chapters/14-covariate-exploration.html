@@ -423,13 +423,13 @@ window.Quarto = {
 <img src="../images/ch14_fig1.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch14-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;14.1: <strong>Figure 14.1: 피부과 PK 공변량 분류 (Covariate Categories in Dermatology PK).</strong> 중심에서 5개 카테고리로 방사형으로 배치: Demographics(나이, 체중, 성별), Pathophysiology(eGFR, ALT), Genetics(CYP2C19), Immunology(ADA), Disease(baseline PASI/EASI). 각 카테고리의 대표 변수와 PK 파라미터에 미치는 영향을 함께 나타낸다.
+그림&nbsp;14.1: 피부과 PK 공변량 분류 (Covariate Categories in Dermatology PK). 중심에서 5개 카테고리로 방사형으로 배치: Demographics(나이, 체중, 성별), Pathophysiology(eGFR, ALT), Genetics(CYP2C19), Immunology(ADA), Disease(baseline PASI/EASI). 각 카테고리의 대표 변수와 PK 파라미터에 미치는 영향을 함께 나타낸다.
 </figcaption>
 </figure>
 </div>
 <section id="공변량이란-무엇인가" class="level3" data-number="14.1.1">
 <h3 data-number="14.1.1" class="anchored" data-anchor-id="공변량이란-무엇인가"><span class="header-section-number">14.1.1</span> 공변량이란 무엇인가</h3>
-<p>집단 약동학(Population PK) 분석에서 공변량은 PK 파라미터(CL, V, ka 등)의 <strong>개체간 변이를 설명하는 환자 수준의 특성</strong>입니다. 수학적으로 표현하면, 개인 <span class="math inline">\(i\)</span>의 청소율 <span class="math inline">\(CL_i\)</span>는 다음과 같이 분해됩니다:</p>
+<p><a href="#fig-ch14-1" class="quarto-xref">그림&nbsp;<span>14.1</span></a> 에서 보듯이, 집단 약동학(Population PK) 분석에서 공변량은 PK 파라미터(CL, V, ka 등)의 <strong>개체간 변이를 설명하는 환자 수준의 특성</strong>입니다. 수학적으로 표현하면, 개인 <span class="math inline">\(i\)</span>의 청소율 <span class="math inline">\(CL_i\)</span>는 다음과 같이 분해됩니다:</p>
 <p><span class="math display">\[CL_i = \theta_{CL} \cdot f(\text{Covariates}_i) \cdot e^{\eta_i}\]</span></p>
 <p>여기서 <span class="math inline">\(\theta_{CL}\)</span>은 전형적인(typical) 청소율, <span class="math inline">\(f(\text{Covariates}_i)\)</span>는 공변량 함수, <span class="math inline">\(\eta_i \sim N(0, \omega^2)\)</span>는 잔여 개체간 변이입니다. 좋은 공변량을 찾아 모델에 반영하면 <strong><span class="math inline">\(\omega^2\)</span>이 감소</strong>하여, 설명되지 않는 변이가 줄어듭니다.</p>
 </section>
@@ -514,13 +514,13 @@ window.Quarto = {
 <img src="../images/ch14_fig2.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch14-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;14.2: <strong>Figure 14.2: Allometric Scaling 원리 (Allometric Scaling Principle).</strong> 체중과 CL/V의 관계를 나타내는 allometric 관계(CL∝WT^0.75, V∝WT^1.0)를 log-log 그래프로 표시하고, 성인/소아/비만 환자의 범위를 함께 보여준다.
+그림&nbsp;14.2: Allometric Scaling 원리 (Allometric Scaling Principle). 체중과 CL/V의 관계를 나타내는 allometric 관계(CL∝WT^0.75, V∝WT^1.0)를 log-log 그래프로 표시하고, 성인/소아/비만 환자의 범위를 함께 보여준다.
 </figcaption>
 </figure>
 </div>
 <section id="체중-기반-파라미터-조정의-원리" class="level3" data-number="14.2.1">
 <h3 data-number="14.2.1" class="anchored" data-anchor-id="체중-기반-파라미터-조정의-원리"><span class="header-section-number">14.2.1</span> 체중 기반 파라미터 조정의 원리</h3>
-<p>Allometric scaling은 체중(WT)과 PK 파라미터 사이의 생물학적 관계를 모델에 반영하는 방법입니다. 이는 포유류 종 간의 대사율이 체중의 <span class="math inline">\(3/4\)</span> 승에 비례한다는 <strong>Kleiber’s law</strong>에 기반합니다.</p>
+<p><a href="#fig-ch14-2" class="quarto-xref">그림&nbsp;<span>14.2</span></a> 에서 보듯이, allometric scaling은 체중(WT)과 PK 파라미터 사이의 생물학적 관계를 모델에 반영하는 방법입니다. 이는 포유류 종 간의 대사율이 체중의 <span class="math inline">\(3/4\)</span> 승에 비례한다는 <strong>Kleiber’s law</strong>에 기반합니다.</p>
 <p><span class="math display">\[CL = CL_{ref} \times \left(\frac{WT}{WT_{ref}}\right)^{0.75}\]</span></p>
 <p><span class="math display">\[V = V_{ref} \times \left(\frac{WT}{WT_{ref}}\right)^{1.0}\]</span></p>
 <p>여기서 <span class="math inline">\(CL_{ref}\)</span>와 <span class="math inline">\(V_{ref}\)</span>는 참조 체중(<span class="math inline">\(WT_{ref}\)</span>, 보통 70 kg)에서의 전형적인(typical) 파라미터 값입니다. 청소율(CL)에는 <strong>0.75</strong> 지수(exponent)를, 분포용적(V)에는 <strong>1.0</strong> 지수를 적용합니다.</p>
@@ -1356,11 +1356,11 @@ window.Quarto = {
 <img src="../images/ch14_fig3.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch14-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-그림&nbsp;14.3: <strong>Figure 14.3: Forest Plot 해석 방법 (Forest Plot Interpretation).</strong> CL에 대한 공변량 효과를 forest plot으로 표현: 기준선(1.0)에 대해 체중, 나이, 성별, ADA 상태, eGFR의 효과 크기와 수평 신뢰구간을 표시하고, 임상적으로 유의한 효과와 그렇지 않은 효과를 구분하였다.
+그림&nbsp;14.3: Forest Plot 해석 방법 (Forest Plot Interpretation). CL에 대한 공변량 효과를 forest plot으로 표현: 기준선(1.0)에 대해 체중, 나이, 성별, ADA 상태, eGFR의 효과 크기와 수평 신뢰구간을 표시하고, 임상적으로 유의한 효과와 그렇지 않은 효과를 구분하였다.
 </figcaption>
 </figure>
 </div>
-<p>Forest plot은 공변량이 PK 파라미터에 미치는 효과를 직관적으로 보여주는 핵심적인 그래프입니다. 각 공변량의 효과 크기와 신뢰구간을 함께 표시합니다.</p>
+<p><a href="#fig-ch14-3" class="quarto-xref">그림&nbsp;<span>14.3</span></a> 에서 보듯이, forest plot은 공변량이 PK 파라미터에 미치는 효과를 직관적으로 보여주는 핵심적인 그래프입니다. 각 공변량의 효과 크기와 신뢰구간을 함께 표시합니다.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Forest plot 데이터 준비</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 공변량 효과를 상대적 변화(%)로 표현</span></span>
@@ -2347,11 +2347,11 @@ window.Quarto = {
 <span id="cb30-23"><a href="#cb30-23" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-24"><a href="#cb30-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## 공변량(Covariate)의 개념과 중요성 {#sec-covariate-concept}</span></span>
 <span id="cb30-25"><a href="#cb30-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-26"><a href="#cb30-26" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 14.1: 피부과 PK 공변량 분류 (Covariate Categories in Dermatology PK).** 중심에서 5개 카테고리로 방사형으로 배치: Demographics(나이, 체중, 성별), Pathophysiology(eGFR, ALT), Genetics(CYP2C19), Immunology(ADA), Disease(baseline PASI/EASI). 각 카테고리의 대표 변수와 PK 파라미터에 미치는 영향을 함께 나타낸다.](../images/ch14_fig1.png)</span>{#fig-ch14-1 width=100%}</span>
+<span id="cb30-26"><a href="#cb30-26" aria-hidden="true" tabindex="-1"></a><span class="al">![피부과 PK 공변량 분류 (Covariate Categories in Dermatology PK). 중심에서 5개 카테고리로 방사형으로 배치: Demographics(나이, 체중, 성별), Pathophysiology(eGFR, ALT), Genetics(CYP2C19), Immunology(ADA), Disease(baseline PASI/EASI). 각 카테고리의 대표 변수와 PK 파라미터에 미치는 영향을 함께 나타낸다.](../images/ch14_fig1.png)</span>{#fig-ch14-1 width=100%}</span>
 <span id="cb30-27"><a href="#cb30-27" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-28"><a href="#cb30-28" aria-hidden="true" tabindex="-1"></a><span class="fu">### 공변량이란 무엇인가</span></span>
 <span id="cb30-29"><a href="#cb30-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-30"><a href="#cb30-30" aria-hidden="true" tabindex="-1"></a>집단 약동학(Population PK) 분석에서 공변량은 PK 파라미터(CL, V, ka 등)의 **개체간 변이를 설명하는 환자 수준의 특성**입니다. 수학적으로 표현하면, 개인 $i$의 청소율 $CL_i$는 다음과 같이 분해됩니다:</span>
+<span id="cb30-30"><a href="#cb30-30" aria-hidden="true" tabindex="-1"></a>@fig-ch14-1 에서 보듯이, 집단 약동학(Population PK) 분석에서 공변량은 PK 파라미터(CL, V, ka 등)의 **개체간 변이를 설명하는 환자 수준의 특성**입니다. 수학적으로 표현하면, 개인 $i$의 청소율 $CL_i$는 다음과 같이 분해됩니다:</span>
 <span id="cb30-31"><a href="#cb30-31" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-32"><a href="#cb30-32" aria-hidden="true" tabindex="-1"></a>$$CL_i = \theta_{CL} \cdot f(\text{Covariates}_i) \cdot e^{\eta_i}$$</span>
 <span id="cb30-33"><a href="#cb30-33" aria-hidden="true" tabindex="-1"></a></span>
@@ -2420,11 +2420,11 @@ window.Quarto = {
 <span id="cb30-96"><a href="#cb30-96" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-97"><a href="#cb30-97" aria-hidden="true" tabindex="-1"></a><span class="fu">## Allometric Scaling {#sec-allometric-scaling}</span></span>
 <span id="cb30-98"><a href="#cb30-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-99"><a href="#cb30-99" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 14.2: Allometric Scaling 원리 (Allometric Scaling Principle).** 체중과 CL/V의 관계를 나타내는 allometric 관계(CL∝WT^0.75, V∝WT^1.0)를 log-log 그래프로 표시하고, 성인/소아/비만 환자의 범위를 함께 보여준다.](../images/ch14_fig2.png)</span>{#fig-ch14-2 width=100%}</span>
+<span id="cb30-99"><a href="#cb30-99" aria-hidden="true" tabindex="-1"></a><span class="al">![Allometric Scaling 원리 (Allometric Scaling Principle). 체중과 CL/V의 관계를 나타내는 allometric 관계(CL∝WT^0.75, V∝WT^1.0)를 log-log 그래프로 표시하고, 성인/소아/비만 환자의 범위를 함께 보여준다.](../images/ch14_fig2.png)</span>{#fig-ch14-2 width=100%}</span>
 <span id="cb30-100"><a href="#cb30-100" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-101"><a href="#cb30-101" aria-hidden="true" tabindex="-1"></a><span class="fu">### 체중 기반 파라미터 조정의 원리</span></span>
 <span id="cb30-102"><a href="#cb30-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-103"><a href="#cb30-103" aria-hidden="true" tabindex="-1"></a>Allometric scaling은 체중(WT)과 PK 파라미터 사이의 생물학적 관계를 모델에 반영하는 방법입니다. 이는 포유류 종 간의 대사율이 체중의 $3/4$ 승에 비례한다는 **Kleiber's law**에 기반합니다.</span>
+<span id="cb30-103"><a href="#cb30-103" aria-hidden="true" tabindex="-1"></a>@fig-ch14-2 에서 보듯이, allometric scaling은 체중(WT)과 PK 파라미터 사이의 생물학적 관계를 모델에 반영하는 방법입니다. 이는 포유류 종 간의 대사율이 체중의 $3/4$ 승에 비례한다는 **Kleiber's law**에 기반합니다.</span>
 <span id="cb30-104"><a href="#cb30-104" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-105"><a href="#cb30-105" aria-hidden="true" tabindex="-1"></a>$$CL = CL_{ref} \times \left(\frac{WT}{WT_{ref}}\right)^{0.75}$$</span>
 <span id="cb30-106"><a href="#cb30-106" aria-hidden="true" tabindex="-1"></a></span>
@@ -3180,9 +3180,9 @@ window.Quarto = {
 <span id="cb30-892"><a href="#cb30-892" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-893"><a href="#cb30-893" aria-hidden="true" tabindex="-1"></a><span class="fu">### Forest Plot: 공변량 효과 시각화</span></span>
 <span id="cb30-894"><a href="#cb30-894" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-895"><a href="#cb30-895" aria-hidden="true" tabindex="-1"></a><span class="al">![**Figure 14.3: Forest Plot 해석 방법 (Forest Plot Interpretation).** CL에 대한 공변량 효과를 forest plot으로 표현: 기준선(1.0)에 대해 체중, 나이, 성별, ADA 상태, eGFR의 효과 크기와 수평 신뢰구간을 표시하고, 임상적으로 유의한 효과와 그렇지 않은 효과를 구분하였다.](../images/ch14_fig3.png)</span>{#fig-ch14-3 width=100%}</span>
+<span id="cb30-895"><a href="#cb30-895" aria-hidden="true" tabindex="-1"></a><span class="al">![Forest Plot 해석 방법 (Forest Plot Interpretation). CL에 대한 공변량 효과를 forest plot으로 표현: 기준선(1.0)에 대해 체중, 나이, 성별, ADA 상태, eGFR의 효과 크기와 수평 신뢰구간을 표시하고, 임상적으로 유의한 효과와 그렇지 않은 효과를 구분하였다.](../images/ch14_fig3.png)</span>{#fig-ch14-3 width=100%}</span>
 <span id="cb30-896"><a href="#cb30-896" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-897"><a href="#cb30-897" aria-hidden="true" tabindex="-1"></a>Forest plot은 공변량이 PK 파라미터에 미치는 효과를 직관적으로 보여주는 핵심적인 그래프입니다. 각 공변량의 효과 크기와 신뢰구간을 함께 표시합니다.</span>
+<span id="cb30-897"><a href="#cb30-897" aria-hidden="true" tabindex="-1"></a>@fig-ch14-3 에서 보듯이, forest plot은 공변량이 PK 파라미터에 미치는 효과를 직관적으로 보여주는 핵심적인 그래프입니다. 각 공변량의 효과 크기와 신뢰구간을 함께 표시합니다.</span>
 <span id="cb30-898"><a href="#cb30-898" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-901"><a href="#cb30-901" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb30-902"><a href="#cb30-902" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>

@@ -17,11 +17,11 @@ library(scales)       # 축 레이블 서식
 
 ## EDA의 목적과 PK 분석에서의 역할 {#sec-eda-purpose}
 
-![**Figure 6.1: PK 데이터 EDA 워크플로우 (EDA Workflow for PK Data).** Import → QC checks(결측, 이상값, 중복) → 기술통계 → 시각화 → 분석 전략 수립의 단계별 흐름도를 도식화하였다. 각 단계에서 수행하는 핵심 작업과 사용하는 R 함수를 함께 표시하였다.](../images/ch06_fig1.png){#fig-ch06-1 width=100%}
+![PK 데이터 EDA 워크플로우 (EDA Workflow for PK Data). Import → QC checks(결측, 이상값, 중복) → 기술통계 → 시각화 → 분석 전략 수립의 단계별 흐름도를 도식화하였다. 각 단계에서 수행하는 핵심 작업과 사용하는 R 함수를 함께 표시하였다.](../images/ch06_fig1.png){#fig-ch06-1 width=100%}
 
 ### EDA란 무엇인가
 
-탐색적 데이터 분석(EDA)은 John Tukey가 1977년 저서 *Exploratory Data Analysis*에서 체계화한 접근법으로, 가설 설정 이전에 데이터 자체가 이야기하는 바를 경청하는 분석 철학입니다. PK 분석에서 EDA는 단순한 "그래프 그리기"가 아니라, 데이터의 신뢰성과 분석 방향을 결정짓는 **필수적인 과정**입니다.
+탐색적 데이터 분석(EDA)은 John Tukey가 1977년 저서 *Exploratory Data Analysis*에서 체계화한 접근법으로, 가설 설정 이전에 데이터 자체가 이야기하는 바를 경청하는 분석 철학입니다. PK 분석에서 EDA는 단순한 "그래프 그리기"가 아니라, 데이터의 신뢰성과 분석 방향을 결정짓는 **필수적인 과정**입니다 (@fig-ch06-1).
 
 ### PK 분석에서 EDA의 세 가지 핵심 역할
 
@@ -41,11 +41,11 @@ EDA는 한 번으로 끝나는 작업이 아닙니다. 데이터를 시각화하
 
 ## 기술통계량 {#sec-descriptive-stats}
 
-![**Figure 6.2: PK 데이터의 로그정규분포 (Log-Normal Distribution of PK Data).** 왼쪽 패널은 원래 스케일에서의 우편향(skewed) 분포, 오른쪽 패널은 로그 변환 후 정규분포를 보여준다. 기하평균(geometric mean)이 산술평균보다 적절한 중심 경향 측도인 이유를 시각적으로 설명한다.](../images/ch06_fig2.png){#fig-ch06-2 width=100%}
+![PK 데이터의 로그정규분포 (Log-Normal Distribution of PK Data). 왼쪽 패널은 원래 스케일에서의 우편향(skewed) 분포, 오른쪽 패널은 로그 변환 후 정규분포를 보여준다. 기하평균(geometric mean)이 산술평균보다 적절한 중심 경향 측도인 이유를 시각적으로 설명한다.](../images/ch06_fig2.png){#fig-ch06-2 width=100%}
 
 ### 중심 경향 측도: 산술평균과 기하평균
 
-PK 데이터의 기술통계에서 가장 중요한 구분은 **산술평균(arithmetic mean)**과 **기하평균(geometric mean)**의 선택입니다.
+@fig-ch06-2 에서 볼 수 있듯이, PK 데이터의 기술통계에서 가장 중요한 구분은 **산술평균(arithmetic mean)**과 **기하평균(geometric mean)**의 선택입니다.
 
 **산술평균(Arithmetic Mean)**은 모든 값을 더한 후 개수로 나눈 값입니다:
 
@@ -1205,12 +1205,12 @@ pk_overall_summary |>
 
 ## 약리학 노트: Cyclosporine 농도 변이와 약물상호작용 {#sec-pharma-note}
 
-![**Figure 6.3: Cyclosporine 농도 변이의 원인 (Cyclosporine Variability Sources).** 개체간 변이(IIV: 유전, 체중, 나이)와 개체내 변이(IOV: 음식, 복약 순응도, 약물상호작용)가 C0/C2 농도 변이에 기여하는 요인을 다이어그램으로 도식화하였다.](../images/ch06_fig3.png){#fig-ch06-3 width=100%}
+![Cyclosporine 농도 변이의 원인 (Cyclosporine Variability Sources). 개체간 변이(IIV: 유전, 체중, 나이)와 개체내 변이(IOV: 음식, 복약 순응도, 약물상호작용)가 C0/C2 농도 변이에 기여하는 요인을 다이어그램으로 도식화하였다.](../images/ch06_fig3.png){#fig-ch06-3 width=100%}
 
 :::{.callout-note}
 ## CYP3A4 기질로서의 Cyclosporine
 
-Cyclosporine은 CYP3A4와 P-glycoprotein(P-gp)의 기질(substrate)이자 억제제(inhibitor)입니다. 이 약물의 혈중 농도는 매우 많은 요인에 의해 영향을 받으며, 이것이 높은 개체간 변이(IIV ~40-60%)의 주된 원인입니다.
+Cyclosporine은 CYP3A4와 P-glycoprotein(P-gp)의 기질(substrate)이자 억제제(inhibitor)입니다. @fig-ch06-3 에서 보듯이, 이 약물의 혈중 농도는 매우 많은 요인에 의해 영향을 받으며, 이것이 높은 개체간 변이(IIV ~40-60%)의 주된 원인입니다.
 
 Cyclosporine의 경구 생체이용률이 20-50%로 넓은 범위를 보이는 이유:
 

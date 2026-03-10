@@ -329,11 +329,11 @@ tibble(
 
 ## 생물학적 동등성(BE) 시험 분석 {#sec-bioequivalence}
 
-![**Figure 8.1: 생물학적 동등성 시험 설계 (Bioequivalence Study Design).** 2×2 교차 설계(crossover design)에서 Period 1(R→T, T→R), 휴약기(washout), Period 2의 구조와 PK 채혈 일정을 도식화하였다. 80-125% 동등성 판정 기준을 함께 표시하였다.](../images/ch08_fig1.png){#fig-ch08-1 width=100%}
+![생물학적 동등성 시험 설계 (Bioequivalence Study Design). 2×2 교차 설계(crossover design)에서 Period 1(R→T, T→R), 휴약기(washout), Period 2의 구조와 PK 채혈 일정을 도식화하였다. 80-125% 동등성 판정 기준을 함께 표시하였다.](../images/ch08_fig1.png){#fig-ch08-1 width=100%}
 
 ### BE 시험이란
 
-**생물학적 동등성(Bioequivalence, BE)** 시험은 제네릭 의약품(generic drug)이 오리지널 의약품(innovator drug)과 동일한 체내 노출을 제공하는지 확인하는 시험입니다. 두 제형의 **속도(rate)**와 **정도(extent)**가 통계적으로 동등함을 입증해야 합니다.
+**생물학적 동등성(Bioequivalence, BE)** 시험은 제네릭 의약품(generic drug)이 오리지널 의약품(innovator drug)과 동일한 체내 노출을 제공하는지 확인하는 시험입니다 (@fig-ch08-1). 두 제형의 **속도(rate)**와 **정도(extent)**가 통계적으로 동등함을 입증해야 합니다.
 
 **핵심 PK 파라미터:**
 
@@ -605,13 +605,13 @@ ggplot(be_forest_data, aes(x = GMR_percent, y = Parameter)) +
 
 ## 단클론항체(mAb) PK 특성 {#sec-mab-pk}
 
-![**Figure 8.2: 단클론항체의 PK 특성 (Monoclonal Antibody PK).** SC 주사 후 림프계를 통한 흡수, FcRn recycling에 의한 재활용, TMDD(표적 결합 및 내재화)를 거쳐 긴 반감기를 갖게 되는 단클론항체의 체내동태를 도식화하였다.](../images/ch08_fig2.png){#fig-ch08-2 width=100%}
+![단클론항체의 PK 특성 (Monoclonal Antibody PK). SC 주사 후 림프계를 통한 흡수, FcRn recycling에 의한 재활용, TMDD(표적 결합 및 내재화)를 거쳐 긴 반감기를 갖게 되는 단클론항체의 체내동태를 도식화하였다.](../images/ch08_fig2.png){#fig-ch08-2 width=100%}
 
 ### Adalimumab의 약동학
 
 **Adalimumab (Humira®)**는 재조합 완전 인간 단클론항체(fully human monoclonal antibody)로, TNF-$\alpha$에 결합하여 이를 중화합니다. 건선, 류마티스 관절염, 크론병 등 다양한 자가면역 질환에 사용됩니다.
 
-단클론항체의 PK는 저분자 약물과 여러 면에서 다릅니다:
+@fig-ch08-2 에서 볼 수 있듯이, 단클론항체의 PK는 저분자 약물과 여러 면에서 다릅니다:
 
 | 특성 | 저분자 약물 (예: Apremilast) | 단클론항체 (예: Adalimumab) |
 |:---|:---|:---|
@@ -997,13 +997,13 @@ ggplot(ada_pk |> filter(Conc_obs > 0), aes(x = TIME_days, y = Conc_obs, group = 
 
 ## 약리학 노트: Adalimumab의 약리학과 면역원성 {#sec-adalimumab-pharmacology}
 
-![**Figure 8.3: Adalimumab의 항TNF-α 작용기전 (Adalimumab Anti-TNF-α Mechanism).** TNF-α 결합 중화, Fc 매개 효과(CDC, ADCC), 건선 피부에서의 하류 염증 억제 경로를 도식화하였다. 면역원성(ADA 생성)에 의한 약효 감소 기전도 함께 나타낸다.](../images/ch08_fig3.png){#fig-ch08-3 width=100%}
+![Adalimumab의 항TNF-α 작용기전 (Adalimumab Anti-TNF-α Mechanism). TNF-α 결합 중화, Fc 매개 효과(CDC, ADCC), 건선 피부에서의 하류 염증 억제 경로를 도식화하였다. 면역원성(ADA 생성)에 의한 약효 감소 기전도 함께 나타낸다.](../images/ch08_fig3.png){#fig-ch08-3 width=100%}
 
 ### Anti-TNF-α 작용기전
 
 **TNF-α (Tumor Necrosis Factor-alpha)**는 염증 반응의 핵심 매개체입니다. 건선에서는 피부 각질세포(keratinocyte)와 면역세포에서 TNF-α가 과발현되어 만성 염증을 유발합니다.
 
-Adalimumab은 **TNF-α에 높은 친화력(affinity)**으로 결합하여 다음과 같은 효과를 나타냅니다:
+@fig-ch08-3 에 나타낸 바와 같이, Adalimumab은 **TNF-α에 높은 친화력(affinity)**으로 결합하여 다음과 같은 효과를 나타냅니다:
 
 1. **가용성 TNF-α (soluble TNF-α) 중화**: 유리 TNF-α에 결합하여 수용체 결합을 차단
 2. **막결합 TNF-α (membrane-bound TNF-α) 결합**: 세포 표면의 TNF-α에 결합하여 ADCC(Antibody-Dependent Cellular Cytotoxicity)와 CDC(Complement-Dependent Cytotoxicity) 유도
